@@ -1,0 +1,41 @@
+{
+    "name": "brunopulis.com",
+    "version": "1.0.0",
+    "description": "Site institucional Bruno Pulis",
+    "main": "gulpfile.js",
+    "scripts": {
+      "start": "gulp",
+      "build": "gulp js && gulp stylus && gulp jekyll-build"
+    },
+    "author": "Bruno Pulis",
+    "license": "MIT",
+    "devDependencies": {
+        "cz-conventional-changelog": "^2.1.0",
+        "husky": "^1.1.4",
+        "validate-commit-msg": "^2.14.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "commitmsg": "validate-commit-msg",
+    "validate-commit-msg": {
+        "types": [
+          "feat",
+          "fix",
+          "docs",
+          "style",
+          "refactor",
+          "perf",
+          "test",
+          "chore",
+          "revert"
+        ],
+        "warnOnFail": false,
+        "maxSubjectLength": 100,
+        "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
+        "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
+        "helpMessage": ""
+    }
+}
