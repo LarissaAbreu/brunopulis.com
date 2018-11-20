@@ -1,0 +1,35 @@
+---
+layout: page
+title: Blog
+background: '/img/bg-post.jpg'
+---
+
+{% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+      {% else %}
+      <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+      {% endif %}
+    </a>
+    <p class="post-meta">
+      Postado por
+      {% if post.author %}
+        {{ post.author }}
+      {% else %}
+        {{ site.author }}
+      {% endif %}
+      em
+      <time datetime="{{ post.date }}">
+        {% include date.html date=post.date %}
+      </time>
+    </p>
+  </article>
+  <hr>
+{% endfor %}
+
+<div class="clearfix">
+    {% include pagination.html %}
+</div>
