@@ -1,23 +1,24 @@
-# Site settings
-title: Bruno Pulis - Desenvolvedor Frontend 
-email: bruno.pulis@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.brunopulis.com" 
+title:             Bruno Pulis
+email:             bruno.pulis@gmail.com
+description:       Frontend Developer & Advocate Accessibility
+author:            Bruno Pulis
+baseurl:           ""
+url:               "https://brunopulis.com"
 
-# Social Midia
-twitter_username: obrunopulis
-github_username: brunopulis
+# Social Profiles
+twitter_username:  obrunopulis
+github_username:   brunopulis
+facebook_username: bpulis
 
 # Build settings
 markdown: kramdown
-highligther: rouge
-permalink: /:title/
+highlighter: rouge
+permalink: /:categories/:title/
 paginate: 10
 paginate_path: "/page/:num/"
 
-# plugins
 plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-admin
 

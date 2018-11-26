@@ -4,14 +4,14 @@ title: Blog
 background: '/img/bg-post.jpg'
 ---
 
-{% for post in paginator.posts %}
+{% for post in site.posts  limit: 5 %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
       <h2 class="post-title">{{ post.title }}</h2>
       {% if post.subtitle %}
-      <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        <h3 class="post-subtitle">{{ post.subtitle }}</h3>
       {% else %}
-      <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+        <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
       {% endif %}
     </a>
     <p class="post-meta">
@@ -22,14 +22,14 @@ background: '/img/bg-post.jpg'
         {{ site.author }}
       {% endif %}
       em
-      <time datetime="{{ post.date }}">
+
+      <time datetime="{{ post.date | date_to_xmlschema }}">
         {% include date.html date=post.date %}
       </time>
-    </p>
+      </p>
   </article>
   <hr>
 {% endfor %}
 
-<div class="clearfix">
-    {% include pagination.html %}
-</div>
+{% include pagination.html %}
+

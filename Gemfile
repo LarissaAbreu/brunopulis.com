@@ -1,7 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'rake'
-gem 'rouge'
-gem 'jekyll'
-gem 'jekyll-admin'
-gem 'jekyll-paginate'
+gem "jekyll"
+
+group :jekyll_plugins do
+  gem "rake"
+  gem "rouge"
+  gem "jekyll-feed"
+  gem "jekyll-paginate"
+  gem "jekyll-admin"
+end

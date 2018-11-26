@@ -20,18 +20,7 @@ layout: default
               <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
             {% endif %}
           </a>
-          <p class="post-meta">Postado por
-            {% if post.author %}
-              {{ post.author }}
-            {% else %}
-              {{ site.author }}
-            {% endif %}
-            em
-
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {% include date.html date=post.date %}
-            </time>
-            </p>
+          {% include metas.html %}
         </article>
         <hr>
       {% endfor %}
