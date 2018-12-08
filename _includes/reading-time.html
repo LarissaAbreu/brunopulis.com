@@ -5,9 +5,9 @@
 
     {% assign words = content | number_of_words %}
     {% if words < 360 %}
-      1 minuto leitura.
+      1 minuto.
     {% else %}
-      {{ words | divided_by:180 }} minutos leitura.
+      {{ words | divided_by:180 }} minutos.
     {% endif %}
   </span>
   <style>

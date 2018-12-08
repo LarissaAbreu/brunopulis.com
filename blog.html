@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog
+title: Artigos técnicos, reflexões e poesias
 background: '/img/bg-post.jpg'
 ---
 
@@ -15,18 +15,8 @@ background: '/img/bg-post.jpg'
       {% endif %}
     </a>
     <p class="post-meta">
-      Postado por
-      {% if post.author %}
-        {{ post.author }}
-      {% else %}
-        {{ site.author }}
-      {% endif %}
-      em
-
-      <time datetime="{{ post.date | date_to_xmlschema }}">
-        {% include date.html date=post.date %}
-      </time>
-      </p>
+      {% include metas.html %}
+    </p>
   </article>
   <hr>
 {% endfor %}

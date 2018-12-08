@@ -1,15 +1,15 @@
-<span class="meta">
-    Postado por: <a href="#">{{ site.author }}</a> em
-    <time datetime="{{ post.date | date_to_xmlschema }}">
-      {% include date.html date=post.date %}
-    </time>
-    Categoria: {% if post %}
-      {% assign categories = post.categories %}
-    {% else %}
-      {% assign categories = page.categories %}
-    {% endif %}
-    {% for category in categories %}
-      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-      {% unless forloop.last %}&nbsp;{% endunless %}
-    {% endfor %}
-  </span>
+<div class="post-meta">
+  <a href="/sobre-mim">{{ site.author }}</a> em
+  <time datetime="{{ post.date | date_to_xmlschema }}">
+    {% include date.html date=post.date %}
+  </time>
+  Categoria: {% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>

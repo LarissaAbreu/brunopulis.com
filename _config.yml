@@ -21,6 +21,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-admin
+  - jekyll-sitemap
 
 collections:
   - portfolio
