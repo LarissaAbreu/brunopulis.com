@@ -1,11 +1,23 @@
 <section class="author">
-  <div class="details">
-      <img itemprop="image" class="img-rounded" src="/img/author.jpg" alt="Bruno Pulis">
-      <p class="def">Autor</p>
-      <h3 class="name" itemprop="author">
-          <a href="http://github.com/brunopulis">Bruno Pulis</a>
-      </h3>
-      <p class="desc">Desenvolvedor Front End, Teólogo e nerd</p>
-      <a class="email" href="https://github.com/brunopulis">github.com/brunopulis</a>
+  <div class="author-img">
+      <img itemprop="image" class="img-rounded" width="100" height="100" src="/img/author.jpg" alt="Bruno Pulis">
+  </div>
+
+  <div class="author-content">
+    <h3 class="author-content__title">{{ site.author }}</h3>
+    <p class="author-content__job">{{ site.description }}</p>
+
+    <a target="_blank" class="author-social" href="http://instagram.com/{{ site.github_username }}">
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <span class="sr-only">Github</span>
+    </a>
+    <a target="_blank" class="author-social" href="http://instagram.com/{{ site.twitter_username }}">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <span class="sr-only">Twitter</span>
+    </a>
+    <a target="_blank" class="author-social" href="http://facebook.com/{{ site.facebook_username }}">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <span class="sr-only">Facebook</span>
+    </a>
   </div>
 </section>
