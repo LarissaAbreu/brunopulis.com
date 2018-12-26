@@ -1,8 +1,4 @@
 <div class="post-meta">
-  <a href="/sobre-mim">{{ site.author }}</a> em
-  <time datetime="{{ post.date | date_to_xmlschema }}">
-    {% include date.html date=post.date %}
-  </time>
   Categoria: {% if post %}
     {% assign categories = post.categories %}
   {% else %}

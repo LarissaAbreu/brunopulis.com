@@ -1,0 +1,5 @@
+<small class="tags">
+  {% for tag in page.tags %}
+    <a href="/tags/#{{tag | slugify }}/" class="tags__item">{{ tag }}</a>
+  {% endfor %}
+</small>
