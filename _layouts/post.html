@@ -7,16 +7,16 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="col-lg-10 col-md-10 mx-auto">
       {% include reading-time.html %}
+      {% include share.html %}
 
       {{ content }}
 
       {% include author.html %}
-      {% include share.html %}
+
       {% include related.html %}
       {% include comments.html %}
-      {% include pagination.html %}
     </div>
   </div>
 </div>
