@@ -1,0 +1,28 @@
+// ======================================================
+// Author
+// ======================================================
+
+.author {
+  background: #f1f1f1;
+  display: flex;
+  margin: 25px 0;
+  overflow: hidden;
+  padding: 38px 0 37px 0;
+}
+
+.author-img {
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.author-content {
+  &__title { margin: 0; }
+  &__job { margin: 0; }
+
+  p { margin-bottom: 15px; }
+}
+
+.author-social {
+  color: #313131;
+  margin-right: 10px;
+}
