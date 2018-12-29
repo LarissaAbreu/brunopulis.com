@@ -1,5 +1,5 @@
-<small class="tags">
+<section class="tags">
   {% for tag in post.tags %}
-    <a href="/tags/#{{tag | slugify }}/" class="tags__item">{{ tag }}</a>
+    <a href="/tags/#{{tag | slugify }}/" class="tags__link">{{ tag }}</a>
   {% endfor %}
-</small>
+</section>
