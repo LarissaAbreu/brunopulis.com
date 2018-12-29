@@ -34,6 +34,8 @@ blockquote {
   color: $gray-600;
 }
 
+li { margin-bottom: 10px; }
+
 .section-heading {
   font-size: 36px;
   font-weight: 700;
@@ -83,3 +85,5 @@ blockquote {
   margin-left: -23px;
   padding-left: 20px;
 }
+
+img { max-width: 100%; }

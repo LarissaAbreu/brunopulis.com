@@ -7,8 +7,9 @@ description: "Resumo de como foi minha participação no Global Accessibility Aw
 main-class:
 color:
 tags:
-- eventos
-categories: reviews
+- reviews
+- a11y
+categories: eventos
 twitter_text: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 introduction: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 ---

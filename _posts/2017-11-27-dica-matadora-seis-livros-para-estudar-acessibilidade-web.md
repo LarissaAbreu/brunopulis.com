@@ -9,7 +9,8 @@ color:
 tags:
 - livros
 - indicacao
-categories: a11y
+- dicas
+categories: dev
 twitter_text: "Lista com excelentes referências de livros sobre acessibilidade web."
 introduction: "Lista com excelentes referências de livros sobre acessibilidade web."
 ---
