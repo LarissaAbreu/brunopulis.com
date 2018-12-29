@@ -1,13 +1,16 @@
 ---
 layout: post
 title:  "Global Accessibility Awarenss Day 2017"
-subtitle: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017 promovido pelo o IXDABH"
-twitter_text: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 date:   2017-11-09
 image: '/img/posts/global-a11y.jpg'
-categories: reviews
+description: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017 promovido pelo o IXDABH"
+main-class:
+color:
 tags:
 - eventos
+categories: reviews
+twitter_text: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
+introduction: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 ---
 
 # Introdução

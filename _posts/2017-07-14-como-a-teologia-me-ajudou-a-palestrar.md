@@ -1,12 +1,17 @@
 ---
 layout: post
 title: "Como a teologia me ajudou a palestrar"
-twitter_text: "Como a teologia e suas disciplinas me ajudaram a perder a vergonha e palestrar"
 date: 2017-07-14 01:13:35
 image: '/img/posts/devfestne/teologia.jpg'
-categories: dev
+description: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
+main-class:
+color:
 tags:
 - carreira
+- motivacional
+categories: dev
+twitter_text: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
+introduction: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 ---
 
 ![Bruno Pulis segurando um microfone, vestindo blusa preta com uma bermuda jeans olhando para o computado e a platéia com os olhos voltados ao o que está sendo falado](/img/posts/devfestne/devfestne.jpg)

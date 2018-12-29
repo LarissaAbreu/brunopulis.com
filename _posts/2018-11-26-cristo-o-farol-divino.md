@@ -1,13 +1,17 @@
 ---
 layout: post
 title:  "Cristo, o farol divino"
-subtitle: "E quando a vida não tem sentido, a claridade se torna um filete de esperança e as trevas nos recobrem? Talvez, devemos olhar para o farol. Acompanhem esta reflexão e veja que Ele e nosso farol."
-twitter_text: "E quando a vida não tem sentido, a claridade se torna um filete de esperança e as trevas nos recobrem? Talvez, devemos olhar para o farol."
 date:   2018-11-26
 image: '/img/posts/farol.jpg'
-categories: random
+description: "E quando a vida não tem sentido, a claridade se torna um filete de esperança e as trevas nos recobrem? Talvez, devemos olhar para o farol. Acompanhem esta reflexão e veja que Ele e nosso farol."
+main-class:
+color:
 tags:
 - cristianismo
+- reflexao
+categories: random
+twitter_text: "E quando a vida não tem sentido, a claridade se torna um filete de esperança e as trevas nos recobrem? Talvez, devemos olhar para o farol."
+introduction: "E quando a vida não tem sentido, a claridade se torna um filete de esperança e as trevas nos recobrem? Talvez, devemos olhar para o farol."
 ---
 
 > O povo que andava em trevas, viu uma grande luz, e sobre os que habitavam na região da sombra da morte, resplandeceu a luz   Isaías 9:2
