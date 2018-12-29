@@ -2,7 +2,7 @@
 layout: page
 title: Sobre mim
 description: um pouco da minha trajetória
-background: '/img/bg-about.jpg'
+image: '/img/bg-about.jpg'
 ---
 
 ## Olá, seja bem vindo!
