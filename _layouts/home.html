@@ -22,12 +22,7 @@ layout: default
                 {{ post.title }}
               </a>
             </h2>
-
-            {% if post.subtitle %}
-              <p class="post-subtitle card-text">{{ post.subtitle | strip_html | truncatewords: 50 }}</p>
-            {% else %}
-              <p class="post-subtitle card-text">{{ post.subtitle | strip_html | truncatewords: 50 }}</p>
-            {% endif %}
+            <p class="post-subtitle card-text">{{ post.introduction | strip_html | truncatewords: 50 }}</p>
 
             {% include tags-home.html %}
             <!-- {% include metas.html %} -->
