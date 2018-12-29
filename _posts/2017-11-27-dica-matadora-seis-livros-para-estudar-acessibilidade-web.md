@@ -1,12 +1,12 @@
 ---
 title: "Dica matadora: 6 livros para estudar acessibilidade web"
 subtitle: "Confira uma lista sensacional de livros sobre acessibilidade web."
+twitter_text: "Lista com excelentes referências de livros sobre acessibilidade web."
 layout: post
 image: "/img/posts/books.jpg"
 categories: a11y
 tags:
-- indicacao
-- ux
+- livros
 ---
 
 Neste artigo irei mostrar uma lista de livros para você que se interessa pelo assunto, são livros excelentes e recomendados internacionalmente.

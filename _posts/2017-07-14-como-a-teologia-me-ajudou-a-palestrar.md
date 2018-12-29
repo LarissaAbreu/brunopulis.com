@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "Como a teologia me ajudou a palestrar"
+twitter_text: "Como a teologia e suas disciplinas me ajudaram a perder a vergonha e palestrar"
 date: 2017-07-14 01:13:35
 image: '/img/posts/devfestne/teologia.jpg'
 categories: dev
 tags:
-- teologia
-- talks
 - carreira
 ---
 

@@ -1,13 +1,12 @@
 ---
 title: "Ignore o WCAG! Teste de usuários com pessoas com deficiência em vez disso."
 subtitle: "Aprenda com essas dicas como testar acessibilidade dos seus produtos digitais da forma correta"
+twitter_text: "Aprenda como testar acessibilidade dos seus produtos digitais da forma correta"
 layout: post
 image: "/img/posts/computer.jpg"
 categories: a11y
 tags:
 - wcag
-- testes
-- ux
 ---
 
 Texto original: [Skip the WCAG](https://axesslab.com/skip-the-wcag/) escrito por Hampus Sethfors. 
