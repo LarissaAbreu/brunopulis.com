@@ -87,3 +87,25 @@ blockquote {
 }
 
 img { max-width: 100%; }
+
+table {
+  width: 100%;
+
+  thead {
+    background: #ccc;
+
+    th {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) { background: #f5f5f5; }
+
+    td {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+}
