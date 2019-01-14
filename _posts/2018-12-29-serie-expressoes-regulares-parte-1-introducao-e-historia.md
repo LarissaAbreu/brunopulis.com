@@ -28,7 +28,7 @@ Vamos, encarar esse monstro?
 
 Comecei a folhear o livro [Expressões Regulares: Uma Abordagem Divertida](https://novatec.com.br/livros/expressoes-regulares-5ed/) do Aurélio Jarbas, uma das grandes referências brasileiras no assunto.
 
-O livro, está na sua quinta edição e você pode adquiri-lo no site da [NOVATEC](https://novatec.com.br/livros/expressoes-regulares-5ed/). Com um cupom de desconto de 20%, somente colocar o cupom **AURELIO**. Existe também a versão digital que é comercializada na [Amazon](https://www.amazon.com.br/dp/B01BPK1W46/).
+O livro, está na sua quinta edição e você pode adquiri-lo no site da [NOVATEC](https://novatec.com.br/livros/expressoes-regulares-5ed/). Existe também a versão digital que é comercializada na [Amazon](https://www.amazon.com.br/dp/B01BPK1W46/).
 
 O intuito dessa série de artigos e estudar as etapas que compreendem uma expressão regular. Servira como um guia de estudos e fonte de consulta posterior também.
 
