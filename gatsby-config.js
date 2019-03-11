@@ -23,12 +23,12 @@ module.exports = {
       },
     },
 
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./src/img/favicon.png",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: "",
+    //   },
+    // },
     "gatsby-plugin-netlify",
   ],
 }
