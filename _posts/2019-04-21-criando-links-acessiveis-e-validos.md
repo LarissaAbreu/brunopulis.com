@@ -14,7 +14,7 @@ twitter_text: "Quer aprender a escrever um link válido e acessível? Confira ne
 introduction: "Quer aprender a escrever um link válido e acessível? Confira neste artigo."
 ---
 
-> Post traduzido por [Bruno Pulis](https://github.com/brunopulis) e escrito originalmente por [Emma Patricios](http://www.punkchip.com/). Publicado em 15 de Fevereiro, 2019
+> [Post traduzido](https://a11yproject.com/posts/creating-valid-and-accessible-links/) por [Bruno Pulis](https://github.com/brunopulis) e escrito originalmente por [Emma Patricios](http://www.punkchip.com/). Publicado em 15 de Fevereiro, 2019
 
 O elemento de âncora é frequentemente citado como o principal bloco de construção da World Wide Web. Ele é utilizado para criar um link para outras páginas, para âncoras na mesma página, para outros recursos (como um PDF) ou para um endereço de e-mail. Como podemos terr certeza que eles são acessíveis a todos? 
 
