@@ -18,7 +18,7 @@ introduction: "Quer aprender a escrever um link válido e acessível? Confira ne
 
 O elemento de âncora é frequentemente citado como o principal bloco de construção da World Wide Web. Ele é utilizado para criar um link para outras páginas, para âncoras na mesma página, para outros recursos (como um PDF) ou para um endereço de e-mail. Como podemos terr certeza que eles são acessíveis a todos? 
 
-## Começe com HTML válido
+## Comece com HTML válido
 Para ser um link válido, deve ter:
 
 * um **atributo `href`** - a localização da âncora, página ou recurso;
