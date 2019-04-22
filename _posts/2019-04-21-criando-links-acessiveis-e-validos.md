@@ -2,7 +2,7 @@
 layout: post
 title: "Dica rápida: Criando links acessíveis e válidos"
 date: 2019-04-21 10:20:00
-image: '/img/posts/links.png'
+image: '/img/posts/links.jpg'
 description: "Vamos aprender a escrever links válidos e acessíveis para todas as pessoas"
 main-class:
 color:
