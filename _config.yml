@@ -24,7 +24,9 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  - portfolio
+  palestras:
+    output: true
+    permalink: /palestras/:path/
 
 # exclude my node related stuff
 exclude: [
