@@ -23,7 +23,11 @@
     "dependencies": {
         "bootstrap": ">=4.3.1",
         "font-awesome": "4.7.0",
+<<<<<<< HEAD
         "jquery": ">=3.4.0",
+=======
+        "jquery": "3.4.0",
+>>>>>>> 94922aaffdd6728b82956d98bf90f95821f83cdc
         "popper.js": "1.14.3",
         "rrssb": "^1.14.0",
         "startbootstrap-clean-blog": "^5.0.5"
