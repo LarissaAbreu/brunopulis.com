@@ -3,7 +3,7 @@ email:             bruno.pulis@gmail.com
 description:       Frontend Developer & Advocate Accessibility
 author:            Bruno Pulis
 baseurl:           ""
-url:               "https://brunopulis.com"
+url:               "brunopulis.netlify.com"
 
 # Social Profiles
 twitter_username:  obrunopulis
