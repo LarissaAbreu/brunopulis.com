@@ -17,9 +17,5 @@ body {
 
   &.is-nav-mobile-open {
     overflow: hidden;
-
-    // @include mq($from: desktop) {
-    //   overflow: visible;
-    // }
   }
 }

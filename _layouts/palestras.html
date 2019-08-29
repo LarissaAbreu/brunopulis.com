@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Artigos
-image: '/img/bg-post.jpg'
 ---
 
-{% for post in site.posts  limit: 5 %}
+{% for palestra in site.palestras %}
 <article class="post-preview">
   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ post.title }}</h2>
@@ -20,5 +18,3 @@ image: '/img/bg-post.jpg'
 </article>
 <hr>
 {% endfor %}
-
-{% include pagination.html %}

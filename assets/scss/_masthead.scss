@@ -5,6 +5,7 @@ header.masthead {
   background: no-repeat center center;
   background-color: $gray-600;
   background-attachment: scroll;
+  background-position: 0 -55px;
   position: relative;
   @include background-cover;
 
