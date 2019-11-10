@@ -73,9 +73,9 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pt-br`,
   meta: [],
-  description: ``,
+  description: `Blog sobre acessibilidade web, qualidade de software, metodologias de testes`,
 }
 
 SEO.propTypes = {
