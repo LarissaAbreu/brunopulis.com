@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "brunopulis",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Personal website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Bruno Pulis <brunopulis@protonmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/brunopulis/brunopulis/issues"
   },
   "dependencies": {
     "gatsby": "^2.17.6",

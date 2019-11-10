@@ -20,11 +20,14 @@ coverage
 # nyc test coverage
 .nyc_output
 
+<<<<<<< HEAD
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
 bower_components
+=======
+>>>>>>> 84be65abbcc8600405104fb14db82dc654ea65eb
 
 # node-waf configuration
 .lock-wscript
@@ -51,12 +54,22 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+<<<<<<< HEAD
 # dotenv environment variable files
 .env*
+=======
+# dotenv environment variables file
+.env
+>>>>>>> 84be65abbcc8600405104fb14db82dc654ea65eb
 
 # gatsby files
 .cache/
 public
+<<<<<<< HEAD
+
+=======
+static/admin/*.bundle.*
+>>>>>>> 84be65abbcc8600405104fb14db82dc654ea65eb
 # Mac files
 .DS_Store
 
