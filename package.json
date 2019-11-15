@@ -9,28 +9,24 @@
         "html",
         "responsive"
     ],
-    "homepage": "https://github.com/brunopulis/brunopulis.github.io",
+    "homepage": "https://github.com/brunopulis/brunopulis",
     "bugs": {
-        "url": "https://github.com/brunopulis/brunopulis.github.io/issues",
+        "url": "https://github.com/brunopulis/brunopulis/issues",
         "email": "bruno.pulis@gmail.com"
     },
     "license": "MIT",
     "author": "Bruno Pulis",
     "repository": {
         "type": "git",
-        "url": "https://github.com/brunopulis/brunopulis.github.io.git"
+        "url": "https://github.com/brunopulis/brunopulis.git"
     },
     "dependencies": {
         "bootstrap": ">=4.3.1",
         "font-awesome": "4.7.0",
-<<<<<<< HEAD
         "jquery": ">=3.4.0",
-=======
-        "jquery": "3.4.0",
->>>>>>> 94922aaffdd6728b82956d98bf90f95821f83cdc
         "popper.js": "1.14.3",
         "rrssb": "^1.14.0",
-        "startbootstrap-clean-blog": "^5.0.5"
+        "startbootstrap-clean-blog": "^5.0.8"
     },
     "devDependencies": {
         "gulp": "^4.0.0",
