@@ -1,0 +1,20 @@
+<section class="related">
+  <h2 class="related__title">Você pode gostar também</h2>
+  {% assign maxRelatedCounter  = 0 %}
+
+  <ul class="related__list list-group list-group-flush">
+  {% for post in site.posts %}
+      {% if post.url != page.url %}
+          {% if post.main-class == page.main-class %}
+              <li class="related__item list-group-item">
+                  <a href="{{ post.url }}" class="related__link">{{ post.title }}</a>
+              </li>
+              {% assign maxRelatedCounter  = maxRelatedCounter | plus: 1 %}
+              {% if maxRelatedCounter == 3 %}
+                  {% break %}
+              {% endif %}
+          {% endif %}
+      {% endif %}
+  {% endfor %}
+  </ul>
+</section>

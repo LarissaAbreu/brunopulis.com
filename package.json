@@ -1,0 +1,42 @@
+{
+    "title": "Bruno Pulis",
+    "name": "bruno-pulis",
+    "version": "4.0.1",
+    "description": "Personal website",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive"
+    ],
+    "homepage": "https://github.com/brunopulis/brunopulis.github.io",
+    "bugs": {
+        "url": "https://github.com/brunopulis/brunopulis.github.io/issues",
+        "email": "bruno.pulis@gmail.com"
+    },
+    "license": "MIT",
+    "author": "Bruno Pulis",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brunopulis/brunopulis.github.io.git"
+    },
+    "dependencies": {
+        "bootstrap": ">=4.3.1",
+        "font-awesome": "4.7.0",
+<<<<<<< HEAD
+        "jquery": ">=3.4.0",
+=======
+        "jquery": "3.4.0",
+>>>>>>> 94922aaffdd6728b82956d98bf90f95821f83cdc
+        "popper.js": "1.14.3",
+        "rrssb": "^1.14.0",
+        "startbootstrap-clean-blog": "^5.0.5"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-clean-css": "3.9.4",
+        "gulp-header": "2.0.5",
+        "gulp-rename": "1.3.0",
+        "gulp-uglify": "3.0.0"
+    }
+}

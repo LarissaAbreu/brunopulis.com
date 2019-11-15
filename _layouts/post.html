@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% include page-header.html %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-md-10 mx-auto">
+      {% include reading-time.html %}
+
+      {{ content }}
+
+      {% include tags.html %}
+      {% include share.html %}
+      {% include author.html %}
+      {% include related.html %}
+      {% include comments.html %}
+    </div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+    },
+    "headline": "{{page.title}}",
+    "datePublished": "{{page.date}}",
+    "dateModified": "{{page.date}}",
+    "description": "{{page.description}}",
+    "image": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{page.image }}"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Pulis"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Bruno Pulis Blog",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://brunopulis.com/assets/img/icons/favicon-512x512.png"
+        }
+    },
+    "articleBody": "{{ content | strip_html | strip_newlines | replace: '"', '' }}"
+  }
+</script>

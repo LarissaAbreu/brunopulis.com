@@ -1,0 +1,43 @@
+title:             Bruno Pulis
+email:             bruno.pulis@gmail.com
+description:       Frontend Developer & Advocate Accessibility
+author:            Bruno Pulis
+baseurl:           ""
+url:               "brunopulis.netlify.com"
+
+# Social Profiles
+twitter_username:  obrunopulis
+github_username:   brunopulis
+facebook_username: bpulis
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: "/page/:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-admin
+  - jekyll-sitemap
+
+collections:
+  palestras:
+    output: true
+    permalink: /palestras/:path/
+
+# exclude my node related stuff
+exclude: [
+  'package.json',
+  'src',
+  'node_modules',
+  'vendor/bundle/ruby',
+  'package-lock.json',
+  'Readme.md',
+  'gulpfile.js',
+  'initpost.sh',
+  'testlinks.sh',
+  '.travis.yml'
+]
