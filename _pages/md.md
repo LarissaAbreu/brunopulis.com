@@ -1,7 +1,7 @@
 ---
 type: page
 title: Sobre
-seotitle: sobre
+seotitle: Bruno Pulis - Sobre
 description: Trajetória profissonal de Bruno Pulis
 url: sobre
 ---
