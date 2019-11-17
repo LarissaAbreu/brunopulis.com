@@ -1,8 +1,7 @@
 ---
 layout: palestras
-title: "Acessibilidade na prática"
-event: "DevInCompany BH - segunda edição"
-event_date: 2013-12-01
-external_url: "https://speakerdeck.com/brunopulis/acessibilidade-nao-e-um-monstro"
+title: Acessibilidade na prática
+url: 'https://speakerdeck.com/brunopulis/acessibilidade-nao-e-um-monstro'
+date: 2014-05-29T15:57:07.173Z
 ---
 
