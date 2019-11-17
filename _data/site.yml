@@ -1,2 +1,17 @@
+tel: +55 31 973438008
+tel_display: +55 31 973438008
 seo:
-  tagline: "Desenvolvedor Web e Evangelista de Acessibilidade Web"
+  tagline: Desenvolvedor Web e Evangelista de Acessibilidade Web
+items:
+  - link: /
+    name: Home
+  - link: sobre
+    name: Sobre
+  - link: portfolio
+    name: Portfolio
+  - link: blog
+    name: Blog
+  - link: palestras
+    name: Palestras
+  - link: contato
+    name: Contato
