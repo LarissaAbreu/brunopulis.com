@@ -1,0 +1,13 @@
+items:
+  - name: Home
+    link: /
+  - name: Sobre
+    link: /sobre
+  - name: Portfolio
+    link: /portfolio
+  - name: Blog
+    link: /blog
+  - name: Palestras
+    links: /palestras
+  - name: Contato
+    links: /contato
