@@ -29,6 +29,7 @@
         "startbootstrap-clean-blog": "^5.0.8"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.11.2",
         "gulp": "^4.0.0",
         "gulp-clean-css": "3.9.4",
         "gulp-header": "2.0.5",
