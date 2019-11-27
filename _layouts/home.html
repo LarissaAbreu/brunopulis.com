@@ -2,39 +2,18 @@
 layout: default
 ---
 
-<!-- Page Header -->
 {% include header-home.html %}
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-10 col-md-10 mx-auto">
+    <div class="col-lg-12 col-md-12 mx-auto">
       {{ content }}
 
-      {% for post in paginator.posts  limit: 5 %}
-        <article class="card post-preview">
-          <div class="card-body">
-            <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
-              {% include date.html date=post.date %}
-            </time>
-
-            <h2 class="card-title post-title">
-              <a class="card-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-                {{ post.title }}
-              </a>
-            </h2>
-            <p class="post-subtitle card-text">{{ post.introduction | strip_html | truncatewords: 50 }}</p>
-
-            {% include tags-home.html %}
-            <!-- {% include metas.html %} -->
-          </div>
-        </article>
-      {% endfor %}
+      {% include patterns/services/services.html %}
+      {% include portfolio.html %}
+      {% include blog.html %}
 
       {% include pagination.html %}
-      
-      <a href="http://www.thedevelopersconference.com.br" rel="noopener noreferrer" target="_blank"  title="The Developer's Conference 2019, um evento organizado pela Globalcode" style="text-decoration: none;">
-        <img src="https://s3-sa-east-1.amazonaws.com/thedevconf/2019/img/divulgacao/belohorizonte/banner-TDC2019-belohorizonte-486x60.png" style="border:none;" alt="Evento TDC2019" />
-      </a>
     </div>
   </div>
 </div>

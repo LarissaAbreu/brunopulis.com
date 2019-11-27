@@ -1,16 +1,177 @@
 backend:
   name: github
-  repo: github.com/brunopulis/brunopulis.github.io
+  repo: brunopulis/brunopulis
   branch: master
-  site_domain: brunopulis.netlify.com
-media_folder: "images/uploads"
+media_folder: assets/images/posts
+public_folder: assets
+media_folder_relative: true
+publish_mode: editorial_workflow
+
 collections:
-  - name: "post" # Used in routes, e.g. /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Website settings"
+    name: website-settings
+    files:
+      - label: "Website settings"
+        name: site
+        file: _data/site.yml
+        fields:
+          - label: Tel
+            name: tel
+            widget: string
+
+          - label: "Tel display"
+            name: tel_display
+            widget: string
+
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - label: Tagline
+                name: tagline
+                widget: string
+
+          - label: Navigation
+            name: items
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+
+              - label: Link
+                name: link
+                widget: string
+
+  - name: page
+    label: Page
+    folder: _pages
+    create: true
+    slug: .md
+    fields:
+      - label: Type
+        name: type
+        widget: hidden
+        default: page
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: "SEO Title"
+        name: seotitle
+        widget: string
+
+      - label: Description
+        name: description
+        widget: string
+        required: false
+
+      - label: URL
+        name: url
+        widget: string
+
+      - label: Body
+        name: body
+        widget: markdown
+        required: false
+
+  # Posts
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: post
+
+      - label: Categorias
+        name: categories
+        widget: hidden
+        default: blog
+
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Body
+        name: body
+        widget: markdown
+
+      - label: Tags
+        name: tags
+        widget: list
+
+      - label: Autor
+        name: author
+        widget: string
+        required: false
+
+      - label: "Data de Publicação"
+        name: date
+        widget: datetime
+
+      - label: "Imagem destacada"
+        name: thumbnail
+        widget: image
+        required: false
+
+      - label: "Twitter Description"
+        name: twitter
+        widget: string
+        required: false
+
+      - label: Introduction
+        name: intro
+        widget: string
+
+  - name: servicos
+    label: Serviços
+    label_singular: Serviço
+    folder: _services
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: post
+      - label: Title
+        name: title
+        widget: string
+      - label: Icon
+        name: thumbnail
+        widget: image
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+  - name: palestras
+    label: Palestras
+    label_singular: Palestra
+    folder: _palestras
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: palestra
+      - label: Categorias
+        name: categories
+        widget: hidden
+        default: evento
+      - label: Title
+        name: title
+        widget: string
+      - label: URL
+        name: url
+        widget: string
+        required: true
+      - label: "Data de Publicação"
+        name: date
+        widget: datetime

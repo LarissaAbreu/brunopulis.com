@@ -1,0 +1,75 @@
+I"<blockquote>
+  <p><a href="https://a11yproject.com/posts/creating-valid-and-accessible-links/">Post traduzido</a> por <a href="https://github.com/brunopulis">Bruno Pulis</a> e escrito originalmente por <a href="http://www.punkchip.com/">Emma Patricios</a>. Publicado em 15 de Fevereiro, 2019</p>
+</blockquote>
+
+<p>O elemento de âncora é frequentemente citado como o principal bloco de construção da World Wide Web. Ele é utilizado para criar um link para outras páginas, para âncoras na mesma página, para outros recursos (como um PDF) ou para um endereço de e-mail. Como podemos ter certeza que eles são acessíveis a todos?</p>
+
+<h2 id="comece-com-html-válido">Comece com HTML válido</h2>
+<p>Para ser um link válido, deve ter:</p>
+
+<ul>
+  <li>um <strong>atributo <code class="highlighter-rouge">href</code></strong> - a localização da âncora, página ou recurso;</li>
+  <li><strong>conteúdo do link</strong> - texto descrevendo para onde o link está indo, pode ser um texto simples ou o <code class="highlighter-rouge">atributo alt</code> de uma imagem;</li>
+  <li>abrindo e fechando tags.</li>
+</ul>
+
+<h2 id="escrever-texto-do-link-com-sentido">Escrever texto do link com sentido</h2>
+<p>Textos comuns de links inúteis são <strong>“clique aqui”</strong>, <strong>“leia mais”</strong> e <strong>“link”</strong>.</p>
+
+<p>Estes são problemáticos porque quando uma pessoa usa um leitor de tela para navegar através de links, eles serão lidos fora do contexto. Onde você esperaria que esses três links fossem se você os ouvisse? É impossível saber.</p>
+
+<p>Pense em reestruturar sua sentença para remover <strong>clique aqui</strong> ou <strong>link</strong> e, em seguida, coloque a parte significativa no link.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- ruim --&gt;</span>
+Para verificar nossa documentação <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/README.md"</span><span class="nt">&gt;</span>clique aqui<span class="nt">&lt;/a&gt;</span>.
+
+<span class="c">&lt;!-- melhor --&gt;</span>
+Disponibilizamos nossa <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/README.md"</span><span class="nt">&gt;</span>documentação<span class="nt">&lt;/a&gt;</span>.
+</code></pre></div></div>
+
+<p><strong>“Leia mais”</strong> pode ser corrigido, incluindo o que  vamos ler mais sobre:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- ruim --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/full-article"</span><span class="nt">&gt;</span>Leia mais<span class="nt">&lt;/a&gt;</span>.
+
+<span class="c">&lt;!-- melhor --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/full-article"</span><span class="nt">&gt;</span>Leia mais -  Pontos de referência acessíveis<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<h2 id="e-quanto-ao-atributo-title">E quanto ao atributo title?</h2>
+<p>O atributo <code class="highlighter-rouge">title</code> não é exposto por todos os navegadores de uma forma acessível, isso significa que as pessoas que usam touch-devices e teclados provavelmente nunca verão essas informações.</p>
+
+<blockquote>
+  <p>“Se você quiser ocultar conteúdo de usuários de dispositivos móveis e tablets, bem como usuários de tecnologia assistiva e usuários de teclado, use o atributo de title.” <a href="https://developer.paciellogroup.com/blog/2010/11/using-the-html-title-attribute/">Usando o atributo title HTML - The Paciello Group</a></p>
+
+</blockquote>
+
+<p>Portanto, não é recomendado utilizar o atributo <code class="highlighter-rouge">title</code> em elementos <code class="highlighter-rouge">&lt;a&gt;</code>. Se você usá-lo, não use o mesmo nome do link, isso pode gerar leituras duplicadas desnecessárias para alguns leitores de tela.</p>
+
+<h2 id="foco-e-teclado">Foco e teclado</h2>
+
+<p>Alguns desenvolvedores/designers vêem o <code class="highlighter-rouge">outline</code> como um recurso feio e os removem. As pessoas que navegam usando o teclado precisam desse estado para saber onde estão.</p>
+
+<p>A melhor prática é nunca remover o <code class="highlighter-rouge">outline</code>, mas existem soluções acessíveis para o estilo, que estão definidas na <a href="https://a11yproject.com/posts/never-remove-css-outlines/">Dica Rápida: Nunca remova outline do CSS. (em inglês)</a></p>
+
+<p>Por padrão, um elemento <code class="highlighter-rouge">&lt;a&gt;</code> com um <code class="highlighter-rouge">href</code> pode ser ativado pela tecla Enter.</p>
+
+<p>Lembre-se de não substituir essa funcionalidade se anexar outro script personalizado. Além disso, não é esperado que a tecla Space ative os links.</p>
+
+<h2 id="quando-você-deve-usar-button">Quando você deve usar button?</h2>
+
+<p>Se você tiver um elemento <code class="highlighter-rouge">&lt;a&gt;</code> que tenha:</p>
+
+<ul>
+  <li>um atributo <strong>vazio</strong> ou <strong>sem href</strong></li>
+  <li>script anexado via atributo onclick ou listerners.</li>
+</ul>
+
+<h2 id="leitura-adicional">Leitura adicional</h2>
+
+<ul>
+  <li><a href="https://developer.mozilla.org/pt-br/docs/Web/HTML/Element/a"><code class="highlighter-rouge">&lt;a&gt;</code>: O elemento de âncora</a> - Documentação MDN</li>
+  <li><a href="http://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html">Links, Botões, Submits, e Divs, Oh Hell</a> - Adrian Roselli0</li>
+</ul>
+
+:ET

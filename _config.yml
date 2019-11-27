@@ -1,6 +1,6 @@
 title:             Bruno Pulis
 email:             bruno.pulis@gmail.com
-description:       Frontend Developer & Advocate Accessibility
+description:       Procurando um profissional para tornar seus produtos digitais acessíveis? Vamos conversar, minha missão é tornar a web mais simples e acessível
 author:            Bruno Pulis
 baseurl:           ""
 url:               "brunopulis.netlify.com"
@@ -20,10 +20,13 @@ paginate_path: "/page/:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-admin
   - jekyll-sitemap
 
 collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
   palestras:
     output: true
     permalink: /palestras/:path/

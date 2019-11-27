@@ -1,9 +1,12 @@
-.navbar  { width: 100%; }
+.navbar  {
+  background: #000;
+  width: 100%;
+}
 
 #mainNav {
   position: absolute;
   border-bottom: 1px solid $gray-200;
-  background-color: white;
+  background-color: #000;
   z-index: 1;
 
   .navbar-brand {

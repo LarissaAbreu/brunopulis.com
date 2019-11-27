@@ -1,0 +1,43 @@
+I"z
+<p>Esse artigo visa mostrar de forma clara como é possível retornar o nome das tags do Wordpress sem o link padrão. É uma técnica relativamente simples uma consulta na documentação e resolvemos nosso problema, vamos lá!</p>
+
+<h2 id="o-cenário">O cenário</h2>
+
+<p>Estou desenvolvendo um site com meu amigo Jhonny Costa, onde temos uma determinada página que irá retornar a tag de um determinado post.</p>
+
+<p>Após algumas conversas, entramos em um impasse onde não exisitiria a necessidade das tags virem com seus respectivos links.</p>
+
+<p>Então eu recorri a documentação do Wordpress para consultar a função que gera as tags a <code>the_tags()</code>, a documentação mostra que ela recebe três paramêtros por padrão: <code>$before</code>, <code>$sep</code>, <code>$after</code>.</p>
+
+<h2 id="before"><code>$before</code></h2>
+<p>Paramêtro do tipo String, onde retornará um texto antes das tags serem exibidas. Seu padrão é a palavra “Tags”.</p>
+
+<h2 id="sep"><code>$sep</code></h2>
+<p>Paramêtro do tipo String, onde retornará um texto ou caractere que serão exibidos entre cada tag link, O padrão dele é (,) entre cada tag.</p>
+
+<h2 id="after"><code>$after</code></h2>
+<p>Paramêtro do tipo String, onde retornará um texto após a última tag. Seu padrão não é exibir nada.</p>
+
+<p>A função <code>the_tags()</code> não possui retorno.</p>
+
+<h3 id="exemplo">Exemplo</h3>
+
+<p>Imagine o caso, o cliente me pediu que o texto que deve ser mostrado seria <strong>“Tags Sociais”</strong> e separados pelo sinal maior <strong>(&gt;)</strong>:</p>
+
+<p><code>the_tags( ‘Tags Sociais: ‘,’ &gt; ‘ );</code></p>
+
+<p>Para exibir somente as tags sem o link devemos escrever o seguinte código:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">foreach</span><span class="p">((</span> <span class="nx">get_the_tags</span><span class="p">()</span> <span class="p">)</span> <span class="k">as</span> <span class="nv">$tag</span><span class="p">)</span><span class="o">:</span> 
+  <span class="k">echo</span> <span class="nv">$tag</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+<span class="k">endforeach</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Você deve colocar esse trecho de código no lugar apropriado do seu tema para retornar as tags sem os seus links.</p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Com esse trecho de código resolvi meu problema para retornar as tags, espero que possa ser útil para alguém que tenha a mesma dúvida ou similar.</p>
+
+<p>Caso tenha alguma dúvida escreva um comentário.</p>
+:ET

@@ -1,0 +1,213 @@
+I"�<h2 id="introdução">Introdução</h2>
+
+<p>Fala pessoal! Depois de muito tempo <del>offline</del>, sem escrever absolutamente nada sobre desenvolvimento resolvi reativar meu blog para partilhar conhecimentos e me forçar a estudar também.</p>
+
+<p>Nesta série de artigos, iremos estudar juntos sobre Expressões Regulares, sua história, conceitos e implementações dela, no mundo real.</p>
+
+<p>Vamos, encarar esse monstro?</p>
+
+<p><img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-05/31/11/asset/buzzfeed-prod-web11/anigif_sub-buzz-31176-1464709031-4.gif" alt="Bambam tirando sua camisa no treino" /></p>
+
+<hr />
+
+<p>Comecei a folhear o livro <a href="https://novatec.com.br/livros/expressoes-regulares-5ed/">Expressões Regulares: Uma Abordagem Divertida</a> do Aurélio Jarbas, uma das grandes referências brasileiras no assunto.</p>
+
+<p>O livro, está na sua quinta edição e você pode adquiri-lo no site da <a href="https://novatec.com.br/livros/expressoes-regulares-5ed/">NOVATEC</a>. Existe também a versão digital que é comercializada na <a href="https://www.amazon.com.br/dp/B01BPK1W46/">Amazon</a>.</p>
+
+<p>O intuito dessa série de artigos e estudar as etapas que compreendem uma expressão regular. Servira como um guia de estudos e fonte de consulta posterior também.</p>
+
+<p>Posteriormente irei fazer um review do livro.</p>
+
+<h2 id="uma-breve-história">Uma breve história</h2>
+
+<p>As expressões regulares são uma forma concisa de identificar cadeias de caracteres, palavras ou padrões de texto. Por exemplo: buscar todos os telefones que contenham o DDD (31).</p>
+
+<p>Elas são escritas em uma linguagem formal que pode ser interpretada por processadores de ER’s, um programa que serve um gerador de analisador sintático ou examina o texto e identifica as partes que casam com a especificação dada.</p>
+
+<p>Alguns, desses programas são distribuídos livremente na internet, como:</p>
+
+<ul>
+  <li><a href="https://regex101.com/">RegExp101</a></li>
+  <li><a href="https://regexr.com/">RegExr</a></li>
+  <li><a href="https://www.regextester.com/">Regex Tester</a></li>
+</ul>
+
+<p>O termo deriva do trabalho do matemático norte-americano <a href="https://pt.wikipedia.org/wiki/Stephen_Kleene"><strong>Stephen Cole Kleene</strong></a>, que desenvolveu as expressões regulares como uma notação ao que ele chamava de <strong>álgebra de conjuntos regulares</strong> ou também conhecida como <strong>álgebra de Kleene</strong>.</p>
+
+<p>Kleene foi notório em sua área de atuação, considerado e reconhecido juntamente com Alan Turing e Emil Post e outros como o fundador de uma ramificação da lógica matemática, chamada de <strong>teoria da computabilidade</strong>. Esse trabalho fundamentou o estudo que as funções são computáveis.</p>
+
+<p>Vários conceitos matemáticos têm seu nome, como: <strong>hierarquia de Kleene</strong>, <strong>álgebra de Kleene</strong>, <strong>fecho de Klenne</strong> e <strong>teorema da recursão de Klenne</strong>.</p>
+
+<h2 id="legal-mas-para-que-serve">Legal, mas para que serve?</h2>
+
+<p>As ER’s servem para uma infinidade de propósitos, vai depender muito do contexto em que iremos utilizá-la. Em um editor de texto, como o <span lang="en">Word</span>, por exemplo, podemos utilizar uma ER para substituir determinado termo dentro de um texto.</p>
+
+<p>Imagine a praticidade de fazer isso em um tcc ou dissertação de mestrado de forma assertiva e simples.</p>
+
+<p>Outra abordagem seria na validação de um número de cartão de crédito, ou até mesmo validar um e-mail e telefone.</p>
+
+<p>Abaixo, cito alguns exemplos que ela pode ser utilizada:</p>
+
+<ul>
+  <li>corresponder a qualquer endereço de IP em um intervalo;</li>
+  <li>corresponder a qualquer endereço de e-mail de um domínio específico;</li>
+  <li>corresponder somente a frase exata;</li>
+  <li>corresponder a palavra com grafias diferentes ou caracteres especiais;</li>
+  <li>corresponder a um formato alfanumérico;</li>
+  <li>corresponder a um número de telefone;</li>
+</ul>
+
+<h3 id="exemplo-de-expressão-regular">Exemplo de expressão regular:</h3>
+
+<p>Corresponde somente a frase exata:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span><span class="se">\W</span>|^<span class="o">)</span>tesouro<span class="se">\d</span>ireto<span class="o">(</span><span class="se">\W</span>|<span class="nv">$)</span>
+</code></pre></div></div>
+
+<p>CEP formatado com expressões regulares</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\d</span><span class="o">{</span>5<span class="o">}</span>-<span class="se">\d</span><span class="o">{</span>3<span class="o">}</span>
+</code></pre></div></div>
+<hr />
+
+<h2 id="curiosidades">Curiosidades</h2>
+<p>As ER’s estão em praticamente em todos os lugares, linguagens de programação, editores de texto, banco de dados, planilhas e muito mais, abaixo, listo alguns meios em que se pode usar:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Planilhas</th>
+      <th>Aplicativos</th>
+      <th>Banco de dados</th>
+      <th>Linguagens</th>
+      <th>Editores</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Google Docs</td>
+      <td>Grep</td>
+      <td>MySQL</td>
+      <td>Awk</td>
+      <td>Emacs</td>
+    </tr>
+    <tr>
+      <td>OpenOffice</td>
+      <td>Apache HTTPd</td>
+      <td>PostgreSQL</td>
+      <td>Javascript</td>
+      <td>VIM</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Nginx</td>
+      <td>Oracle</td>
+      <td>PHP</td>
+      <td>Word</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>SQLite</td>
+      <td>Python</td>
+      <td>OpenOffice</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Sed</td>
+      <td>Notepad++</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Tcl</td>
+      <td>VisualCode</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>VBScript</td>
+      <td>Sublime Text</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>C</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Java</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Ruby</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ActionScript</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>PHP PCRE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Shell Script</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>HTML5</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Lua</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>.NET (VB, C#)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Powershell</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>As expressões regulares são um recurso extremamente poderoso, dominando elas podemos resolver problemas do cotidiano de forma simples. Tem conhecimento do seu funcionamento é de suma importância para ser um bom desenvolvedor.</p>
+
+<p>Venha nessa jornada rumo as Expressões Regulares!</p>
+
+:ET

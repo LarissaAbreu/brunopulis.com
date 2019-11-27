@@ -1,0 +1,108 @@
+I"l<h1 id="introdução">Introdução</h1>
+
+<p>Fala pessoal, nesse post vou contar um pouco de como foi participar no Global Acessibility Awarenss da edição de Belo Horizonte promovido pelo  <a href="http://bhz.ixda.org.br/">IXDABH</a></p>
+
+<hr />
+
+<h2 id="objetivos-do-evento">Objetivos do evento</h2>
+
+<p>Divulgar/Disseminar/Discutir/Pensar/Aprender práticas ou experiências com metodologias usadas no mercado ou desenvolvidas por conta própria, que promovam a acessibilidade e inclusão digital (web, softwares, celulares, etc) e pessoas com necessidades diferentes.</p>
+
+<p>O Global Acessibility Awarness Day ou #GAAD2017 é um evento mundial na data de 18 de marco, sobre conscientização e promoção da Acessibilidade no meio digital.</p>
+
+<h2 id="história-do-evento">História do evento</h2>
+
+<p>A ideia do GAAD começou com um  <a href="https://mysqltalk.wordpress.com/2011/11/27/challenge-accessibility-know-how-needs-to-go-mainstream-with-developers-now/">post em um blog</a>  escrito pelo  <a href="http://globalaccessibilityawarenessday.org/joe_devon.html">Joe Devon</a>um desenvolvedor de web de Los Angeles,  <a href="https://www.linkedin.com/in/jennison/">Jennison Asuncion</a>, um profissional de acessibilidade de Toronto, descobriu o post do blog do Joe por acidente, através do Twitter. Depois de ler o post, Jennison contactou Joe imediatamente e eles uniram as forças, impulsionando a respeitada e extensa network de ambos para realizar o evento</p>
+
+<h2 id="eventos-online">Eventos Online</h2>
+
+<ul>
+  <li><a href="http://environmentsforhumans.com/2017/accessu-summit/">AccessU Summit 2017</a></li>
+  <li><a href="http://mailchi.mp/e993313afc40/1ml4oa6z8f-1242317?e=3ab58790fd">Free AMAC</a></li>
+  <li>WAG Webinar 10 Challenges and Solutions for web accessibility implementation in higher education.</li>
+</ul>
+
+<h2 class="section-heading">Países participantes</h2>
+
+<ul>
+  <li>Belo Horizonte, Brasil</li>
+  <li>Itália</li>
+  <li>Estados Unidos</li>
+  <li>Índia</li>
+  <li>Suíça (17/05)</li>
+  <li>Alemanha</li>
+  <li>Austrália</li>
+  <li>Tchecoslováquia</li>
+  <li>África do Sul</li>
+  <li>Dinamarca</li>
+  <li>Holanda;</li>
+  <li>Canadá</li>
+  <li>Japão</li>
+  <li>Inglaterra</li>
+  <li>Suécia.</li>
+</ul>
+
+<p><a href="http://globalaccessibilityawarenessday.org/events.html">Acesse os locais atualizados do GAAD17</a></p>
+
+<h2 id="o-convite">O convite</h2>
+
+<p>Eu entrei no grupo de IXDABH e vi sobre o evento é logo marquei minha presença. Uns dias depois, o Alan Vasconcelos me enviou um e-mail convidando para ministrar um Dojo de acessibilidade, obviamente aceitei de prontidão.</p>
+
+<h3 id="apresentações">Apresentações</h3>
+
+<p>O Alan iniciou se apresentando e colocando em xeque o Design Universal excelente tema para se abordar nesse evento, visto que um dos conceitos mais fortes é  <strong>perda do público alvo</strong>.</p>
+
+<p>Logo após, fiz uma breve apresentação, comentando sobre alguns dados estatísticos da população com algum tipo de deficiência no Brasil e sobre leis federais para adequar os sites na questão da Acessibilidade.</p>
+
+<h3 id="o-dojo">O Dojo</h3>
+
+<p>Criamos duas personas para contar suas estórias sobre a dificuldade de navegação na web, possuem contextos diferente e necessidades diferentes.
+O dojo se dividiu em duas etapas:  <strong>análise do problema</strong>  e  <strong>resolução dos problemas encontrados</strong>.</p>
+
+<p>Provocamos alguns erros na marcação do HTML, como por exemplo:</p>
+
+<ul>
+  <li>retirada do atributo Lang</li>
+  <li>ausência de atributo for nos formulários</li>
+  <li>hierarquia de títulos de forma errônea.</li>
+</ul>
+
+<p>A seguir, vou compartilhar as estória das personas que criamos para aplicar o teste.</p>
+
+<h4 id="estória-da-beatriz">Estória da Beatriz</h4>
+
+<p>Beatriz adora ficar de bobeira na internet. Aos 36 anos de idade, às vezes ela passa horas no Facebook, ou mesmo, lendo textões no Medium. Ela também gosta de saber o que está acontecendo com o mundo, por meio dos grandes portais de notícias como El Paìs e BBC Brasil. Ou seja, Beatriz é uma internauta típica, exceto por um detalhe: Beatriz é cega.</p>
+
+<p>Sendo uma internauta experiente (sim, ela já teve um email do BOL, usou internet discada e pesquisou no Cadê), Beatriz tem uma grande desenvoltura com as tecnologias assistivas como leitores de tela, teclas de atalho e até displays em Braile. Mas isso não quer dizer que sua vida na Web seja fácil. A grande parte dos sites de hoje são pesados e cheios de barreiras de acessibilidade.</p>
+
+<blockquote>
+  <p><em>Minha mão chega a doer de tanto apertar o Tab. Pra quê tanto menu, gente? Eu só quero chegar ao texto! Isso sem falar quando o texto não está estruturado corretamente:</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>Outro dia, eu tava com uma dúvida sobre imposto de renda e achei um site do governo com todas as instruções que eu queria. Mas aí, fui procurar o título do texto, porém só encontrava o nome do site.</em></p>
+</blockquote>
+
+<h4 id="estória-do-roberto">Estória do Roberto</h4>
+
+<p>Roberto é um advogado de 61 anos que usa muito a internet para consultar leis, jurisprudências e demais casos que o auxiliam no seu trabalho. Mas, às vezes, Roberto tem muita dificuldade em clicar nos links do portal jurídico.</p>
+
+<blockquote>
+  <p><em>Fui fazer uma busca avançada e não conseguia acertar aquela “bolinha” para marcar a opção: “Buscar apenas os Decretos-lei”. Será que não dava pra ser maior?</em></p>
+</blockquote>
+
+<p>Roberto também não fica muito satisfeito com o contraste:</p>
+
+<blockquote>
+  <p><em>Poxa… um texto cinza, em cima de uma caixa cinza-claro, não ficou legal… E que letrinha miúda é essa, gente?</em></p>
+</blockquote>
+
+<h3 id="desenvolvimento">Desenvolvimento</h3>
+
+<p>Trabalhamos em cima dessas duas estórias e analisamos e propusemos as soluções corretas, no meio do Dojo, os  <a href="http://www.irmaosfot.com.br/">irmãos Fot</a>  que estavam palestrando sobre inclusividade no mercado de trabalho, desceram e participaram do Dojo conosco, um detalhe ambos são cegos, o que foi muito enriquecedor para o momento.
+Eles testaram o site juntamente conosco mostrando as dificuldades que encontram no dia a dia para navegar em sites da web.</p>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Para mim foi uma experiência única e enriquecedora, pois percebi que é possível tornar a web mais inclusiva e acessível a todos os públicos.</p>
+:ET

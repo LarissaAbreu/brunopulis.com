@@ -1,0 +1,45 @@
+I"$<p>Texto original: <a href="https://axesslab.com/skip-the-wcag/">Skip the WCAG</a> escrito por Hampus Sethfors.</p>
+
+<p>Se você está tentando tornar seu site ou aplicativo acessível, você provavelmente se atrapalhou nas Diretrizes de Acessibilidade para o Conteúdo da Web (WCAG). Mas não desperdice sua energia tentando compreendê-la. Sério, não!</p>
+
+<hr />
+
+<h2 id="teste-com-pessoasreais">Teste com pessoas reais</h2>
+
+<p>Eu sei que é uma declaração ousada. Mas o WCAG irá confundi-lo. E provavelmente assustá-lo. É realmente um documento longo e difícil de compreender.</p>
+
+<p>O quê mais? Bem, peguei as WCAG, coloquei no Microsoft Word e baixei todo o documento. Voilà, aqui estão as 98 páginas:</p>
+
+<!-- Incluir max-width: 100% height: auto -->
+<p><img src="/img/posts/wcag.png" alt="98 páginas da documentação do WCAG 2.0" /></p>
+
+<p>Além disso, existem as técnicas reais para o sucesso - os links azuis na segunda metade das páginas acima levam a essas técnicas. Provavelmente mais 1.000 páginas ou mais.&lt;/p&gt;</p>
+
+<p>Então, em vez de mergulhar na WCAG, opte por <strong>permitir que as pessoas com deficiência.</strong> testem seu site ou app.</p>
+
+<p>Eu fiz isso muito no meu papel como designer de interação em empresas com foco em acessibilidade. E não há dúvidas em minha mente: <strong>o teste com usuários com deficiência irá ajudá-lo a melhorar a acessibilidade muito mais do que ler qualquer checklist ou web standard.</strong></p>
+
+<h2 id="usuários-normais-não-são-bons-o-suficiente">Usuários “normais” não são bons o suficiente</h2>
+
+<p>Testar com usuários com deficiência também irá ajudá-lo a melhorar sua usabilidade muito mais do que testar com seus usuários “normais”. Por quê?</p>
+
+<p>Bem, por exemplo, uma pessoa com deficiência cognitiva, como o autismo, reagirá às mesmas coisas que outro usuário. Mas eles vão mais longe. Eles são muito melhores em detectar inconsistências no design, problemas com navegação e conteúdo desnecessário.</p>
+
+<p>Coisas que outros usuários vão achar irritantes, para eles podem auxiliar. Da mesma forma, uma pessoa com baixa visão reagirá ao pequeno texto ou ao baixo contraste, o que tornará difícil a leitura de qualquer pessoa no sol com um smartphone.</p>
+
+<p>Se você quiser testar com pessoas com deficiência, criei uma lista de dicas para você ir em outro artigo:</p>
+
+<ul>
+  <li><a href="https://axesslab.com/seven-tips-for-user-testing-with-users-with-disabilities/">Sete dicas para testar com usuário com deficiência (em inglês)</a></li>
+  <li><a href="https://axesslab.com/user-testing/">Recrutando usuários para realizar testes</a></li>
+</ul>
+
+<h2 id="não-me-mate">Não me mate…</h2>
+
+<p>E, finalmente, volto para as pessoas incríveis da comunidade de acessibilidade: por favor, não me mate por sugerir que as pessoas ignorem as WCAG. O fato é que eu amo as WCAG! Provavelmente é um dos documentos mais importantes em torno de todas as categorias.</p>
+
+<p>Mas deve ser usado por pessoas que amadureceram ainda mais em sua carreira de acessibilidade ou mentalidade.</p>
+
+<p>Primeiro, você deve testemunhar pessoas em ação, caso contrário, você não entenderá como usar as WCAG, por que está por aí e são pontos fortes e limitações. Espero que você entenda o que quero dizer!</p>
+
+:ET
