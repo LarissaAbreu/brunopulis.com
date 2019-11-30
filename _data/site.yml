@@ -1,16 +1,15 @@
 seo:
-  tagline: "Desenvolvedor Web e Evangelista de Acessibilidade Web"
-
+  tagline: Desenvolvedor Web e Evangelista de Acessibilidade Web
 items:
-  - name: Home
-    link: /
-  - name: Sobre
-    link: /sobre
-  - name: Portfolio
-    link: /portfolio
-  - name: Blog
-    link: /blog
-  - name: Palestras
-    links: /palestras
-  - name: Contato
-    links: /contato
+  - link: /
+    name: Home
+  - link: sobre
+    name: Sobre
+  - link: portfolio
+    name: Portfolio
+  - link: blog
+    name: Blog
+  - link: palestras
+    name: Palestras
+  - link: contato
+    name: Contato

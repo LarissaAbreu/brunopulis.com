@@ -1,32 +1,33 @@
 {
-    "title": "Bruno Pulis",
-    "name": "bruno-pulis",
-    "version": "4.0.1",
-    "description": "Personal website",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive"
-    ],
-    "homepage": "https://github.com/brunopulis/brunopulis",
-    "bugs": {
-        "url": "https://github.com/brunopulis/brunopulis/issues",
-        "email": "bruno.pulis@gmail.com"
-    },
-    "license": "MIT",
-    "author": "Bruno Pulis",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/brunopulis/brunopulis.git"
-    },
-    "dependencies": {
-        "bootstrap": "4.3.1",
-        "font-awesome": "4.7.0",
-        "jquery": "3.4.1",
-        "popper.js": "1.16.0",
-        "rrssb": "1.14.0",
-        "startbootstrap-clean-blog": "5.0.8"
-    },
-    "devDependencies": {}
+	"title": "Bruno Pulis",
+	"name": "bruno-pulis",
+	"version": "4.0.1",
+	"description": "Personal website",
+	"keywords": [ "css", "sass", "html", "responsive" ],
+	"homepage": "https://github.com/brunopulis/brunopulis",
+	"bugs": {
+		"url": "https://github.com/brunopulis/brunopulis/issues",
+		"email": "bruno.pulis@gmail.com"
+	},
+	"license": "MIT",
+	"author": "Bruno Pulis",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brunopulis/brunopulis.git"
+	},
+	"dependencies": {
+		"bootstrap": "4.4.0",
+		"font-awesome": "4.7.0",
+		"jquery": "3.4.1",
+		"popper.js": "1.16.0",
+		"rrssb": "1.14.0",
+		"startbootstrap-clean-blog": "5.0.8"
+	},
+	"devDependencies": {
+		"gulp": "4.0.2",
+		"gulp-clean-css": "4.2.0",
+		"gulp-header": "2.0.9",
+		"gulp-rename": "1.4.0",
+		"gulp-uglify": "3.0.2"
+	}
 }
