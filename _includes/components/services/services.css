@@ -1,0 +1,23 @@
+.services {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	background: #f6f9ff;
+}
+
+.services__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+	grid-gap: 15px;
+	grid-auto-flow: dense;
+	justify-content: center;
+	width: 100%;
+}
+
+.services__item {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}

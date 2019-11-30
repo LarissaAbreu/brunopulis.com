@@ -1,0 +1,27 @@
+.footer {
+	grid-column: full;
+	display: grid;
+	grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 50rem) [main-end] minmax(1rem, 1fr)
+		[full-end];
+	background-color: #f3f3f3;
+}
+
+.list-inline {
+	margin: 0;
+	padding: 0;
+}
+
+.copyright {
+	color: white !important;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+
+.copyright > a {
+	color: white;
+}
+
+.love {
+	padding-left: 10px;
+}
