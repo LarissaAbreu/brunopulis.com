@@ -1,15 +1,18 @@
 :root {
+	--color-one: #1d2534;
+	--color-two: #4a5163;
+	--color-three: #e0f1ff;
+	--color-four: #daa21b;
+	--color-white: #ffffff;
 	--color-primary: #626703;
 	--color-primary-light: #9ea60e;
 	--color-primary-muted: #bec26d;
-	--color-primary-dark: #2f3707;
-
+	--color-primary-dark: #212121;
 	--color-secondary: #372a1a;
 	--color-secondary-medium: #968156;
 	--color-secondary-light: #f0d6b6;
 
-	--font-primary: "Crimson Text", Georgia, serif;
-
+	--font-primary: "Open Sans", Helvetica, sans-serif;
 	--border-radius: 4px;
 }
 
@@ -38,4 +41,12 @@ hr {
 .flex-child-imgs img {
 	display: block;
 	width: 100%;
+}
+
+.ligthen-blue {
+	background: var(--color-three);
+}
+
+.has-background {
+  background: #FBFBFD;
 }

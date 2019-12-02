@@ -1,13 +1,16 @@
 ---
 ---
 
-{% include_relative modules.css %}
-{% include_relative grid.css %}
-{% include_relative type.css %}
+{% include_relative bulma/bulma.min.css %}
 {% include_relative theme.css %}
-{% include patterns/buttons/buttons.css %}
-{% include patterns/masthead/masthead.css %}
-{% include patterns/footer/footer.css %}
-{% include patterns/banner/banner.css %}
-{% include patterns/cards/cards.css %}
-{% include patterns/slider/slider.css %}
+
+{% include components/navigation/navigation.css %}
+{% include components/masthead/masthead.css %}
+{% include components/buttons/buttons.css %}
+
+{% include components/banner/banner.css %}
+{% include components/services/services.css %}
+{% include components/jobs/jobs.css %}
+{% include components/cards/cards.css %}
+{% include components/blog/blog.css %}
+{% include components/footer/footer.css %}
