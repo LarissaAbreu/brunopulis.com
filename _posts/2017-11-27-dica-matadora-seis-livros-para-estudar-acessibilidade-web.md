@@ -2,15 +2,14 @@
 layout: post
 title: "Dica matadora: 6 livros para estudar acessibilidade web"
 date: 2017-11-27
-image: "/img/posts/books.jpg"
+image: "/assets/images/posts/books.jpg"
+alt: "Livros empilhados de diversas cores"
 description: "Confira uma lista sensacional de livros sobre acessibilidade web."
-main-class:
-color:
 tags:
 - livros
 - indicacao
 - dicas
-categories: dev
+categories: indicação
 twitter_text: "Lista com excelentes referências de livros sobre acessibilidade web."
 introduction: "Lista com excelentes referências de livros sobre acessibilidade web."
 ---
@@ -21,7 +20,7 @@ Navegando pela internet, encontrei uma lista de livros sobre acessibilidade web 
 
 Uma boa alternativa é comprar o e-book das obras, visto que, o preço sai mais em conta.
 
-Todos os livros são de especialistas em acessibilidade web. 
+Todos os livros são de especialistas em acessibilidade web.
 
 Segue a lista com os livros indicados pelo site:
 

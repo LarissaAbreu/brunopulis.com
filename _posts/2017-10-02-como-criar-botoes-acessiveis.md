@@ -2,14 +2,13 @@
 layout: post
 title: "Como criar botões acessíveis"
 date: 2017-10-02
-image: "/img/posts/criar-botoes/button.png"
+image: "/assets/images/posts/criar-botoes/button.png"
+alt: "Botão azul escrito Clique aqui"
 description: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
-main-class:
-color:
 tags:
 - dicas
 - a11y
-categories: dev
+categories: tutorial
 twitter_text: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 introduction: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 ---
@@ -46,13 +45,13 @@ O exemplo abaixo mostra de forma clara como fazer.
 ```html
 <div class=”card-action”>
   <a href=”#” role="button">
-    Leia mais 
+    Leia mais
     <span class=”sr-only”>sobre Galo na libertadores</span>
   </a>
 </div>
 
 <button>
-  Leia mais 
+  Leia mais
   <span class="sr-only">sobre o Galo na libertadores</span>
 </button>
 ```

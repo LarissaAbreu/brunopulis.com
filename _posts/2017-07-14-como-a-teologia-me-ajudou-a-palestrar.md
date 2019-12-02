@@ -2,14 +2,13 @@
 layout: post
 title: "Como a teologia me ajudou a palestrar"
 date: 2017-07-14 01:13:35
-image: '/img/posts/devfestne/teologia.jpg'
+image: "/assets/images/posts/devfestne/teologia.jpg"
+alt: "Uma bíblia com foco e duas velas próximas e um corredor ao fundo da imagem"
 description: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
-main-class:
-color:
 tags:
 - carreira
 - motivacional
-categories: dev
+categories: carreira
 twitter_text: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 introduction: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 ---
@@ -143,7 +142,7 @@ Grande abraço.
 
 **Cursos no Udemy sobre oratória:**
 
-* [Public Speaking for Beginners](https://www.udemy.com/join/login-popup/?next=/public-speaking-for-beginners-al/learn/v4/overview) 
+* [Public Speaking for Beginners](https://www.udemy.com/join/login-popup/?next=/public-speaking-for-beginners-al/learn/v4/overview)
 * [Public Speaking Skills Developed From Scratch, in Little Time](https://www.udemy.com/join/login-popup/?next=/public-speaking-for-beginners-al/learn/v4/overview)
 
 ## Bibliografia

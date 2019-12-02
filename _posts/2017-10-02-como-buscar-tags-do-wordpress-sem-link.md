@@ -2,14 +2,13 @@
 layout: post
 title: "Como buscar tags do wordpress sem link"
 date: 2017-10-02 00:43:26
-image: "/img/posts/buscar-tags/wp.png"
+image: "/assets/images/posts/buscar-tags/wp.png"
+alt: "Nuvem de tags com palavras relacionadas ao Wordpress"
 description: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
-main-class:
-color:
 tags:
 - wordpress
 - seo
-categories: dev
+categories: wordpress
 twitter_text: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 introduction: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 ---
@@ -44,7 +43,7 @@ Imagine o caso, o cliente me pediu que o texto que deve ser mostrado seria **“
 Para exibir somente as tags sem o link devemos escrever o seguinte código:
 
 ```php
-foreach(( get_the_tags() ) as $tag): 
+foreach(( get_the_tags() ) as $tag):
   echo $tag->name;
 endforeach;
 ```

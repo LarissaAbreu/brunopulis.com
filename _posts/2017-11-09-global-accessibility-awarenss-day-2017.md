@@ -2,10 +2,9 @@
 layout: post
 title:  "Global Accessibility Awarenss Day 2017"
 date:   2017-11-09
-image: '/img/posts/global-a11y.jpg'
+image: "/assets/images/posts/global-a11y.jpg"
+alt: "Logomarca do movimento global de acessibilidade comemorado em 18 de março"
 description: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017 promovido pelo o IXDABH"
-main-class:
-color:
 tags:
 - reviews
 - a11y

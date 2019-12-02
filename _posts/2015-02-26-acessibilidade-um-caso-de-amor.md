@@ -2,10 +2,9 @@
 layout: post
 title: "Acessibilidade: um caso de amor"
 date: 2015-02-26
-image: "/img/posts/in-love/stormtropper.jpeg"
+image: "/assets/images/posts/in-love/stormtropper.jpeg"
+alt: "Um stormtropper saindo da tecla S do teclado"
 description: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
-main-class:
-color:
 tags:
 - a11y
 - empatia

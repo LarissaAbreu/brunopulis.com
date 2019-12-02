@@ -2,12 +2,10 @@
 layout: post
 title: "Precisamos urgente de equilibrio"
 date: 2017-12-21 00:06:48
-image: '/img/posts/precisamos-de-equilibrio/equilibrio.jpg'
+image: "/assets/images/posts/precisamos-de-equilibrio/equilibrio.jpg"
+alt: "Mulher sentada no canto do quarto apoiando a mão na cabeça pensativa"
 description: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
-main-class:
-color:
 tags:
-- lifestyle
 - saude
 categories: carreira
 twitter_text: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
@@ -39,7 +37,7 @@ Compreender que o desequilíbrio é algo externo afetando o seu “eu interno”
 
 Nosso tempo é curto e devemos priorizar o que realmente importa, ou seja, dar atenção a coisas que realmente valem a pena.
 
-A vida é recheada de momentos ímpares que devem ser experimentados fora da esfera profissional, mesmo que esses momentos sejam oferecidos por sua vida profissional. 
+A vida é recheada de momentos ímpares que devem ser experimentados fora da esfera profissional, mesmo que esses momentos sejam oferecidos por sua vida profissional.
 
 Recentemente palestrei em Salvador, um compromisso profissional mas, porém, consegui usufruir dele na minha vida pessoal. A questão do tempo me recorda uma passagem:
 
