@@ -5,3 +5,9 @@ services:
 portfolio:
   title: Últimos trabalhos
   subtitle: Lorem Ipsum
+
+talks:
+  title: Palestras
+
+blog:
+  title: Últimos artigos
