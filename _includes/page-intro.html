@@ -1,0 +1,6 @@
+{% if page.intro_paragraph and page.intro_paragraph != '' %}
+<p class="subtitle is-3">
+  {{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}
+</p>
+{% endif %}
+<hr class="spacer is-1">

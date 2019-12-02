@@ -9,21 +9,21 @@
     </div>
 
     <div class="row">
-      {% for post in site.posts %}
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ post.modal-id }}">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+      {% portfolios = site.portfolio | reverse %}
+      {% for portfolio in portfolios %}
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ post.modal-id }}">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img alt="" class="img-responsive img-centered" src="img/portfolio/{{ post.thumbnail }}">
-          </a>
-          <div class="portfolio-caption">
-            <h4>{{ post.title }}</h4>
-            <p class="text-muted">{{ post.subtitle }}</p>
           </div>
+          <img alt="" class="img-responsive img-centered" src="images/portfolio/{{ post.thumbnail }}">
+        </a>
+        <div class="portfolio-caption">
+          <h4>{{ portfolio.title }}</h4>
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>
