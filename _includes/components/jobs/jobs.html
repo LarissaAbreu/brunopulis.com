@@ -1,0 +1,21 @@
+<section class="section jobs is-medium" id="jobs">
+  <div class="container">
+    <h2 class="services__title section-heading">{{ site.data.home.portfolio.title }}</h2>
+  </div>
+
+  <div class="container">
+    <div class="columns">
+      {% for portfolio in site.portfolio %}
+      <div class="column is-4">
+        <div class="card is-usp">
+          <a href="{{ portfolio.clientUrl }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ portfolio.thumb }}" alt="Soul Fit Modas">
+
+            <h3 class="subtitle is-3">{{ portfolio.title }}</h3>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
