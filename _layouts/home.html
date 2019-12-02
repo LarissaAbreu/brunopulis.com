@@ -2,18 +2,9 @@
 layout: default
 ---
 
-{% include header-home.html %}
+{{ content }}
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 col-md-12 mx-auto">
-      {{ content }}
-
-      {% include patterns/services/services.html %}
-      {% include portfolio.html %}
-      {% include blog.html %}
-
-      {% include pagination.html %}
-    </div>
-  </div>
-</div>
+{% include components/services/services.html %}
+{% include components/jobs/jobs.html %}
+{% include components/talks/talks.html %}
+{% include components/blog/blog.html %}

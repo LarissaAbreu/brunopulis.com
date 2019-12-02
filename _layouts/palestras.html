@@ -2,14 +2,19 @@
 layout: page
 ---
 
-{% for palestra in site.palestras %}
+<h2>{{ page.title }}</h2>
+
+{% include page-intro.html %}
+
+{% assign palestras = site.palestras | sort: 'date' | reverse %}
+{% for palestra in palestras %}
   <article class="post-preview">
     <a href="{{ post.url }}">
-      <h2 class="post-title">{{ post.title }}</h2>
-      {% if post.subtitle %}
-        <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+      <h2 class="post-title">{{ palestra.title }}</h2>
+      {% if palestra.subtitle %}
+        <h3 class="post-subtitle">{{ palestra.subtitle }}</h3>
       {% else %}
-        <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+        <h3 class="post-subtitle">{{ palestra.excerpt | strip_html | truncatewords: 15 }}</h3>
       {% endif %}
     </a>
     <p class="post-meta">
