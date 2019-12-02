@@ -1,20 +1,40 @@
-<h2>{{ site.data.home.blog.title }}</h2>
+<section class="blog is-medium" id="blog">
+  <div class="container">
+    <h2 class="services__title section-heading">{{ site.data.home.blog.title }}</h2>
+  </div>
 
-{% for post in paginator.posts  limit: 6 %}
-  <article class="card post-preview">
-    <div class="card-body">
-      <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
-        {% include shared/date.html date=post.date %}
-      </time>
+  <div class="container">
+    <ul class="blog__list columns is-multiline is-variable is-5">
+      {% for post in site.posts  limit: 6 %}
+      <li class="blog__item column is-4-widescreen is-4-tablet">
+        <article class="card">
+          <div class="ribbon">
+            <span>{{ post.categories }}</span>
+          </div>
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{ post.image }}" alt="{{ post.alt }}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
+              {% include shared/date.html date=post.date %}
+            </time>
 
-      <h2 class="card-title post-title">
-        <a class="card-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-          {{ post.title }}
-        </a>
-      </h2>
-      <p class="post-subtitle card-text">{{ post.introduction | strip_html | truncatewords: 50 }}</p>
+            <h2 class="card-title subtitle is-4">
+              <a class="card-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                {{ post.title }}
+              </a>
+            </h2>
+            <div class="content">
+              <p class="post-subtitle card-text">{{ post.introduction | strip_html | truncatewords: 50 }}</p>
+            </div>
+          </div>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
 
-      {% include tags-home.html %}
-    </div>
-  </article>
-{% endfor %}
+    <a href="/blog" class="button is-center is-primary">Ver todos artigos</a>
+  </div>
+</section>

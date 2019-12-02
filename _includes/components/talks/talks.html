@@ -1,16 +1,29 @@
-{% for palestra in paginator.palestras limit: 3 %}
-  <article class="post-preview">
-    <a href="{{ post.url }}">
-      <h2 class="post-title">{{ palestra.title }}</h2>
-      {% if palestra.subtitle %}
-        <h3 class="post-subtitle">{{ palestra.subtitle }}</h3>
-      {% else %}
-        <h3 class="post-subtitle">{{ palestra.excerpt | strip_html | truncatewords: 15 }}</h3>
-      {% endif %}
-    </a>
-    <p class="post-meta">
-      {% include metadata/metas.html %}
-    </p>
-  </article>
-  <hr>
-{% endfor %}
+<section class="talks section has-background is-medium" id="talks">
+  <div class="container">
+    <h2 class="services__title section-heading">{{ site.data.home.talks.title }}</h2>
+  </div>
+
+  <div class="container">
+    <ul class="blog__list columns is-multiline is-variable is-5">
+      {% for palestra in site.palestras %}
+      <li class="blog__item column is-4-widescreen is-4-tablet">
+        <article class="post-preview">
+          <a href="{{ post.url }}">
+            <h2 class="post-title">{{ palestra.title }}</h2>
+            {% if palestra.subtitle %}
+            <h3 class="post-subtitle">{{ palestra.subtitle }}</h3>
+            {% else %}
+            <h3 class="post-subtitle">{{ palestra.excerpt | strip_html | truncatewords: 15 }}</h3>
+            {% endif %}
+          </a>
+
+          Evento: {{ palestra.event }}
+          <a href="{{ palestra.url }}" target="_blank" rel="noopener noreferrer">
+            Acessar palestra <span class="is-sr-only">{{ palestra.title }}</span>
+          </a>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
