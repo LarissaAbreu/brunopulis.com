@@ -43,39 +43,6 @@ collections:
                 name: link
                 widget: string
 
-  - name: page
-    label: Page
-    folder: _pages
-    create: true
-    slug: .md
-    fields:
-      - label: Type
-        name: type
-        widget: hidden
-        default: page
-
-      - label: Title
-        name: title
-        widget: string
-
-      - label: "SEO Title"
-        name: seotitle
-        widget: string
-
-      - label: Description
-        name: description
-        widget: string
-        required: false
-
-      - label: URL
-        name: url
-        widget: string
-
-      - label: Body
-        name: body
-        widget: markdown
-        required: false
-
   # Posts
   - name: posts
     label: Posts
@@ -129,27 +96,45 @@ collections:
         name: intro
         widget: string
 
-  - name: servicos
-    label: Serviços
-    label_singular: Serviço
-    folder: _services
+  - name: portfolio
+    label: Portfolio
+    label_singular: Portfolio
+    folder: _portfolio
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - label: Layout
-        name: layout
-        widget: hidden
-        default: post
       - label: Title
         name: title
         widget: string
-      - label: Icon
-        name: thumbnail
-        widget: image
-        required: false
+        required: true
+
       - label: Body
         name: body
         widget: markdown
+
+      - label: "Imagem destacada"
+        name: thumbnail
+        widget: image
+        required: false
+
+      - label: Tags
+        name: tags
+        widget: list
+
+      - label: "Data de Publicação"
+        name: date
+        widget: datetime
+        required: true
+
+      - label: "Twitter Description"
+        name: twitter
+        widget: string
+        required: false
+
+      - label: Introduction
+        name: intro
+        widget: string
+
   - name: palestras
     label: Palestras
     label_singular: Palestra
@@ -161,17 +146,21 @@ collections:
         name: layout
         widget: hidden
         default: palestra
+
       - label: Categorias
         name: categories
         widget: hidden
         default: evento
+
       - label: Title
         name: title
         widget: string
+
       - label: URL
         name: url
         widget: string
         required: true
+
       - label: "Data de Publicação"
         name: date
         widget: datetime
