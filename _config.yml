@@ -1,21 +1,24 @@
-title:             Bruno Pulis
-email:             bruno.pulis@gmail.com
-description:       Procurando um profissional para tornar seus produtos digitais acessíveis? Vamos conversar, minha missão é tornar a web mais simples e acessível
-author:            Bruno Pulis
-baseurl:           ""
-url:               "brunopulis.netlify.com"
+title: Bruno Pulis
+email: bruno.pulis@gmail.com
+description: Procurando um profissional para tornar seus produtos digitais acessíveis? Vamos conversar, minha missão é tornar a web mais simples e acessível
+author: Bruno Pulis
+baseurl: ""
+url: "brunopulis.netlify.com"
 
 # Social Profiles
-twitter_username:  obrunopulis
-github_username:   brunopulis
-facebook_username: bpulis
+twitter_username: obrunopulis
+github_username: brunopulis
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
-paginate: 5
+paginate: 6
 paginate_path: "/page/:num/"
+
+# Enable section IDs in frontmatter, useful for identifying current page
+# (used as a hook for styling etc)
+section: true
 
 plugins:
   - jekyll-feed
@@ -31,16 +34,19 @@ collections:
     output: true
     permalink: /palestras/:path/
 
+# Compress HTML (in liquid via layouts/compress.html)
+compress_html:
+  clippings: all
+
 # exclude my node related stuff
-exclude: [
-  'package.json',
-  'src',
-  'node_modules',
-  'vendor/bundle/ruby',
-  'package-lock.json',
-  'Readme.md',
-  'gulpfile.js',
-  'initpost.sh',
-  'testlinks.sh',
-  '.travis.yml'
-]
+exclude:
+  - README.md
+  - LICENSE.txt
+  - netlify.toml
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
