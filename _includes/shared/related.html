@@ -3,18 +3,22 @@
   {% assign maxRelatedCounter  = 0 %}
 
   <ul class="related__list list-group list-group-flush">
-  {% for post in site.posts %}
+    {% assign relatedPosts = site.posts %}
+    {% for post in relatedPosts %}
       {% if post.url != page.url %}
-          {% if post.main-class == page.main-class %}
-              <li class="related__item list-group-item">
-                  <a href="{{ post.url }}" class="related__link">{{ post.title }}</a>
-              </li>
-              {% assign maxRelatedCounter  = maxRelatedCounter | plus: 1 %}
-              {% if maxRelatedCounter == 3 %}
-                  {% break %}
-              {% endif %}
-          {% endif %}
+        {% if post.main-class == page.main-class %}
+          <li class="related__item list-group-item">
+            <div class="card">
+              <p class="card-header-title">
+                <a href="{{ post.url }}" class="related__link">{{ post.title }}</a>
+              </p>
+            </li>
+            {% assign maxRelatedCounter  = maxRelatedCounter | plus: 1 %}
+            {% if maxRelatedCounter == 3 %}
+                {% break %}
+            {% endif %}
+        {% endif %}
       {% endif %}
-  {% endfor %}
+    {% endfor %}
   </ul>
 </section>

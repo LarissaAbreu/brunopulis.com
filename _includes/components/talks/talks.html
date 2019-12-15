@@ -1,13 +1,17 @@
-<section class="talks section has-background is-medium" id="talks">
+<section class="talks section has-background" id="talks">
   <div class="container">
-    <h2 class="services__title section-heading">{{ site.data.home.talks.title }}</h2>
+    <h2 class="services__title section-heading">
+      {{ site.data.home.talks.title }}
+    </h2>
   </div>
 
   <div class="container">
     <ul class="blog__list columns is-multiline is-variable is-5">
-      {% for palestra in site.palestras %}
+      {% assign palestras = (site.palestras | sort: 'date') | reverse %}
+      {% for palestra in palestras limit: 3  %}
       <li class="blog__item column is-4-widescreen is-4-tablet">
         <article class="post-preview">
+          <img src="{{ palestra.external_image }}" alt="">
           <a href="{{ post.url }}">
             <h2 class="post-title">{{ palestra.title }}</h2>
             {% if palestra.subtitle %}
