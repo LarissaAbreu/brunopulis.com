@@ -13,7 +13,7 @@ twitter_text: "Relato de como a teologia me auxiliou para perder o medo de falar
 introduction: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 ---
 
-![Bruno Pulis segurando um microfone, vestindo blusa preta com uma bermuda jeans olhando para o computado e a platéia com os olhos voltados ao o que está sendo falado](/img/posts/devfestne/devfestne.jpg)
+![Bruno Pulis segurando um microfone, vestindo blusa preta com uma bermuda jeans olhando para o computador](/img/posts/devfestne/devfestne.jpg)
 
 ## Disclaimer
 
@@ -114,13 +114,10 @@ Devemos encontrar essa “conexão” ou contexto com o ouvinte e, assim, conseg
 
 ## Dicas finais
 
-- Melhore o som da sua voz: procure pronunciar as palavras
-    corretamente, evitando falar com a boca fechada, falando em um tom
-    adequado, alterando a potência de vez em quando para enfatizar coisas
-    importantes;
+- Melhore o som da sua voz: procure pronunciar as palavras corretamente, evitando falar com a boca fechada, falando em um tom adequado, alterando a potência de vez em quando para enfatizar coisas
+importantes;
 
-- Fale com os olhos: antes de falar qualquer palavra, cumprimente silenciosamente as pessoas com “um sorriso nos olhos”,
-    procurando identificar cada pessoa, em lances rápidos de olhar.
+- Fale com os olhos: antes de falar qualquer palavra, cumprimente silenciosamente as pessoas com “um sorriso nos olhos”, procurando identificar cada pessoa, em lances rápidos de olhar.
 
 - Durante sua talk olhe para as pessoas, comunique-se com elas através de expressões, transmita segurança e sinta o que elas estão sentindo enquanto ouvem suas palavras.
 
