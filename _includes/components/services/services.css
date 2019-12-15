@@ -1,19 +1,34 @@
 .services {
-  padding: 16px 0;
   text-align: center;
 }
 
 .services .card {
-  background-color: rgb(251, 251, 253);
+  background-color: transparent;
   box-shadow: none;
 }
 
 .services__title {
+  color: #222;
   padding: 15px 0;
   text-align: center;
   font-weight: 600;
   font-size: 2rem;
 }
+
+.services__subtitle {
+  color: #222;
+}
+
+.services__list {
+  list-style: disc;
+  text-align: left;
+  padding-left: 85px;
+}
+
+.services__item {
+  font-size: 1.25rem;
+}
+
 
 .steps__inner {
   display: flex;

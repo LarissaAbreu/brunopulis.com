@@ -1,4 +1,6 @@
 :root {
+  --color-primary: #fff;
+
   --font-primary: "Open Sans", Helvetica, sans-serif;
   --font-secondary: "Source Sans Pro", Helvetica, sans-serif;
 }
