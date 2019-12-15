@@ -27,7 +27,7 @@ Uma das coisas que senti mais falta foi a interação da comunidade de desenvolv
 
 Retornando, me deparei com a iniciativa help4Papers que tem como objetivo auxiliar desenvolvedores que querem começar a palestrar, achei fantástico a disponibilidade e boa vontade dos fundadores em ajudar as pessoas. Eles têm algumas dicas bem legais e vale a pena segui-los.
 
-### O que teologia tem haver com isso?
+### O que teologia tem haver com isso
 
 Talvez você estranhou o título desse post, mas irei explicar. Para quem me conhece, sabe que sou apaixonado por duas coisas: teologia e frontend. Minha história com teologia vem desde a adolescência, sempre fui uma pessoa curiosa que procurava conhecer os princípios e fundamentos de como o mundo funciona. Aprendi um pouco de grego e hebraico e fui tomando gosto pela coisa.
 
@@ -38,8 +38,8 @@ Na faculdade de TI me interessei mais pelo o frontend, pelo fato de lidar com pr
 Na teologia não estudamos somente a Bíblia, temos diversas matérias como: sociologia, psicologia, antropologia e filosofia. Uma das matérias que me ajudou foi a Homilética, que por definição é:
 
 > É a arte de pregar, ou seja, utilizar os princípios da retórica com a finalidade específica de falar sobre o conteúdo da bíblia sagrada cristã.
-Este termo acabou por originar a palavra homilia, que quer dizer “discurso com a finalidade de agradar”[1].
-Ela procura ajudar o pregador a comunicar a mensagem de forma clara e inteligível. No mundo do desenvolvimento, conheço diversas pessoas que tecnicamente são excelentes, mas como comunicadores ainda não são bons. Necessitamos de nos comunicar bem, afinal, nem só de código viverá o desenvolvedor, mas de uma comunicação efetiva e clara.
+> Este termo acabou por originar a palavra homilia, que quer dizer “discurso com a finalidade de agradar”[1].
+> Ela procura ajudar o pregador a comunicar a mensagem de forma clara e inteligível. No mundo do desenvolvimento, conheço diversas pessoas que tecnicamente são excelentes, mas como comunicadores ainda não são bons. Necessitamos de nos comunicar bem, afinal, nem só de código viverá o desenvolvedor, mas de uma comunicação efetiva e clara.
 
 Vivemos em uma era onde a comunicação é essencial e não investir nisso seria um pecado capital.
 
@@ -75,9 +75,9 @@ Outra dica: não fixe o olhar em uma única pessoa, olhe na altura dos olhos das
 
 Existem certos padrões de vozes que se não tomarmos cuidado atrapalham na hora de comunicar a mensagem, dentre eles podemos citar:
 
-* Voz estridente;
-* Voz fanhosa;
-* Voz monótona;
+- Voz estridente;
+- Voz fanhosa;
+- Voz monótona;
 
 Caso, você tenha algum tipo de voz citado acima não se desespere! Com treinamento e modulação da sua voz, você aumentará consideravelmente o alcance da mensagem.
 
@@ -85,7 +85,18 @@ Uma regra de ouro é: procure falar pausadamente, sem querer correr com o conte�
 
 **O vídeo abaixo mostra sobre a modulação da voz de maneira fenomenal:**
 
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/pt-br/julian_treasure_how_to_speak_so_that_people_want_to_listen" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<div style="max-width:854px">
+  <div style="position:relative;height:0;padding-bottom:56.25%">
+    <iframe src="https://embed.ted.com/talks/lang/pt-br/julian_treasure_how_to_speak_so_that_people_want_to_listen"
+            width="854"
+            height="480"
+            style="position:absolute;left:0;top:0;width:100%;height:100%"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
 
 Se o tom de sua voz é baixo e tranquilo, procure aumentar o tom dando ênfase em partes importantes do seu conteúdo.
 
@@ -103,38 +114,32 @@ Devemos encontrar essa “conexão” ou contexto com o ouvinte e, assim, conseg
 
 ## Dicas finais
 
-* Melhore o som da sua voz: procure pronunciar as palavras
-corretamente, evitando falar com a boca fechada, falando em um tom
-adequado, alterando a potência de vez em quando para enfatizar coisas
-importantes;
+- Melhore o som da sua voz: procure pronunciar as palavras
+    corretamente, evitando falar com a boca fechada, falando em um tom
+    adequado, alterando a potência de vez em quando para enfatizar coisas
+    importantes;
 
-* Fale com os olhos: antes de falar qualquer palavra,
-cumprimente silenciosamente as pessoas com “um sorriso nos olhos”,
-procurando identificar cada pessoa, em lances rápidos de olhar.
+- Fale com os olhos: antes de falar qualquer palavra, cumprimente silenciosamente as pessoas com “um sorriso nos olhos”,
+    procurando identificar cada pessoa, em lances rápidos de olhar.
 
-* Durante sua talk olhe para as pessoas, comunique-se com elas
-através de expressões, transmita segurança e sinta o que elas estão
-sentindo enquanto ouvem suas palavras.
+- Durante sua talk olhe para as pessoas, comunique-se com elas através de expressões, transmita segurança e sinta o que elas estão sentindo enquanto ouvem suas palavras.
 
-* Seja zueiro, conte piadas, abuse dos gifs: não aborde de cara o assunto, use storytelling, descreva uma experiência, relate seu
-trajeto até o local. Aborde uma situação alegre. Lembre-se: até os grandes
-pregadores podem temer durante uma mensagem. O temor e tremor é
-natural. Encare isto com tranquilidade. É uma questão de tempo.
+- Seja zueiro, conte piadas, abuse dos gifs: não aborde de cara o assunto, use storytelling, descreva uma experiência, relate seu trajeto até o local. Aborde uma situação alegre. Lembre-se: até os grandes pregadores podem temer durante uma mensagem. O temor e tremor é natural. Encare isto com tranquilidade. É uma questão de tempo.
 
-* Atualize-se: estude sobre o assunto, invista tempo pesquisando, lendo, estudando, testando e codando principalmente. O hábito da leitura é primordial para ser um palestrante que sabe comunicar. Quem lê mais, sabe mais.
+- Atualize-se: estude sobre o assunto, invista tempo pesquisando, lendo, estudando, testando e codando principalmente. O hábito da leitura é primordial para ser um palestrante que sabe comunicar. Quem lê mais, sabe mais.
 
-* Faça com amor: compartilhar conhecimento é uma das melhores coisas da nossa área, ver o crescimento das pessoas por algo que ensinamos não há dinheiro que pague. E também se divirta!
+- Faça com amor: compartilhar conhecimento é uma das melhores coisas da nossa área, ver o crescimento das pessoas por algo que ensinamos não há dinheiro que pague. E também se divirta!
 
----
+* * *
 
-![Várias pessoas em posições diferente fazendo caretas, entra elas está: Rafael Nunes Verger, Yan Magalhães, Thiago Almeida, Bruno Pulis, Diego Leite e Marcus Silva](/img/posts/devfestne/galera.jpg)
-
-
-
+![Várias pessoas em posições diferente fazendo caretas](/img/posts/devfestne/galera.jpg)
 
 ## Conclusão
 
-Através de estudo e dedicação você vai conseguir palestrar de maneira agradável e segura. Lembre-se, é um processo de contínuo aprendizado. Usando essas dicas você conseguirá alcançar resultados interessante. Tem mais alguma dica sobre o assunto? Compartilhe comigo.
+Através de estudo e dedicação você vai conseguir palestrar de maneira agradável e segura.
+Lembre-se, é um processo de contínuo aprendizado.
+Usando essas dicas você conseguirá alcançar resultados interessante.
+Tem mais alguma dica sobre o assunto? Compartilhe comigo.
 
 Grande abraço.
 
@@ -142,8 +147,9 @@ Grande abraço.
 
 **Cursos no Udemy sobre oratória:**
 
-* [Public Speaking for Beginners](https://www.udemy.com/join/login-popup/?next=/public-speaking-for-beginners-al/learn/v4/overview)
-* [Public Speaking Skills Developed From Scratch, in Little Time](https://www.udemy.com/join/login-popup/?next=/public-speaking-for-beginners-al/learn/v4/overview)
+- [Public Speaking for Beginners](https://www.udemy.com/join/login-popup/?next=/public-speaking-for-beginners-al/learn/v4/overview)
+- [Public Speaking Skills Developed From Scratch, in Little Time](https://www.udemy.com/join/login-popup/?next=/public-speaking-for-beginners-al/learn/v4/overview)
 
 ## Bibliografia
-SIGNIFICADOS. **Significado de Homilética**. Disponível em: [https://www.significados.com.br/homiletica/](https://www.significados.com.br/homiletica/) Acesso em: 16 de junho de 2018.
+
+SIGNIFICADOS. **Significado de Homilética**. Disponível em: <https://www.significados.com.br/homiletica/> Acesso em: 16 de junho de 2018.

@@ -34,9 +34,9 @@ Confesso que minha consciência pesa muito, por isso a cada dia eu me apaixono m
 Você pode estar se questionando: **"Isso é exagero da sua parte"**.
 Creio que não meu caro leitor faça alguns testes simples:
 
-* Retire o mouse e tente navegar em algum site de preferência sites governamentais e de grandes marcas;
-* Tente navegar as escuras com o auxílio de um leitor de tela;
-* Tente através do TAB chegar a um determinado local sem um link de pular para o conteúdo determinado.
+- Retire o mouse e tente navegar em algum site de preferência sites governamentais e de grandes marcas;
+- Tente navegar as escuras com o auxílio de um leitor de tela;
+- Tente através do TAB chegar a um determinado local sem um link de pular para o conteúdo determinado.
 
 Estes três pequenos e bobos testes podem te surpreender muito.
 
@@ -45,4 +45,3 @@ E pelo o que eu já percebi e analizei estamos construíndo não pontes para ace
 > Se o lugar não está pronto para receber TODAS as pessoas, o lugar é deficiente
 
 Concluo que tudo na vida e questão de consciência você pode fazer ela pesar ou não, depende somente de uma pessoa: **Você**.
-

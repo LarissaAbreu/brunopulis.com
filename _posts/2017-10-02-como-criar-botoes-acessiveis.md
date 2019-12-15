@@ -6,8 +6,8 @@ image: "/assets/images/posts/criar-botoes/button.png"
 alt: "Botão azul escrito Clique aqui"
 description: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 tags:
-- dicas
-- a11y
+  - dicas
+  - a11y
 categories: tutorial
 twitter_text: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 introduction: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
@@ -28,7 +28,7 @@ Fiz esse exemplo para ilustrar quando são feitos incorretamente.
 <div class=”card-action”>
   <a href=”#”>Leia mais</a>
 </div>
-````
+```
 
 Da forma que foi feita a marcação, o usuário que utiliza leitor de tela, como o NVDA, JAWS por exemplo, ficaria perdido porque os botões de “Leia mais” não tem em seu contexto nenhuma informação. Os leitores de tela oferecem um recurso de navegar via links de forma rápida. No NVDA utiliza-se a tecla L para saltar todos os links da página.
 
@@ -43,10 +43,10 @@ O exemplo abaixo mostra de forma clara como fazer.
 ### Marcação HTML
 
 ```html
-<div class=”card-action”>
-  <a href=”#” role="button">
+<div class="”card-action”">
+  <a href="”#”" role="button">
     Leia mais
-    <span class=”sr-only”>sobre Galo na libertadores</span>
+    <span class="”sr-only”">sobre Galo na libertadores</span>
   </a>
 </div>
 

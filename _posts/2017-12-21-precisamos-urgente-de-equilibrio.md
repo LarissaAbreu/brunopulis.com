@@ -6,7 +6,7 @@ image: "/assets/images/posts/precisamos-de-equilibrio/equilibrio.jpg"
 alt: "Mulher sentada no canto do quarto apoiando a mão na cabeça pensativa"
 description: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
 tags:
-- saude
+  - saude
 categories: carreira
 twitter_text: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
 introduction: >-

@@ -6,8 +6,8 @@ image: "/assets/images/posts/buscar-tags/wp.png"
 alt: "Nuvem de tags com palavras relacionadas ao Wordpress"
 description: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 tags:
-- wordpress
-- seo
+  - wordpress
+  - seo
 categories: wordpress
 twitter_text: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 introduction: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
@@ -21,15 +21,18 @@ Estou desenvolvendo um site com meu amigo Jhonny Costa, onde temos uma determina
 
 Após algumas conversas, entramos em um impasse onde não exisitiria a necessidade das tags virem com seus respectivos links.
 
-Então eu recorri a documentação do Wordpress para consultar a função que gera as tags a <code>the_tags()</code>, a documentação mostra que ela recebe três paramêtros por padrão: <code>$before</code>, <code>$sep</code>, <code>$after</code>.
+Então eu recorri a documentação do Wordpress para consultar a função que gera as tags a <code>the_tags()</code>, a documentação mostra que ela recebe três paramêtros por padrão: <code>$before</code>, <code>$sep</code>, <code>\$after</code>.
 
-## <code>$before</code>
+## <code>\$before</code>
+
 Paramêtro do tipo String, onde retornará um texto antes das tags serem exibidas. Seu padrão é a palavra “Tags”.
 
-## <code>$sep</code>
+## <code>\$sep</code>
+
 Paramêtro do tipo String, onde retornará um texto ou caractere que serão exibidos entre cada tag link, O padrão dele é (,) entre cada tag.
 
-## <code>$after</code>
+## <code>\$after</code>
+
 Paramêtro do tipo String, onde retornará um texto após a última tag. Seu padrão não é exibir nada.
 
 A função <code>the_tags()</code> não possui retorno.

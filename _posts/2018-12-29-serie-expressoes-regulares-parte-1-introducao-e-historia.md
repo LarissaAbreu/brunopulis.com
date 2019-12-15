@@ -6,8 +6,8 @@ image: "/assets/images/posts/regexp/regex.png"
 alt: "Abreviação em inglês de Expressões regulares. Ilustração"
 description: "Nesta série, vamos estudar sobre a história e a introdução das expressões regulares e compreender os benefícios de sua utilização."
 tags:
-- regex
-- metacaracteres
+  - regex
+  - metacaracteres
 categories: série
 twitter_text: "Nesta série, vamos estudar sobre expressões regulares e compreender os benefícios de sua utilização."
 introduction: "Nesta série, vamos estudar sobre a história e a introdução das expressões regulares e compreender os benefícios de sua utilização."
@@ -41,9 +41,9 @@ Elas são escritas em uma linguagem formal que pode ser interpretada por process
 
 Alguns, desses programas são distribuídos livremente na internet, como:
 
-* [RegExp101](https://regex101.com/)
-* [RegExr](https://regexr.com/)
-* [Regex Tester](https://www.regextester.com/)
+- [RegExp101](https://regex101.com/)
+- [RegExr](https://regexr.com/)
+- [Regex Tester](https://www.regextester.com/)
 
 O termo deriva do trabalho do matemático norte-americano [**Stephen Cole Kleene**](https://pt.wikipedia.org/wiki/Stephen_Kleene), que desenvolveu as expressões regulares como uma notação ao que ele chamava de **álgebra de conjuntos regulares** ou também conhecida como **álgebra de Kleene**.
 
@@ -51,7 +51,7 @@ Kleene foi notório em sua área de atuação, considerado e reconhecido juntame
 
 Vários conceitos matemáticos têm seu nome, como: **hierarquia de Kleene**, **álgebra de Kleene**, **fecho de Klenne** e **teorema da recursão de Klenne**.
 
-## Legal, mas para que serve?
+## Legal, mas para que serve
 
 As ER's servem para uma infinidade de propósitos, vai depender muito do contexto em que iremos utilizá-la. Em um editor de texto, como o <span lang="en">Word</span>, por exemplo, podemos utilizar uma ER para substituir determinado termo dentro de um texto.
 
@@ -61,55 +61,55 @@ Outra abordagem seria na validação de um número de cartão de crédito, ou at
 
 Abaixo, cito alguns exemplos que ela pode ser utilizada:
 
-* corresponder a qualquer endereço de IP em um intervalo;
-* corresponder a qualquer endereço de e-mail de um domínio específico;
-* corresponder somente a frase exata;
-* corresponder a palavra com grafias diferentes ou caracteres especiais;
-* corresponder a um formato alfanumérico;
-* corresponder a um número de telefone;
+- corresponder a qualquer endereço de IP em um intervalo;
+- corresponder a qualquer endereço de e-mail de um domínio específico;
+- corresponder somente a frase exata;
+- corresponder a palavra com grafias diferentes ou caracteres especiais;
+- corresponder a um formato alfanumérico;
+- corresponder a um número de telefone;
 
-
-### Exemplo de expressão regular:
+### Exemplo de expressão regular
 
 Corresponde somente a frase exata:
+
 ```shell
 (\W|^)tesouro\direto(\W|$)
 ```
 
 CEP formatado com expressões regulares
+
 ```shell
 \d{5}-\d{3}
 ```
+
 ---
 
 ## Curiosidades
+
 As ER's estão em praticamente em todos os lugares, linguagens de programação, editores de texto, banco de dados, planilhas e muito mais, abaixo, listo alguns meios em que se pode usar:
 
-| Planilhas   | Aplicativos  | Banco de dados | Linguagens     | Editores       |
-| ----------  | ------------ | -------------  | -------------  | -------------  |
-| Google Docs | Grep         | MySQL          | Awk            | Emacs
-| OpenOffice  | Apache HTTPd | PostgreSQL     | Javascript     | VIM
-|             | Nginx        | Oracle         | PHP            | Word
-|             |              | SQLite         | Python         | OpenOffice
-|             |              |                | Sed            | Notepad++
-|             |              |                | Tcl            | VisualCode
-|             |              |                | VBScript       | Sublime Text
-|             |              |                | C              |
-|             |              |                | Java           |
-|             |              |                | Ruby           |
-|             |              |                | ActionScript   |
-|             |              |                | PHP PCRE       |
-|             |              |                | Shell Script   |
-|             |              |                | HTML5          |
-|             |              |                | Lua            |
-|             |              |                | .NET (VB, C#)  |
-|             |              |                | Powershell     |
-
+| Planilhas   | Aplicativos  | Banco de dados | Linguagens    | Editores     |
+| ----------- | ------------ | -------------- | ------------- | ------------ |
+| Google Docs | Grep         | MySQL          | Awk           | Emacs        |
+| OpenOffice  | Apache HTTPd | PostgreSQL     | Javascript    | VIM          |
+|             | Nginx        | Oracle         | PHP           | Word         |
+|             |              | SQLite         | Python        | OpenOffice   |
+|             |              |                | Sed           | Notepad++    |
+|             |              |                | Tcl           | VisualCode   |
+|             |              |                | VBScript      | Sublime Text |
+|             |              |                | C             |              |
+|             |              |                | Java          |              |
+|             |              |                | Ruby          |              |
+|             |              |                | ActionScript  |              |
+|             |              |                | PHP PCRE      |              |
+|             |              |                | Shell Script  |              |
+|             |              |                | HTML5         |              |
+|             |              |                | Lua           |              |
+|             |              |                | .NET (VB, C#) |              |
+|             |              |                | Powershell    |              |
 
 ## Conclusão
 
 As expressões regulares são um recurso extremamente poderoso, dominando elas podemos resolver problemas do cotidiano de forma simples. Tem conhecimento do seu funcionamento é de suma importância para ser um bom desenvolvedor.
 
 Venha nessa jornada rumo as Expressões Regulares!
-
-

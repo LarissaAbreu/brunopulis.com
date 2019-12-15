@@ -6,8 +6,8 @@ image: "/assets/images/posts/computer.jpg"
 alt: "Um bloco de anotações com uma caneta e um notebook em cima de uma mesa marrom"
 description: "Aprenda com essas dicas como testar acessibilidade dos seus produtos digitais da forma correta"
 tags:
-- wcag
-- teste usabilidade
+  - wcag
+  - teste usabilidade
 categories: a11y
 twitter_text: "Aprenda como testar acessibilidade dos seus produtos digitais da forma correta"
 introduction: "Aprenda como testar acessibilidade dos seus produtos digitais da forma correta"
@@ -26,6 +26,7 @@ Eu sei que é uma declaração ousada. Mas o WCAG irá confundi-lo. E provavelme
 O quê mais? Bem, peguei as WCAG, coloquei no Microsoft Word e baixei todo o documento. Voilà, aqui estão as 98 páginas:
 
 <!-- Incluir max-width: 100% height: auto -->
+
 ![98 páginas da documentação do WCAG 2.0](/img/posts/wcag.png)
 
 Além disso, existem as técnicas reais para o sucesso - os links azuis na segunda metade das páginas acima levam a essas técnicas. Provavelmente mais 1.000 páginas ou mais.</p>
@@ -44,8 +45,8 @@ Coisas que outros usuários vão achar irritantes, para eles podem auxiliar. Da 
 
 Se você quiser testar com pessoas com deficiência, criei uma lista de dicas para você ir em outro artigo:
 
-* [Sete dicas para testar com usuário com deficiência (em inglês)](https://axesslab.com/seven-tips-for-user-testing-with-users-with-disabilities/)
-* [Recrutando usuários para realizar testes](https://axesslab.com/user-testing/)
+- [Sete dicas para testar com usuário com deficiência (em inglês)](https://axesslab.com/seven-tips-for-user-testing-with-users-with-disabilities/)
+- [Recrutando usuários para realizar testes](https://axesslab.com/user-testing/)
 
 ## Não me mate…
 
@@ -54,5 +55,3 @@ E, finalmente, volto para as pessoas incríveis da comunidade de acessibilidade:
 Mas deve ser usado por pessoas que amadureceram ainda mais em sua carreira de acessibilidade ou mentalidade.
 
 Primeiro, você deve testemunhar pessoas em ação, caso contrário, você não entenderá como usar as WCAG, por que está por aí e são pontos fortes e limitações. Espero que você entenda o que quero dizer!
-
-

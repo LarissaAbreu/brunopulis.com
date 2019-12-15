@@ -6,9 +6,9 @@ image: "/assets/images/posts/tools-a11y/tools.jpg"
 alt: "Um notebook ao centro da mesa com diversas ferramentas ao seu redor, representando sua utilidade"
 description: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 tags:
-- dicas
-- tools
-- a11y
+  - dicas
+  - tools
+  - a11y
 categories: a11y
 twitter_text: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 introduction: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
@@ -31,15 +31,16 @@ Foi desenvolvido pela WebAIM em 2001, com o intuito de auxiliar nos testes de ac
 Desenvolvido em 2009 pela Fundação para a Ciência e a Tecnologia (FCP), atualmente é o que eu mais tenho utilizado, ele gera um relatório bastante simples e com tips para corrigir os bug’s. Permite testar com as duas versões da WCAG a 1.0 e 2.0, recomendo usar a mais atual 2.0 para realizar os testes. Além de dar uma pontuação para o site de 0 a 10 no quesito de acessibilidade.
 
 ## [Tota11y](http://khan.github.io/tota11y/)
+
 O Tota11y é para mim um dos melhores se você quer algo rápido e não muito técnico. Ele é um bookmarklet para ser salvo na sua barra de favoritos.
 
 Ele tem as seguintes opções para verificação:
 
-* **Heading’s**: permite visualizar a estrutura dos heading’s da página demarcando as areas de forma visual;
-* **Contraste**: exibe se os elementos possuem contraste e se estão com baixo contraste e ainda dá uma sugestão de um bom contraste;
-* **Label’s**: exibe as label’s dos formulários e acusa aonde não existe as mesmas;
-* **Images alt text**: exibe o alt das imagens;
-* **Landmark’s**: mostra as landmark’s da WAI-ARIA.
+- **Heading’s**: permite visualizar a estrutura dos heading’s da página demarcando as areas de forma visual;
+- **Contraste**: exibe se os elementos possuem contraste e se estão com baixo contraste e ainda dá uma sugestão de um bom contraste;
+- **Label’s**: exibe as label’s dos formulários e acusa aonde não existe as mesmas;
+- **Images alt text**: exibe o alt das imagens;
+- **Landmark’s**: mostra as landmark’s da WAI-ARIA.
 
 Meu conselho:
 
