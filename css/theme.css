@@ -1,52 +1,51 @@
 :root {
-	--color-one: #1d2534;
-	--color-two: #4a5163;
-	--color-three: #e0f1ff;
-	--color-four: #daa21b;
-	--color-white: #ffffff;
-	--color-primary: #626703;
-	--color-primary-light: #9ea60e;
-	--color-primary-muted: #bec26d;
-	--color-primary-dark: #212121;
-	--color-secondary: #372a1a;
-	--color-secondary-medium: #968156;
-	--color-secondary-light: #f0d6b6;
-
-	--font-primary: "Open Sans", Helvetica, sans-serif;
-	--border-radius: 4px;
+  --font-primary: "Open Sans", Helvetica, sans-serif;
+  --font-secondary: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 html {
-	font-family: var(--font-primary);
-	color: var(--color-secondary);
+  font-family: var(--font-primary);
+  color: var(--color-secondary);
 }
 
 .color-primary-light {
-	color: var(--color-primary-light);
+  color: var(--color-primary-light);
 }
 
 a {
-	color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 a:hover,
 a:focus {
-	color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 
 hr {
-	border-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
 .flex-child-imgs img {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .ligthen-blue {
-	background: var(--color-three);
+  background: var(--color-three);
 }
 
 .has-background {
-  background: #FBFBFD;
+  background: #fbfbfd;
+}
+
+.site-main {
+  padding-top: 4vh;
+}
+
+.blog-post p {
+  font-size: 22px;
+}
+
+.blog-post h2 {
+  font-size: 2.5rem;
 }
