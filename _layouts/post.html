@@ -2,18 +2,28 @@
 layout: default
 ---
 
+{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
 <div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 mx-auto">
-      {% include shared/reading-time.html %}
+  <article class="columns blog-post">
+    <div class="column is-8 is-offset-2">
+      <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
+        {{ page.date | date: date_format }}
+      </time>
+      <span>/</span>
+      <span>
+        {%- for tag in page.categories -%}{{ tag }}{%- endfor -%}
+      </span>
 
-      {{ content }}
+      <h1 class="title is-1">{{ page.title }}</h1>
 
-      {% include tags.html %}
+      <div class="content">
+        <img src="{{ page.background }}" />
+        {{ content }}
+      </div>
+
       {% include shared/share.html %}
       {% include shared/author.html %}
-      {% include shared/related.html %}
       {% include shared/comments.html %}
     </div>
-  </div>
+  </article>
 </div>
