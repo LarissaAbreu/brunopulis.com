@@ -8,11 +8,7 @@
 {% include components/header/header.css %}
 {% include components/navigation/navigation.css %}
 {% include components/masthead/masthead.css %}
-{% include components/buttons/buttons.css %}
-
-{% include components/banner/banner.css %}
 {% include components/services/services.css %}
-{% include components/jobs/jobs.css %}
-{% include components/cards/cards.css %}
 {% include components/blog/blog.css %}
+{% include components/talks/talks.css %}
 {% include components/footer/footer.css %}
