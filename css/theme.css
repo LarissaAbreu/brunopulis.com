@@ -6,6 +6,7 @@
 html {
   font-family: var(--font-primary);
   color: var(--color-secondary);
+  scroll-behavior: smooth;
 }
 
 .color-primary-light {
