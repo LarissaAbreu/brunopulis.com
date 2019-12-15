@@ -1,5 +1,44 @@
 <footer class="footer has-background-black">
-  <div class="content">
-    <p class="has-text-centered">Feito Jekyll e <strong>Bulma</strong></p>
+  <div class="container is-fullhd">
+    <div class="columns is-12-mobile is-12-tablet">
+      <div class="column is-4">
+        <p class="footer-title">Mapa do site</p>
+        <ul class="footer-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/sobre">Sobre</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/palestras">Palestras</a></li>
+          <li><a href="/contato">Contato</a></li>
+          <li><a href="/acessibilidade">Acessibilidade desse site</a></li>
+        </ul>
+      </div>
+
+      <div class="column is-4">
+        <p class="footer-title">Serviços</p>
+        <ul class="footer-list">
+          <li>Wordpress</li>
+          <li>Design Responsivo</li>
+          <li>Consultoria em acessibilidade web</li>
+        </ul>
+      </div>
+
+      <div class="column is-4">
+        <p class="footer-title is-2">Redes sociais</p>
+        <ul class="footer-list">
+          <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">Github</a></li>
+          <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li><a href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          <li><a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">E-mail</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sub-footer">
+      <p><small>© 2019 brunopulis.com, Todos os direitos reservados.</small></p>
+    </div>
+
+    <div class="voltar-topo">
+      <a href="#site-header">Voltar ao topo</a>
+    </div>
   </div>
 </footer>

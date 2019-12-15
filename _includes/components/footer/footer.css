@@ -1,23 +1,45 @@
 .footer {
-	background-color: #f3f3f3;
+  position: relative;
 }
 
-.list-inline {
-	margin: 0;
-	padding: 0;
+.footer-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.copyright {
-	color: white;
-	font-size: 14px;
-	margin: 0;
-	text-align: center;
+.footer-title,
+.footer-list,
+.sub-footer {
+  color: white;
 }
 
-.copyright > a {
-	color: white;
+.voltar-topo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.love {
-	padding-left: 10px;
+.voltar-topo a {
+  color: white;
+  display: inline-block;
+  font-size: .8rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.voltar-topo a:after {
+  background: #fff;
+  border-radius: 50%;
+  color: #222;
+  content: "^";
+  display: block;
+  float: right;
+  font-size: 1.4em;
+  font-weight: 700;
+  height: 40px;
+  margin: -10px 0 0 10px;
+  padding: 11px 10px 8px;
+  text-align: center;
+  width: 40px;
 }
