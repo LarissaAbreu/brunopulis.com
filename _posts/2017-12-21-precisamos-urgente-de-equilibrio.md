@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Precisamos urgente de equilibrio"
+title: "Precisamos de equilibrio"
 date: 2017-12-21 00:06:48
-image: "/assets/images/posts/precisamos-de-equilibrio/equilibrio.jpg"
+image: "/assets/images/posts/equilibrio.jpg"
+background: "/assets/images/posts/equilibrio.jpg"
 alt: "Mulher sentada no canto do quarto apoiando a mão na cabeça pensativa"
 description: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
 tags:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dica matadora: 6 livros para estudar acessibilidade web"
+title: "Seis livros para estudar acessibilidade web"
 date: 2017-11-27
 image: "/assets/images/posts/books.jpg"
 alt: "Livros empilhados de diversas cores"

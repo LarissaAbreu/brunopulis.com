@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Expressões Regulares: Parte 2 - Metacaracteres"
+title: "Expressões Regulares: Metacaracteres"
 date: 2019-01-21 23:38:51
-image: "/assets/images/posts/regexp/regex.png"
+image: "/assets/images/posts/code.jpg"
 alt: "Abreviação em inglês de Expressões regulares. Ilustração"
 description: "Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los"
 tags:
