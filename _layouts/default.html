@@ -7,10 +7,12 @@ layout: compress
   {% include metadata/head.html %}
 
   <body>
-    {% include header.html %}
+    {% include components/header/header.html %}
 
     <main class="site-main">
-      {% include components/masthead/masthead.html %} {{ content }}
+      {% include components/masthead/masthead.html %}
+
+      {{ content }}
     </main>
 
     {% include components/footer/footer.html %}
