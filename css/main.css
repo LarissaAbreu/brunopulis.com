@@ -11,4 +11,5 @@
 {% include components/services/services.css %}
 {% include components/blog/blog.css %}
 {% include components/talks/talks.css %}
+{% include shared/author/author.css %}
 {% include components/footer/footer.css %}

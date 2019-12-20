@@ -6,15 +6,15 @@ layout: default
 <div class="container">
   <article class="columns blog-post">
     <div class="column is-8 is-offset-2">
-      <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
+      <time class="blog-post__date" datetime="{{ post.date | date_to_xmlschema }}">
         {{ page.date | date: date_format }}
       </time>
-      <span>/</span>
-      <span>
+      <span class="blog-post__separator">/</span>
+      <span class="blog-post__category">
         {%- for tag in page.categories -%}{{ tag }}{%- endfor -%}
       </span>
 
-      <h1 class="title is-1">{{ page.title }}</h1>
+      <h1 class="blog-post__title">{{ page.title }}</h1>
 
       <div class="content">
         <img src="{{ page.background }}" />
@@ -22,7 +22,7 @@ layout: default
       </div>
 
       {% include shared/share.html %}
-      {% include shared/author.html %}
+      {% include shared/author/author.html %}
       {% include shared/comments.html %}
     </div>
   </article>
