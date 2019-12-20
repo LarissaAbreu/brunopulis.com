@@ -24,9 +24,11 @@ O elemento de âncora é frequentemente citado como o principal bloco de constru
 
 Para ser um link válido, deve ter:
 
+<div class="grt alert">
 - um **atributo `href`** - a localização da âncora, página ou recurso;
 - **conteúdo do link** - texto descrevendo para onde o link está indo, pode ser um texto simples ou o `atributo alt` de uma imagem;
 - abrindo e fechando tags.
+</div>
 
 ## Escrever texto do link com sentido
 

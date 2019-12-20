@@ -70,3 +70,99 @@ h5,
 h6 {
   font-family: var(--font-secondary);
 }
+
+.grt {
+	max-width: 784px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 21px;
+	line-height: 36px;
+	padding: 22px;
+}
+.grt h1 {
+	font-size: 43px;
+	line-height: 68px;
+	margin-bottom: 36px;
+}
+.grt .title {
+	font-size: 55px;
+	line-height: 86px;
+	margin-bottom: 36px;
+}
+.grt h2 {
+	font-size: 34px;
+	line-height: 55px;
+	margin-top: 58px;
+	margin-bottom: 22px;
+}
+.grt h3 {
+	font-size: 27px;
+	line-height: 45px;
+	margin-top: 36px;
+	margin-bottom: 14px;
+}
+.grt h4 {
+	font-size: 21px;
+	line-height: 36px;
+	font-weight: bold;
+	margin-bottom: 9px;
+}
+.grt p, .grt ul, .grt ol, .grt blockquote, .grt pre, .grt .alert, .grt .note, .grt .box, .grt .footnotes {
+	margin-bottom: 36px;
+}
+.grt ul, .grt ol {
+	margin-left: 36px;
+}
+.grt li {
+	margin-bottom: 14px;
+}
+.grt blockquote {
+	padding-left: 22px;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.15);
+	border-width: 0 0 0 9px;
+}
+.grt sub, .grt sup {
+	padding: 0 1px;
+}
+.grt code, .grt pre, .grt kbd {
+	font-size: 19px;
+}
+.grt code {
+	background-color: rgba(0,0,0,0.08);
+	padding: 5px 6px;
+	border-radius: 9px;
+	margin: 0 1px;
+}
+.grt pre {
+	padding: 14px;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.15);
+	border-width: 0 0 0 9px;
+}
+.grt kbd {
+	background-color: #fff;
+	padding: 5px 6px;
+	border-radius: 6px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.45);
+	margin: 0 1px;
+}
+.grt .alert, .grt .note, .grt .box {
+	padding: 22px;
+}
+.grt .footnotes {
+	font-size: 17px;
+	line-height: 30px;
+	padding-top: 22px;
+	border-top: 1px dotted rgba(0,0,0,0.15);
+}
+.grt .footnotes p {
+	margin-bottom: 22px;
+}
+.grt ul ul, .grt ul ol, .grt ol ul, .grt ol ol, .grt blockquote.right p, .grt blockquote.left p, .grt .alert :last-child, .grt .note :last-child, .grt .box :last-child, .grt .footnotes :last-child {
+	margin-bottom: 0;
+}
+@media all and (min-width: 856px) {
+	.grt {
+		padding: 36px;
+	}
+}

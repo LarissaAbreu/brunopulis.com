@@ -1,4 +1,14 @@
 .author {
+  background: #f5f5f5;
   margin: 30px 0;
   padding: 3px;
+}
+
+.author-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.author__image {
+  padding: 15px;
 }

@@ -5,9 +5,9 @@ permalink: /acessibilidade
 section: acessibilidade
 ---
 
-Este site segue as diretrizes do e-MAG (Modelo de Acessibilidade em Governo Eletrônico), conforme as normas do Governo Federal, em obediência ao Decreto 5.296, de 2.12.2004.
+Este site segue as diretrizes de acessibilidade da LBI (Lei Brasileira de Inclusão) conforme as normas do Governo Federal.
 
-O termo acessibilidade significa incluir a pessoa com deficiência na participação de atividades como o uso de produtos, serviços e informações. Alguns exemplos são os prédios com rampas de acesso para cadeira de rodas e banheiros adaptados para deficientes.
+> O termo acessibilidade significa incluir a pessoa com deficiência na participação de atividades como o uso de produtos, serviços e informações.
 
 Na internet, acessibilidade refere-se principalmente às recomendações do WCAG (World Content Accessibility Guide) do W3C e no caso do Governo Brasileiro ao e-MAG (Modelo de Acessibilidade em Governo Eletrônico). O e-MAG está alinhado as recomendações internacionais, mas estabelece padrões de comportamento acessível para sites governamentais.
 
@@ -37,9 +37,3 @@ Decreto nº 6.949, de 25 de agosto de 2009 (link externo) - Promulga a Convenç�
 Decreto nº 7.724, de 16 de Maio de 2012 (link externo) - Regulamenta a Lei No 12.527, que dispõe sobre o acesso a informações.
 Modelo de Acessibilidade de Governo Eletrônico (link externo)
 Portaria nº 03, de 07 de Maio de 2007 - formato .pdf (35,5Kb) (link externo) - Institucionaliza o Modelo de Acessibilidade em Governo Eletrônico – e-MAG
-Dúvidas, sugestões e críticas:
-No caso de problemas com a acessibilidade do portal, favor acessar a Página de contato.
-
-Dicas, links e recursos úteis:
-Acessibilidade Legal (link externo)
-Acesso Digital (link externo)
