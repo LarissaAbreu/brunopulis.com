@@ -14,8 +14,10 @@ github_username: brunopulis
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
+
+# Pagination setup
 paginate: 6
-paginate_path: "/page/:num/"
+paginate_path: "blog/page:num/"
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
