@@ -2,7 +2,7 @@
 layout: post
 title: "Como a teologia me ajudou a palestrar"
 date: 2017-07-14 01:13:35
-image: "/assets/images/posts/devfestne/teologia.jpg"
+image: "/assets/images/posts/cover/cover-teologia.jpg"
 alt: "Uma bíblia com foco e duas velas próximas e um corredor ao fundo da imagem"
 description: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 tags:

@@ -12,6 +12,9 @@
       {{ site.data.site.seo.tagline }}
     {% endunless %}
   </title>
+
+  {% seo title=false %}
+
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!-- Google Authorship Markup -->
@@ -23,18 +26,18 @@
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   {% if page.image %}
-    <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
+    <meta property="twitter:image:src" content="{{ site.url }}/images/{{page.image }}">
   {% else %}
-    <meta property="twitter:image:src" content="{{ "/assets/images/blog-image.png" | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="twitter:image:src" content="{{ "/assets/images/blog-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
 
   <!-- Social: Facebook / Open Graph -->
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   {% if page.image %}
-    <meta property="og:image" content="{{ site.url }}{{page.image }}">
+    <meta property="og:image" content="{{ site.url }}/images/{{page.image }}">
   {% else %}
-    <meta property="og:image" content="{{ "/assets/images/blog-image.png" | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:image" content="{{ "/assets/images/blog-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
@@ -42,7 +45,11 @@
   <!-- Social: Google+ / Schema.org  -->
   <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta itemprop="image" content="{{ "/assets/images/blog-image.png" | prepend: site.baseurl | prepend: site.url }}"/>
+  {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}/images/{{page.image }}">
+  {% else %}
+    <meta property="og:image" content="{{ "/assets/images/blog-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
+  {% endif %}
 
   <link rel="icon" type="image/png" sizes="192x192" href="{{"/assets/images/icons/android-icon-192x192.png"}}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{"/assets/images/icons/favicon-32x32.png"}}">
@@ -64,10 +71,10 @@
   <link href="/assets/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
   <link async href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{"/css/main.css" | relative_url }}">
-  <link defer rel="stylesheet" href="{{"/assets/vendor/font-awesome/css/font-awesome.min.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" href="https://brunopulis.com/feed.xml">
 
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39069482-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

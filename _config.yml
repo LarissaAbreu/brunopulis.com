@@ -6,6 +6,9 @@ baseurl: ""
 url: "brunopulis.netlify.com"
 
 # Social Profiles
+author:
+  twitter: obrunopulis
+
 twitter_username: obrunopulis
 linkedin_username: pulis
 github_username: brunopulis
@@ -15,19 +18,9 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 
-gems: [jekyll-paginate-v2]
-
-# Pagination settings
-pagination:
-  enabled: true
-  per_page: 6
-  sort_reverse: true
-  sort_field: 'date'
-  title: ':title'
-  trail:
-    before: 2
-    after: 2
-
+# Pagination setup
+paginate: 6
+paginate_path: "blog/page:num/"
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
@@ -35,10 +28,15 @@ section: true
 
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
+  - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 collections:
+  # portfolio:
+  #   output: true
+  #   permalink: /portfolio/:path/
+
   palestras:
     output: true
     permalink: /palestras/:path/
@@ -59,3 +57,4 @@ exclude:
   - vendor/cache
   - vendor/gems
   - vendor/ruby
+  - .bundle/

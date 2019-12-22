@@ -2,7 +2,7 @@
 layout: post
 title: "Como buscar tags do wordpress sem link"
 date: 2017-10-02 00:43:26
-image: "/assets/images/posts/buscar-tags/wp.png"
+image: "/assets/images/posts/cover/cover-wp.jpg"
 alt: "Nuvem de tags com palavras relacionadas ao Wordpress"
 description: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 tags:

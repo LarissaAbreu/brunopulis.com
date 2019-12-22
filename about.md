@@ -9,7 +9,7 @@ intro_paragraph: |
 ---
 
 
-## Olá!
+## Olá
 
 Meu nome é Bruno Pulis, sou de Belo Horizonte, tenho 30 anos e trabalho como <strong>Front-End Developer</strong> desde 2010.
 
@@ -22,6 +22,7 @@ Me formei pela Faculdade Pitágoras em 2008 em **Sistemas para Internet** e esto
 <p>Mantenho o <a href="https://github.com/brunopulis/awesome-a11y" target="_blank" rel="noopener noreferrer"><span lang="en">Awesome A11y</span></a> no Github, com referências sobre acessibilidade web.</p>
 
 {: .section-heading}
+
 ### Hobbies
 
 No meu tempo livre, dedico-me em estudar teologia, escrever e tocar violão.
