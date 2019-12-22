@@ -6,6 +6,9 @@ baseurl: ""
 url: "brunopulis.netlify.com"
 
 # Social Profiles
+author:
+  twitter: obrunopulis
+
 twitter_username: obrunopulis
 linkedin_username: pulis
 github_username: brunopulis
@@ -26,6 +29,7 @@ section: true
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 collections:
