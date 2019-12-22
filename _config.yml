@@ -27,9 +27,9 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
+  # portfolio:
+  #   output: true
+  #   permalink: /portfolio/:path/
 
   palestras:
     output: true
@@ -51,3 +51,4 @@ exclude:
   - vendor/cache
   - vendor/gems
   - vendor/ruby
+  - .bundle/
