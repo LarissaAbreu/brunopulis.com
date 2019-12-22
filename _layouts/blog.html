@@ -1,5 +1,7 @@
 ---
 layout: default
+pagination:
+  enabled: true
 ---
 
 <section class="section">
@@ -19,8 +21,7 @@ layout: default
                   <a class="card-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
                 </h2>
 
-                  <p class="blog__description">{{ post.introduction | strip_html | truncatewords: 50 }}</p>
-
+                <p class="blog__description">{{ post.introduction | strip_html | truncatewords: 50 }}</p>
                 <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
                   {% include shared/date.html date=post.date %}
                 </time>
@@ -34,6 +35,22 @@ layout: default
       </div>
     </div>
 
-    {% include pagination.html %}
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a onclick="ga('send', 'event', 'pagination', 'click', 'page next')" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a onclick="ga('send', 'event', 'pagination', 'click', 'page previous')" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
+
+
+
   </div>
 </section>

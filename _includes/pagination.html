@@ -1,10 +1,16 @@
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous" onclick="ga('send', 'event', 'pagination', 'click', 'page previous')">⇠</a>
+{% if paginator.total_pages > 1 %}
+  <ul class="pager">
+      {% if paginator.previous_page %}
+      <li class="previous">
+          <a onclick="ga('send', 'event', 'pagination', 'click', 'page next')" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="next">
+          <a onclick="ga('send', 'event', 'pagination', 'click', 'page previous')" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      </li>
+      {% endif %}
+  </ul>
   {% endif %}
-  <span class="page_number ">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next" onclick="ga('send', 'event', 'pagination', 'click', 'page next')">⇢</a>
-  {% endif %}
-  </div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
