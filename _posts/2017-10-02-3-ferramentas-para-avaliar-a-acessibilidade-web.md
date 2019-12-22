@@ -2,7 +2,7 @@
 layout: post
 title: "3 ferramentas para avaliar a acessibilidade web"
 date: 2017-10-02
-image: "/assets/images/posts/tools-a11y/tools.jpg"
+image: "/assets/images/posts/cover/cover-tools.jpg"
 alt: "Um notebook ao centro da mesa com diversas ferramentas ao seu redor, representando sua utilidade"
 description: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 tags:
