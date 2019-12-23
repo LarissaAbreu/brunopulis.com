@@ -57,7 +57,7 @@
               $('#contactForm').trigger("reset");
             },
             complete: function () {
-              setTimeout(function () {
+              setTimeout(() => {
                 $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
               }, 1000);
             }

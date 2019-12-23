@@ -1,5 +1,5 @@
 <section class="comments">
-  <h3>Comentários</h3>
+  <h3 class="title is-3">Comentários</h3>
   <div id="disqus_thread"></div>
 </section>
 
@@ -21,7 +21,7 @@
 
   window.onscroll = function(e) {
     if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 500)) {
-      if (disqus_loaded == false) {
+      if (disqus_loaded === false) {
         load_disqus();
       }
     }
