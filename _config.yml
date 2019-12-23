@@ -3,10 +3,15 @@ email: brunopulis@protonmail.com
 description: Procurando um profissional para tornar seus produtos digitais acessíveis? Vamos conversar, minha missão é tornar a web mais simples e acessível
 author: Bruno Pulis
 baseurl: ""
-url: "brunopulis.netlify.com"
+url: "brunopulis.com"
+
+webmaster_verifications:
+  google: DJZadsIuwm42MwJftKIXWE3cGrZLTlOTYdMf55gIVS8
+  bing: A1D6C4C7B86E7BF77A38CFC9B416AD04
 
 # Social Profiles
 author:
+  name: Bruno Pulis
   twitter: obrunopulis
 
 twitter_username: obrunopulis
