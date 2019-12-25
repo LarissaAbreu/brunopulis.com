@@ -12,3 +12,7 @@
 .navbar-item {
   color: var(--color-white);
 }
+
+.is-active .navbar-item {
+  color: #000 !important;
+}
