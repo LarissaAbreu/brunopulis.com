@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% include shared/breadcrumbs.html %}
-
 <div class="container">
   <div class="columns">
-    <div class="column is-8 is-offset-2">
+    <div class="column is-12">
+      {% include shared/breadcrumbs/breadcrumbs.html %}
+
       {{ content }}
     </div>
   </div>

@@ -2,24 +2,28 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<div class="container">
+  {% include shared/breadcrumbs/breadcrumbs.html %}
 
-{% include page-intro.html %}
+  <div class="columns blog-post">
+    <div class="column">
+      <h2 class="title is-2">{{ page.title }}</h2>
 
-{% assign palestras = site.palestras | sort: 'date' | reverse %}
-{% for palestra in palestras %}
-  <article class="post-preview">
-    <a href="{{ post.url }}">
-      <h2 class="post-title">{{ palestra.title }}</h2>
-      {% if palestra.subtitle %}
-        <h3 class="post-subtitle">{{ palestra.subtitle }}</h3>
-      {% else %}
-        <h3 class="post-subtitle">{{ palestra.excerpt | strip_html | truncatewords: 15 }}</h3>
-      {% endif %}
-    </a>
-    <p class="post-meta">
-      {% include metadata/metas.html %}
-    </p>
-  </article>
-  <hr>
-{% endfor %}
+      {% include page-intro.html %}
+
+      {% assign palestras = site.palestras | sort: 'date' | reverse %}
+      {% for palestra in palestras %}
+        <article class="post-preview">
+          <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
+            <h3 class="subtitle is-3 post-title">{{ palestra.title }}</h3>
+          </a>
+          <div class="post-meta">
+            <time><strong>Data</strong> {{ palestra.event_date | date: "%d/%m/%y" }}</time>
+            <p><strong>Evento:</strong> {{ palestra.event }}</p>
+          </div>
+        </article>
+        <hr>
+      {% endfor %}
+    </div>
+  </div>
+</div>
