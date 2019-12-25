@@ -43,3 +43,10 @@
   text-align: center;
   width: 40px;
 }
+
+@media(max-width: 500px) {
+  .voltar-topo {
+    position: inherit;
+    bottom: 0;
+  }
+}
