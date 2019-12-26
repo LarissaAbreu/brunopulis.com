@@ -90,12 +90,62 @@ hr {
   line-height: 37px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
   color: var(--saphire-blue);
   font-family: var(--font-secondary);
   line-height: 1.85;
+}
+
+.post-blog img {
+  display: block;
+  margin-bottom: 1rem;
+  margin: auto;
+  max-width: 100%;
+}
+
+img,
+embed,
+iframe,
+object,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .title-container {
+    height: initial;
+  }
+
+  .title-container .background-cover {
+    background-image: none !important;
+  }
+
+  .title-container .title {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: initial;
+    line-height: initial;
+    max-width: 100%;
+    padding: 1rem;
+    position: relative;
+    text-shadow: none;
+  }
+
+  .title-container .background-cover .background-shroud {
+    background: none;
+    height: initial;
+  }
+
+  .title-container .date {
+    bottom: initial;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+  }
 }
