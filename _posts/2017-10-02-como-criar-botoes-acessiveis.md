@@ -3,6 +3,7 @@ layout: post
 title: "Como criar botões acessíveis"
 date: 2017-10-02
 image: "/assets/images/posts/cover/cover-links.jpg"
+featured: "/assets/images/posts/links.jpg"
 alt: "Botão azul escrito Clique aqui"
 description: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 tags:
