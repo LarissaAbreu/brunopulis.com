@@ -15,4 +15,5 @@
 
 {% include shared/author/author.css %}
 {% include shared/breadcrumbs/breadcrumbs.css %}
+{% include shared/share/share.css %}
 {% include shared/pagination/pagination.css %}
