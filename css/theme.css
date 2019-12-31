@@ -100,6 +100,12 @@ hr {
   line-height: 1.85;
 }
 
+.content a,
+.content a:focus {
+  color: var(--saphire-blue);
+  text-decoration: underline;
+}
+
 .post-blog img {
   display: block;
   margin-bottom: 1rem;
@@ -107,13 +113,16 @@ hr {
   max-width: 100%;
 }
 
-img,
+img {
+  max-width: 100%;
+}
+
 embed,
 iframe,
 object,
 video {
-  height: auto;
-  max-width: 100%;
+  min-height: 500px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
