@@ -21,7 +21,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 a,
 a:hover,
 a:focus {
@@ -42,20 +41,15 @@ hr {
 }
 
 .title-container {
-  height: calc(100vh - 70px);
+  height: 400px;
 }
 
 .title-container .title {
-  bottom: 15%;
   color: #fbfbfb;
   font-family: var(--font-secondary);
   font-size: 4vw;
   font-weight: 300;
-  left: 0;
   margin: auto;
-  max-width: 80%;
-  position: absolute;
-  right: 0;
   text-align: center;
   text-shadow: 2px 2px 2px #111;
 }
@@ -78,8 +72,11 @@ hr {
 }
 
 .title-container .background-cover .background-shroud {
+  align-content: center;
+  align-items: center;
   background: linear-gradient(to top, rgba(17,17,17,0.8), rgba(17,17,17,0.5), transparent, transparent);
-  height: calc(100vh - 70px);
+  display: flex;
+  height: 400px;
   position: relative;
   transition: all .4s ease-in-out;
 }
@@ -88,6 +85,10 @@ hr {
   font-family: var(--font-primary);
   font-size: 1.25rem;
   line-height: 37px;
+}
+
+.content {
+  padding: 0 0 20px 0;
 }
 
 .content h2,
@@ -104,6 +105,11 @@ hr {
 .content a:focus {
   color: var(--saphire-blue);
   text-decoration: underline;
+}
+
+.content-blog {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .post-blog img {

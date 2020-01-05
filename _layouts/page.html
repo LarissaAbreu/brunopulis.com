@@ -3,9 +3,14 @@ layout: default
 ---
 
 <div class="container">
-  <div class="columns">
-    <div class="column is-12">
-      {% include shared/breadcrumbs/breadcrumbs.html %}
+  {% include shared/breadcrumbs/breadcrumbs.html %}
+
+  <div class="columns blog-post">
+    <div class="column">
+      <h2 class="title is-2">{{ page.title }}</h2>
+
+      {% include page-intro.html %}
+
 
       {{ content }}
     </div>

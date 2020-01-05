@@ -1,46 +1,45 @@
 ---
 layout: default
 pagination:
-  enabled: true
+enabled: true
 ---
 
-<section class="section">
+<div class="container">
+  {% include shared/breadcrumbs/breadcrumbs.html %}
+
+  <h2 class="title is-1">{{ page.title }}</h2>
+  {% include page-intro.html %}
+
   <div class="container">
-    {% include shared/breadcrumbs/breadcrumbs.html %}
+    <div class="blog__list columns is-multiline">
+      {% for post in paginator.posts %}
+      <div class="column is-12-mobile is-6-tablet is-4-desktop">
+        <article class="blog__item card" style="background-size:cover; background: url({{ post.image }})">
+          <div class="card-content">
+            <h2 class="blog__title card-title">
+              <a class="card-link"
+                href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+            </h2>
 
-    <h2 class="title is-1">{{ page.title }}</h2>
-    {% include page-intro.html %}
+            <p class="blog__description">
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+                {{ post.introduction | strip_html | truncatewords: 50 }}
+              </a>
+            </p>
 
-    <div class="container">
-      <div class="blog__list columns is-multiline">
-        {% for post in paginator.posts %}
-          <div class="column is-12-mobile is-6-tablet is-4-desktop">
-            <article class="blog__item card" style="background-size:cover; background: url({{ post.image }})">
-              <div class="card-content">
-                <h2 class="blog__title card-title">
-                  <a class="card-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
-                </h2>
-
-                <p class="blog__description">
-                  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-                    {{ post.introduction | strip_html | truncatewords: 50 }}
-                  </a>
-                </p>
-
-                <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
-                  {% include shared/date.html date=post.date %}
-                </time>
-                <div class="tags">
-                  <div class="tag">{{ post.categories }}</div>
-                </div>
-              </div>
-            </article>
+            <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
+              {% include shared/date.html date=post.date %}
+            </time>
+            <div class="tags">
+              <div class="tag">{{ post.categories }}</div>
+            </div>
           </div>
-        {% endfor %}
-        {% include shared/pagination/pagination.html %}
+        </article>
       </div>
+      {% endfor %}
+      {% include shared/pagination/pagination.html %}
     </div>
-
-
   </div>
-</section>
+
+
+</div>
