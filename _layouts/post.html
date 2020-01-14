@@ -16,16 +16,18 @@ layout: default
   </div>
 </div>
 
-<div class="container">
-  <article class="columns section post-blog">
-    <div class="column">
-      <div class="content content-blog">
-        {{ content }}
+<main>
+  <div class="container">
+    <article class="columns section post-blog">
+      <div class="column">
+        <div class="content content-blog">
+          {{ content }}
 
-        {% include shared/share/share.html %}
-        {% include shared/author/author.html %}
-        {% include shared/comments.html %}
+          {% include shared/share/share.html %}
+          {% include shared/author/author.html %}
+          {% include shared/comments.html %}
+        </div>
       </div>
-    </div>
-  </article>
-</div>
+    </article>
+  </div>
+</main>
