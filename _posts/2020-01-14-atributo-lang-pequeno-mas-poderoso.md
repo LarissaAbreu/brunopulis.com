@@ -12,15 +12,15 @@ twitter_text: Descubra o poder do atributo lang e como utilizar ele da forma cor
 introduction: Descubra o poder do atributo lang e como utilizar ele da forma correta
 ---
 
-Nesse post iremos explorar um dos atributos HTML que passam desapercibidos no dia a dia, o atributo `lang`.
+Nesse post iremos explorar um dos atributos HTML que passam desapercebidos no dia a dia, o atributo `lang`.
 
-O atributo `lang` ajuda a definir o idioma de um elemento: a língua em que elementos não-editáveis são escritos, ou a língua em que elementos editáveis devem ser escritos pelo usuário<sup>[1]</sup>.
+O atributo`lang` ajuda a definir o idioma de um elemento: a língua em que elementos não-editáveis são escritos, ou a língua em que elementos editáveis devem ser escritos pelo usuário<sup>[1]</sup>.
 
 ## Cenário de exemplo
 
 <span lang="en">John</span> é um jornalista cego, que trabalha para uma agência internacional de notícias. Ele faz correspondência dela no Brasil. Um dos maiores passatempos de John é ler resenhas de livros e breves sumários para realizar o seu sonho: montar uma grande biblioteca.
 
-John estava procurando uma resenha sobre o livro [Peter Pan](https://pt.wikipedia.org/wiki/Peter_Pan), quando encontrou uma página escrita em inglês, porém, o desenvolvedor ao criar a página utilizou a marcação da linguagem em `pt-br` ou seja, em português. 
+John estava procurando uma resenha sobre o livro [Peter Pan](https://pt.wikipedia.org/wiki/Peter_Pan), quando encontrou uma página escrita em inglês. Porém, o desenvolvedor, ao criar a página, utilizou a marcação da linguagem em `pt-br` ou seja, em português.
 
 A experiência de John, foi mais ou menos a seguinte:
 
@@ -28,9 +28,9 @@ A experiência de John, foi mais ou menos a seguinte:
 
 ### Afinal, o que aconteceu?
 
-Como vocês podem perceber, o título e os dois primeiros paragráfos soaram totalmente estranhos, parecido com o [Joel Santana](https://pt.wikipedia.org/wiki/Joel_Santana) tentando falar em inglês.
+Como vocês podem perceber, o título e os dois primeiros parágrafos soaram totalmente estranhos, parecido com o [Joel Santana](https://pt.wikipedia.org/wiki/Joel_Santana) tentando falar em inglês.
 
-Porém, os dois últimos paragráfos estão totalmente compreensíveis.
+Porém, os dois últimos parágrafos estão totalmente compreensíveis.
 
 O que aconteceu no vídeo é algo bem simples, mas se não prestarmos atenção o conteúdo pode ficar incompreensível. A marcação HTML desse trecho é: 
 
@@ -59,7 +59,7 @@ O documento HTML acima deve ser observado com cuidado, pois existem dois pontos 
 * Por definição o documento HTML, **deve conter** uma linguagem definida para o escopo global. Quando isso não acontece, o browser seleciona automaticamente o idioma do browser;
 * Tags HTML, podem receber o atributo `lang` para serem lidos de forma correta.
 
-Já pensou ter que consumir conteúdo de páginas que possuem esse tipo de problema? O quão frustante isso pode ser? Essa experiência basicamente acontece todos os dias quando pessoas como que possuem deficiência visual, surdo cegos e cognitiva tentam acessar páginas com idiomas com a definição de linguagem errada.
+Já pensou ter que consumir conteúdo de páginas que possuem esse tipo de problema? O quão frustante isso pode ser? Essa experiência basicamente acontece todos os dias quando pessoas que possuem deficiência visual, auditiva e cognitiva tentam acessar páginas com idiomas com a definição de linguagem errada.
 
 Uma possível solução para o problema seria: 
 
@@ -83,11 +83,11 @@ Uma possível solução para o problema seria:
 
 <hr/>
 
-Ao incluirmos o escopo de global de linguagem, o documento usa essas configurações para toda a página, assim, o leitor de tela irá carregar a entonação e sotaque daquela linguagem especificada. 
+Ao incluirmos o escopo de global de linguagem, o documento usa essas configurações para toda a página. Assim, o leitor de tela irá carregar a entonação e sotaque daquela linguagem especificada.
 
 Algo muito impressionante, não é mesmo?
 
-Uma dica de ouro é: 
+Uma dica de ouro é:
 
 > Usar as tags e atributos corretos para gerar uma boa experiência de uso.
 
@@ -97,13 +97,14 @@ A <abbr lang="en" title="Web Content Accessibility Guidelines">WCAG</abbr> um do
 
 O nível de impacto para os usuários é considerado **alto**.
 
-O elemento do documento HTML deve conter um atributo lang válido ou deve corresponder a um código lang válido para usuários de leitores de tela multilíngues que podem preferir um idioma diferente do padrão.
-Todo documento HTML é obrigatório definir o idioma da página.
+O elemento do documento HTML deve conter um atributo lang válido ou deve corresponder a um código lang válido para usuários de leitores de tela multilíngues que podem preferir um idioma diferente do padrão. 
+
+Em todo documento HTML é **obrigatório definir o idioma da página**.
+
 
 ## Conclusão
 
-Percebemos que o atributo é extremamente importante para nossas páginas web e sua implementação é bastante simples. Existem casos em sites multilíngues que o atributo pode ser alterado dinamicamente via linguagens de programação.
-Meu conselho é: sempre que iniciar o desenvolvimento de uma página **defina a linguagem** e não tenha esse tipo de problema. 
+Percebemos que o atributo é extremamente importante para nossas páginas web e sua implementação é bastante simples. Existem casos em sites multilíngues que o atributo pode ser alterado dinamicamente via linguagens de programação. Meu conselho é: sempre que iniciar o desenvolvimento de uma página **defina a linguagem** e não tenha esse tipo de problema.
 
 Gostou? Tem alguma dúvida ou sugestão? Escreva um comentário. 
 
