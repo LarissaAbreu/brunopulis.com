@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>
     {% if page.title %}
       {{page.title}}
@@ -14,7 +14,6 @@
   </title>
 
   {% include metadata/open-graph.html %}
-  {% seo title=false %}
   <meta content="#000000" name="msapplication-TileColor">
   <meta content="#000000" name="theme-color">
   <meta name="msapplication-TileImage" content="{{"/assets/images/icons/ms-icon-144x144.png"}}">
@@ -36,8 +35,6 @@
   <link href="/assets/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
   <link async href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700|Open+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{"/css/main.css" | relative_url }}">
-  <link rel="canonical" href="https://brunopulis.com{{ page.url | replace:'index.html','' }}" />
-  <link rel="alternate" type="application/rss+xml" href="https://brunopulis.com/feed.xml">
 
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39069482-1"></script>
