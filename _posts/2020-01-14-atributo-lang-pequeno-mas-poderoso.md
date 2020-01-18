@@ -24,7 +24,7 @@ John estava procurando uma resenha sobre o livro [Peter Pan](https://pt.wikipedi
 
 A experiência de John, foi mais ou menos a seguinte:
 
-<iframe title="Vídeo demonstrando o uso do atributo lang" src="https://www.youtube.com/embed/IFmKQ5e17Jo" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="Vídeo demonstrando o uso do atributo lang" src="https://www.youtube.com/embed/IFmKQ5e17Jo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Afinal, o que aconteceu?
 

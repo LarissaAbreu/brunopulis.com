@@ -1,10 +1,13 @@
 <header id="site-header">
-  <nav class="navbar is-dark m-auto" role="navigation" aria-label="Navegação principal">
+  <nav class="navbar is-dark m-auto" aria-label="Navegação principal">
     <div class="container">
       <div class="navbar-brand">
+        {% if page.index %}
         <h1 class="site-title">
           <a class="navbar-item" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
         </h1>
+        {% endif %}
+        <a class="site-title navbar-item" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
         <a role="button" class="navbar-burger burger" aria-label="Menu de navegação" aria-expanded="false"
           data-target="navbarBasicExample">
