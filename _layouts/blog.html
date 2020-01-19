@@ -17,8 +17,7 @@ enabled: true
         <article class="blog__item card" style="background-size:cover; background: url({{ post.image }})">
           <div class="card-content">
             <h2 class="blog__title card-title">
-              <a class="card-link"
-                href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+              <a class="card-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
             </h2>
 
             <p class="blog__description">
