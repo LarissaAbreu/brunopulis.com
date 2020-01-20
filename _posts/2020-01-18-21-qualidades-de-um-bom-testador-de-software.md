@@ -2,11 +2,11 @@
 layout: post
 title: "21 Qualidades de um bom testador de software"
 date: 2020-01-18 20:26:35
-image: '/assets/images/default-image.jpg'
-featured: '/assets/images/posts/default-image.jpg'
+image: '/assets/images/posts/qualidade.jpg'
+featured: '/assets/images/posts/cover/cover-qualidade.jpg'
 alt:
 description: 
-categories:
+categories: Dicas
 tags:
 twitter_text:
 introduction: |-
