@@ -1,0 +1,46 @@
+<a class="skippy sr-only sr-only-focusable" href="#content">
+  <span class="skippy-text">Ir para conteúdo principal</span>
+</a>
+
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bg-dark fixed-top">
+ <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/images/logo.png" alt="Bruno Pulis" width="36" height="36" />
+    </a>
+
+    <div class="navbar-nav-scroll">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        {% for item in site.navigation %}
+          <li class="nav-item">
+            <a class="nav-link" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');" href="{{ item.link | relative_url }}" itemprop="url">
+              <span itemprop="name">{{ item.name }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <ul class="navbar-nav ml-md-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/canaldobrunopulis/" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>

@@ -1,0 +1,48 @@
+<div class="col-md-4"  itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="card mb-4 shadow-sm">
+    {% if post.categories %}
+      {% assign categories = post.categories %}
+      <span class="post-card__label">
+        {% for category in categories %}
+          <a href="{{site.baseurl}}/categories/#{{category|slugize}}" class="label"> {{ category }} </a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </span>
+    {% endif %}
+    <a href="{{ post.url | relative_url }}">
+      {% if post.featured %}
+        <figure class="post-card__thumb">
+          <img src="{{post.featured}}" class="card-img-top" width="100%" height="225" alt="{{post.alt}}" />
+        </figure>
+      {% else %}
+        <figure class="post-card__thumb">
+          <img src="/assets/images/blog-image.jpg" />
+        </figure>
+      {% endif %}
+    
+      <div class="card-body">
+        <h2>{{ post.title | strip_html | truncate: 150 }}</h2>
+        {% assign date_format = site.sleek.date_format | default: "%b %-d, %Y" %}
+        <span class="post-card__meta">
+          <time>{{ post.date | date: date_format }}</time>
+        </span>
+
+        {% if post.summary %}
+          <p class="card-text">{{ post.summary | strip_html | truncatewords:20 }}</p>
+        {% else %}
+          <p class="card-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
+        {% endif %}
+        <div class="d-flex justify-content-between align-items-center">
+          <small class="text-muted">
+            {% assign words = content | number_of_words %}
+              {% if words < 360 %}
+                1 min
+              {% else %}
+                {{ words | divided_by:180 }} mins
+            {% endif %} de leitura
+          </small>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
