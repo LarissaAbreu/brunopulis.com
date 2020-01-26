@@ -3,15 +3,38 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="pt-br" class="fontawesome-i2svg-active fontawesome-i3svg-complete">
+<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
-
   <body>
-    {% include components/header/header.html %}
+    {% include components/header.html %}
 
-    {{ content }}
+    <div class="jumbotron text-white">
+      <div class="container">
+        <h1 class="hero__title">Bruno Pulis</h1>
+        <p class="hero__meta">Desenvolvimento web e consultoria em acessibilidade web.</p>
+      </div>
+    </div>
 
-    {% include components/footer/footer.html %}
-    {% include components/libras/libras.html %}
+    <section class="section services" id="services">
+      {% include components/services.html %}
+    </section>
+
+    <section class="newsletter p-40" id="newsletter">
+      {% include components/newsletter.html %}
+    </section> 
+
+    <section class="section blog" id="blog">
+      <div class="container">
+        <h2 class="section__title section-heading">{{ site.data.home.blog.title }}</h2>
+        <div class="row" itemscope="" itemtype="http://schema.org/Blog">
+          {% for post in site.posts  limit: 6 %}
+            {% include components/blog.html %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    
+    {% include components/footer.html %}
+    {% include components/libras.html %}
   </body>
 </html>

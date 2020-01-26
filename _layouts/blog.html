@@ -1,44 +1,38 @@
 ---
-layout: default
+layout: compress
 pagination:
 enabled: true
 ---
 
-<div class="container">
-  {% include shared/breadcrumbs/breadcrumbs.html %}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
+  {% include metadata/head.html %}
+  <body class="site">
+    {% if site.google_tag_manager %}
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
 
-  <h2 class="title is-1">{{ page.title }}</h2>
-  {% include page-intro.html %}
+    {% include components/header.html %}
 
-  <div class="container">
-    <div class="blog__list columns is-multiline">
-      {% for post in paginator.posts %}
-      <div class="column is-12-mobile is-6-tablet is-4-desktop">
-        <article class="blog__item card" style="background-size:cover; background: url({{ post.image }})">
-          <div class="card-content">
-            <h2 class="blog__title card-title">
-              <a class="card-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
-            </h2>
-
-            <p class="blog__description">
-              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-                {{ post.introduction | strip_html | truncatewords: 50 }}
-              </a>
-            </p>
-
-            <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">
-              {% include shared/date.html date=post.date %}
-            </time>
-            <div class="tags">
-              <div class="tag">{{ post.categories }}</div>
-            </div>
-          </div>
-        </article>
+    <div class="hero--small">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ page.title }}</h1>
       </div>
-      {% endfor %}
-      {% include shared/pagination/pagination.html %}
     </div>
-  </div>
-
-
-</div>
+    
+    <main class="site__content">
+      <div class="container">
+        <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
+          {% for post in paginator.posts %}
+            {% include components/blog.html %}
+          {% endfor %}
+          {% include shared/pagination/pagination.html %}
+        </div>
+      </div>
+    </main>
+    {% include components/footer.html %}
+  </body>
+</html>
