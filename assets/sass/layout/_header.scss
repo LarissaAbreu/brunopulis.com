@@ -1,0 +1,14 @@
+.header {
+  padding: 20px 0;
+}
+
+.header__navigation {
+  @extend .navbar;
+  @extend .navbar-expand-md;
+  @extend .justify-content-center;
+}
+
+.header__brand {
+  margin-right: 0;
+  @extend .nav-brand;
+}

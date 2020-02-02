@@ -1,0 +1,15 @@
+.section-title {
+  color: $bg-default;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+
+  &:after {
+    content: '';
+    display: block;
+    background: $bg-default;
+    height: 2px;
+    width: 15%;
+    margin: 10px auto auto auto;
+  }
+}
