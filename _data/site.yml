@@ -9,3 +9,8 @@ items:
     name: Blog
   - link: palestras
     name: Palestras
+
+jobs:
+  yep: No momento estou disponível para novos projetos
+  nope: No momento não estou disponível para novos projetos
+  nope-class: bg-danger
