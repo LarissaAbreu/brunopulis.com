@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Global Accessibility Awarenss Day 2017"
 date: 2017-11-09
 image: "/assets/images/posts/cover/cover-a11y.jpg"
@@ -9,7 +9,8 @@ description: "Resumo de como foi minha participação no Global Accessibility Aw
 tags:
   - reviews
   - a11y
-categories: eventos
+categories: 
+  - Eventos
 twitter_text: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 introduction: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 ---

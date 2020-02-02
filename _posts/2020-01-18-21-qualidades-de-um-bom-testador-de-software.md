@@ -1,13 +1,16 @@
 ---
-layout: post
-title: "21 Qualidades de um bom testador de software"
+layout: single-blog
+title: "21 Qualidades de um bom QA"
 date: 2020-01-18 20:26:35
-image: '/assets/images/default-image.jpg'
-featured: '/assets/images/posts/default-image.jpg'
+image: '/assets/images/posts/cover/cover-qualidade.jpg'
+featured: '/assets/images/posts/qualidade.jpg'
 alt:
 description: 
-categories:
+categories: 
+  - Qualidade
 tags:
+  - qualidade de software
+  - skills
 twitter_text:
 introduction: |-
     Toda as empresas buscam profissionais que possam compor seu quadro de funcionários com excelência e qualidade.

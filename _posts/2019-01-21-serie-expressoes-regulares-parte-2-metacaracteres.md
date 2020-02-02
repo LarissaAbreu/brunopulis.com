@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Expressões Regulares: Metacaracteres"
 date: 2019-01-21 23:38:51
 image: "/assets/images/posts/cover/cover-code.jpg"
@@ -9,7 +9,7 @@ description: "Vamos entender os metacaracteres que são essenciais para criar ex
 tags:
   - regex
   - metacaracteres
-categories: série
+categories: Séries
 twitter_text: "Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los"
 introduction: "Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los"
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Como buscar tags do wordpress sem link"
 date: 2017-10-02 00:43:26
 image: "/assets/images/posts/cover/cover-wp.jpg"
@@ -9,7 +9,8 @@ description: "Aprenda como retornar o nome das tags do Wordpress sem o link padr
 tags:
   - wordpress
   - seo
-categories: wordpress
+categories: 
+  - Wordpress
 twitter_text: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 introduction: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Ignore o WCAG! Teste de usuários com pessoas com deficiência em vez disso."
 date: 2017-11-13
 image: "/assets/images/posts/cover/cover-wcag.jpg"
@@ -9,7 +9,8 @@ description: "Aprenda com essas dicas como testar acessibilidade dos seus produt
 tags:
   - wcag
   - teste usabilidade
-categories: a11y
+categories: 
+  - Acessibilidade
 twitter_text: "Aprenda como testar acessibilidade dos seus produtos digitais da forma correta"
 introduction: "Aprenda como testar acessibilidade dos seus produtos digitais da forma correta"
 ---

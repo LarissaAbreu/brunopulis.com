@@ -1,14 +1,12 @@
 ---
-layout: post
+layout: single-blog
 title: "Criando links acessíveis e válidos"
 date: 2019-04-21 10:20:00
 image: "/assets/images/posts/cover/cover-links.jpg"
 featured: "/assets/images/posts/links.jpg"
 alt: "Duas páginas da internet se conectando através de um link. Ilustração"
 description: "Vamos aprender a escrever links válidos e acessíveis para todas as pessoas"
-main-class:
-color:
-categories: tutorial
+categories: Acessibilidade
 tags:
   - links
   - a11y

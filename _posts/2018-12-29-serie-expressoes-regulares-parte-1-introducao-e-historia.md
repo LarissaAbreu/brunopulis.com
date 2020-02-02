@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Expressões Regulares: Introdução e História"
 date: 2018-12-29 03:28:43
 image: "/assets/images/posts/cover/cover-code.jpg"
@@ -9,7 +9,7 @@ description: "Nesta série, vamos estudar sobre a história e a introdução das
 tags:
   - regex
   - metacaracteres
-categories: série
+categories: Séries
 twitter_text: "Nesta série, vamos estudar sobre expressões regulares e compreender os benefícios de sua utilização."
 introduction: "Nesta série, vamos estudar sobre a história e a introdução das expressões regulares e compreender os benefícios de sua utilização."
 ---

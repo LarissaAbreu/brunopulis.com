@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Acessibilidade: um caso de amor"
 date: 2015-02-26
 image: "/assets/images/posts/cover/cover-stormtropper.jpg"
@@ -9,7 +9,8 @@ description: "Como toda boa história de amor, ela inicia-se com empatia e aprox
 tags:
 - a11y
 - empatia
-categories: random
+categories: 
+  - Acessibilidade
 twitter_text: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
 introduction: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
 ---

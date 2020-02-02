@@ -1,15 +1,15 @@
 ---
-layout: post
-title: "Explorando o atributo lang para melhorar a semântica"
+layout: single-blog
+title: "Explorando o atributo lang"
 date: 2020-01-14 01:11:52
 image: '/assets/images/posts/cover/cover-languages.jpg'
 featured: '/assets/images/posts/languages.jpg'
 alt: Vários bilhetes com expressões de diversos idiomas escritos
 description: Descubra o poder do atributo lang e como utilizar ele da forma correta
-categories: a11y
+categories: Acesibilidade
 tags: 
-  - semântica
-  - web standards
+  - Semântica
+  - Web Standards
 twitter_text: Descubra o poder do atributo lang e como utilizar ele da forma correta
 introduction: |-
   O atributo lang geralmente é ignorado e desconhecido pela maioria de nós desenvolvedores, porém, ele  influência diretamente no significado e sentido de nossos documentos HTML. Descubra o poder desse atributo.

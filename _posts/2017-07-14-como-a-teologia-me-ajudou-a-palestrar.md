@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Como a teologia me ajudou a palestrar"
 date: 2017-07-14 01:13:35
 image: "/assets/images/posts/cover/cover-teologia.jpg"
@@ -9,7 +9,8 @@ description: "Relato de como a teologia me auxiliou para perder o medo de falar 
 tags:
 - carreira
 - motivacional
-categories: carreira
+categories: 
+  - Carreira
 twitter_text: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 introduction: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 ---

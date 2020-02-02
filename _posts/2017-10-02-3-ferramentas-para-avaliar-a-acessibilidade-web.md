@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "3 ferramentas para avaliar a acessibilidade web"
 date: 2017-10-02
 image: "/assets/images/posts/cover/cover-tools.jpg"
@@ -10,7 +10,8 @@ tags:
   - dicas
   - tools
   - a11y
-categories: a11y
+categories: 
+  - Acessibilidade
 twitter_text: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 introduction: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 ---

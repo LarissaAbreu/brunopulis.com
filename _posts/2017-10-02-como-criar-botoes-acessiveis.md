@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-blog
 title: "Como criar botões acessíveis"
 date: 2017-10-02
 image: "/assets/images/posts/cover/cover-links.jpg"
@@ -9,7 +9,8 @@ description: "Escrever botões de forma semântica nunca foi tão simples, poré
 tags:
   - dicas
   - a11y
-categories: tutorial
+categories: 
+  - Acessibilidade
 twitter_text: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 introduction: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 ---
