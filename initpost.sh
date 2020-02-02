@@ -125,7 +125,7 @@ EOT
 initpost_content() {
 
 echo "---"
-echo "layout: post"
+echo "layout: single-blog"
 echo "title: \"${POST_TITLE}\""
 echo "date: ${CURRENT_DATE} ${TIME}"
 echo "image: '/assets/images/posts/cover'"

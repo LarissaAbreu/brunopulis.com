@@ -1,34 +1,61 @@
+# SITE CONFIGURATION
 title: Bruno Pulis
 email: brunopulis@protonmail.com
 description: Procurando um profissional para tornar seus produtos digitais acessíveis? Vamos conversar, minha missão é tornar a web mais simples e acessível
 baseurl: ""
 url: "https://brunopulis.com"
 
-webmaster_verifications:
-  google: DJZadsIuwm42MwJftKIXWE3cGrZLTlOTYdMf55gIVS8
-  bing: A1D6C4C7B86E7BF77A38CFC9B416AD04
+hero_img: "bg-talk.jpg"
 
 # Social Profiles
 author:
   name: Bruno Pulis
   twitter: obrunopulis
 
+social:
+  name: Bruno Pulis
+  links:
+    - https://linkedin.com/in/pulis
+    - https://github.com/brunopulis
+    - https://twitter.com/obrunopulis
+    - https://facebook.com/canaldopulis
+    - brunopulis@protonmail.com
+
 twitter_username: obrunopulis
 linkedin_username: pulis
 github_username: brunopulis
 
-# Build settings
+disquis:
+  shortname: brunopulis
+
+# google_tag_manager:
+
+webmaster_verifications:
+  google: DJZadsIuwm42MwJftKIXWE3cGrZLTlOTYdMf55gIVS8
+  bing: A1D6C4C7B86E7BF77A38CFC9B416AD04
+
+# BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 
+exclude:
+  - README.md
+  - LICENSE.txt
+  - netlify.toml
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - gulpfile.js
+  - vendor/bundle/
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+  - .bundle/
+
 # Pagination setup
 paginate: 6
 paginate_path: "blog/page:num/"
-
-# Enable section IDs in frontmatter, useful for identifying current page
-# (used as a hook for styling etc)
-section: true
 
 plugins:
   - jekyll-feed
@@ -44,20 +71,20 @@ collections:
     output: true
     permalink: /palestras/:path/
 
+sass:
+  style: compressed
+  sass_dir: assets/sass
+  sourcemap: development
+
 # Compress HTML (in liquid via layouts/compress.html)
 compress_html:
   clippings: all
 
 # exclude my node related stuff
-exclude:
-  - README.md
-  - LICENSE.txt
-  - netlify.toml
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache
-  - vendor/gems
-  - vendor/ruby
-  - .bundle/
+
+navigation: # Navigation links
+  - {name: 'Home', link: '/'}
+  - {name: 'Sobre', link: '/sobre'}
+  - {name: 'Blog', link: '/blog'}
+  - {name: 'Palestras', link: '/palestras'}
+  - {name: 'Contato', link: '/contact'}
