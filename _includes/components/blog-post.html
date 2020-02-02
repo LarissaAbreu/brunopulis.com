@@ -1,0 +1,54 @@
+
+<div class="col-lg-4 col-md-6 blog-post"  itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="blog-post__card">
+    {% if post.categories %}
+      {% assign categories = post.categories %}
+      <span class="blog-post__category">
+        {% for category in categories %}
+          <a href="{{site.baseurl}}/categories/#{{category|slugize}}" class="label"> {{ category }} </a>
+          {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+      </span>
+    {% endif %}
+    <a href="{{ post.url | relative_url }}" class="blog-post__link">
+      {% if post.featured %}
+        <figure class="blog-post__thumb post-card__thumb">
+          <img src="{{post.featured}}" class="blog-post__image card-img-top" alt="{{post.alt}}" />
+        </figure>
+      {% else %}
+        <figure class="blog-post__thumb post-card__thumb">
+          <img src="/assets/images/blog-image.jpg" class="blog-post__image card-img-top" />
+        </figure>
+      {% endif %}
+
+      <div class="blog-post__body card-body">
+        <h2 class="blog-post__title">{{ post.title | strip_html | truncate: 150 }}</h2>
+        {% assign date_format = site.sleek.date_format | default: "%b %-d, %Y" %}
+        <div class="blog-post__meta post-meta">
+          <ul class="blog-post__list">
+            <li class="blog-post__item">
+              <i class="far fa-calendar" aria-hidden="true"></i>
+              {{ post.date | date: date_format }}
+            </li>
+            <li class="blog-post__item">
+              <small class="text-muted">
+                {% assign words = content | number_of_words %}
+                  {% if words < 360 %}
+                    1 min
+                  {% else %}
+                    {{ words | divided_by:180 }} mins
+                {% endif %} de leitura
+              </small>
+            </li>
+          </ul>
+        </div>
+
+        {% if post.description %}
+          <p class="blog-post__description card-text">{{ post.description | strip_html | truncatewords:20 }}</p>
+        {% else %}
+          <p class="blog-post__description card-text">{{ post.description | strip_html | truncatewords: 20 }}</p>
+        {% endif %}
+      </div>
+    </a>
+  </div>
+</div>

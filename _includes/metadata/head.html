@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
     {% if page.title %}
       {{page.title}}
@@ -14,29 +14,15 @@
   </title>
 
   {% include metadata/open-graph.html %}
-  <meta content="#000000" name="msapplication-TileColor">
-  <meta content="#000000" name="theme-color">
-  <meta name="msapplication-TileImage" content="{{"/assets/images/icons/ms-icon-144x144.png"}}">
+  {% include shared/favicons.html %}
 
-  <link rel="icon" type="image/png" sizes="192x192" href="{{"/assets/images/icons/android-icon-192x192.png"}}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{"/assets/images/icons/favicon-32x32.png"}}">
-  <link rel="icon" type="image/png" sizes="96x96" href="{{"/assets/images/icons/favicon-96x96.png"}}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{"/assets/images/icons/favicon-16x16.png"}}">
-  <link rel="apple-touch-icon" sizes="57x57" href="{{"/assets/images/icons/apple-icon-57x57.png"}}">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{"/assets/images/icons/apple-icon-60x60.png"}}">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{"/assets/images/icons/apple-icon-72x72.png"}}">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{"/assets/images/icons/apple-icon-76x76.png"}}">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{"/assets/images/icons/apple-icon-114x114.png"}}">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{"/assets/images/icons/apple-icon-120x120.png"}}">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{"/assets/images/icons/apple-icon-144x144.png"}}">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{"/assets/images/icons/apple-icon-152x152.png"}}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{"/assets/images/icons/apple-icon-180x180.png"}}">
-  
-  <link href="/assets/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-  <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700|Open+Sans:400,700&display=swap">
-  <link rel="stylesheet" href="{{"/css/main.css" | relative_url }}">
-
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/vendors/linericon/style.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/vendors/owl-carousel/owl.carousel.min.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/magnific-popup.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/vendors/nice-select/css/nice-select.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39069482-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

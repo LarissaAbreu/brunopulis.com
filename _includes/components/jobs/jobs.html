@@ -1,8 +1,51 @@
+<section class="portfolio_area" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="main_title text-left">
+          <h2>{{ site.data.home.portfolio.title }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="filters portfolio-filter">
+      <ul>
+        <li class="active" data-filter="*">todos</li>
+        <li data-filter=".popular">populares</li>
+        <li data-filter=".latest"> últimos</li>
+        <li data-filter=".upcoming">em breve</li>
+      </ul>
+    </div>
+
+    <div class="filters-content">
+      <div class="row portfolio-grid justify-content-center">
+        {% for portfolio in site.portfolio %}
+          <div class="col-lg-4 col-md-6 all latest">
+            <div class="portfolio_box">
+              <div class="single_portfolio">
+                <img class="img-fluid w-100" src="{{ portfolio.thumb }}" alt="Soul Fit Modas">
+                <div class="overlay"></div>
+                <a href="{{ portfolio.clientUrl }}" class="img-gal" target="_blank" rel="noopener noreferrer"></a>
+                  <div class="icon">
+                    <span class="lnr lnr-cross"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="short_info">
+                <h3>{{ portfolio.title }}</h3>
+                <h4><a href="portfolio-details.html">trena ensino</a></h4>
+                <p>website</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section jobs" id="jobs">
   <div class="container">
-    <h2 class="services__title section-heading">
-      {{ site.data.home.portfolio.title }}
-    </h2>
+    <h2 class="services-title section-heading"></h2>
   </div>
 
   <div class="container">
@@ -11,9 +54,9 @@
       <div class="column is-4">
         <div class="card is-usp">
           <a href="{{ portfolio.clientUrl }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ portfolio.thumb }}" alt="Soul Fit Modas">
 
-            <h3 class="subtitle is-3">{{ portfolio.title }}</h3>
+
+            <h3 class="subtitle is-3"></h3>
           </a>
         </div>
       </div>

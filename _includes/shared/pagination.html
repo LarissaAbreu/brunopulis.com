@@ -1,0 +1,25 @@
+<div class="navigation-area">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+      <div class="detials">
+        {% if page.previous.url %}
+          <p>Anterior</p>
+          <a href="{{page.previous.url | relative_url }}">
+            <h4>{{page.previous.title | strip_html | truncate: 30}}</h4>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+      <div class="detials">
+        {% if page.next.url %}
+          <p>Próximo</p>
+          <a href="{{page.next.url | relative_url }}">
+            <h4>{{page.next.title | strip_html | truncate: 30}}</h4>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
