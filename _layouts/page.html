@@ -5,24 +5,25 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
-  <body class="site">
-    {% if site.google_tag_manager %}
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-    {% endif %}
-
+  <body class="site" itemscope itemtype="http://schema.org/WebPage">
     {% include components/header.html %}
 
-    <div class="hero--small">
-      <div class="hero__wrap">
-        <h1 class="hero__title">{{ page.title }}</h1>
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <div class="banner_content text-center">
+            <h2>{{ page.title }}</h2>
+            <div class="page_link">
+              <a href="/">Home</a>
+              <a href="{{ page.url }}">{{ page.title }}</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
     <main class="site__content">
-      <div class="container">
-        <div class="page-content">
+
           {{ content }}
         </div>
       </div>

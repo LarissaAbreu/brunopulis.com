@@ -7,7 +7,7 @@ enabled: true
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
-  <body class="site">
+  <body class="site" itemscope itemtype="http://schema.org/WebPage">
     {% if site.google_tag_manager %}
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
@@ -22,14 +22,14 @@ enabled: true
         <h1 class="hero__title">{{ page.title }}</h1>
       </div>
     </div>
-    
+
     <main class="site__content">
       <div class="container">
         <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
           {% for post in paginator.posts %}
-            {% include components/blog.html %}
+            {% include components/blog-post.html %}
           {% endfor %}
-          {% include shared/pagination/pagination.html %}
+          {% include shared/pagination.html %}
         </div>
       </div>
     </main>

@@ -5,14 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
-  <body class="site">
-    {% if site.google_tag_manager %}
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-    {% endif %}
-
+  <body class="site" itemscope itemtype="http://schema.org/WebPage">
     {% include components/header.html %}
 
     <div class="hero--small">
@@ -39,7 +32,7 @@ layout: compress
         </div>
       </div>
     </main>
-    
+
     {% include components/footer.html %}
   </body>
 </html>
