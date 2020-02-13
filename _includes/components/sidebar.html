@@ -1,87 +1,40 @@
-<div class="col-lg-4">
-  <div class="blog_right_sidebar">
-    <aside class="single_sidebar_widget search_widget">
-      <div class="input-group">
-        <label for="search" class="sr-only">Procurar</label>
-        <input type="text" id="search" class="form-control" placeholder="Procurar">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
-        </span>
-      </div>
-      <div class="br"></div>
-    </aside>
-
-    <aside class="single_sidebar_widget popular_post_widget">
-      <h3 class="widget_title">Posts recentes</h3>
-
-      {% for post in site.posts  limit: 4 %}
-        <div class="media post_item">
-          <div class="media-body">
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              <h3>{{ post.title | strip_html | truncate: 150 }}</h3>
-            </a>
-          </div>
+<aside class="sidebar">
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation-bar w-nav">
+    <div class="w-container">
+      <a href="/" class="logo-link w-nav-brand">
+        <h1 class="logo-text">Bruno Pulis</h1>
+      </a>
+      
+      <nav role="navigation" class="navigation-menu w-nav-menu">
+        <p>Analista de Qualidade, Frontend Developer, Evangelista de Acessibilidade Web.</p>
+        <p>Escrevo sobre acessiiblidade, qualidade de software, desenvolvimento web em geral e carreira.</p>
+        <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
+        
+        {% for item in site.navigation %}
+          <a class="nav-link w-nav-link" href="{{ item.link | relative_url }}" itemprop="url" itemprop="name">
+            {{ item.name }}
+          </a>
+        {% endfor %}
+        <div class="divider"></div>
+        <div class="social-link-group">
+          <a href="https://www.facebook.com/{{ site.facebook_username }}" class="social-icon-link w-inline-block" aria-label="Facebook">
+            <img src="/assets/images/svgs/fb-icon.svg" width="25" alt="">
+          </a>
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Twitter">
+            <img src="/assets/images/svgs/twitter-icon.svg" width="25" alt="">
+          </a>
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Github">
+            <img src="/assets/images/svgs/github-icon.svg" width="25" alt="">
+          </a>
+          <a href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Linkedin">
+            <img src="/assets/images/svgs/linkedin-icon.svg" width="25" alt="">
+          </a>
         </div>
-      {% endfor %}
-      <div class="br"></div>
-    </aside>
-
-    <aside class="single_sidebar_widget ads_widget">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Site -->
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-5974434706039245"
-          data-ad-slot="9879261153"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      <div class="br"></div>
-    </aside>
-        <aside class="single_sidebar_widget post_category_widget">
-          <h4 class="widget_title">Categorias</h4>
-          <ul class="list cat-list">
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-              {% for category in categories_list %}
-                <li><a href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
-              {% endfor %}
-            {% else %}
-              {% for category in categories_list %}
-                <li><a href="#{{ tag[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
-              {% endfor %}
-            {% endif %}
-            {% assign categories_list = nil %}
-          </ul>
-          <div class="br"></div>
-        </aside>
-        <aside class="single-sidebar-widget newsletter_widget">
-            <h4 class="widget_title">Newsletter</h4>
-            <p>Assine a newsletter e não perca nenhuma atualização.</p>
-            <div class="form-group d-flex flex-row">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
-                </div>
-                <a href="#" class="bbtns">Inscrever</a>
-            </div>
-            <p class="text-bottom">Você pode se descadastrar a qualquer momento</p>
-            <div class="br"></div>
-        </aside>
-        <aside class="single-sidebar-widget tag_cloud_widget">
-          <h4 class="widget_title">Tags</h4>
-          <ul class="list">
-            {% assign tags = site.tags | sort %}
-            {% for tag in tags %}
-              <li>
-                <a href="/tag/{{ tag | first | slugify }}">
-                  {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </aside>
+      </nav>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
     </div>
-</div>
+    <div class="w-nav-overlay" data-wf-ignore=""></div>
+  </div>
+</aside>
