@@ -1,56 +1,40 @@
 <aside class="sidebar">
-  <section class="sidebar-single--widget search_widget">
-    {% include components/search.html %}
-  </section>
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation-bar w-nav">
+    <div class="w-container">
+      <a href="/" class="logo-link w-nav-brand">
+        <h1 class="logo-text">Bruno Pulis</h1>
+      </a>
 
-  <section class="sidebar-single--widget post_category_widget">
-    <h2 class="widget_title">Categorias</h2>
+      <nav role="navigation" class="navigation-menu w-nav-menu">
+        <p>Analista de Qualidade, Frontend Developer, Evangelista de Acessibilidade Web.</p>
+        <p>Escrevo sobre acessiiblidade, qualidade de software, desenvolvimento web em geral e carreira.</p>
+        <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
 
-    <ul class="list widget-category__list">
-      {% for category in site.categories | reverse %}
-        <li class="widget-category__item">
-          <a href="/categories#{{ category[0] }}" class="widget-category__link">
-          {% if page.categories contains category[0] %}
-          <strong>{{ category[0] }}</strong>
-          {% else %}
-            {{ category[0] | capitalize }} ({{ category[1].size }})
-          {% endif %}
+        {% for item in site.navigation %}
+          <a class="nav-link w-nav-link" href="{{ item.link | relative_url }}" itemprop="url" itemprop="name">
+            {{ item.name }}
           </a>
-        </li>
-      {% endfor %}
-    </ul>
-    <div class="br"></div>
-  </section>
-
-  <section class="sidebar-single--widget popular_post_widget">
-    <h2 class="widget_title">Posts recentes</h2>
-
-    {% for post in site.posts  limit: 4 %}
-      <div class="media post_item">
-        <div class="media-body">
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            <h3>{{ post.title | strip_html | truncate: 150 }}</h3>
+        {% endfor %}
+        <div class="divider"></div>
+        <div class="social-link-group">
+          <a href="https://www.facebook.com/{{ site.facebook_username }}" class="social-icon-link w-inline-block" aria-label="Facebook">
+            <img src="/assets/images/svgs/fb-icon.svg" width="25" alt="">
+          </a>
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Twitter">
+            <img src="/assets/images/svgs/twitter-icon.svg" width="25" alt="">
+          </a>
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Github">
+            <img src="/assets/images/svgs/github-icon.svg" width="25" alt="">
+          </a>
+          <a href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Linkedin">
+            <img src="/assets/images/svgs/linkedin-icon.svg" width="25" alt="">
           </a>
         </div>
+      </nav>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
       </div>
-    {% endfor %}
-    <div class="br"></div>
-  </section>
-
-  <section class="sidebar-single--widget  tag_cloud_widget">
-    <h2 class="widget_title">Tags</h2>
-    <ul class="list">
-      {% for tag in site.tags %}
-      <li>
-        <a href="'/tags#{{ tag[0] }}">
-        {% if page.tags contains tag[0] %}
-          <strong>{{tag[0]}}</strong>
-        {% else %}
-          {{ tag[0] }}
-        {% endif %}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+    </div>
+    <div class="w-nav-overlay" data-wf-ignore=""></div>
+  </div>
 </aside>

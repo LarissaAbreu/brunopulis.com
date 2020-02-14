@@ -19,17 +19,23 @@ social:
     - https://linkedin.com/in/pulis
     - https://github.com/brunopulis
     - https://twitter.com/obrunopulis
-    - https://facebook.com/canaldopulis
+    - https://www.facebook.com/obrunopulis
     - brunopulis@protonmail.com
-
-twitter_username: obrunopulis
+    
+facebook_username: obrunopulis
+twitter_username:  obrunopulis
 linkedin_username: pulis
+<<<<<<< HEAD
 github_username: brunopulis
 disquis_shortname: brunopulis
 
 algolia:
   application_id: 'MJWV3215SI'
 
+=======
+github_username:   brunopulis
+disquis_shortname: brunopulis
+>>>>>>> 77cecb6ec987512b90b447d8d20c4a0c785304e8
 
 webmaster_verifications:
   google: DJZadsIuwm42MwJftKIXWE3cGrZLTlOTYdMf55gIVS8

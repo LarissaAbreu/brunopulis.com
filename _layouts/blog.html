@@ -6,78 +6,45 @@ enabled: true
 
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
-  <body class="blog_version" itemscope itemtype="http://schema.org/WebPage">
-    {% include components/header.html %}
+  <body class="site" itemscope itemtype="http://schema.org/WebPage">
+    <div class="blog">
+      {% include components/sidebar.html %}
 
-    <section class="banner_area">
-      <div class="banner_inner d-flex align-items-center">
-        <div class="container">
-          <div class="banner_content text-center">
-            <h2>{{ page.title }}</h2>
-            <div class="page_link">
-              <a href="/">Home</a>
-              <a href="{{ page.url }}">{{ page.title }}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <main>
+        <div class="w-container">
+          <div class="w-dyn-list">
+            <div class="w-dyn-items">
+              <div class="w-dyn-item">
+                <div class="post-wrapper">
+                  <div itemscope itemtype="http://schema.org/Blog">
+                    {% for post in site.posts %}
+                      <a href="{{ post.url }}" class="blog-title-link w-inline-block">
+                        <h1 class="blog-title">{{ post.title | strip_html | truncate: 150 }}</h1>
+                      </a>
 
-    <section class="blog_area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="blog_left_sidebar">
-              <article class="row blog_item">
-                <div class="col-md-12">
-                  <div class="blog_post">
-                    <img src="img/blog/main-blog/m-blog-1.jpg" alt="">
-                    <div class="blog_details">
-                      <a href="single-blog.html"><h2>Astronomy Binoculars A Great Alternative</h2></a>
-                      <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
-                      <a href="single-blog.html" class="primary_btn"><span>Continue lendo <span class="sr-only">Título aqui</span></a>
-                    </div>
+                      <div class="post-info-wrapper">
+                        <div class="post-info">
+                          {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                          {{ post.date | date: date_format }}
+                        </div>
+                        <div class="post-info">|</div>
+                        <a href="/categories/travel" class="post-info when-link">Travel</a>
+                      </div>
+
+                      <p class="post-summary">
+                        {{ post.description | strip_html | truncatewords:20 }}</p>
+                      </p>
+                      <a href="{{ post.url }}" class="button-round w-button" aria-label="{{ post.title }}">
+                        Continue lendo
+                      </a>
+                    {% endfor %}
                   </div>
                 </div>
-              </article>
-
-              <nav class="blog-pagination justify-content-center d-flex">
-                  <ul class="pagination">
-                      <li class="page-item">
-                          <a href="#" class="page-link" aria-label="Previous">
-                              <span aria-hidden="true">
-                                  <span class="lnr lnr-chevron-left"></span>
-                              </span>
-                          </a>
-                      </li>
-                      <li class="page-item"><a href="#" class="page-link">01</a></li>
-                      <li class="page-item active"><a href="#" class="page-link">02</a></li>
-                      <li class="page-item"><a href="#" class="page-link">03</a></li>
-                      <li class="page-item"><a href="#" class="page-link">04</a></li>
-                      <li class="page-item"><a href="#" class="page-link">09</a></li>
-                      <li class="page-item">
-                          <a href="#" class="page-link" aria-label="Next">
-                              <span aria-hidden="true">
-                                  <span class="lnr lnr-chevron-right"></span>
-                              </span>
-                          </a>
-                      </li>
-                  </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="blog_right_sidebar">
-              {% include components/sidebar.html %}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    {% include components/footer.html %}
-    {% include shared/scripts.html %}
-  </main>
-</body>
+      </main>
+    </div>
+  </body>
 </html>

@@ -6,61 +6,36 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
   <body class="site" itemscope itemtype="http://schema.org/WebPage">
-    {% include components/header.html %}
+    <div class="blog">
+      {% include components/sidebar.html %}
 
-    <section class="banner_area">
-      <div class="banner_inner d-flex align-items-center">
-        <div class="container">
-          <div class="banner_content text-center">
-            <h2>{{ page.title }}</h2>
-            <div class="page_link">
-              <a href="/">Home</a>
-              <a href="/palestras">Palestras</a>
+      <main>
+        <div class="w-container">
+          <h1 class="section-header">{{ page.title }}</h1>
+
+          <div class="w-dyn-list">
+            <div class="w-dyn-items">
+              <div class="w-dyn-item">
+                <div class="post-wrapper">
+                  {% assign palestras = site.palestras | sort: 'date' | reverse %}
+                  {% for palestra in palestras %}
+                    <article class="post-preview">
+                      <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
+                        <h3 class="subtitle is-3 post-title">{{ palestra.title }}</h3>
+                      </a>
+                      <div class="post-meta">
+                        <time><strong>Data</strong> {{ palestra.event_date | date: "%d/%m/%y" }}</time>
+                        <p><strong>Evento:</strong> {{ palestra.event }}</p>
+                      </div>
+                    </article>
+                    <hr>
+                  {% endfor %}
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <main class="site__content">
-      <div class="container">
-        <div class="page-content">
-          {% assign palestras = site.palestras | date: "%-m" | reverse %}
-          {{ palestras.event_date | date: "%-d" }}
-          {% case palestras %}
-            {% when '1' %}Janeiro
-            {% when '2' %}Fevereiro
-            {% when '3' %}Março
-            {% when '4' %}Abril
-            {% when '5' %}Maio
-            {% when '6' %}Junho
-            {% when '7' %}Julho
-            {% when '8' %}Agosto
-            {% when '9' %}Setembro
-            {% when '10' %}Outubro
-            {% when '11' %}Novembro
-            {% when '12' %}Dezembro
-          {% endcase %}
-          {{ palestras.event_date | date: "%Y" }}
-
-          {% for palestra in palestras %}
-            <article class="post-preview">
-              <h3 class="subtitle is-3 post-title">
-                <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
-                  {{ palestra.title }}
-                </a>
-              </h3>
-              <div class="post-meta">
-                <time>{{ palestra.event_date | date: '%B %d, %Y' }}</time>
-                <p><strong>{{ palestra.event }}</strong></p>
-              </div>
-            </article>
-            <hr>
-          {% endfor %}
-        </div>
-      </div>
-    </main>
-
-    {% include components/footer.html %}
+      </main>
+    </div>
   </body>
 </html>
