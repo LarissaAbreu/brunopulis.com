@@ -1,0 +1,21 @@
+seo:
+  tagline: Acessibilidade Web, Frontend e Qualidade de software
+
+about:
+  position: QA e Frontend Developer.
+  description: Escrevo sobre qualidade de software, acessiiblidade, desenvolvimento web em geral e carreira.
+
+section:
+  header: Artigos
+
+navigation:
+  - name: Sobre
+    link: /sobre
+  - name: Blog
+    link: /blog
+  - name: Palestras
+    link: /palestras
+  - name: Categorias
+    link: /category
+  - name: Tags
+    link: /tags
