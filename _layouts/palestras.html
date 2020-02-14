@@ -6,36 +6,28 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
   <body class="site" itemscope itemtype="http://schema.org/WebPage">
-    <div class="blog">
-      {% include components/sidebar.html %}
+    {% include components/sidebar.html %}
 
-      <main>
-        <div class="w-container">
+    <main class="content">
+      <div class="w-container">
+        <div class="body-copy">
           <h1 class="section-header">{{ page.title }}</h1>
 
-          <div class="w-dyn-list">
-            <div class="w-dyn-items">
-              <div class="w-dyn-item">
-                <div class="post-wrapper">
-                  {% assign palestras = site.palestras | sort: 'date' | reverse %}
-                  {% for palestra in palestras %}
-                    <article class="post-preview">
-                      <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
-                        <h3 class="subtitle is-3 post-title">{{ palestra.title }}</h3>
-                      </a>
-                      <div class="post-meta">
-                        <time><strong>Data</strong> {{ palestra.event_date | date: "%d/%m/%y" }}</time>
-                        <p><strong>Evento:</strong> {{ palestra.event }}</p>
-                      </div>
-                    </article>
-                    <hr>
-                  {% endfor %}
-                </div>
-              </div>
-            </div>
+          {% assign palestras = site.palestras | sort: 'date' | reverse %}
+          {% for palestra in palestras %}
+            <article class="post-preview">
+              <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
+                <h2 class="subtitle is-3 post-title">{{ palestra.title }}</h2>
+              </a>
+              <div class="post-meta">
+                <time><strong>Data</strong> {{ palestra.event_date | date: "%d/%m/%y" }}</time>
+                <p><strong>Evento:</strong> {{ palestra.event }}</p>
+               </div>
+            </article>
+            <hr>
+           {% endfor %}
           </div>
-        </div>
+         </div>
       </main>
-    </div>
   </body>
 </html>
