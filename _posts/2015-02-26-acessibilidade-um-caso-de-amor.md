@@ -6,11 +6,11 @@ image: "/assets/images/posts/cover/cover-stormtropper.jpg"
 featured: "/assets/images/posts/cover/cover-stormtropper.jpg"
 alt: "Um stormtropper saindo da tecla S do teclado"
 description: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
+categories: Acessibilidade
 tags:
 - a11y
 - empatia
-categories: 
-  - Acessibilidade
+
 twitter_text: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
 introduction: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
 ---

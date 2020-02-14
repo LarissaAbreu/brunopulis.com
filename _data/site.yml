@@ -9,6 +9,8 @@ items:
     name: Blog
   - link: palestras
     name: Palestras
+  - link: contato
+    name: Contato
 
 jobs:
   yep: No momento estou disponível para novos projetos

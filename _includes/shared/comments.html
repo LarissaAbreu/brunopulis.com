@@ -4,12 +4,12 @@
 </section>
 
 <script>
-  var disqus_loaded = false;
+  var disqus_loaded = true;
   function load_disqus() {
     var d = document, s = d.createElement('script');
     var disqus_config = function () {
       this.page.url = '{{ site.url }}{{page.url}}';
-      this.page.identifier = '{{page.url}}';
+      this.page.identifier = '{{page.disquis_shortname}}';
     };
 
     s.src = '//brunopulis.disqus.com/embed.js';

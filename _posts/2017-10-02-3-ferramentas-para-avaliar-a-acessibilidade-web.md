@@ -10,8 +10,8 @@ tags:
   - dicas
   - tools
   - a11y
-categories: 
-  - Acessibilidade
+categories: Acessibilidade
+
 twitter_text: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 introduction: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 ---

@@ -1,4 +1,4 @@
-<a class="skippy sr-only sr-only-focusable" href="#content">
+<a class="skippy sr-only" href="#content">
   <span class="skippy-text">Ir para conteúdo principal</span>
 </a>
 
@@ -6,7 +6,9 @@
   <div class="main_menu">
     <nav class="navbar navbar-expand-lg navbar-light" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <div class="container">
-        <a class="navbar-brand logo_h" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        <a class="navbar-brand logo_h" href="/" aria-label="Ir para página inicial">
+          <img src="/assets/images/logo.png" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar"></span>
@@ -18,9 +20,7 @@
           <ul class="nav navbar-nav menu_nav justify-content-end">
             {% for item in site.navigation %}
               <li class="nav-item" itemprop="url">
-                <a class="nav-link" href="{{ item.link | relative_url }}" itemprop="url" itemprop="name">
-                  {{ item.name }}
-                </a>
+                <a class="nav-link" href="{{ item.link | relative_url }}" itemprop="url">{{ item.name }}</a>
               </li>
             {% endfor %}
           </ul>

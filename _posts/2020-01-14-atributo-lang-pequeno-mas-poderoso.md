@@ -6,7 +6,7 @@ image: '/assets/images/posts/cover/cover-languages.jpg'
 featured: '/assets/images/posts/languages.jpg'
 alt: Vários bilhetes com expressões de diversos idiomas escritos
 description: Descubra o poder do atributo lang e como utilizar ele da forma correta
-categories: Acesibilidade
+categories: Acessibilidade
 tags: 
   - Semântica
   - Web Standards

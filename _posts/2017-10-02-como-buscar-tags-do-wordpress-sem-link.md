@@ -6,11 +6,11 @@ image: "/assets/images/posts/cover/cover-wp.jpg"
 featured: "/assets/images/posts/cover/cover-wp.jpg"
 alt: "Nuvem de tags com palavras relacionadas ao Wordpress"
 description: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
+categories: 
+  - Desenvolvimento Web
 tags:
   - wordpress
   - seo
-categories: 
-  - Wordpress
 twitter_text: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 introduction: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 ---

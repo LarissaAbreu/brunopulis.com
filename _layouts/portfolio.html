@@ -1,0 +1,38 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
+  {% include metadata/head.html %}
+  <body class="site" itemscope itemtype="http://schema.org/WebPage">
+    {% include components/header.html %}
+
+    <div class="hero--small">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ page.title }}</h1>
+      </div>
+    </div>
+    <main class="site__content">
+      <div class="container">
+        <div class="page-content">
+          {% assign palestras = site.palestras | sort: 'date' | reverse %}
+          {% for palestra in palestras %}
+            <article class="post-preview">
+              <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
+                <h3 class="subtitle is-3 post-title">{{ palestra.title }}</h3>
+              </a>
+              <div class="post-meta">
+                <time><strong>Data</strong> {{ palestra.event_date | date: "%d/%m/%y" }}</time>
+                <p><strong>Evento:</strong> {{ palestra.event }}</p>
+              </div>
+            </article>
+            <hr>
+          {% endfor %}
+        </div>
+      </div>
+    </main>
+
+    {% include components/footer.html %}
+  </body>
+</html>

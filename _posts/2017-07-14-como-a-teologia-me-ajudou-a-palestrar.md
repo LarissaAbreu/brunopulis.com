@@ -6,11 +6,11 @@ image: "/assets/images/posts/cover/cover-teologia.jpg"
 featured: "/assets/images/posts/cover/cover-teologia.jpg"
 alt: "Uma bíblia com foco e duas velas próximas e um corredor ao fundo da imagem"
 description: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
+categories: Carreira
 tags:
 - carreira
 - motivacional
-categories: 
-  - Carreira
+
 twitter_text: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 introduction: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 ---

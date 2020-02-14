@@ -6,11 +6,11 @@ image: "/assets/images/posts/cover/cover-wcag.jpg"
 featured: "/assets/images/posts/wcag.png"
 alt: "Um bloco de anotações com uma caneta e um notebook em cima de uma mesa marrom"
 description: "Aprenda com essas dicas como testar acessibilidade dos seus produtos digitais da forma correta"
+categories:  Acessibilidade
 tags:
   - wcag
   - teste usabilidade
-categories: 
-  - Acessibilidade
+
 twitter_text: "Aprenda como testar acessibilidade dos seus produtos digitais da forma correta"
 introduction: "Aprenda como testar acessibilidade dos seus produtos digitais da forma correta"
 ---

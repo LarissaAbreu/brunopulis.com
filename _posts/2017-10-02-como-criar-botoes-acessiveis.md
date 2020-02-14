@@ -6,11 +6,11 @@ image: "/assets/images/posts/cover/cover-links.jpg"
 featured: "/assets/images/posts/links.jpg"
 alt: "Botão azul escrito Clique aqui"
 description: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
+
+categories: Acessibilidade
 tags:
   - dicas
   - a11y
-categories: 
-  - Acessibilidade
 twitter_text: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 introduction: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 ---

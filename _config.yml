@@ -12,6 +12,7 @@ author:
   name: Bruno Pulis
   twitter: obrunopulis
 
+mailchimp_url: "https://brunopulis.us3.list-manage.com/subscribe/post?u=e1843173804aef8e161201c1b&amp;id=806ccbea2e"
 social:
   name: Bruno Pulis
   links:
@@ -24,11 +25,11 @@ social:
 twitter_username: obrunopulis
 linkedin_username: pulis
 github_username: brunopulis
+disquis_shortname: brunopulis
 
-disquis:
-  shortname: brunopulis
+algolia:
+  application_id: 'MJWV3215SI'
 
-# google_tag_manager:
 
 webmaster_verifications:
   google: DJZadsIuwm42MwJftKIXWE3cGrZLTlOTYdMf55gIVS8
@@ -63,9 +64,9 @@ plugins:
   - jekyll-sitemap
 
 collections:
-  # portfolio:
-  #   output: true
-  #   permalink: /portfolio/:path/
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 
   palestras:
     output: true
@@ -76,15 +77,12 @@ sass:
   sass_dir: assets/sass
   sourcemap: development
 
-# Compress HTML (in liquid via layouts/compress.html)
 compress_html:
   clippings: all
 
-# exclude my node related stuff
-
-navigation: # Navigation links
+navigation:
   - {name: 'Home', link: '/'}
   - {name: 'Sobre', link: '/sobre'}
   - {name: 'Blog', link: '/blog'}
   - {name: 'Palestras', link: '/palestras'}
-  - {name: 'Contato', link: '/contact'}
+  - {name: 'Contato', link: '/contato'}
