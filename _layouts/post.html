@@ -1,0 +1,48 @@
+---
+layout: compress
+comments: true
+---
+
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
+{% include metadata/head.html %}
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  {% include components/sidebar.html %}
+
+  <main class="content">
+    <div class="w-container">
+      <article class="">
+        <div class="post-title-section">
+          <h2>{{ page.title }}</h2>
+          <div class="post-info-wrapper">
+            <div class="post-info">
+              <meta itemprop="datePublished" content="{{post.date}}">
+              <time datetime="{{ post.date | date_to_xmlschema }}">
+                <span class="day">
+                  {{ post.date | date: "%d" }}
+                </span>
+                <span class="month-year">
+                  {{ post.date | date: "%B %Y" }}
+                </span>
+              </time>
+            </div>
+            <div class="post-info">|</div>
+            {% include shared/categories.html %}
+          </div>
+        </div>
+
+        <div class="body-copy">
+          <div class="feature-img">
+            <img class="img-fluid" src="{{ page.featured }}" alt="">
+          </div>
+
+          {{ content }}
+
+          {% include shared/comments.html %}
+        </div>
+      </article>
+    </div>
+  </main>
+  </body>
+</html>

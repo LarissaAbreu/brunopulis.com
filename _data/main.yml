@@ -6,13 +6,13 @@ about:
   description: Escrevo sobre qualidade de software, acessiiblidade, desenvolvimento web em geral e carreira.
 
 section:
-  header: Artigos
+  header: Últimos artigos
 
 navigation:
   - name: Sobre
     link: /sobre
   - name: Blog
-    link: /blog
+    link: /
   - name: Palestras
     link: /palestras
   - name: Categorias

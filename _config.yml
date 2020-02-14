@@ -5,37 +5,15 @@ description: Procurando um profissional para tornar seus produtos digitais acess
 baseurl: ""
 url: "https://brunopulis.com"
 
-hero_img: "bg-talk.jpg"
-
 # Social Profiles
-author:
-  name: Bruno Pulis
-  twitter: obrunopulis
+facebook_username: https://www.facebook.com/obrunopulis
+twitter_username:  https://twitter.com/obrunopulis
+linkedin_username: https://linkedin.com/in/pulis
+github_username:   https://github.com/brunopulis
+email_username: brunopulis@protonmail.com
+disqus_username: brunopulis
 
-mailchimp_url: "https://brunopulis.us3.list-manage.com/subscribe/post?u=e1843173804aef8e161201c1b&amp;id=806ccbea2e"
-social:
-  name: Bruno Pulis
-  links:
-    - https://linkedin.com/in/pulis
-    - https://github.com/brunopulis
-    - https://twitter.com/obrunopulis
-    - https://www.facebook.com/obrunopulis
-    - brunopulis@protonmail.com
-    
-facebook_username: obrunopulis
-twitter_username:  obrunopulis
-linkedin_username: pulis
-<<<<<<< HEAD
-github_username: brunopulis
-disquis_shortname: brunopulis
-
-algolia:
-  application_id: 'MJWV3215SI'
-
-=======
-github_username:   brunopulis
-disquis_shortname: brunopulis
->>>>>>> 77cecb6ec987512b90b447d8d20c4a0c785304e8
+# mailchimp_url: "https://brunopulis.us3.list-manage.com/subscribe/post?u=e1843173804aef8e161201c1b&amp;id=806ccbea2e"
 
 webmaster_verifications:
   google: DJZadsIuwm42MwJftKIXWE3cGrZLTlOTYdMf55gIVS8
@@ -46,34 +24,20 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 
-exclude:
-  - README.md
-  - LICENSE.txt
-  - netlify.toml
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - gulpfile.js
-  - vendor/bundle/
-  - vendor/cache
-  - vendor/gems
-  - vendor/ruby
-  - .bundle/
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
-# Pagination setup
-paginate: 6
-paginate_path: "blog/page:num/"
-
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
 
 collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
-
   palestras:
     output: true
     permalink: /palestras/:path/
@@ -81,14 +45,16 @@ collections:
 sass:
   style: compressed
   sass_dir: assets/sass
-  sourcemap: development
 
-compress_html:
-  clippings: all
-
-navigation:
-  - {name: 'Home', link: '/'}
-  - {name: 'Sobre', link: '/sobre'}
-  - {name: 'Blog', link: '/blog'}
-  - {name: 'Palestras', link: '/palestras'}
-  - {name: 'Contato', link: '/contato'}
+exclude:
+  - README.md
+  - LICENSE.txt
+  - netlify.toml
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+  - .bundle/

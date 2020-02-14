@@ -1,4 +1,4 @@
-<aside class="sidebar">
+<aside class="sidebar-column">
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation-bar w-nav">
     <div class="w-container">
       <a href="/" class="logo-link w-nav-brand">
@@ -6,27 +6,27 @@
       </a>
 
       <nav role="navigation" class="navigation-menu w-nav-menu">
-        <p>Analista de Qualidade, Frontend Developer, Evangelista de Acessibilidade Web.</p>
-        <p>Escrevo sobre acessiiblidade, qualidade de software, desenvolvimento web em geral e carreira.</p>
+        <p>{{ site.data.main.about.position }}</p>
+        <p>{{ site.data.main.about.description }}</p>
         <div class="divider w-hidden-medium w-hidden-small w-hidden-tiny"></div>
 
-        {% for item in site.navigation %}
+        {% for item in site.data.main.navigation %}
           <a class="nav-link w-nav-link" href="{{ item.link | relative_url }}" itemprop="url" itemprop="name">
             {{ item.name }}
           </a>
         {% endfor %}
         <div class="divider"></div>
         <div class="social-link-group">
-          <a href="https://www.facebook.com/{{ site.facebook_username }}" class="social-icon-link w-inline-block" aria-label="Facebook">
+          <a href="{{ site.facebook_username }}" class="social-icon-link w-inline-block" aria-label="Facebook">
             <img src="/assets/images/svgs/fb-icon.svg" width="25" alt="">
           </a>
-          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Twitter">
+          <a href="{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Twitter">
             <img src="/assets/images/svgs/twitter-icon.svg" width="25" alt="">
           </a>
-          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Github">
+          <a href="{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Github">
             <img src="/assets/images/svgs/github-icon.svg" width="25" alt="">
           </a>
-          <a href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Linkedin">
+          <a href="{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="social-icon-link w-inline-block" aria-label="Linkedin">
             <img src="/assets/images/svgs/linkedin-icon.svg" width="25" alt="">
           </a>
         </div>

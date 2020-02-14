@@ -6,24 +6,15 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
   <body class="site" itemscope itemtype="http://schema.org/WebPage">
-    <div class="blog">
-      {% include components/sidebar.html %}
+    {% include components/sidebar.html %}
 
-      <main>
-        <div class="w-container">
+    <main class="content">
+      <div class="w-container">
+        <div class="body-copy">
           <h1 class="section-header">{{ site.data.home.blog.title }}</h1>
-          
-          <div class="w-dyn-list">
-            <div class="w-dyn-items">
-              <div class="w-dyn-item">
-                <div class="post-wrapper">
-                  {{ content }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+          {{ content }}
+      </div>
+      </div>
+    </main>
   </body>
 </html>
