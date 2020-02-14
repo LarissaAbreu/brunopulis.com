@@ -1,7 +1,0 @@
-{% assign navurl = page.url | remove: 'index.html' %}
-{% for item in include.navigation %}
-<a class="main-nav__link navbar-item" href="{{ item.link }}" {% if item.url == navurl %}{% endif %}>{{ item.text }}</a>
-{% if item.subitems %}
-{% include components/navigation/navigation.html navigation=item.subitems %}
-{% endif %}
-{% endfor %}
