@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Como a teologia me ajudou a palestrar"
 date: 2017-07-14 01:13:35
 image: "/assets/images/posts/cover/cover-teologia.jpg"

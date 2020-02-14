@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "3 ferramentas para avaliar a acessibilidade web"
 date: 2017-10-02
 image: "/assets/images/posts/cover/cover-tools.jpg"

@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Explorando o atributo lang"
 date: 2020-01-14 01:11:52
 image: '/assets/images/posts/cover/cover-languages.jpg'
@@ -37,7 +37,7 @@ Porém, os dois últimos parágrafos estão totalmente compreensíveis.
 
 O que aconteceu no vídeo é algo bem simples, mas se não prestarmos atenção o conteúdo pode ficar incompreensível. A marcação HTML desse trecho é: 
 
-```html
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +53,7 @@ O que aconteceu no vídeo é algo bem simples, mas se não prestarmos atenção 
   <p lang="en">After all their adventures and fun, Wendy decides that her place is at home with their mother. Wendy helps all the Lost Boys return to London. But Peter doesn’t want her to go. Instead he tries to trick her. He tells her that their mother doesn’t want them anymore. However, he understands how sad their mother must be. In the end, he decides to let them go home.</p>
 </body>
 </html>
-```
+{% endhighlight %}
 
 <hr/>
 

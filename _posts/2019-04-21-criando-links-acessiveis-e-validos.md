@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Criando links acessíveis e válidos"
 date: 2019-04-21 10:20:00
 image: "/assets/images/posts/cover/cover-links.jpg"

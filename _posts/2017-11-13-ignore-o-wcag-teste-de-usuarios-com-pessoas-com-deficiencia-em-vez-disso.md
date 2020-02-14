@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Ignore o WCAG! Teste de usuários com pessoas com deficiência em vez disso."
 date: 2017-11-13
 image: "/assets/images/posts/cover/cover-wcag.jpg"

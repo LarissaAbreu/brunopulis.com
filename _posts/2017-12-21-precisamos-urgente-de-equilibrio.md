@@ -1,16 +1,17 @@
 ---
-layout: single-blog
+layout: post
 title: "Precisamos de equilibrio"
 date: 2017-12-21 00:06:48
 image: "/assets/images/posts/cover/cover-equilibrio.jpg"
 featured: "/assets/images/posts/equilibrio.jpg"
 alt: "Mulher sentada no canto do quarto apoiando a mão na cabeça pensativa"
 description: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
+categories: Carreira
 tags:
   - saude
   - burnout
   - depressão
-categories: Carreira
+
 twitter_text: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
 introduction: >-
   Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde.

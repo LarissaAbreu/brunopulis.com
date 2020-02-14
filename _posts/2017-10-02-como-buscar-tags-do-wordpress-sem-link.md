@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Como buscar tags do wordpress sem link"
 date: 2017-10-02 00:43:26
 image: "/assets/images/posts/cover/cover-wp.jpg"

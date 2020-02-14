@@ -1,17 +1,16 @@
 ---
-layout: single-blog
+layout: post
 title: "Seis livros para estudar acessibilidade web"
 date: 2017-11-27
 image: "/assets/images/posts/cover/cover-books.jpg"
 featured: "/assets/images/posts/books.jpg"
 alt: "Livros empilhados de diversas cores"
 description: "Confira uma lista sensacional de livros sobre acessibilidade web."
+categories: Livros
 tags:
   - livros
   - indicacao
   - dicas
-categories: 
-  - Livros
 twitter_text: "Lista com excelentes referências de livros sobre acessibilidade web."
 introduction: "Lista com excelentes referências de livros sobre acessibilidade web."
 ---

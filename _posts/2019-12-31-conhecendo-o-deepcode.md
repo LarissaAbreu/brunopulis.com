@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Conhecendo o DeepCode"
 date: 2019-12-31 14:01:04
 image: '/assets/images/posts/cover/cover-ia.jpg'

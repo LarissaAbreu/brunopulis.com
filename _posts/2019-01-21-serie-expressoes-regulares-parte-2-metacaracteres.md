@@ -1,15 +1,16 @@
 ---
-layout: single-blog
+layout: post
 title: "Expressões Regulares: Metacaracteres"
 date: 2019-01-21 23:38:51
 image: "/assets/images/posts/cover/cover-code.jpg"
 featured: "/assets/images/posts/code.jpg"
 alt: "Abreviação em inglês de Expressões regulares. Ilustração"
 description: "Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los"
+categories: Séries
 tags:
   - regex
   - metacaracteres
-categories: Séries
+
 twitter_text: "Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los"
 introduction: "Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los"
 ---

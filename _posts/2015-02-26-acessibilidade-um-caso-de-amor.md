@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Acessibilidade: um caso de amor"
 date: 2015-02-26
 image: "/assets/images/posts/cover/cover-stormtropper.jpg"

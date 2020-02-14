@@ -1,5 +1,5 @@
 ---
-layout: single-blog
+layout: post
 title: "Como criar botões acessíveis"
 date: 2017-10-02
 image: "/assets/images/posts/cover/cover-links.jpg"
