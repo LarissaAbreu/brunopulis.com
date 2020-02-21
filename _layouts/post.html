@@ -10,36 +10,38 @@ layout: compress
     {% include components/sidebar.html %}
 
     <main class="content">
-      <div class="w-container">
-        <article class="">
-          <div class="post-title-section">
-            <h2>{{ page.title }}</h2>
+      <div class="container">
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+          <header class="post-title-section">
+            <h2 itemprop="name headline">{{ page.title }}</h2>
             <div class="post-info-wrapper">
               <div class="post-info">
-                <meta itemprop="datePublished" content="{{post.date}}">
+                <meta itemprop="datePublished" content="{{ page.date }}">
                 <time datetime="{{ post.date | date_to_xmlschema }}">
                   <span class="day">
-                    {{ post.date | date: "%d" }}
+                    {{ page.date | date: "%d" }}
                   </span>
                   <span class="month-year">
-                    {{ post.date | date: "%B %Y" }}
+                    {{ page.date | date: "%B %Y" }}
                   </span>
                 </time>
               </div>
               <div class="post-info">|</div>
               {% include shared/categories.html %}
             </div>
-          </div>
+          </header>
           <div id="audimaWidget"></div>
 
-          <div class="body-copy">
+          <div class="body-copy" itemprop="articleBody">
             <div class="feature-img">
               <img class="img-fluid" src="{{ page.featured }}" alt="">
             </div>
 
             {{ content }}
 
-            {% include shared/comments.html %}
+            {%- if site.disqus_username  -%}
+              {% include shared/disqus-comments.html %}
+            {%- endif site.disqus_username  -%}
           </div>
         </article>
       </div>
