@@ -8,7 +8,11 @@ layout: compress
   <body itemscope itemtype="http://schema.org/WebPage">
     {% include components/sidebar.html %}
 
-    {{ content }}
+    <main class="content">
+      <div class="w-container">
+        {{ content }}
+      </div>
+    </main>
 
     {% include shared/scripts.html %}
   </body>

@@ -15,7 +15,5 @@ navigation:
     link: /
   - name: Palestras
     link: /palestras
-  - name: Categorias
-    link: /category
   - name: Tags
     link: /tags
