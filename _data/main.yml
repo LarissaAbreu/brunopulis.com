@@ -7,9 +7,12 @@ navigation:
     name: Blog
   - link: /palestras
     name: Palestras
+  - link: /series
+    name: Séries
   - link: /tags
     name: Tags
-    
+
+
 about:
   description: >-
     Escrevo sobre qualidade de software, acessiiblidade, desenvolvimento web em
