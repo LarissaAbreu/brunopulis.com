@@ -27,8 +27,6 @@ Eu já experimentei alguns métodos de organização pessoal e produtividade. De
 
 * Pomodoro;
 * GTD;
-* Kanban;
-* Scrum.
 
 ### Pomodoro
 
@@ -50,17 +48,20 @@ Em minha procura por me organizar estava vendo alguns vídeos sobre o [Notion](h
 
 Basicamente o **PARA**, possuí uma proposta bastante interessante onde ele subdivide todo o método em somente quatro etapas. A palavra PARA é um acrônimo de:
 
-**Projetos, Áreas, Recursos e Arquivos,** as quatro categorias de nível superior que abrangem todo tipo de informação que você pode encontrar em seu cotidiano.
+**Projetos, Áreas, Recursos e Arquivos,** as quatro categorias que abrangem todo tipo de informação que você pode encontrar em seu cotidiano. Abaixo irei explicar o que cada área representa e como devemos proceder em cada etapa.
 
-### Definições
+### Projetos
 
-#### Projetos
+A etapa de projetos é a mais importante no meu ponto de vista nesse método, dela surgem as outras etapas e ações que devemos executar. Podemos até parafrasear a máxima:
 
-Um projeto é série de tarefas vinculadas a uma meta, com um prazo.
+> defina seus projetos, ou eles definirão você.
 
-Alguns exemplos: 
+Um projeto é série de tarefas vinculadas a uma meta, com um prazo. Ou seja, algo com prazo de validade, finito. O método recomenda elencar os projetos em uma folha de papel e depois exportar ele para todas as ferramentas que utilizamos. Assim, podemos ter clareza do que votar como projeto.
 
-* Escrever postagem no blog;
+Outra vantagem de fazer no papel é que uma vez definido podemos enviar para as plataformas que temos informações. O PARA oferece o melhor dos dois mundos a **consistência** da centralização, com a **adaptabilidade** da descentralização.
+
+Alguns exemplos de projetos:
+
 * Viagem para Disney;
 * Comprar um novo celular.
 
@@ -79,7 +80,7 @@ Alguns exemplos:
 
 #### Recurso
 
-Um recurso é um tópico ou tema de interesse contínuo.
+Um recurso é um tópico ou tema de interesse contínuo. Os blocos de informações nessa etapa costumam ter informações valiosas que você pode acessar ao procurar material para uma postagem de um blog, por exemplo. 
 
 Alguns exemplos: 
 
@@ -89,7 +90,13 @@ Alguns exemplos:
 
 #### Arquivos
 
-Incluem itens inativos das outras três categorias. Alguns exemplos: 
+Arquivos podemos encarar como portfólios de projetos concluídos, cada um inativo, mas pronto para oferecer material potencialmente útil para reutilizar em projetos futuros. 
 
-* Projetos concluídos;
-* Projetos inativos.
+Alguns exemplos: 
+
+* Site da empresa ACME;
+* Aplicativo em Flutter.
+
+## Resumo 
+
+O sistema PARA promete ser eficaz e mais claro, como sempre estou experimentando ele. Em breve posto mais notícias de como está sendo a experiência de sua utilização. 
