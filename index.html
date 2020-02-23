@@ -2,49 +2,44 @@
 layout: default
 ---
 
-<main class="content">
-  <div class="w-container">
-    <h1 class="section-header">{{ site.data.main.section.header }}</h1>
+<h1 class="section-header">{{ site.data.main.section.header }}</h1>
 
-    <div class="w-dyn-list">
-      <div class="w-dyn-items">
-        <div class="w-dyn-item">
-          <div class="post-wrapper">
-            <div itemscope itemtype="http://schema.org/Blog">
-              {% for post in site.posts %}
-                <article class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-                  <a href="{{ post.url }}" class="blog-title-link w-inline-block">
-                    <h2 class="blog-title" itemprop="name">{{ post.title | strip_html | truncate: 150 }}</h2>
-                  </a>
+<div class="w-dyn-list">
+  <div class="w-dyn-items">
+    <div class="w-dyn-item">
+      <div class="post-wrapper">
+        <div itemscope itemtype="http://schema.org/Blog">
+          {% for post in site.posts %}
+            <article class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+              <a href="{{ post.url }}" class="blog-title-link w-inline-block">
+                <h2 class="blog-title" itemprop="name">{{ post.title | strip_html | truncate: 150 }}</h2>
+              </a>
 
-                  <div class="post-info-wrapper">
-                    <div class="post-info">
-                      <meta itemprop="datePublished" content="{{post.date}}">
-                      <time datetime="{{ post.date | date_to_xmlschema }}">
-                        <span class="day">
-                          {{ post.date | date: "%d" }}
-                        </span>
-                        <span class="month-year">
-                          {{ post.date | date: "%B %Y" }}
-                        </span>
-                      </time>
-                    </div>
-                    <div class="post-info">|</div>
-                    {% include shared/categories.html %}
-                  </div>
+              <div class="post-info-wrapper">
+                <div class="post-info">
+                  <meta itemprop="datePublished" content="{{post.date}}">
+                  <time datetime="{{ post.date | date_to_xmlschema }}">
+                    <span class="day">
+                      {{ post.date | date: "%d" }}
+                    </span>
+                    <span class="month-year">
+                      {{ post.date | date: "%B %Y" }}
+                    </span>
+                  </time>
+                </div>
+                <div class="post-info">|</div>
+                {% include shared/categories.html %}
+              </div>
 
-                  <p class="post-summary">
-                    {{ post.description | strip_html | truncatewords:150 }}</p>
-                  </p>
+              <p class="post-summary">
+                {{ post.description | strip_html | truncatewords:150 }}</p>
+              </p>
 
-                  {% include shared/tags.html %}
-                </article>
-              {% endfor %}
-            </div>
-          </div>
+              {% include shared/tags.html %}
+            </article>
+          {% endfor %}
         </div>
       </div>
     </div>
   </div>
-</main>
-
+</div>
