@@ -3,6 +3,9 @@ layout: post
 title: 'O método PARA: um sistema universal para organizar informações digitais'
 date: '2020-02-22 09:21pm'
 categories: Produtividade
+tags:
+  - produtividade
+  - organização
 description: >-
   A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma
   quantidade absurda de informações. E como lidamos com essa grande quantidade,
@@ -34,7 +37,7 @@ Eu já experimentei alguns métodos de organização pessoal e produtividade. De
 >
 > A técnica deriva seu nome da palavra italiana pomodoro (tomate), como referência ao popular cronômetro gastronômico na forma dessa fruta. O método é baseado na ideia de que pausas frequentes podem aumentar a agilidade mental.
 
-Ele, funciona muito bem quanto temos tarefas que são bem definidas. Utilizei um bom tempo ele, porém, sentia necessidade de algo a mais com mais etapas, pois a maioria dos projetos que estou envolvido são complexas e mudam com certa frequência. 
+Ele, funciona muito bem quanto temos tarefas que são bem definidas. Utilizei um bom tempo, porém, sentia necessidade de algo a mais com mais etapas, pois a maioria dos projetos que estou envolvido são complexas e mudam com certa frequência. 
 
 ### GTD
 
