@@ -3,7 +3,11 @@ layout: post
 title: 'O método PARA: um sistema universal para organizar informações digitais'
 date: '2020-02-22 09:21pm'
 categories: Produtividade
-description: Intrudcoao
+description: >-
+  A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma
+  quantidade absurda de informações. E como lidamos com essa grande quantidade,
+  armazenando e categorizando elas? Vamos descobrir uma boa alternativa para
+  colocar ordem no caos da informação.
 ---
 A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma quantidade absurda de informações. 
 
