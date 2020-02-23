@@ -18,7 +18,7 @@ Você já parou para refletir o quanto de conteúdo consumimos nas mídias digit
 
 Com essa curiosidade em mente um infográfico anual demonstra o que acontece em um minuto na internet, do ano de 2019 pode ser visto logo abaixo.
 
-![Infográfico demonstrando o que acontece na internet em um minuto ](/assets/images/posts/internet-minute-820.jpg)
+![Infográfico demonstrando o que acontece na internet em um minuto ](/assets/images/posts/internet-minute.jpg)
 
 Chega a ser assustador, não é mesmo? Ao analisarmos o ano de 2018 com 2019 os dados são gritantes: 
 
@@ -100,6 +100,6 @@ Alguns exemplos:
 * Site da empresa ACME;
 * Aplicativo em Flutter.
 
-## Resumo 
+## Resumo
 
-O sistema PARA promete ser eficaz e mais claro, como sempre estou experimentando ele. Em breve posto mais notícias de como está sendo a experiência de sua utilização. 
+O sistema PARA promete ser eficaz e mais claro, como sempre estou experimentando ele. Em breve posto mais notícias de como está sendo a experiência de sua utilização.
