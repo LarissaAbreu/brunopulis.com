@@ -11,7 +11,11 @@ Você já parou para refletir o quanto de conteúdo consumimos nas mídias digit
 
 Com essa curiosidade em mente um infográfico anual demonstra o que acontece em um minuto na internet, do ano de 2019 pode ser visto logo abaixo.
 
-![Infografico demonstrando o que acontece na internet em um minuto ](/assets/images/posts/internet-minute-820.jpg)
+![Infográfico demonstrando o que acontece na internet em um minuto ](/assets/images/posts/internet-minute-820.jpg)
+
+Chega a ser assustador, não é mesmo? Ao analisarmos o ano de 2018 com 2019 os dados são gritantes: 
+
+![Infografico comparando o ano de 2018 e 2019](/assets/images/posts/internet-minute-comparison.jpg)
 
 Procurando recentemente um método para tentar organizar minha vida digital (que é uma bagunça) encontrei sem querer com o [método PARA ](https://praxis.fortelabs.co/para/)criado por Tiago Forte. 
 
