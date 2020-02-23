@@ -9,8 +9,7 @@ navigation:
     name: Palestras
   - link: /tags
     name: Tags
-  - link: /test
-    name: Teste
+    
 about:
   description: >-
     Escrevo sobre qualidade de software, acessiiblidade, desenvolvimento web em
