@@ -5,9 +5,15 @@ date: '2020-02-22 09:21pm'
 categories: Produtividade
 description: Intrudcoao
 ---
-(Introdução)
+A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma quantidade absurda de informações. 
 
-Procurando recentemente um método para organizar minha vida digital, encontrei sem querer com o [método PARA ](https://praxis.fortelabs.co/para/)criado por Tiago Forte. 
+Você já parou para refletir o quanto de conteúdo consumimos nas mídias digitais por dia? Quanto tempo gastamos com redes sociais, notícias, jogos e chats com nossos amigos? 
+
+Com essa curiosidade em mente um infográfico anual demonstra o que acontece em um minuto na internet, do ano de 2019 pode ser visto logo abaixo.
+
+![Infografico demonstrando o que acontece na internet em um minuto ](/assets/images/posts/internet-minute-820.jpg)
+
+Procurando recentemente um método para tentar organizar minha vida digital (que é uma bagunça) encontrei sem querer com o [método PARA ](https://praxis.fortelabs.co/para/)criado por Tiago Forte. 
 
 ## Significado da sigla PARA
 
@@ -38,7 +44,7 @@ Alguns exemplos:
 * Hobbies;
 * Produtividade.
 
-#### Recurso 
+#### Recurso
 
 Um recurso é um tópico ou tema de interesse contínuo.
 
@@ -50,9 +56,7 @@ Alguns exemplos:
 
 #### Arquivos
 
-Incluem itens inativos das outras três categorias.
-Alguns exemplos: 
+Incluem itens inativos das outras três categorias. Alguns exemplos: 
 
 * Projetos concluídos;
 * Projetos inativos.
- 
