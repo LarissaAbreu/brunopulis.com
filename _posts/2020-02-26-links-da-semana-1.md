@@ -11,9 +11,13 @@ Links da semana #1 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
 ## Introdução
 
-Eu acompanho o blog do [Willian Justen](https://willianjusten.com.br) há um bom tempo, desde da época em que ele ensina sobre Jekyll e ele criou um hábito interessante sobre postar os links interessantes do que tinha visto. Pensando nisso, a partir dessa semana irei soltar um post por semana nesse formato. 
+Eu acompanho o blog do [Willian Justen](https://willianjusten.com.br) há um bom tempo, desde da época em que ele ensinava sobre Jekyll e algo que ele fazia que era bastante interessante era uma lista semanal de links interessantes.
 
-Essa semana praticamente estudei sobre algumas disciplinas relacionadas a Qualidade de Software e acessibilidade, então os links serão mais nesse sentido. 
+Pensando nisso, a partir dessa semana irei soltar um post por semana nesse formato. 
+
+Essa semana praticamente estudei sobre algumas disciplinas relacionadas a Qualidade de Software como: **testes baseados em riscos** e acessibilidade web.
+
+Também continuei o curso ["Treinamento de testes de software para iniciantes"](https://www.hotmart.com/product/treinamento-de-testes-de-software-para-iniciantes), aproveitando em Abril o Julio de Lima irá abrir uma segunda turma.
 
 ## Acessibilidade
 
