@@ -1,20 +1,26 @@
 seo:
-  tagline: 'Acessibilidade Web, Frontend e Qualidade de software'
+  tagline: 'Analista de Qualidade, Acessibilidade Web e Frontend'
+
 navigation:
   - link: /sobre
     name: Sobre
-  - link: /
-    name: Blog
   - link: /palestras
     name: Palestras
-  - link: /series
-    name: Séries
-  - link: /tags
-    name: Tags
+  - link: /blog
+    name: Blog
 
+contact:
+  name: Entre em contato
 
 about:
+  name: Bruno Pulis
   description: >-
-    Escrevo sobre qualidade de software, acessiiblidade, desenvolvimento web em
-    geral e carreira.
-  position: QA e Frontend Developer.
+    Escrevo sobre qualidade de software, acessiblidade, desenvolvimento web,
+    carreira e reflexões.
+  position: Analista de Qualidade
+
+section:
+  portfolio_button: Ver Portfólio
+  curricullum_button: Ver Currículo
+  blog: Artigos recentes
+  blog_button: Todos artigos

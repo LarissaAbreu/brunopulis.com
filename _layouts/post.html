@@ -7,42 +7,39 @@ layout: compress
   {% include metadata/head.html %}
 
   <body itemscope itemtype="http://schema.org/WebPage">
-    {% include components/sidebar.html %}
+    {% include components/header.html %}
 
-    <main class="content">
-      <div class="container">
-        <article itemscope itemtype="http://schema.org/BlogPosting">
-          <header class="post-title-section">
-            <h2 itemprop="name headline">{{ page.title }}</h2>
-            <div class="post-info-wrapper">
-              <div class="post-info">
-                <meta itemprop="datePublished" content="{{ page.date }}">
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                  <span class="day">
-                    {{ page.date | date: "%d" }}
-                  </span>
-                  <span class="month-year">
-                    {{ page.date | date: "%B %Y" }}
-                  </span>
-                </time>
-              </div>
-              <div class="post-info">|</div>
-              {% include shared/categories.html %}
-            </div>
+    <main class="main-wrapper">
+      <article class="blog-post px-3 py-5 p-md-5" itemscope itemtype="http://schema.org/BlogPosting">
+		    <div class="container">
+			    <header class="blog-post-header">
+            <h2 class="title mb-2" itemprop="name headline">{{ page.title }}</h2>
+				    <div class="meta mb-3">
+              <span class="date">Publicado em: {{ page.date | date_to_long_string }}</span>
+              {% include shared/read_time.html %}
+              <span class="comment"><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{page.id}}">0 comments</a></span></div>
           </header>
           <div id="audimaWidget"></div>
 
-          <div class="body-copy" itemprop="articleBody">
-            <div class="feature-img">
+			    <div class="blog-post-body">
+				    <figure class="blog-banner">
               <img class="img-fluid" src="{{ page.featured }}" alt="">
-            </div>
+              <figcaption class="mt-2 text-center image-caption">Image Credit: <a href="https://made4dev.com?ref=devblog" target="_blank">made4dev.com (Premium Programming T-shirts)</a></figcaption>
+
+            </figure>
 
             {{ content }}
 
-            {% include shared/disqus-comments.html %}
+            <div class="blog-comments-section">
+              {% include shared/disqus_comments.html %}
+            </div>
           </div>
-        </article>
-      </div>
+        </div>
+	    </article>
+
+	    <footer class="footer text-center py-2 theme-bg-dark">
+        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+	    </footer>
     </main>
 
     <script src="//audio.audima.co/audima-widget.js" defer></script>

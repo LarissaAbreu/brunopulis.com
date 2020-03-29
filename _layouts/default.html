@@ -6,12 +6,10 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
   {% include metadata/head.html %}
   <body itemscope itemtype="http://schema.org/WebPage">
-    {% include components/sidebar.html %}
+    {% include components/header.html %}
 
-    <main class="content">
-      <div class="w-container">
-        {{ content }}
-      </div>
+    <main class="main-wrapper">
+      {{ content }}
     </main>
 
     {% include shared/scripts.html %}

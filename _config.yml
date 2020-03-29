@@ -9,14 +9,16 @@ url: "https://brunopulis.com"
 author: Bruno Pulis
 
 # Social Profiles
-facebook_username: https://www.facebook.com/obrunopulis
-twitter_username:  https://twitter.com/obrunopulis
-linkedin_username: https://linkedin.com/in/pulis
-github_username:   https://github.com/brunopulis
+facebook: https://www.facebook.com/obrunopulis
+twitter:  https://twitter.com/obrunopulis
+linkedin: https://linkedin.com/in/pulis
+stackoverflow: https://stackoverflow.com/users/8055146/bruno-pulis
+codepen: https://codepen.io/brunopulis
+github:   https://github.com/brunopulis
 email_username: brunopulis@protonmail.com
 disqus_username: brunopulis
 
-# mailchimp_url: "https://brunopulis.us3.list-manage.com/subscribe/post?u=e1843173804aef8e161201c1b&amp;id=806ccbea2e"
+mailchimp_url: "https://brunopulis.us3.list-manage.com/subscribe/post?u=e1843173804aef8e161201c1b&amp;id=806ccbea2e"
 
 webmaster_verifications:
   google: DJZadsIuwm42MwJftKIXWE3cGrZLTlOTYdMf55gIVS8

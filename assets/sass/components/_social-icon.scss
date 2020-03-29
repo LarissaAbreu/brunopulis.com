@@ -1,0 +1,31 @@
+.social-link-group {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.social-button {
+  -webkit-transition: opacity 300ms ease;
+  background-color: #000;
+  border-radius: 100px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 8px;
+  transition: opacity 300ms ease;
+}
+
+.social-button:hover { opacity: 0.7; }
+.social-button.border {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  padding: 6px;
+}
+
+.social-icon-link {
+  margin-right: 11px;
+  opacity: 0.41;
+  transition: opacity 200ms ease;
+  width: 19px;
+}
+
+.social-icon-link:hover { opacity: 0.8; }

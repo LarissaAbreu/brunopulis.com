@@ -1,0 +1,87 @@
+// ===============================================================
+// Post template
+// ===============================================================
+
+.blog-title-link {
+  display: block;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-title-link:hover { opacity: 0.61; }
+
+.post-list {
+  padding: 0;
+  list-style: none;
+}
+
+.post-list a {
+  color: #333;
+  display: block;
+  border-bottom: 1px solid #dadada;
+  padding: .625rem 0;
+  text-decoration: none;
+  transition: all .5s;
+
+  &:hover,
+  &:focus {
+    background: #333;
+    color: white;
+  }
+}
+
+.post-list a > img { margin-right: 10px; }
+.post-list .entry-date { float: right; }
+
+.post-wrapper {
+  background-color: #fff;
+  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.post-summary {
+  display: block;
+  margin-bottom: 14px;
+  line-height: 144%;
+}
+
+.post-info {
+  display: inline-block;
+  margin-right: 8px;
+  color: #666;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.post-info.when-link { text-decoration: none; }
+.post-info.when-link:hover { color: #333; }
+
+.blog-title-link {
+  display: block;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-title-link:hover { opacity: 0.61; }
+.body-copy img { border-radius: 3px; }
+.body-copy a { text-decoration: none; }
+.body-copy a:hover { text-decoration: underline; }
+.body-copy li { margin-bottom: 3px; }
+
+.body-copy blockquote {
+  margin-left: -23px;
+  padding-left: 18px;
+  border-left-width: 4px;
+  border-left-color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.body-copy figure { margin-bottom: 20px; }

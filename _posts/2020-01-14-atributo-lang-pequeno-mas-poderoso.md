@@ -27,17 +27,24 @@ John estava procurando uma resenha sobre o livro [Peter Pan](https://pt.wikipedi
 
 A experiência de John, foi mais ou menos a seguinte:
 
-<iframe title="Vídeo demonstrando o uso do atributo lang" src="https://www.youtube.com/embed/IFmKQ5e17Jo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe title="Vídeo demonstrando o uso do atributo lang"
+          width="560"
+          height="315"  
+          src="https://www.youtube.com/embed/IFmKQ5e17Jo"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+</div>
 
-### Afinal, o que aconteceu?
+### Exemplificando
 
 Como vocês podem perceber, o título e os dois primeiros parágrafos soaram totalmente estranhos, parecido com o [Joel Santana](https://pt.wikipedia.org/wiki/Joel_Santana) tentando falar em inglês.
 
 Porém, os dois últimos parágrafos estão totalmente compreensíveis.
 
-O que aconteceu no vídeo é algo bem simples, mas se não prestarmos atenção o conteúdo pode ficar incompreensível. A marcação HTML desse trecho é: 
+O que aconteceu no vídeo é algo bem simples, mas se não prestarmos atenção o conteúdo pode ficar incompreensível. A marcação HTML desse trecho é:
 
-{% highlight html linenos %}
+{% highlight html %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,7 +71,7 @@ O documento HTML acima deve ser observado com cuidado, pois existem dois pontos 
 
 Já pensou ter que consumir conteúdo de páginas que possuem esse tipo de problema? O quão frustante isso pode ser? Essa experiência basicamente acontece todos os dias quando pessoas que possuem deficiência visual, auditiva e cognitiva tentam acessar páginas com idiomas com a definição de linguagem errada.
 
-Uma possível solução para o problema seria: 
+Uma possível solução para o problema seria:
 
 ```html
 <!DOCTYPE html>
@@ -100,18 +107,17 @@ A <abbr lang="en" title="Web Content Accessibility Guidelines">WCAG</abbr> um do
 
 O nível de impacto para os usuários é considerado **alto**.
 
-O elemento do documento HTML deve conter um atributo lang válido ou deve corresponder a um código lang válido para usuários de leitores de tela multilíngues que podem preferir um idioma diferente do padrão. 
+O elemento do documento HTML deve conter um atributo lang válido ou deve corresponder a um código lang válido para usuários de leitores de tela multilíngues que podem preferir um idioma diferente do padrão.
 
 Em todo documento HTML é **obrigatório definir o idioma da página**.
-
 
 ## Conclusão
 
 Percebemos que o atributo é extremamente importante para nossas páginas web e sua implementação é bastante simples. Existem casos em sites multilíngues que o atributo pode ser alterado dinamicamente via linguagens de programação. Meu conselho é: sempre que iniciar o desenvolvimento de uma página **defina a linguagem** e não tenha esse tipo de problema.
 
-Gostou? Tem alguma dúvida ou sugestão? Escreva um comentário. 
+Gostou? Tem alguma dúvida ou sugestão? Escreva um comentário.
 
-## Referências 
+## Referências
 
-* [1] Atributos globais > Lang. Mozilla Developer Network, 2019. Disponível em: [https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/lang](<https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/lang>). Acesso em: 14 de jan. de 2020.
+* [1] Atributos globais > Lang. Mozilla Developer Network, 2019. Disponível em: [Atributo lang](<https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/lang>). Acesso em: 14 de jan. de 2020.
 * [2] 3.1.1 – Language of Page (Level A). WUHCAG, 2019. Disponível em [Language of Page](https://www.wuhcag.com/language-of-page/). Acesso em 14 de jan. de 2020.

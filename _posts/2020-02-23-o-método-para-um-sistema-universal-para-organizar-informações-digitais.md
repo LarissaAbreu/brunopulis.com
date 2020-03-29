@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'O método PARA: um sistema universal para organizar informações digitais'
+title: 'Como organizar suas informações digitais'
 date: '2020-02-22 09:21pm'
 categories: Produtividade
 tags:
