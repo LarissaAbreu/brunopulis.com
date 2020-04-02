@@ -5,7 +5,7 @@ description: Lorem Ipsum
 permalink: /sobre
 ---
 
-Nascido em Campo Belo/MG e erradicado em Belo Horizonte. Considero-me mais belohorizontino do que campobelense. Atuo na área de tecnologia desde 2009, com boa experiência em desenvolvimento frontend e backend. 
+Nascido em Campo Belo/MG e erradicado em Belo Horizonte. Considero-me mais belohorizontino do que campobelense. Atuo na área de tecnologia desde 2009, com boa experiência em desenvolvimento frontend e backend. Para ver detalhadamente a minha trajetória profissional basta fazer o download do meu <a href="/assets/docs/brunopulis.pdf" download onclick="ga('send', 'event', 'PDF', 'Download', 'Download do meu currículo');">currículo</a>
 
 Trabalhei no <a href="http://www.diariosassociados.com.br/home/" target="_blank" rel="noopener noreferrer">Diários e Associados</a>, onde fui responsável pela refatoração do [Portal Uai](https://uai.com.br) um dos grandes portais de comunicação de Minas Gerais.
 
@@ -59,7 +59,7 @@ Eu posso te ajudar a desenvolver novos projetos com as seguintes habilidades:
 * Scrum;
 * Kanban.
 
-<h2 class="mt-5">Outros projetos</h2>  
+<h2 class="mt-5">Outros projetos</h2>
 
 Mantenho alguns projetos open source, como:
 
@@ -68,9 +68,7 @@ Mantenho alguns projetos open source, como:
 * <a href="https://github.com/brunopulis/awesome-cypress" target="_blank" rel="noopener noreferrer">Awesome Cypress</a>.
 * <a href="https://instagram.com/oensaiospoeticos" target="_blank" rel="noopener noreferrer">Ensaios Poéticos</a>.
 
-Para ver detalhadamente a minha trajetória profissional basta fazer o download do meu <a href="/assets/docs/brunopulis.pdf" download>currículo</a>
-
-<h2 class="mt-5">Contato</h2>  
+<h2 class="mt-5">Contato</h2>
 
 Para entrar em contato comigo basta me dar um "olá" em alguma dessas redes sociais:
 

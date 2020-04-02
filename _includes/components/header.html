@@ -4,13 +4,14 @@
   </h1>
 
   <nav class="navbar navbar-expand-lg navbar-dark" itemscope itemtype="http://schema.org/SiteNavigationElement">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navigation" class="collapse navbar-collapse flex-column" >
+    <div id="navigation" class="collapse navbar-collapse flex-column">
       <div class="profile-section pt-3 pt-lg-0">
-        <img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/author.jpg" alt="Bruno Pulis" >
+        <img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/author.jpg" alt="Bruno Pulis">
 
         <div class="bio mb-3">
           {{ site.data.main.about.description }}<br>
@@ -18,19 +19,22 @@
         </div>
         <ul class="social-list list-inline py-3 mx-auto">
           <li class="list-inline-item">
-            <a href="{{ site.twitter }}" target="_blank" rel="noreferrer noopener">
+            <a href="{{ site.twitter }}" target="_blank" rel="noreferrer noopener"
+              onclick="ga('send', 'event', 'Click', 'Contato', 'Twitter');">
               <span class="sr-only">Twitter</span>
               <i class="fab fa-twitter fa-fw" aria-hidden="true"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer noopener">
+            <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer noopener"
+              onclick="ga('send', 'event', 'Click', 'Contato', 'Linkedin');">
               <span class="sr-only">Linkedin</span>
               <i class="fab fa-linkedin-in fa-fw" aria-hidden="true"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="{{ site.github }}" target="_blank" rel="noreferrer noopener">
+            <a href="{{ site.github }}" target="_blank" rel="noreferrer noopener"
+              onclick="ga('send', 'event', 'Click', 'Contato', 'Github');">
               <span class="sr-only">Github</span>
               <i class="fab fa-github-alt fa-fw" aria-hidden="true"></i>
             </a>
@@ -53,14 +57,15 @@
 
       <ul class="navbar-nav flex-column text-left">
         {% for item in site.data.main.navigation %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ item.link | relative_url }}" itemprop="url">{{ item.name }}</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.link | relative_url }}" itemprop="url">{{ item.name }}</a>
+        </li>
         {% endfor %}
       </ul>
 
       <div class="my-2 my-md-3">
-        <a class="btn btn-primary" href="mailto:brunopulis@protonmail.com" rel="noopener noreferrer" target="_blank">{{ site.data.main.contact.name }}</a>
+        <a class="btn btn-primary" href="mailto:brunopulis@protonmail.com" rel="noopener noreferrer" target="_blank"
+          onclick="ga('send', 'event', 'Click', 'Contato', 'Botão de contato');">{{ site.data.main.contact.name }}</a>
       </div>
     </div>
   </nav>
