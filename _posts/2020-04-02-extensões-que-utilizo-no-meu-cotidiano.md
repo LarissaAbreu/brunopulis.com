@@ -3,6 +3,7 @@ layout: post
 title: Extensões que utilizo no meu cotidiano
 date: '2020-04-01 09:07pm'
 categories: Dicas
+featured: "/assets/images/posts/cover/cover-extension.jpg"
 tags:
   - Referências
   - Dicas
