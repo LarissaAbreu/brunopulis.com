@@ -81,6 +81,10 @@ A [web developer](https://chrome.google.com/webstore/detail/web-developer/bfbame
 
 A proposta do [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=pt-BR) é simples te auxiliar a escrever em inglês sem cometer erros básicos de gramática. Ás vezes, bate aquela dúvida em qual termo colocar, ele traz algumas recomendações de acordo com o contexto da sentença ou frase. 
 
+### Nimbus Screenshot
+
+O [Nimbus](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj) eu uso praticamente todos os dias para tirar prints, gravar pequenos videos e editar algumas imagens ele é uma boa ferramenta que me auxilia no meu trabalho como QA.
+
 ### Notion
 
 O [Notion](https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk?hl=pt-BR) é um dos meus queridinhos, ele é um ambiente com diversos serviços que usamos. Muitos de nós desenvolvedores usamos: trello, todo list, drive, dropbox e uma infinidade de serviços a proposta do Notion é integrar isso em uma única ferramenta para facilitar nosso dia a dia. 
