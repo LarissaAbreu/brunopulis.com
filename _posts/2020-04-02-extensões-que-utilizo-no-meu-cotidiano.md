@@ -3,7 +3,6 @@ layout: post
 title: Extensões que utilizo no meu cotidiano
 date: '2020-04-01 09:07pm'
 categories: Dicas
-featured: "/assets/images/posts/cover/cover-extension.jpg"
 tags:
   - Referências
   - Dicas
@@ -42,7 +41,7 @@ Para todos que me conhecem sabem que eu sou um pouco empolgado com acessibilidad
 
 O [AXE](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd?hl=pt-BR) é desenvolvido pelo o pessoal da Deque Systems, é uma ferramenta altamente competente naquilo que se propõe. Possuí um relatório muito conciso dos problemas relacionados a acessibilidade e documentação clara e concisa. O AXE também tem uma versão PRO, onde é possível gerar relatórios das inconsistências encontradas. Recomendo sem medo de errar.
 
-###  ChromeVox 
+### ChromeVox
 
 A proposta do [ChromeVox](https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn?hl=pt-BR) é fazer testes de acessibilidade como se fosse uma tecnologia assistiva como um leitor de telas. Eu gosto de realizar alguns testes rápidos com ele, uma dica que dou é sempre que precisar de validar algo no leitor de tela utilize um mais consolidado como o o NVDA ou JAWS.
 
@@ -79,6 +78,10 @@ O [Privacy badger](https://chrome.google.com/webstore/detail/privacy-badger/pkeh
 A [web developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=pt-BR) é uma das extensões mais antigas que eu conheço. Basicamente ela é um cinto de utilidades com uma séries de verificações bastante útil para quem trabalha com frontend. 
 
 ## Produtividade
+
+### Bitwarden
+
+Eu uso o [Bitwarden](https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb) tem pouco tempo, porém, gosto da forma como ele trabalha e organiza as informações. Eu utilizava o 1Password como gerenciador de senhas, mas encontrei o Bitwarden e pelo fato de ser open source adotei ele no meu dia a dia. 
 
 ### Grammarly
 
