@@ -53,6 +53,8 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Thumbnail", name: "featured", widget: "image", default: "assets/images/photo-thumb.jpg" }
+      - { label: "Imagem destacada", name: "image", widget: "image", default: "assets/images/posts/cover/" }
       - { label: "Publicado", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma" }
       - { label: "Categoria", name: "categories", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
