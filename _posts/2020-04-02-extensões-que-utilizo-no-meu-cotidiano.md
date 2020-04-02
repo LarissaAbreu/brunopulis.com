@@ -45,4 +45,4 @@ Para validar problemas encontrados relacionados a alguma deficiência visual eu 
 
 ### NoCoffee Visual Simulator
 
-O NoCoffee e mais == das ferrsam
+O  NoCoffee é mais uma ferramenta voltada para avaliar deficiências visuais, assim como, o Colorblinding porém, ele é mais completo pois demonstra algumas deficiencias quedadaal
