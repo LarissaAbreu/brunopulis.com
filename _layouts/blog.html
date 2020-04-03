@@ -4,43 +4,47 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-  {% include metadata/head.html %}
-  <body class="site" itemscope itemtype="http://schema.org/WebPage">
-    {% include components/header.html %}
+{% include metadata/head.html %}
 
-    <main class="main-wrapper">
-      <section class="blog-list px-3 py-5 p-md-5">
-		    <div class="container">
-			    <div class="row">
-            {% for post in site.posts %}
-              <div class="col-md-4 mb-3">
-                <article class="card blog-post-card">
-                  {% if post.featured %}
-                    <img class="card-img-top" src="{{ post.featured }}" alt="{{ post.title }}">
-                  {% else %}
-                    <img class="card-img-top" src="/assets/images/photo-thumb.jpg" alt="">
-                  {% endif %}
+<body class="site" itemscope itemtype="http://schema.org/WebPage">
+  {% include components/header.html %}
 
-                  <div class="card-body">
-                    <h3 class="card-title">
-                      <a class="theme-link" href="{{ post.url }}">{{ post.title }}</a>
-                    </h3>
-                    <p class="card-text">
-                      {{ post.description | strip_html | truncatewords: 25 }}
-                    </p>
-                  </div>
+  <main class="main-wrapper">
+    <section class="blog-list px-3 py-5 p-md-5">
+      <div class="container">
+        <div class="row">
+          {% for post in site.posts %}
+          <div class="col-md-4 mb-3">
+            <article class="card blog-post-card">
+              {% if post.featured %}
+              <img class="card-img-top" src="{{ post.featured }}" alt="{{ post.title }}">
+              {% else %}
+              <img class="card-img-top" src="/assets/images/photo-thumb.jpg" alt="">
+              {% endif %}
 
-                  <footer class="card-footer">
-                    <small class="text-muted">Published 2 days ago</small>
-                  </footer>
-                </article>
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a class="theme-link" href="{{ post.url }}">{{ post.title }}</a>
+                </h3>
+                <p class="card-text">
+                  {{ post.description | strip_html | truncatewords: 25 }}
+                </p>
               </div>
-            {% endfor %}
-				  </div>
-		    </div>
-      </section>
-    </main>
 
-    {% include shared/scripts.html %}
-  </body>
+              <footer class="card-footer">
+                <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}">
+                  Publicado: {% include shared/date.html date=post.date %}
+                </time>
+              </footer>
+            </article>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include shared/scripts.html %}
+</body>
+
 </html>
