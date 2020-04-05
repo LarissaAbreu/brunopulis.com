@@ -4,45 +4,51 @@ layout: compress
 
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-  {% include metadata/head.html %}
+{% include metadata/head.html %}
 
-  <body itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
 
-    {% include components/header.html %}
+  {% include components/header.html %}
 
-    <main class="main-wrapper">
-      <article class="blog-post px-3 py-5 p-md-5" itemscope itemtype="http://schema.org/BlogPosting">
-		    <div class="container">
-			    <header class="blog-post-header">
-            <h2 class="title mb-2" itemprop="name headline">{{ page.title }}</h2>
-				    <div class="meta mb-3">
-              <span class="date">Publicado em: {{ page.date | date_to_long_string }}</span>
-              {% include shared/read_time.html %}
-              <span class="comment"><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{page.id}}">0 comments</a></span></div>
-          </header>
-          <div id="audimaWidget"></div>
+  {% include components/newsletter.html %}
+  <main class="main-wrapper">
+    <article class="blog-post px-3 py-5 p-md-5" itemscope itemtype="http://schema.org/BlogPosting">
+      <div class="container">
+        <header class="blog-post-header">
+          <h2 class="title mb-2" itemprop="name headline">{{ page.title }}</h2>
+          <div class="meta mb-3">
+            <span class="date">Publicado em: {{ page.date | date: "%d/%m/%Y" }}</span>
+            {% include shared/read_time.html %}
+            <span class="comment"><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{page.id}}">0
+                comentários</a></span></div>
+        </header>
+        <div id="audimaWidget"></div>
 
-			    <div class="blog-post-body">
-				    <figure class="blog-banner">
-              <img class="img-fluid" src="{{ page.featured }}" alt="">
-              <!-- <figcaption class="mt-2 text-center image-caption">Image Credit: <a href="https://made4dev.com?ref=devblog" target="_blank">made4dev.com (Premium Programming T-shirts)</a></figcaption> -->
-            </figure>
+        <div class="blog-post-body">
+          <figure class="blog-banner">
+            <img class="img-fluid" src="{{ page.featured }}" alt="">
+            <figcaption class="mt-2 text-center image-caption">
+              Crédito da imagem: <a href="{{ post.link_image  }}" target="_blank">{{ page.link_text }}</a>
+            </figcaption>
+          </figure>
 
-            {{ content }}
+          {{ content }}
 
-            <div class="blog-comments-section">
-              {% include shared/disqus_comments.html %}
-            </div>
+          <div class="blog-comments-section">
+            {% include shared/disqus_comments.html %}
           </div>
         </div>
-	    </article>
+      </div>
+    </article>
 
-	    <footer class="footer text-center py-2 theme-bg-dark">
-        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-	    </footer>
-    </main>
+    <footer class="footer text-center py-2 theme-bg-dark">
+      <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a
+          href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+    </footer>
+  </main>
 
-    <script src="//audio.audima.co/audima-widget.js" defer></script>
-    {% include shared/scripts.html %}
-  </body>
+  <script src="//audio.audima.co/audima-widget.js" defer></script>
+  {% include shared/scripts.html %}
+</body>
+
 </html>

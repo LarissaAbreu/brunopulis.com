@@ -16,8 +16,8 @@ layout: compress
           {% for post in site.posts %}
           <div class="col-md-4 mb-3">
             <article class="card blog-post-card">
-              {% if post.featured %}
-              <img class="card-img-top" src="{{ post.featured }}" alt="{{ post.title }}">
+              {% if post.thumb %}
+              <img class="card-img-top" src="{{ post.thumb }}" alt="{{ post.title }}">
               {% else %}
               <img class="card-img-top" src="/assets/images/photo-thumb.jpg" alt="">
               {% endif %}
@@ -32,7 +32,7 @@ layout: compress
               </div>
 
               <footer class="card-footer">
-                <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}">
+                <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
                   Publicado: {% include shared/date.html date=post.date %}
                 </time>
               </footer>
