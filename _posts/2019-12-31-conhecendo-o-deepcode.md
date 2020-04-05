@@ -2,7 +2,7 @@
 layout: post
 title: "Conhecendo o DeepCode"
 date: 2019-12-31 14:01:04
-image: '/assets/images/posts/cover/cover-ia.jpg'
+thumb: '/assets/images/posts/cover/cover-ia.jpg'
 featured: '/assets/images/posts/inteligencia-artificial.jpg'
 alt:
 description: Descubra como a inteligência artificial pode ajudar no processo de Code Review

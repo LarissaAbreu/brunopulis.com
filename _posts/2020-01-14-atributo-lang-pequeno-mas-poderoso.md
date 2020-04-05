@@ -2,7 +2,7 @@
 layout: post
 title: "Explorando o atributo lang"
 date: 2020-01-14 01:11:52
-image: '/assets/images/posts/cover/cover-languages.jpg'
+thumb: '/assets/images/posts/cover/cover-languages.jpg'
 featured: '/assets/images/posts/languages.jpg'
 alt: Vários bilhetes com expressões de diversos idiomas escritos
 description: Descubra o poder do atributo lang e como utilizar ele da forma correta

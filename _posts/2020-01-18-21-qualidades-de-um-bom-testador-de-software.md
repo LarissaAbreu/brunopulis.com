@@ -2,6 +2,7 @@
 layout: post
 title: "21 Qualidades de um bom QA"
 date: 2020-01-18 20:26:35
+thumb: '/assets/images/posts/qualidade.jpg'
 featured: '/assets/images/posts/qualidade.jpg'
 categories: Qualidade
 tags:

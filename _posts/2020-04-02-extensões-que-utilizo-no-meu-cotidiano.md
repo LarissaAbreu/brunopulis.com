@@ -11,6 +11,7 @@ description: >-
   Dicas de extensões que utilizo no meu dia a dia  me ajudando a ser mais
   produtivo.
 ---
+
 ![Caixa de ferramentas simbolizando extensoes do navegador.](/assets/images/posts/extension.jpg)
 
 Fala pessoal, nesse artigo gostaria de compartilhar com vocês as extensões que utilizo no meu cotidiano e me ajudam ficar mais focado e ser mais produtivo. 

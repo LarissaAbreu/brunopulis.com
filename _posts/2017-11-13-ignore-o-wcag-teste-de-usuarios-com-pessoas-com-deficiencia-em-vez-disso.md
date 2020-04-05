@@ -2,7 +2,7 @@
 layout: post
 title: "Ignore o WCAG! Teste de usuários com pessoas com deficiência em vez disso."
 date: 2017-11-13
-image: "/assets/images/posts/cover/cover-wcag.jpg"
+thumb: "/assets/images/posts/cover/cover-wcag.jpg"
 featured: "/assets/images/posts/wcag.png"
 alt: "Um bloco de anotações com uma caneta e um notebook em cima de uma mesa marrom"
 description: "Aprenda com essas dicas como testar acessibilidade dos seus produtos digitais da forma correta"

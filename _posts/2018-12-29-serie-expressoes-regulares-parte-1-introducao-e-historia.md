@@ -2,7 +2,7 @@
 layout: post
 title: "Expressões Regulares: Introdução e História"
 date: 2018-12-29 03:28:43
-image: "/assets/images/posts/cover/cover-code.jpg"
+thumb: "/assets/images/posts/cover/cover-code.jpg"
 featured: "/assets/images/posts/code.jpg"
 alt: "Abreviação em inglês de Expressões regulares. Ilustração"
 description: "Nesta série, vamos estudar sobre a história e a introdução das expressões regulares e compreender os benefícios de sua utilização."
