@@ -20,45 +20,6 @@ No meu tempo livre costumo ajudar em traduções de ferramentas open source, esc
 Criei essse blog com o intuito de compartilhar conhecimento com as pessoas, pois a troca de experiências é algo primordial para nosso crescimento profissional. Nele você irá encontrar várias dicas sobre **frontend**, **acessibilidade**, **qualidade de software** e pequenos tutoriais. E caso você tenha algum tema para sugerir basta entrar em contato
 <a href="mailto:brunopulis@protonmail.com" target="_blank" rel="noopener noreferrer">comigo</a>.
 
-<h2 class="mt-5">Minhas skills e experiências</h2>
-
-Eu posso te ajudar a desenvolver novos projetos com as seguintes habilidades:
-
-<h3 class="mt-5">Frontend</h3>
-
-* Avaliação de acessibilidade;
-* Conformidade com o WCAG;
-* Design Responsivo;
-* HTML, Template Engines;
-* Metodologias de CSS (BEM, OOCSS, SMACSS, ITCSS);
-* CSS (Sass, Less);
-* CSS Frameworks (Bootstrap, Foundation, Bulma);
-* CMS para desenvolvimento de sites (Wordpress, Jekyll);
-* Automatizadores de tarefas (Gulp, Grunt);
-* Javascript (ES6);
-* Vue.js;
-* React;
-* Flutter;
-* Git.
-
-<h3 class="mt-5">Backend</h3>
-
-* MySQL;
-* PHP/Laravel;
-* Node JS;
-
-<h3 class="mt-5">Quality Assurance</h3>
-
-* Testes automatizados (Selenium WebDriver, Cypress, Capybara, Rspec);
-* Testes de acessibilidade;
-* TDD;
-* BDD;
-
-<h3 class="mt-5">Metodologias</h3>
-
-* Scrum;
-* Kanban.
-
 <h2 class="mt-5">Outros projetos</h2>
 
 Mantenho alguns projetos open source, como:
