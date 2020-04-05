@@ -4,35 +4,39 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-  {% include metadata/head.html %}
-  <body itemscope itemtype="http://schema.org/WebPage">
-    {% include components/header.html %}
+{% include metadata/head.html %}
 
-    <main class="main-wrapper">
-      <section class="about-section py-5">
-        <div class="container">
-          <h2 class="title mb-3">{{ page.title }}</h2>
+<body itemscope itemtype="http://schema.org/WebPage">
+  {% include components/header.html %}
+
+  <main class="main-wrapper">
+    {% include components/newsletter.html %}
+
+    <section class="about-section py-5">
+      <div class="container">
+        <h2 class="title mb-3">{{ page.title }}</h2>
 
         {% assign palestras = site.palestras | sort: 'date' | reverse %}
-          {% for palestra in palestras %}
-            <article class="post-preview">
-              <h3 class="title mb-3">
-                <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
-                  {{ palestra.title }}
-                </a>
-              </h3>
+        {% for palestra in palestras %}
+        <article class="post-preview">
+          <h3 class="title mb-3">
+            <a href="{{ palestra.external_url }}" target="_blank" rel="noopener noreferrer">
+              {{ palestra.title }}
+            </a>
+          </h3>
 
-              <div class="post-meta">
-                <time><strong>Data</strong> {{ palestra.event_date | date: "%d/%m/%y" }}</time>
-                <p><strong>Evento:</strong> {{ palestra.event }}</p>
-                </div>
-            </article>
-            <hr>
-          {% endfor %}
-        </div>
-      </section>
-    </main>
+          <div class="post-meta">
+            <time><strong>Data</strong> {{ palestra.event_date | date: "%d/%m/%y" }}</time>
+            <p><strong>Evento:</strong> {{ palestra.event }}</p>
+          </div>
+        </article>
+        <hr>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
 
-    {% include shared/scripts.html %}
-  </body>
+  {% include shared/scripts.html %}
+</body>
+
 </html>

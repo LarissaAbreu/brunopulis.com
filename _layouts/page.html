@@ -4,41 +4,31 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-  {% include metadata/head.html %}
-  <body itemscope itemtype="http://schema.org/WebPage">
-    {% include components/header.html %}
+{% include metadata/head.html %}
 
-    <main class="main-wrapper">
-	    <article class="about-section py-5">
-		    <div class="container">
-			    <h2 class="title mb-3">{{ page.title }}</h2>
+<body itemscope itemtype="http://schema.org/WebPage">
+  {% include components/header.html %}
 
-			    {{ content }}
-		    </div>
-	    </article>
+  <main class="main-wrapper">
+    <article class="about-section py-5">
+      <div class="container">
+        <h2 class="title mb-3">{{ page.title }}</h2>
 
-	    <section class="cta-section theme-bg-light py-5">
-		    <div class="container text-center">
-			    <h2 class="heading">Newsletter</h2>
-			    <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
-			    <form class="signup-form form-inline justify-content-center pt-3">
-            <div class="form-group">
-                <label class="sr-only" for="semail">Your email</label>
-                <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
-            </div>
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-		    </div><!--//container-->
-	    </section>
+        {{ content }}
+      </div>
+    </article>
 
-	    <footer class="footer text-center py-2 theme-bg-dark">
-        <small class="copyright">
-          Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by
-          <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers
-        </small>
-	    </footer>
-    </main>
+    {% include components/newsletter.html %}
 
-    {% include shared/scripts.html %}
-  </body>
+    <footer class="footer text-center py-2 theme-bg-dark">
+      <small class="copyright">
+        Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by
+        <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers
+      </small>
+    </footer>
+  </main>
+
+  {% include shared/scripts.html %}
+</body>
+
 </html>
