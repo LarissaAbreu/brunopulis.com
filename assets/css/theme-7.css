@@ -540,9 +540,7 @@ code {
 	word-break: break-word
 }
 
-a>code {
-	color: inherit
-}
+a>code { color: inherit }
 
 kbd {
 	padding: .2rem .4rem;
@@ -584,21 +582,15 @@ pre code {
 }
 
 @media (min-width: 576px) {
-	.container {
-		max-width: 540px
-	}
+	.container { max-width: 540px }
 }
 
 @media (min-width: 768px) {
-	.container {
-		max-width: 720px
-	}
+	.container { max-width: 720px }
 }
 
 @media (min-width: 992px) {
-	.container {
-		max-width: 960px
-	}
+	.container { max-width: 960px }
 }
 
 @media (min-width: 1200px) {
@@ -10226,135 +10218,10 @@ body {
 	overflow-x: hidden
 }
 
-.config-trigger {
-	position: absolute;
-	top: 30px;
-	left: -36px;
-	width: 36px;
-	height: 36px;
-	background: #223142;
-	color: #fff;
-	text-align: center;
-	border-radius: 4px;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-	text-decoration: none
-}
-
-.config-trigger:hover {
-	background: #111820;
-	text-decoration: none
-}
-
-.config-trigger:hover .fa-cog {
-	color: #fff
-}
-
-.config-trigger .fa-cog {
-	font-size: 1.25rem;
-	display: block;
-	color: #fff
-}
-
-.config-panel {
-	position: absolute;
-	top: 50px;
-	right: -190px;
-	z-index: 30;
-	width: 190px
-}
-
-.config-panel .panel-inner {
-	position: relative;
-	background: #223142;
-	color: #fff;
-	padding: 15px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0
-}
-
-.config-panel .panel-title {
-	font-weight: 600;
-	margin-bottom: 10px;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #fff
-}
-
-.config-panel label {
-	color: #fff
-}
-
-.config-panel #color-options {
-	margin-bottom: 0px
-}
-
-.config-panel #color-options li a {
-	display: block;
-	width: 28px;
-	height: 28px;
-	border: 2px solid transparent;
-	margin-top: 5px
-}
-
-.config-panel #color-options li a:hover {
-	-webkit-opacity: .9;
-	-moz-opacity: .9;
-	opacity: .9;
-	border: 2px solid rgba(255, 255, 255, 0.9)
-}
-
-.config-panel #color-options li.list-inline-item {
-	margin-right: 5px
-}
-
-.config-panel #color-options li.active a {
-	border: 2px solid #fff
-}
-
-.config-panel #color-options li.theme-1 a {
-	background: #5FCB71
-}
-
-.config-panel #color-options li.theme-2 a {
-	background-color: #5BC3D5
-}
-
-.config-panel #color-options li.theme-3 a {
-	background-color: #3B7EEB
-}
-
-.config-panel #color-options li.theme-4 a {
-	background-color: #5ECCA9
-}
-
-.config-panel #color-options li.theme-5 a {
-	background-color: #EEA73B
-}
-
-.config-panel #color-options li.theme-6 a {
-	background-color: #5469C9
-}
-
-.config-panel #color-options li.theme-7 a {
-	background-color: #5D6BA7
-}
-
-.config-panel #color-options li.theme-8 a {
-	background-color: #6C51A4
-}
-
-.config-panel .close {
-	position: absolute;
-	right: 5px;
-	top: 5px;
-	color: #fff
-}
-
-.config-panel .close .fa {
-	color: #fff
+.profile-teaser .name { font-size: 3rem; }
+.profile-teaser .tagline {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .overview-section .item-desc {
@@ -10446,4 +10313,100 @@ body {
     border-top: none;
     background: none;
     padding-top: 0
+}
+
+.resume-wrapper {
+    border: 1px solid rgba(0,0,0,0.025)
+}
+
+.resume-section-heading {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.15rem;
+    color: #5D6BA7
+}
+
+.resume-section-heading:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: #5D6BA7;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.resume-name {
+    font-size: 2.75rem;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    color: #5D6BA7
+}
+
+.resume-tagline {
+    font-size: 1.25rem;
+    font-weight: 300
+}
+
+.resume-contact {
+    border-left: 1px solid rgba(0,0,0,0.08);
+    font-size: 0.75rem
+}
+
+a.resume-link {
+    color: #4f4f4f
+}
+
+a.resume-link:hover {
+    color: #5D6BA7
+}
+
+.resume-profile-image {
+    max-width: 120px
+}
+
+.resume-intro {
+    font-size: 0.875rem
+}
+
+.resume-main .item-title {
+    font-size: 1rem
+}
+
+.resume-main .item-meta {
+    font-size: 0.75rem
+}
+
+.resume-main .item-content {
+    font-size: 0.875rem
+}
+
+.resume-aside {
+    border-left: 1px solid rgba(0,0,0,0.08)
+}
+
+.resume-aside .item {
+    font-size: 0.875rem
+}
+
+.resume-aside .item-title {
+    font-size: 1rem
+}
+
+.resume-education-list,.resume-awards-list {
+    font-size: 0.875rem
+}
+
+.resume-degree-time-org,.resume-degree-time {
+    font-size: 0.75rem
+}
+
+.resume-lang-list,.resume-interests-list {
+    font-size: 0.875rem
+}
+
+.resume-social-list {
+    font-size: 0.75rem
 }
