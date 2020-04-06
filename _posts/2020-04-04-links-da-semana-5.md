@@ -19,8 +19,7 @@ Links da semana #5 - Coisas bacanas que vi e decidi compartilhar com vocês.
 ## Vídeos
 
 * [A dor de aprender por Fábio Akita](https://www.youtube.com/watch?v=HEaIsKm-pao)
-* [Guia DEFINITIVO de Aprendendo a Aprender | A maior BRONCA da sua vida ](https://www.youtube.com/watch?v=oUPaJxk6TZ0)
-* [Um júnior já deveria saber como reduzir a quantidade de IFs de um código](https://www.youtube.com/watch?v=Lf3ZV0UsnEo)
+* [Guia DEFINITIVO de Aprendendo a Aprender - A maior BRONCA da sua vida ](https://www.youtube.com/watch?v=oUPaJxk6TZ0)
 
 ## Cursos
 
