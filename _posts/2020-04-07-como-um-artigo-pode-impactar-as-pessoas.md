@@ -9,10 +9,13 @@ legend:
 link_text: Foto por Ross Find em Unsplash
 link_image: https://unsplash.com/photos/mG28olYFgHI
 description: Conto um pouco de como eu topei um desafio para gravar meu primeiro vídeo para o Youtube e a surpresa que tive.
-categories:
-tags:
-twitter_text:
-introduction:
+categories: Reflexão
+tags: 
+  - Acessibilidade
+  - Desafios
+  
+twitter_text: Conto um pouco de como eu topei um desafio para gravar meu primeiro vídeo para o Youtube e a surpresa que tive.
+introduction: Conto um pouco de como eu topei um desafio para gravar meu primeiro vídeo para o Youtube e a surpresa que tive.
 ---
 
 Recentemente por incentivo do meu mentor o [Júlio de Lima](https://www.linkedin.com/in/juliodelimas/), postei o meu primeiro vídeo sobre acessibilidade no meu [canal no Youtube](https://www.youtube.com/channel/UCAjuwwxEbHtm4GvVi3W_o6Q), onde mostro a ferramenta <span lang="en">NoCoffee Vision Simulator</span>.
