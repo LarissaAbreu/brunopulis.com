@@ -30,9 +30,9 @@ Eu topei desafio e gravei o vídeo sobre o NoCoffee. Postei no Linkedin e muitas
 <footer class="blockquote-footer">Thiago Santos</footer>
 </blockquote>
 
-Eu nunca pensei que o conteúdo que estava produzindo pudesse alcançar que estava tão e sofria de um problema que por muitos é ignorado. Nesses casos se tornar primordial a acessibilidade.
+Foi uma supresa para mim saber que alguém que estava perto, sofria de algo que muita das vezes colocamos como distante no nosso cotidiano. Nesses casos torna-se primordial a acessibilidade.
 
-Para quem não conhece o que é uma mácula na visão se parece com imagem abaixo:
+Para quem não conhece o que é uma mácula na visão, a experiência de navegação é assim:
 
 <figure class="blog-banner">
   <img class="img-fluid" src="/assets/images/posts/no-coffee.gif" alt="Navegação em um site com visão máculada">
