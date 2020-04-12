@@ -2,11 +2,14 @@
 layout: post
 title: 'Links da semana #4'
 date: '2020-03-30 08:40pm'
-categories: Referências
+categories: Referencias
 tags:
   - Links Semanais
 description: Links interessantes que vi e achei legal em compartilhar
 ---
+
+Links da semana 3 - Coisas bacanas que vi e decidi compartilhar com vocês.
+
 ## Acessibilidade
 
 * [Accessibility for teams](https://accessibility-for-teams.com/)

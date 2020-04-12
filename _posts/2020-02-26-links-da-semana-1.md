@@ -2,13 +2,13 @@
 layout: post
 title: 'Links da semana #1'
 date: '2020-02-26 06:32pm'
-categories: 
-  - Referências
+categories: Referencias
 tags:
   - Links Semanais
 description: Links interessantes que vi e achei legal em compartilhar
 ---
-Links da semana #1 - Coisas bacanas que vi e decidi compartilhar com vocês.
+
+Links da semana 1 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
 ## Introdução
 
