@@ -2,18 +2,10 @@
 layout: post
 title: "Links da semana 6"
 date: 2020-04-08 12:20:19
-thumb: '/assets/images/posts/cover'
-featured: '/assets/images/posts/'
-alt:
-legend:
-link_text:
-link_image:
-description:
+description: Links interessantes que vi e achei legal em compartilhar
 categories: Referencias
 tags:
  - Links Semanais
-twitter_text:
-introduction:
 ---
 
 Links da semana 6 - Coisas bacanas que vi e decidi compartilhar com vocês.
