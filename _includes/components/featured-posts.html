@@ -23,7 +23,7 @@
 
           <div class="card-footer">
             <meta itemprop="datePublished" content="{{post.date}}">
-            <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}">
+            <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
               Publicado: {% include shared/date.html date=post.date %}
             </time>
           </div>
