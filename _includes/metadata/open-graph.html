@@ -11,7 +11,7 @@
   <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   {% if page.image %}
-    <meta property="og:image" content="{{ site.url }}{{page.image }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.featured }}">
   {% else %}
     <meta property="og:image" content="{{ "/assets/images/blog-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
@@ -29,7 +29,7 @@
   <meta name="twitter:creator" content="@obrunopulis">
   <meta name="twitter:card" content="summary">
   {% if page.image %}
-    <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
+    <meta property="twitter:image:src" content="{{ site.url }}{{ page.featured }}">
   {% else %}
     <meta property="twitter:image:src" content="{{ "/assets/images/blog-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
