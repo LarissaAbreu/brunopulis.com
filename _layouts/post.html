@@ -1,54 +1,38 @@
 ---
-layout: compress
+layout: default
 ---
-
-<!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-{% include metadata/head.html %}
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  {% include components/header.html %}
-
-  <main class="main-wrapper">
-    {% include components/newsletter.html %}
-
-    <article class="blog-post px-3 py-5 p-md-5" itemscope itemtype="http://schema.org/BlogPosting">
-      <div class="container">
-        <header class="blog-post-header">
-          <h2 class="title mb-2" itemprop="name headline">{{ page.title }}</h2>
-          <div class="meta mb-3">
-            <span class="date">Publicado em: {{ page.date | date: "%d/%m/%Y" }}</span>
-            {% include shared/read_time.html %}
-            <span class="comment"><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{page.id}}">0
-                comentários</a></span></div>
-        </header>
-        <div id="audimaWidget"></div>
-
-        <div class="blog-post-body">
-          <figure class="blog-banner">
-            <img class="img-fluid" src="{{ page.featured }}" alt="{{ page.alt }}">
-            <figcaption class="mt-2 text-center image-caption">
-              Crédito da imagem: <a href="{{ post.link_image  }}" target="_blank">{{ page.link_text }}</a>
-            </figcaption>
-          </figure>
-
-          {{ content }}
-
-          <div class="blog-comments-section">
-            {% include shared/disqus_comments.html %}
-          </div>
-        </div>
+  
+<section class="blog-posts-content-container">
+  <article class="blog-post px-3 py-5 p-md-5" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="blog-post-header">
+      <div class="meta mb-3">
+        <span class="date">{{ page.date | date: "%d/%m/%Y" }}</span>
+        {% include shared/read_time.html %}
       </div>
-    </article>
+      <h1 class="title mb-2" itemprop="name headline">{{ page.title }}</h1>
+    </header>
+    <div id="audimaWidget"></div>
 
-    <footer class="footer text-center py-2 theme-bg-dark">
-      <small class="copyright">Design por <i class="fas fa-heart" style="color: #fb866a;" aria-hidden="true"></i>
-        por <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> para desenvolvedores</small>
-    </footer>
-  </main>
+    <div class="blog-post-body">
+      {% if page.featured %}
+        <figure class="blog-banner">
+          <img class="img-fluid" src="{{ page.featured }}" alt="{{ page.alt }}">
+          <figcaption class="mt-2 text-center image-caption">
+            Crédito da imagem: <a href="{{ post.link_image  }}" target="_blank">{{ page.link_text }}</a>
+          </figcaption>
+        </figure>
+      {% endif %}
 
-  <script src="//audio.audima.co/audima-widget.js" defer></script>
-  {% include shared/scripts.html %}
-</body>
+      {{ content }}
 
-</html>
+      <div class="blog-comments-section">
+        <h3>Comentários</h3>
+        {% include shared/disqus_comments.html %}
+      </div>
+
+      {% include components/newsletter.html %}
+    </div>
+  </article>
+</section>
+
+<script src="//audio.audima.co/audima-widget.js" defer></script>

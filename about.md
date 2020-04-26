@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre mim
-description: Lorem Ipsum
+description: Trajetória profissional
 permalink: /sobre
 ---
 

@@ -1,49 +1,105 @@
 <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
   <h2 class="sr-only">Rodapé</h2>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-6 col-md">
-        <h3 class="footer__title">Mapa do site</h3>
-        <ul class="list-unstyled text-small">
-          <li><a class="" href="/">Home</a></li>
-          <li><a class="" href="/sobre">Sobre</a></li>
-          <li><a class="" href="/blog">Blog</a></li>
-          <li><a class="" href="/palestras">Palestras</a></li>
-          <li><a class="" href="/acessibilidade">Acessibilidade desse site</a></li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md">
-        <h3 class="footer__title">Serviços</h3>
-        <ul class="list-unstyled text-small">
-          <li class="">Wordpress</li>
-          <li class="">Design Responsivo</li>
-          <li class="">Consultoria em acessibilidade web</li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md">
-        <h3 class="footer__title">Redes sociais</h3>
-        <ul class="list-unstyled text-small">
-          <li><a  class="" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">Github</a></li>
-          <li><a  class="" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-          <li><a  class="" href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-          <li><a  class="" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">E-mail</a></li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-xs text-center">
-        <div class="voltar-topo">
-          <a href="#site-header">Voltar ao topo</a>
-        </div>
+  <div class="footer-wrapper">
+    <div class="col-6 col-md">
+      <h3 class="footer__title">Mapa do site</h3>
+      <ul class="list-unstyled text-small">
+        <li><a class="" href="/">Home</a></li>
+        <li><a class="" href="/sobre">Sobre</a></li>
+        <li><a class="" href="/blog">Blog</a></li>
+        <li><a class="" href="/palestras">Palestras</a></li>
+        <li><a class="" href="/acessibilidade">Acessibilidade desse site</a></li>
+      </ul>
     </div>
-    <div class="row footer_bottom justify-content-center">
-      <p class="col-lg-12 col-sm-12 footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Esse template foi feito com  <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//brunopulis.com/feed.xml">
-        <img src="/assets/images/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" />
-      </a>
+
+    <div class="col-6 col-md">
+      <h3 class="footer__title">Serviços</h3>
+      <ul class="list-unstyled text-small">
+        <li class="">Wordpress</li>
+        <li class="">Design Responsivo</li>
+        <li class="">Consultoria em acessibilidade web</li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md">
+      <h3 class="footer__title">Redes sociais</h3>
+      <ul class="list-unstyled text-small">
+        <li><a  class="" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">Github</a></li>
+        <li><a  class="" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a  class="" href="http://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+        <li><a  class="" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">E-mail</a></li>
+      </ul>
+    </div>
+
+    <div class="col-12 col-xs text-center">
+      <div class="voltar-topo">
+        <a href="#site-header">Voltar ao topo</a>
+      </div>
+  </div>
+      <div class="row footer_bottom justify-content-center">
+        <p class="col-lg-12 col-sm-12 footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Esse template foi feito com  <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//brunopulis.com/feed.xml">
+          <img src="/assets/images/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" />
+        </a>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <ul class="social-list list-inline py-3 mx-auto">
+        <li class="list-inline-item">
+          <a href="{{ site.twitter }}" target="_blank" rel="noreferrer noopener"
+            onclick="ga('send', 'event', 'Click', 'Contato', 'Twitter');">
+            <span class="sr-only">Twitter</span>
+            <i class="fab fa-twitter fa-fw" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer noopener"
+            onclick="ga('send', 'event', 'Click', 'Contato', 'Linkedin');">
+            <span class="sr-only">Linkedin</span>
+            <i class="fab fa-linkedin-in fa-fw" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{ site.github }}" target="_blank" rel="noreferrer noopener"
+            onclick="ga('send', 'event', 'Click', 'Contato', 'Github');">
+            <span class="sr-only">Github</span>
+            <i class="fab fa-github-alt fa-fw" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{ site.stackoverflow }}" target="_blank" rel="noreferrer noopener">
+            <span class="sr-only">Stack Overflow</span>
+            <i class="fab fa-stack-overflow fa-fw" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{ site.codepen }}" target="_blank" rel="noreferrer noopener">
+            <span class="sr-only">Codepen</span>
+            <i class="fab fa-codepen fa-fw" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <hr>
+    </div>
+  <div>
+</footer>
+</div>
+
+<footer>
+  <div class="footer-wrapper">
+    <div class="footer-links">
+      <ul>
+        <li><a href="https://github.com/ananyaneogi" target="_blank" rel="noopener noreferrer">Github</a></li>
+        <li><a href="https://dev.to/ananyaneogi" target="_blank" rel="noopener noreferrer">Dev</a></li>
+        <li><a href="https://twitter.com/_ananyaneogi" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="https://codepen.io/ananyaneogi" target="_blank" rel="noopener noreferrer">Codepen</a></li>
+        <li><a href="https://ananyaneogi.com/rss.xml" target="_blank">RSS Feed</a></li>
+      </ul>
+    </div>
+    <div class="footer-image" style="width: 140px;">
+      <img src="/static/me1-28de0e73f6e99bcae67d049a5dfa9ddd.png" alt="author's illustrated avatar">
     </div>
   </div>
+  <small style="color: var(--light-gray);">© 2020 Copyright Ananya Neogi. All rights reserved.</small>
 </footer>
-
-{% include  shared/scripts.html %}
