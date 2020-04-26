@@ -2,13 +2,13 @@
 layout: post
 title: "Links da Semana 7"
 date: 2020-04-14 13:55:25
-description: Links interessantes que vi e achei legal em compartilhar
+description: Links sobre coisas interessantes que fui vendo pela semana.
 categories: Referencias
 tags:
  - Links Semanais
 ---
 
-Links da semana 7 - Coisas bacanas que vi e decidi compartilhar com vocês.
+Links da semana 7 - Links sobre coisas interessantes que fui vendo pela semana.
 
 ## Artigos
 
