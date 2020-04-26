@@ -1,34 +1,9 @@
 ---
-layout: compress
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-{% include metadata/head.html %}
+<article class="about-section py-5">
+  <h2 class="title mb-3">{{ page.title }}</h2>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  {% include components/header.html %}
-
-  <main class="main-wrapper">
-    <article class="about-section py-5">
-      <div class="container">
-        <h2 class="title mb-3">{{ page.title }}</h2>
-
-        {{ content }}
-      </div>
-    </article>
-
-    {% include components/newsletter.html %}
-
-    <footer class="footer text-center py-2 theme-bg-dark">
-      <small class="copyright">
-        Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by
-        <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers
-      </small>
-    </footer>
-  </main>
-
-  {% include shared/scripts.html %}
-</body>
-
-</html>
+  {{ content }}
+</article>

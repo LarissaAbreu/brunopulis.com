@@ -4,17 +4,19 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-{% include metadata/head.html %}
+  {% include metadata/head.html %}
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  {% include components/skip-link.html %}
-  {% include components/header.html %}
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div class="bp-container">
+      {% include components/header.html %}
 
-  <main class="main-wrapper" id="main-content">
-    {{ content }}
-  </main>
-
-  {% include shared/scripts.html %}
-</body>
-
+      <main class="main-wrapper" id="main-content">
+        <div>
+          {{ content }}
+        </div>
+      </main>
+    </div>
+    {% include components/libras.html %}
+    {% include shared/scripts.html %}
+  </body>
 </html>

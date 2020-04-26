@@ -1,51 +1,32 @@
 ---
-layout: compress
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-{% include metadata/head.html %}
+<section class="blog-list-wrapper">
+  {% for post in site.posts %}
+    <article class="card blog-post-card">
+      {% if post.thumb %}
+      <img class="card-img-top" src="{{ post.thumb }}" alt="{{ post.title }}">
+      {% else %}
+      <img class="card-img-top" src="/assets/images/photo-thumb.jpg" alt="">
+      {% endif %}
 
-<body class="site" itemscope itemtype="http://schema.org/WebPage">
-  {% include components/header.html %}
-
-  <main class="main-wrapper">
-    {% include components/newsletter.html %}
-    <section class="blog-list px-3 py-5 p-md-5">
-      <div class="container">
-        <div class="row">
-          {% for post in site.posts %}
-          <div class="col-md-4 mb-3">
-            <article class="card blog-post-card">
-              {% if post.thumb %}
-              <img class="card-img-top" src="{{ post.thumb }}" alt="{{ post.title }}">
-              {% else %}
-              <img class="card-img-top" src="/assets/images/photo-thumb.jpg" alt="">
-              {% endif %}
-
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a class="theme-link" href="{{ post.url }}">{{ post.title }}</a>
-                </h3>
-                <p class="card-text">
-                  {{ post.description | strip_html | truncatewords: 25 }}
-                </p>
-              </div>
-
-              <footer class="card-footer">
-                <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
-                  Publicado: {% include shared/date.html date=post.date %}
-                </time>
-              </footer>
-            </article>
-          </div>
-          {% endfor %}
-        </div>
+      <div class="card-body">
+        <h3 class="card-title">
+          <a class="theme-link" href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        <p class="card-text">
+          {{ post.description | strip_html | truncatewords: 25 }}
+        </p>
       </div>
-    </section>
-  </main>
 
-  {% include shared/scripts.html %}
-</body>
+      <footer class="card-footer">
+        <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
+          Publicado: {% include shared/date.html date=post.date %}
+        </time>
+      </footer>
+    </article>
+  {% endfor %}
+</section>
 
-</html>
+{% include components/newsletter.html %}
