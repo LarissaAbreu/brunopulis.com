@@ -1,73 +1,21 @@
-<header class="header text-center" itemscope itemtype="http://schema.org/WPHeader">
-  <h1 class="blog-name pt-lg-4 mb-0">
-    <a href="/">{{ site.data.main.about.name }}</a>
-  </h1>
+<nav class="navigation" id="main-navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <a href="#main-content" class="skip-link">Ir para conteúdo principal</a>
 
-  <nav class="navbar navbar-expand-lg navbar-dark" id="main-navigation" itemscope
-    itemtype="http://schema.org/SiteNavigationElement">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div id="navigation" class="collapse navbar-collapse flex-column">
-      <div class="profile-section pt-3 pt-lg-0">
-        <img class="profile-image mb-3 rounded-circle mx-auto" src="/assets/images/author.jpg" alt="Bruno Pulis">
-
-        <div class="bio mb-3">
-          {{ site.data.main.about.description }}<br>
-        </div>
-
-        <ul class="social-list list-inline py-3 mx-auto">
-          <li class="list-inline-item">
-            <a href="{{ site.twitter }}" target="_blank" rel="noreferrer noopener"
-              onclick="ga('send', 'event', 'Click', 'Contato', 'Twitter');">
-              <span class="sr-only">Twitter</span>
-              <i class="fab fa-twitter fa-fw" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="{{ site.linkedin }}" target="_blank" rel="noreferrer noopener"
-              onclick="ga('send', 'event', 'Click', 'Contato', 'Linkedin');">
-              <span class="sr-only">Linkedin</span>
-              <i class="fab fa-linkedin-in fa-fw" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="{{ site.github }}" target="_blank" rel="noreferrer noopener"
-              onclick="ga('send', 'event', 'Click', 'Contato', 'Github');">
-              <span class="sr-only">Github</span>
-              <i class="fab fa-github-alt fa-fw" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="{{ site.stackoverflow }}" target="_blank" rel="noreferrer noopener">
-              <span class="sr-only">Stack Overflow</span>
-              <i class="fab fa-stack-overflow fa-fw" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="{{ site.codepen }}" target="_blank" rel="noreferrer noopener">
-              <span class="sr-only">Codepen</span>
-              <i class="fab fa-codepen fa-fw" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-        <hr>
+  <a href="/">
+    <img src="/assets/images/icons/favicon-32x32.png" alt="Bruno Pulis">
+  </a>
+  <ul class="navigation__list">
+    {% for item in site.data.main.navigation %}
+    <li class="navigation__item">
+      <a class="navigation__link" href="{{ item.link | relative_url }}" itemprop="url">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+    <!-- <li class="theme-switch">
+      <div class="toggle-box">
+        <input type="checkbox" name="checkbox1" id="toggle-box-checkbox"/>
+        <label for="toggle-box-checkbox" class="toggle-box-label-left"></label>
+        <label for="toggle-box-checkbox" class="toggle-box-label"></label>
       </div>
-
-      <ul class="navbar-nav flex-column text-left">
-        {% for item in site.data.main.navigation %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ item.link | relative_url }}" itemprop="url">{{ item.name }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-
-      <div class="my-2 my-md-3">
-        <a class="btn btn-primary" href="mailto:brunopulis@protonmail.com" rel="noopener noreferrer" target="_blank"
-          onclick="ga('send', 'event', 'Click', 'Contato', 'Botão de contato');">{{ site.data.main.contact.name }}</a>
-      </div>
-    </div>
-  </nav>
-</header>
+    </li> -->
+  </ul>
+</nav>
