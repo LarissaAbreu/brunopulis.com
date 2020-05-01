@@ -51,7 +51,7 @@ Um exemplo do framework Vuetify com o componente select:
 
 Aparentemente é um componente simples e elegante, mas qual é sua saída no código HTML? Sua saída é parecida com isso:
 
-<img src="/assets/images/posts/select-vuetify.svg" alt="Trecho de código mostrando como um componente de select é renderizado no html"  />
+<img src="/assets/images/posts/select-vuetify.svg" style="max-width: 100%;" alt="Trecho de código mostrando como um componente de select é renderizado no html"  />
 
 Exemplos assim, estão recheados aos montes pela web. A WebAIM uma empresa que presta treinamentos e consultorias sobre acessibilidade web, realizou no ano de 2019 uma pesquisa onde mapeou 1 milhão de páginas e detectou problemas relacionados a acessibilidade. E pasmem, a maioria dos problemas não era coisas hiper complexas, mas extremamente simples. 
 
