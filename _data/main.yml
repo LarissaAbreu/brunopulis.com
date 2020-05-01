@@ -8,9 +8,7 @@ navigation:
     name: Sobre
   - link: /palestras
     name: Palestras
-  - link: /contato
-    name: Contato
-
+    
 about:
   name: Bruno Pulis
   description: >-
