@@ -45,6 +45,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# mini_magick:
+#   thumbnail:
+#     source: images/
+#     destination: images/thumbnail
+#     resize: "100x70^"
+#     gravity: "center"
+#     extent: "100x70"
+#   large:
+
 collections:
   palestras:
     output: true
