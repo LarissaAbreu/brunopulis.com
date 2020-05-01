@@ -1,5 +1,5 @@
 seo:
-  tagline: 'Analista de Qualidade, Acessibilidade Web e Frontend'
+  tagline: 'Acessibilidade digital, Qualidade e Frontend'
 
 navigation:
   - link: /blog
@@ -11,10 +11,6 @@ navigation:
     
 about:
   name: Bruno Pulis
-  description: >-
-    Escrevo sobre qualidade de software, acessiblidade, desenvolvimento web,
-    carreira e reflexões.
-  position: desenvolvedor web
   site: brunopulis.com
   email: brunopulis@protonmail.com
   telephone: +55 31 97343-8008
@@ -23,5 +19,5 @@ about:
 section:
   portfolio_button: Ver Portfólio
   curricullum_button: Ver Currículo
-  blog: Artigos recentes do blog
+  blog: Artigos
   blog_button: Todos artigos
