@@ -3,20 +3,17 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
+<html lang="pt-br">
   {% include metadata/head.html %}
 
   <body itemscope itemtype="http://schema.org/WebPage">
-    <div class="bp-container">
-      {% include components/header.html %}
+    {% include components/header.html %}
 
-      <main class="main-wrapper" id="main-content">
-        <div>
-          {{ content }}
-        </div>
-      </main>
-    </div>
-    {% include components/libras.html %}
+    <main class="main-wrapper" id="main-content">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
     {% include shared/scripts.html %}
   </body>
 </html>

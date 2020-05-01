@@ -2,31 +2,37 @@
 layout: default
 ---
 
-<section class="blog-list-wrapper">
+<ul class="cards">
   {% for post in site.posts %}
-    <article class="card blog-post-card">
-      {% if post.thumb %}
-      <img class="card-img-top" src="{{ post.thumb }}" alt="{{ post.title }}">
-      {% else %}
-      <img class="card-img-top" src="/assets/images/photo-thumb.jpg" alt="">
-      {% endif %}
+    <li class="card" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+      <div class="card__image-container">
+        <figure class="card__image-container">
+          {% if post.thumb %}
+          <img class="card__image lazyload" data-src="{{ post.thumb }}" loading="lazy" alt="{{ post.alt }}">
+          {% else %}
+          <img class="card__image lazyload" data-src="assets/images/photo-thumb.jpg" loading="lazy" alt="">
+          {% endif %}
+        </figure>
 
-      <div class="card-body">
-        <h3 class="card-title">
-          <a class="theme-link" href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
-        <p class="card-text">
-          {{ post.description | strip_html | truncatewords: 25 }}
-        </p>
+        <div class="card__content">
+          <h3 class="card__title" itemprop="name">
+            <a class="card__link" href="{{ post.url }}">{{ post.title | strip_html | truncate: 150 }}</a>
+          </h3>
+          <p class="card__text">
+            {{ post.description | strip_html | truncatewords: 25 }}
+          </p>
+
+          <div class="card-footer">
+            <meta itemprop="datePublished" content="{{post.date}}">
+            <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
+              Publicado: {% include shared/date.html date=post.date %}
+            </time>
+            <span> por {{ site.data.main.about.name }}</span>
+          </div>
+        </div>
       </div>
-
-      <footer class="card-footer">
-        <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
-          Publicado: {% include shared/date.html date=post.date %}
-        </time>
-      </footer>
-    </article>
+    </li>
   {% endfor %}
-</section>
+</ul>
 
 {% include components/newsletter.html %}
