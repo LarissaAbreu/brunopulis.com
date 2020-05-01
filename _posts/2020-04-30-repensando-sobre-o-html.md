@@ -47,37 +47,11 @@ O problema é que  a maioria desses frameworks possuem erros grotescos de html, 
 
 Um exemplo do framework Vuetify com o componente select: 
 
-<pre><code class="language-html">
- <v-select :items="items" label="Standard"></v-select>
-</code></pre>
+<img src="/assets/images/posts/pre-render-select.svg" alt="Componente select escrito com o framework Vuetify"  />
 
 Aparentemente é um componente simples e elegante, mas qual é sua saída no código HTML? Sua saída é parecida com isso:
 
-<pre><code class="language-html">
- <div class="v-input v-input--is-focused theme--light v-text-field v-text-field--is-booted v-select primary--text">
-	<div class="v-input__control">
-		<div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-1359">
-			<div class="v-select__slot">
-				<label for="input-1359" class="v-label v-label--active theme--light primary--text" style="left: 0px; right: auto; position: absolute;">Standard</label>
-				<div class="v-select__selections">
-					<input id="input-1359" readonly="readonly" type="text" aria-readonly="false">
-				</div>
-				<div class="v-input__append-inner">
-					<div class="v-input__icon v-input__icon--append"> <i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light primary--text"></i>
-					</div>
-				</div>
-				<input type="hidden">
-			</div>
-			<div class="v-menu"></div>
-		</div>
-		<div class="v-text-field__details">
-			<div class="v-messages theme--light primary--text">
-				<div class="v-messages__wrapper"></div>
-			</div>
-		</div>
-	</div>
-</div>
-</code></pre>
+<img src="/assets/images/posts/select-vuetify.svg" alt="Trecho de código mostrando como um componente de select é renderizado no html"  />
 
 Exemplos assim, estão recheados aos montes pela web. A WebAIM uma empresa que presta treinamentos e consultorias sobre acessibilidade web, realizou no ano de 2019 uma pesquisa onde mapeou 1 milhão de páginas e detectou problemas relacionados a acessibilidade. E pasmem, a maioria dos problemas não era coisas hiper complexas, mas extremamente simples. 
 
