@@ -1,32 +1,37 @@
 <section class="latest-blog-section">
-  <h2 class="section-title font-weight-bold mb-5">{{ site.data.main.section.blog }}</h2>
-  <div class="blog-list-wrapper">
+  <h2 class="section-title">{{ site.data.main.section.blog }}</h2>
+  <ul class="cards">
     {% for post in site.posts limit:6 %}
-      <article class="card blog-post-card" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-        {% if post.featured %}
-        <img class="card-img-top" src="{{ post.thumb }}" alt="{{ post.alt }}">
-        {% else %}
-        <img class="card-img-top" src="assets/images/photo-thumb.jpg" alt="">
-        {% endif %}
+      <li class="card" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="card__image-container">
+          <figure class="card__image-container">
+            {% if post.thumb %}
+            <img class="card__image lazyload" data-src="{{ post.thumb }}" loading="lazy" alt="{{ post.alt }}">
+            {% else %}
+            <img class="card__image lazyload" data-src="assets/images/photo-thumb.jpg" loading="lazy" alt="">
+            {% endif %}
+          </figure>
 
-        <div class="card-body">
-          <h3 class="card-title" itemprop="name">
-            <a class="theme-link" href="{{ post.url }}">{{ post.title | strip_html | truncate: 150 }}</a>
-          </h3>
-          <p class="card-text">
-            {{ post.description | strip_html | truncatewords: 25 }}
-          </p>
-        </div>
+          <div class="card__content">
+            <h3 class="card__title" itemprop="name">
+              <a class="card__link" href="{{ post.url }}">{{ post.title | strip_html | truncate: 150 }}</a>
+            </h3>
+            <p class="card__text">
+              {{ post.description | strip_html | truncatewords: 25 }}
+            </p>
 
-        <div class="card-footer">
-          <meta itemprop="datePublished" content="{{post.date}}">
-          <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
-            Publicado: {% include shared/date.html date=post.date %}
-          </time>
+            <div class="card-footer">
+              <meta itemprop="datePublished" content="{{post.date}}">
+              <time class="text-muted small" datetime="{{ post.date | date_to_xmlschema }}">
+                Publicado: {% include shared/date.html date=post.date %}
+              </time>
+              <span> por {{ site.data.main.about.name }}</span>
+            </div>
+          </div>
         </div>
-      </article>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 
   <div class="text-center py-3">
     <a href="/blog" class="btn btn-primary">
