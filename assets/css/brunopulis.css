@@ -437,3 +437,66 @@ a:focus {
 .title {
   font: 700 3.5rem 'Montserrat', sans-serif;
 }
+
+.cta-section {
+	background: var(--c-light-primary);
+	color: var(--c-dark-text);
+  margin: 60px 0;
+  text-align: center;
+}
+
+.cta-section .intro {
+  color: var(--c-dark-text);
+}
+
+.blog-posts-content-container {
+  max-width: 60vw;
+  margin: 60px auto 0;
+  position: relative;
+}
+
+
+
+.main-content {
+	min-height: 20vh;
+}
+
+.cta-section .heading {
+	color: var(--white);
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.meta {
+	color: #616161;
+	font-size: 0.8125rem
+}
+
+.meta span {
+	display: inline-block
+}
+
+.meta span a {
+	color: #8f8f8f
+}
+
+.meta span a:hover {
+	color: #4f4f4f
+}
+
+.meta span:after {
+	content: "";
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #8f8f8f;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	position: relative;
+	top: -3px
+}
+
+.meta span:last-child:after {
+	display: none
+}
