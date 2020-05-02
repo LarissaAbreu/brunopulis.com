@@ -1,0 +1,25 @@
+// ===============================================================
+// Accessibility
+// ===============================================================
+
+.skip-link {
+  background: black;
+  font-size: 1em;
+  font-weight: 700;
+  left: 0;
+  padding: .5em 1em;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: -30em;
+  transition: top .1s linear;
+  z-index: 20;
+  -webkit-transition: top .1s linear;
+
+  &:active,
+  &:focus {
+    color: #fff;
+    top: 0;
+    outline: 0;
+  }
+}

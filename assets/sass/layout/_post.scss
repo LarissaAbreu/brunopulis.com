@@ -10,6 +10,39 @@
   text-decoration: none;
 }
 
+.meta {
+	color: #616161;
+	font-size: 0.8125rem
+}
+
+.meta span {
+	display: inline-block
+}
+
+.meta span a {
+	color: #8f8f8f
+}
+
+.meta span a:hover {
+	color: #4f4f4f
+}
+
+.meta span:after {
+	content: "";
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #8f8f8f;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	position: relative;
+	top: -3px
+}
+
+.meta span:last-child:after { display: none}
+
+
 .blog-title-link:hover { opacity: 0.61; }
 
 .post-list {

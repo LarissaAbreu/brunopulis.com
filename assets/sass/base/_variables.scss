@@ -1,9 +1,25 @@
-$assets-path: '../../assets';
+:root {
+  /* Light mode colors */
+  --c-light-background: #fff;
+  --c-light-primary: #2E408E;
+  --c-light-text: #000;
+  --c-light-title: var(--c-light-primary);
 
-// Bootstrap setup
-$enable-grid-classes: false;
+  /* Dark mode colors */
+  --c-dark-background: #000;
+  --c-dark-text: #fff;
 
-// Color variables
-$bg-default: #173248;
-$white: #fff;
-$black: #000;
+  --bg-color: #2E408E;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+	--heading-font: "Alegreya Sans", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --title-font: "Montserrat", sans-serif;
+	--link-color: #fff;
+	--text-color: #000;
+}
