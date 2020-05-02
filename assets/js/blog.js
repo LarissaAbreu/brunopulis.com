@@ -1,6 +1,6 @@
-const audima = document.querySelector('#audima-iframe');
+// const audima = document.querySelector('#audima-iframe');
 
-audima.setAttribute('title', 'Ouça o post via audio');
+// audima.setAttribute('title', 'Ouça o post via audio');
 
 if('loading' in HTMLImageElement.prototype) {
 	const images = document.querySelectorAll('img.lazyload');
