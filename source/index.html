@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+
+{% include components/newsletter.html %}
+
+
+<section class="blog-list px-3 py-5 p-md-5">
+	<div class="container">
+		{% for post in site.posts %}
+		<div class="item mb-5">
+			<div class="media">
+				{% if post.thumb %}
+					<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ post.thumb }}" alt="{{ post.alt }}">
+				{% else %}
+					<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/photo-thumb.jpg" alt="">
+				{% endif %}
+				<div class="media-body">
+					<h3 class="title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+					<div class="meta mb-1">
+						<meta itemprop="datePublished" content="{{post.date}}">
+            <time class="date" datetime="{{ post.date | date_to_xmlschema }}">
+              Publicado: {% include shared/date.html date=post.date %}
+						</time>
+						
+						<span class="time">{% include shared/read_time.html %}</span>
+						<span class="comment"><a href="#">8 comments</a></span>
+					</div>
+					<div class="intro">{{ post.description | strip_html | truncatewords: 222 }}</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+				
+		<!-- <nav class="blog-nav nav nav-justified my-5">
+			<a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">
+				Anterior
+				<i class="arrow-prev fas fa-long-arrow-alt-left" aria-hidden="true"></i>
+			</a>
+			<a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">
+				Próximo
+				<i class="arrow-next fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+			</a>
+		</nav> -->
+	</div>
+</section>

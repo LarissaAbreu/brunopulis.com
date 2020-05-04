@@ -13,9 +13,11 @@ group :test do
 end
 
 group :jekyll_plugins do
+  gem "pygments.rb"
+  gem "jekyll-compose"
+  gem "kramdown"
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
-  gem 'rake'
   gem 'rouge'
 end

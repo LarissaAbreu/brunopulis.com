@@ -45,23 +45,17 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# mini_magick:
-#   thumbnail:
-#     source: images/
-#     destination: images/thumbnail
-#     resize: "100x70^"
-#     gravity: "center"
-#     extent: "100x70"
-#   large:
-
 collections:
   palestras:
     output: true
     permalink: /palestras/:path/
 
+source: source
+destination: _site
+
 sass:
   style: compressed
-  sass_dir: assets/sass
+  sass_dir: assets/scss
 
 exclude:
   - README.md
