@@ -1,6 +1,6 @@
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="https://brunopulis.com{{ page.url | replace:'index.html','' }}" />
-  <link rel="alternate" type="application/rss+xml" href="https://brunopulis.com/feed.xml">
+  <link rel="alternate" type="application/rss+xml" href="https://brunopulis.com/feed.xml" title="Bruno Pulis - Feed">
 
   <!-- Google Authorship Markup -->
   <meta name="msvalidate.01" content="A1D6C4C7B86E7BF77A38CFC9B416AD04" />
