@@ -57,18 +57,52 @@ Exemplos assim, estão recheados aos montes pela web. A WebAIM uma empresa que p
 
 Abaixo uma tabela demonstrando os problemas mais recorrentes nas páginas.
 
+<div class="table-responsive">
+  <table class="table table-striped">
+    <caption>Falhas mais comuns de acessibilidade na web. <small>Fonte: [The WebAIM Million](https://webaim.org/projects/million/#intro)</small></caption> 
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Tipo de falha da WCAG</th>
+        <th scope="col">% de home pages em Fevereiro de 2020</th>
+        <th scope="col">% de home pages em Fevereiro de 2019</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Baixo contraste</td>
+        <td>86.3%</td>
+        <td>85.3%</td>
+      </tr>
+      <tr>
+        <td>Imagens sem texto alternativo</td>
+        <td>66.0%</td>
+        <td>68.0%</td>
+      </tr>
+      <tr>
+        <td>Links vazios</td>
+        <td>59.9%</td>
+        <td>58.1%</td>
+      </tr>
+      <tr>
+        <td>Faltando label em formulários</td>
+        <td>53.8%</td>
+        <td>52.8%</td>
+      </tr>
+      <tr>
+        <td>Botões vazios</td>
+        <td>28.7%</td>
+        <td>25.0%</td>
+      </tr>
+      <tr>
+        <td>Linguagem do documento ausente</td>
+        <td>28.0%</td>
+        <td>33.1%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
-| Tipo de falha da WCAG | % de home pages em Fevereiro de 2020 | % de home pages em Fevereiro de 2019 |
-| -------- | -------- | -------- |
-| Baixo contraste     | 86.3%     | 85.3%     |
-| Imagens sem texto alternativo     | 66.0%     | 68.0%     |
-| Links vazios     | 59.9%     | 58.1%     |
-| Faltando label em formulários | 53.8%     | 52.8%     |
-| Botões vazios | 28.7%     | 25.0%     |
-| Linguagem do documento ausente | 28.0%     | 33.1%     |
-
-Fonte: [The WebAIM Million](https://webaim.org/projects/million/#intro)
 
 Fica nítido uma coisa, **temos um problema gritante com a semântica e estrutura**
 
