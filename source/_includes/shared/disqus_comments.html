@@ -1,0 +1,23 @@
+{%- if page.comments != false -%}
+  {%- if site.url -%}
+    {%- assign disqus_url = page.url | prepend: site.url -%}
+  {%- elsif site.github.url -%}
+    {%- assign disqus_url = page.url | prepend: site.github.url -%}
+{%- endif %}
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = '{{ disqus_url }}';
+    this.page.identifier = '{{ disqus_url }}';
+  };
+
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://{{ site.disqus_username }}.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<script id="dsq-count-scr" src="//michaelkant.disqus.com/count.js" async></script>
+<noscript>Por favor habilite o Javascript para comentar <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentários feitos por Disqus.</a></noscript>
+{% endif -%}

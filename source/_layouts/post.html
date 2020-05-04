@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="blog-post px-3 py-5 p-md-5" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="container">
+    <header class="blog-post-header">
+      <h2 class="title mb-2" itemprop="name headline">{{ page.title }}</h2>
+      <div class="meta mb-3">
+        <span class="date">Publicado em: {{ page.date | date: "%d/%m/%Y" }}</span>
+        {% include shared/read_time.html %}
+        <span class="comment"><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{page.id}}">0
+            comentários</a></span></div>
+    </header>
+    <div id="audimaWidget"></div>
+
+    <div class="blog-post-body">
+      <figure class="blog-banner">
+        <img class="img-fluid" src="{{ page.featured }}" alt="{{ page.alt }}">
+        <figcaption class="mt-2 text-center image-caption">
+          Crédito da imagem: <a href="{{ post.link_image  }}" target="_blank">{{ page.link_text }}</a>
+        </figcaption>
+      </figure>
+
+      {{ content }}
+
+      <div class="blog-comments-section">
+        {% include shared/disqus_comments.html %}
+      </div>
+    </div>
+  </div>
+</article>
+    
