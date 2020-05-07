@@ -2,9 +2,7 @@
 layout: default
 ---
 
-
 {% include components/newsletter.html %}
-
 
 <section class="blog-list px-3 py-5 p-md-5">
 	<div class="container">
@@ -19,13 +17,8 @@ layout: default
 				<div class="media-body">
 					<h3 class="title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h3>
 					<div class="meta mb-1">
-						<meta itemprop="datePublished" content="{{post.date}}">
-            <time class="date" datetime="{{ post.date | date_to_xmlschema }}">
-              Publicado: {% include shared/date.html date=post.date %}
-						</time>
-						
 						<span class="time">{% include shared/read_time.html %}</span>
-						<span class="comment"><a href="#">8 comments</a></span>
+						<span class="comment"><a href="{{ page.url }}#disqus_thread"></a></span>
 					</div>
 					<div class="intro">{{ post.description | strip_html | truncatewords: 222 }}</div>
 				</div>
