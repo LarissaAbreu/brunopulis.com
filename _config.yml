@@ -9,13 +9,16 @@ url: "https://brunopulis.com"
 author: Bruno Pulis
 
 # Social Profiles
-facebook: https://www.facebook.com/obrunopulis
-twitter:  https://twitter.com/obrunopulis
-linkedin: https://linkedin.com/in/pulis
+facebook_username: https://www.facebook.com/obrunopulis
+facebook_page: https://www.facebook.com/canaldobrunopulis
+twitter_username:  https://twitter.com/obrunopulis
+linkedin_username: https://linkedin.com/in/pulis
 stackoverflow: https://stackoverflow.com/users/8055146/bruno-pulis
 codepen: https://codepen.io/brunopulis
-github:   https://github.com/brunopulis
+github_username:   https://github.com/brunopulis
+medium_username: https://medium.com/@brunopulis
 email_username: brunopulis@protonmail.com
+youtube_channel: https://www.youtube.com/channel/UCAjuwwxEbHtm4GvVi3W_o6Q
 disqus_username: brunopulis
 
 mailchimp_url: "https://brunopulis.us3.list-manage.com/subscribe/post?u=e1843173804aef8e161201c1b&amp;id=806ccbea2e"
@@ -55,7 +58,7 @@ destination: _site
 
 sass:
   style: compressed
-  sass_dir: assets/scss
+  sass_dir: source/assets/scss
 
 exclude:
   - README.md
