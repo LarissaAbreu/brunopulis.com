@@ -1,0 +1,32 @@
+<section class="share" onclick="ga('send', 'event', 'share', 'click', 'share_buttons')">
+  <h3 class="share__title">Compartilhe</h3>
+  <ul class="social-share__list">
+    <li class="social-share__item social-share--facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="popup" onclick="ga('send', 'event', 'share', 'click', 'Compartilhou no FB')">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="24" height="24">
+          <use xlink:href="#share__icon--facebook"></use>
+        </svg>
+        <span class="sr-only">Facebook</span>
+      </a>
+    </li>
+
+    <li class="social-share__item social-share--twitter">
+      <a onclick="ga('send', 'event', 'share', 'click', 'Compartilhou no Twitter')" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
+      class="popup">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="24" height="24">
+          <use xlink:href="#share__icon--twitter"></use>
+        </svg>
+        <span class="sr-only"> Twitter</span>
+      </a>
+    </li>
+
+    <li class="social-share__item social-share--linkedin">
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}" class="popup" onclick="ga('send', 'event', 'share', 'click', 'Compartilhou no Linkedin')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <use xlink:href="#share__icon--linkedin"></use>
+        </svg>
+        <span class="sr-only">Linkedin</span>
+      </a>
+    </li>
+  </ul>
+</section>
