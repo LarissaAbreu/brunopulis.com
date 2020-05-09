@@ -15,16 +15,27 @@ layout: default
     <div id="audimaWidget"></div>
 
     <div class="blog-post-body">
-      <figure class="blog-banner">
-        <img class="img-fluid" src="{{ page.featured }}" alt="{{ page.alt }}">
-        <figcaption class="mt-2 text-center image-caption">
-          Crédito da imagem: <a href="{{ post.link_image  }}" target="_blank">{{ page.link_text }}</a>
-        </figcaption>
-      </figure>
+      {% if page.featured %}
+        <figure class="blog-banner">
+          <img class="img-fluid" src="{{ page.featured }}" alt="{{ page.alt }}">
+          <figcaption class="mt-2 text-center image-caption">
+            Crédito da imagem: <a href="{{ post.link_image  }}" target="_blank">{{ page.link_text }}</a>
+          </figcaption>
+        </figure>
+      {% endif %}
 
       {{ content }}
 
+      <section class="author">
+        {% include shared/author.html %}
+      </section>
+
+      <div class="blog-share-section">
+        {% include shared/share.html %}
+      </div>
+
       <div class="blog-comments-section">
+        <h3>Comentários</h3>
         {% include shared/disqus_comments.html %}
       </div>
     </div>

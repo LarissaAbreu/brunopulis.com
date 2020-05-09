@@ -7,14 +7,13 @@ layout: compress
 {% include metadata/head.html %}
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  {% include components/header.html %}
+  {% include icons.html %}
+  {% include header.html %}
 
   <main class="main-wrapper" id="main-content">
     {{ content }}
 
-    <footer class="footer text-center py-2 theme-bg-dark">
-      <small class="copyright">Feito com <i class="fas fa-heart" style="color: #fb866a;"></i> por <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> para desenvolvedores</small>
-    </footer>
+    {% include footer.html %}
   </main>
 
   {% include shared/scripts.html %}
