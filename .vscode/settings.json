@@ -14,5 +14,6 @@
         "tramify",
         "tweens",
         "unitless"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
