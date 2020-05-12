@@ -4,14 +4,6 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 
-group :test do
-  gem "capybara"
-  gem "rack-jekyll"
-  gem "rspec"
-  gem "selenium-webdriver"
-  gem "pry"
-end
-
 group :jekyll_plugins do
   gem "pygments.rb"
   gem "jekyll-compose"
