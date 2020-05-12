@@ -41,5 +41,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "cypress": "^4.5.0"
+  }
 }
