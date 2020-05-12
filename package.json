@@ -1,0 +1,45 @@
+{
+  "name": "brunopulis",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunopulis/brunopulis.git"
+  },
+  "keywords": [
+    "brunopulis",
+    "accessibility",
+    "a11y",
+    "jekyll",
+    "ruby",
+    "markdown"
+  ],
+  "author": "Bruno Pulis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunopulis/brunopulis/issues"
+  },
+  "homepage": "https://github.com/brunopulis/brunopulis#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
