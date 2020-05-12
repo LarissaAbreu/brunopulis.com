@@ -7,10 +7,15 @@ layout: compress
 {% include head.html %}
 
 <body itemscope itemtype="http://schema.org/WebPage">
+  <a id="skippy" class="sr-only sr-only-focusable skippy" href="#content">
+    <div class="container">
+      <span class="skiplink-text">Ir para conteúdo principal</span>
+    </div>
+  </a>
   {% include icons.html %}
   {% include header.html %}
 
-  <main class="main-wrapper" id="main-content">
+  <main class="main-wrapper" id="content">
     {{ content }}
 
     {% include footer.html %}
