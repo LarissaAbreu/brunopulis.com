@@ -7,12 +7,12 @@ layout: default
 <section class="blog-list px-3 py-5 p-md-5">
 	<div class="container">
 		{% for post in site.posts %}
-		<div class="item mb-5">
+		<div class="blog-item item mb-5">
 			<div class="media">
 				{% if post.thumb %}
-					<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ post.thumb }}" alt="{{ post.alt }}">
+				<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ post.thumb }}" alt="{{ post.alt }}">
 				{% else %}
-					<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/photo-thumb.jpg" alt="">
+				<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/photo-thumb.jpg" alt="">
 				{% endif %}
 				<div class="media-body">
 					<h3 class="title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -25,7 +25,6 @@ layout: default
 			</div>
 		</div>
 		{% endfor %}
-				
 		<!-- <nav class="blog-nav nav nav-justified my-5">
 			<a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">
 				Anterior

@@ -9864,10 +9864,6 @@ h6 {
   background: var(--white);
 }
 
-.main-wrapper .container {
-  max-width: 820px
-}
-
 .cta-section .heading {
   font-size: 2rem;
   font-weight: bold
