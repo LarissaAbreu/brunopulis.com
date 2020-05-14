@@ -4,15 +4,18 @@ title: "Texto alternativo o guia definitivo"
 date: 2020-05-14 17:18:16
 thumb: '/assets/images/posts/cover'
 featured: '/assets/images/posts/cute-cat.jpeg'
-alt:
-legend:
-link_text:
-link_image:
-description:
+alt: Gato de cor marrom brincando
+legend: 
+link_text: Foto por Daniel Göransson
+link_image: https://axesslab.com/alt-texts
 categories: acessibilidade
 tags:
-twitter_text:
-introduction:
+description:  |-
+  Esse artigo contém tudo o que você precisa saber sobre texto alternativo! Quando usá-los e como desenhá-los perfeitamente.
+twitter_text: |-
+  Esse artigo contém tudo o que você precisa saber sobre texto alternativo! Quando usá-los e como desenhá-los perfeitamente.
+introduction: |-
+  Esse artigo contém tudo o que você precisa saber sobre texto alternativo! Quando usá-los e como desenhá-los perfeitamente.
 ---
 
 <div class="alert alert-warning">
