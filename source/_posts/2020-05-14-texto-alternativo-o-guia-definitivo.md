@@ -5,7 +5,7 @@ date: 2020-05-14 17:18:16
 thumb: '/assets/images/posts/cover'
 featured: '/assets/images/posts/cute-cat.jpeg'
 alt: Gato de cor marrom brincando
-legend: 
+legend:
 link_text: Foto por Daniel Göransson
 link_image: https://axesslab.com/alt-texts
 categories: acessibilidade
