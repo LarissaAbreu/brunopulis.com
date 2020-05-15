@@ -1,19 +1,15 @@
 ---
-layout: post
+layout: single
 title: "3 ferramentas para avaliar a acessibilidade web"
 date: 2017-10-02
-thumb: "/assets/images/posts/cover/cover-tools.jpg"
-featured: "/assets/images/posts/tools.jpg"
+header:
+  image: /assets/images/posts/tools.jpg
 alt: "Um notebook ao centro da mesa com diversas ferramentas ao seu redor, representando sua utilidade"
-description: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
+categories: Acessibilidade
 tags:
   - dicas
   - tools
   - a11y
-categories: Acessibilidade
-
-twitter_text: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
-introduction: "Conheça três ferramentas para avaliar a acessibilidade de nossos sites."
 ---
 
 Neste post bem rapidinho vou mostrar alguns avaliadores automáticos para testar as recomendações da WCAG em suas app’s ou websites.

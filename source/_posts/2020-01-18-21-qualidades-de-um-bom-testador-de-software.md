@@ -1,23 +1,15 @@
 ---
-layout: post
+layout: single
 title: "21 Qualidades de um bom QA"
 date: 2020-01-18 20:26:35
-thumb: '/assets/images/posts/qualidade.jpg'
-featured: '/assets/images/posts/qualidade.jpg'
+header:
+  image: /assets/images/posts/qualidade.jpg
 categories: Qualidade
 tags:
   - Skills
-
-twitter_text: |-
-  Toda as empresas buscam profissionais que possam compor seu quadro de funcionários com excelência e qualidade.
-  Os testadores de software compõem uma das posições mais importantes, confira 21 características que todo testador deveria ter.
-description: |-
-  Toda as empresas buscam profissionais que possam compor seu quadro de funcionários com excelência e qualidade.
-  Os testadores de software compõem uma das posições mais importantes, confira 21 características que todo testador deveria ter.
-introduction: |-
-    Toda as empresas buscam profissionais que possam compor seu quadro de funcionários com excelência e qualidade.
-    Os testadores de software compõem uma das posições mais importantes, confira 21 características que todo testador deveria ter.
 ---
+Toda as empresas buscam profissionais que possam compor seu quadro de funcionários com excelência e qualidade. Os testadores de software compõem uma das posições mais importantes, confira 21 características que todo testador deveria ter.
+
 
 > [Post traduzido](http://tryqa.com/software-tester/) por [Bruno Pulis](https://github.com/brunopulis) e escrito originalmente por [Try QA](http://tryqa.com/).
 

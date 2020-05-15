@@ -1,29 +1,22 @@
 ---
-layout: post
+layout: single
 title: "9 coisas para evitar na quarentena"
 date: 2020-04-04 21:14:11
-thumb: '/assets/images/posts/cover/thumb-isolate.jpg'
-featured: '/assets/images/posts/isolate.jpg'
+header:
+  image: /assets/images/posts/isolate.jpg
 legend: 'Foto por Artem Maltsev em Unsplash'
 link_text: 'Unsplash'
 link_image: 'https://unsplash.com/photos/h31mHmLFX_A'
-alt:
-categories: Saúde
+categories: Dicas
 tags:
-  - Saúde mental
-  - Pandemia
-
-twitter_text: |-
-    Nove dicas para o que não fazer em tempos de isolamento social.
-description: |-
-    Nove dicas para o que não fazer em tempos de isolamento social.
-introduction: |-
-    Nove dicas para o que não fazer em tempos de isolamento social.
+  - saúde mental
+  - pandemia
+  - covid19
 ---
 
-<div class="alert alert-info" role="alert">
-Este artigo é um compilado que meu psicológo <a href="https://www.linkedin.com/in/saulo-ferreira-cruz-602999ab/" rel="noreferrer noopener" target="_blank">Saulo Ferreira Cruz</a> desenvolveu. O conteúdo foi autorizado para ser divulgado.
-</div>
+Nove dicas para o que não fazer em tempos de isolamento social.
+
+> Este artigo é um compilado que meu psicológo <a href="https://www.linkedin.com/in/saulo-ferreira-cruz-602999ab/" rel="noreferrer noopener" target="_blank">Saulo Ferreira Cruz</a> desenvolveu. O conteúdo foi autorizado para ser divulgado.
 
 O COVID-19, trouxe uma nova realidade para a vida cotidiana muitas pessoas. Diversos profissionais perdendo seus empregos devido a uma pandemia sem precedentes que se alastrou no mundo de forma muito rápida e silenciosa.
 

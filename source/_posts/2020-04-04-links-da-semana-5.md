@@ -1,14 +1,12 @@
 ---
-layout: post
+layout: single
 title: "Links da Semana 5"
 date: 2020-04-04 12:43:07
-categories: Referências
-tags:
-  - Links Semanais
-description: Links interessantes que vi e achei legal em compartilhar
+categories:
+  - Links da semana
 ---
 
-Links da semana #5 - Coisas bacanas que vi e decidi compartilhar com vocês.
+Links da semana 5 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
 ## Repositórios interessantes
 

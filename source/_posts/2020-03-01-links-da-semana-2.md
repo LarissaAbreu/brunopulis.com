@@ -1,19 +1,17 @@
 ---
-layout: post
-title: 'Links da semana #2'
+layout: single
+title: 'Links da semana 2'
 date: '2020-03-01 04:19pm'
-categories: Referencias
-tags:
-  - Links Semanais
-description: Links interessantes que vi e achei legal em compartilhar
+categories:
+ - Links da semana
 ---
 
 Links da semana 2 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
-## Produtividade 
+## Produtividade
 
 * [This is how many hours you should really be working](https://www.atlassian.com/blog/productivity/this-is-how-many-hours-you-should-really-be-working)
-* [Notion Setup & Workflow with GTD, PARA, Sprints, Checklist Manifesto, and more.](https://www.youtube.com/watch?v=EC1UIm58eLg) 
+* [Notion Setup & Workflow with GTD, PARA, Sprints, Checklist Manifesto, and more.](https://www.youtube.com/watch?v=EC1UIm58eLg)
 * [How to build a second brain in notion](https://groovywink.com/how-to-build-a-second-brain-in-notion/)
 
 ## Acessibilidade

@@ -1,30 +1,25 @@
 ---
-layout: post
+layout: single
 title: "Como consegui otimizar os testes do meu time"
 date: 2020-04-30 23:13:12
-thumb: '/assets/images/posts/cover/thumb-post-fast.jpg'
-featured: '/assets/images/posts/phpunit-faster.jpg'
+header:
+  image: '/assets/images/posts/phpunit-faster.jpg'
 alt: Palavra inglesa Change em um letreiro vermelho chamativo
 legend:
 link_text: Foto por Marc-Olivier Jodoin em Unsplash
 link_image: https://unsplash.com/photos/NqOInJ-ttqM
-categories: qa
+categories: Qualidade
 tags:
-excerpt_separator: <!--more-->
-description:  |-
-  Nesse artigo eu conto como consegui diminui o tempo de execução da suíte de testes do meu time e tive um ganho de 80% de tempo.
-twitter_text: |-
-  Nesse artigo eu conto como consegui diminui o tempo de execução da suíte de testes do meu time e tive um ganho de 80% de tempo.
-introduction: |-
-  Nesse artigo eu conto como consegui diminui o tempo de execução da suíte de testes do meu time e tive um ganho de 80% de tempo.
+ - testes
+ - performance
 ---
+Nesse artigo eu conto como consegui diminui o tempo de execução da suíte de testes do meu time e tive um ganho de 80% de tempo.
+
 
 Testes são uma das partes mais importantes na concepção de um produto digital. Através deles obtemos garantia que determinada funcionalidade cumpre com os requisitos e atende ao cliente de maneira satisfatória.
 
 Para alcançar esse objetivo devemos ter em mente que a entrega dos testes deve ser a mais rápida possível. 
 Com na pirâmide de testes, os unitários são rápidos, baratos e fáceis de implementar.
-
-<!--more-->
 
 Subindo o nível na pirâmide o grau de complexidade aumenta e por consequência sua execução também.
 
@@ -88,7 +83,7 @@ Esses são alguns relatos de pessoas que usaram os filtros:
 
 Antes de aplicar a técnica de filtros do Xdebug os testes estavam executando assim:
 
-<img src="/assets/images/posts/phpunit_lento.png" class="img-fluid" alt="Relatório informando que testes demoram 32 minutos para ser executados">
+<img src="/assets/images/posts/phpunit_lento.png"  alt="Relatório informando que testes demoram 32 minutos para ser executados">
 
 ### Habilitando o filtro
 
@@ -96,55 +91,49 @@ Para criarmos o filtro basta utilizar dois comandos que irão reduzir drasticame
 
 O primeiro comando cria o arquivo `xdebug-filter.php` dentro do diretório `build` ele será gerado no diretório raiz da aplicação. Na minha pesquisa não verifiquei se podemos colocar ele em outro diretório.
 
-<pre>
-  <code class="bash">
-    # dump filter file
-    # Caso não tenha configurado globalmente o PHPUnit rode assim.
-    php vendor/bin/phpunit --dump-xdebug-filter build/xdebug-filter.php
+```bash
+# dump filter file
+# Caso não tenha configurado globalmente o PHPUnit rode assim.
+php vendor/bin/phpunit --dump-xdebug-filter build/xdebug-filter.php
 
-    # Configurado globalmente
-    phpunit --dump-xdebug-filter build/xdebug-filter.php
-  </code>
-</pre>
+# Configurado globalmente
+phpunit --dump-xdebug-filter build/xdebug-filter.php
+```
 
 Após executar o comando do `xdebug-filter` sua saída é exatamente essa:
 
-<pre>
-  <code class="php">
-    &lt;?php 
-      declare(strict_types=1);
+```php
+<?php
+  declare(strict_types=1);
 
-      if (!\function_exists('xdebug_set_filter')) {
-        return;
-      }
+  if (!\function_exists('xdebug_set_filter')) {
+    return;
+  }
 
-      \xdebug_set_filter(
-        \XDEBUG_FILTER_CODE_COVERAGE,
-        \XDEBUG_PATH_WHITELIST,
-        ['seu-path-aqui']
-      )
-  </code>
-</pre>
+  \xdebug_set_filter(
+    \XDEBUG_FILTER_CODE_COVERAGE,
+    \XDEBUG_PATH_WHITELIST,
+    ['seu-path-aqui']
+  )
+```
 
 ## Executando os testes
 
 Após a configuração iremos rodar nossa suíte de testes com o seguinte comando:
 
-<pre>
-  <code class="bash">
-    # run the test suite
-    # Caso não tenha configurado globalmente o PHPUnit rode assim.    
-    php vendor/bin/phpunit --prepend build/xdebug-filter.php --coverage-html build/coverage-report
+```bash
+# run the test suite
+# Caso não tenha configurado globalmente o PHPUnit rode assim.
+php vendor/bin/phpunit --prepend build/xdebug-filter.php --coverage-html build/coverage-report
 
-    # Configurado globalmente
-    phpunit --prepend build/xdebug-filter.php --coverage-html build/coverage-report
-  </code>
-</pre>
+# Configurado globalmente
+phpunit --prepend build/xdebug-filter.php --coverage-html build/coverage-report
+```
 
 Com o arquivo do `xdebug-filter` configurado ele irá consultar ele para fazer referência das configurações.
 Após aplicar as modificações do `xdebug-filter`, eis o resultado:
 
-<img src="/assets/images/posts/phpunit_rapido.png" class="img-fluid" alt="Relatório informando que testes demoram 8 minutos para ser executados">
+<img src="/assets/images/posts/phpunit_rapido.png"  alt="Relatório informando que testes demoram 8 minutos para ser executados">
 
 Tive um ganho aproximadamente de 80% de execução! O processo agora está mais rápido e todo mundo feliz. 
 
@@ -161,49 +150,47 @@ Podemos também usar os paramêtros `stopOnFailure="true"` que irá executar a s
 
 O meu arquivo do phpunit.xml ficou da seguinte forma:
 
-<pre>
-  <code class="xml">
-    &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-    &lt;phpunit 
-         backupGlobals="false"
-         backupStaticAttributes="false"
-         bootstrap="vendor/autoload.php"
-         cacheResult="true"
-         colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false"
-         stopOnError="false">
-    &lt;testsuites&gt;
-        &lt;testsuite name="Unit"&gt;
-            &lt;directory suffix="Test.php">./tests/Unit&lt;/directory&gt;
-        &lt;/testsuite&gt;
+```xml
+<?xml version="1.0" encoding="UTF-8">
+  <phpunit
+        backupGlobals="false"
+        backupStaticAttributes="false"
+        bootstrap="vendor/autoload.php"
+        cacheResult="true"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        stopOnFailure="false"
+        stopOnError="false">
+        <testsuites></testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
 
-        &lt;testsuite name="Feature"&gt;
-            &lt;directory suffix="Test.php">./tests/Feature&lt;/directory&gt;
-        &lt;/testsuite&gt;
-    &lt;/testsuites&gt;
-    &lt;filter&gt;
-        &lt;whitelist addUncoveredFilesFromWhitelist="false" processUncoveredFilesFromWhitelist="true"&gt;
-            &lt;directory suffix=".php">./app&lt;/directory&gt;
-            &lt;exclude&gt;
-                &lt;file&gt;./app/Modules/User/routes.php&lt;/file&gt;
-            &lt;/exclude&gt;
-        &lt;/whitelist&gt;
-    &lt;/filter&gt;
-&lt;/phpunit&gt;      
-  </code>
-</pre>
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+      <whitelist addUncoveredFilesFromWhitelist="false" processUncoveredFilesFromWhitelist="true">
+        <directory suffix=".php">./app</directory>
+        <exclude>
+          <file>./app/Modules/User/routes.php</file>
+        </exclude>
+      </whitelist>
+    </filter>
+</phpunit>
+```
 
-## Conclusão 
+## Conclusão
 
 Ficou claro para mim que a curiosidade a gana para resolver esse problema foi o fator primordial, com isso tive vários aprendizados. Sempre seja curioso e tenta ao máximo melhorar as condições de trabalho do time.
 
 Garantir a qualidade está também nos pequenos detalhes que podem refletir em grandes conquistas. Todas as referências de artigos que foram pesquisados estão logo abaixo.
 
-## Referências:
+## Referências
 
 * [Xdebug code coverage](https://xdebug.org/docs/code_coverage)
 * [Tips to speed up phpunit tests](https://laravel-news.com/tips-to-speed-up-phpunit-tests)

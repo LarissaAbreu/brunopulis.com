@@ -1,32 +1,26 @@
 ---
-layout: post
+layout: single
 title: "Como criar botões acessíveis"
 date: 2017-10-02
-thumb: "/assets/images/posts/cover/cover-links.jpg"
-featured: "/assets/images/posts/links.jpg"
+header:
+  image: /assets/images/posts/links.jpg
 alt: "Botão azul escrito Clique aqui"
-description: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
-
 categories: Acessibilidade
 tags:
   - dicas
   - a11y
-twitter_text: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
-introduction: "Escrever botões de forma semântica nunca foi tão simples, porém, existe muita confusão. Neste artigo vamos abordar algumas soluções para nossos botões."
 ---
-
-Fala pessoal! Depois de algum tempo sem postar nada, resolvi fazer um post rapidinho mas muito importante.
-Hoje, vou falar sobre como criar botões acessíveis sem prejudicar a estética e/ou seu comportamento.
-
-Estruturalmente botões são links estilizados via CSS e tem um valor muito importante para fazerem conversões de cliques, mas, a maioria deles são aplicados de forma incorreta. Nesse post vou mostrar a correção para esse problema.
+Aprenda a criar botões acessíveis sem prejudicar a estética e/ou seu comportamento.
 
 ## O cenário
+
+Estruturalmente botões são links estilizados via CSS e tem um valor muito importante para fazerem conversões de cliques, mas, a maioria deles são aplicados de forma incorreta. Nesse post vou mostrar a correção para esse problema.
 
 Em diversos sites, nos deparamos com call to actions (como: ‘Clique aqui’; ‘Saiba mais’; ‘Continue lendo’ e etc). Estes botões geram algumas barreiras de acessibilidade quando não são feitos da forma correta.
 
 Fiz esse exemplo para ilustrar quando são feitos incorretamente.
 
-```HTML
+```html
 <div class=”card-action”>
   <a href=”#”>Leia mais</a>
 </div>
@@ -60,7 +54,7 @@ O exemplo abaixo mostra de forma clara como fazer.
 
 ### CSS
 
-```CSS
+```css
 .sr-only {
   position: absolute;
   width: 1px;

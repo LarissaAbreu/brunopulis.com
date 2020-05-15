@@ -1,19 +1,17 @@
 ---
-layout: post
+layout: single
 title: "Explorando o atributo lang"
 date: 2020-01-14 01:11:52
-thumb: '/assets/images/posts/cover/cover-languages.jpg'
-featured: '/assets/images/posts/languages.jpg'
+header:
+  image: /assets/images/posts/languages.jpg
 alt: Vários bilhetes com expressões de diversos idiomas escritos
-description: Descubra o poder do atributo lang e como utilizar ele da forma correta
 categories: Acessibilidade
-tags: 
+tags:
   - Semântica
   - Web Standards
-twitter_text: Descubra o poder do atributo lang e como utilizar ele da forma correta
-introduction: |-
-  O atributo lang geralmente é ignorado e desconhecido pela maioria de nós desenvolvedores, porém, ele  influência diretamente no significado e sentido de nossos documentos HTML. Descubra o poder desse atributo.
 ---
+O atributo lang geralmente é ignorado e desconhecido pela maioria de nós desenvolvedores, porém, ele  influência diretamente no significado e sentido de nossos documentos HTML. Descubra o poder desse atributo.
+
 
 Nesse post iremos explorar um dos atributos HTML que passam desapercebidos no dia a dia, o atributo `lang`.
 
@@ -30,7 +28,7 @@ A experiência de John, foi mais ou menos a seguinte:
 <div class="embed-responsive embed-responsive-16by9">
   <iframe title="Vídeo demonstrando o uso do atributo lang"
           width="560"
-          height="315"  
+          height="315"
           src="https://www.youtube.com/embed/IFmKQ5e17Jo"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
@@ -44,7 +42,7 @@ Porém, os dois últimos parágrafos estão totalmente compreensíveis.
 
 O que aconteceu no vídeo é algo bem simples, mas se não prestarmos atenção o conteúdo pode ficar incompreensível. A marcação HTML desse trecho é:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +58,7 @@ O que aconteceu no vídeo é algo bem simples, mas se não prestarmos atenção 
   <p lang="en">After all their adventures and fun, Wendy decides that her place is at home with their mother. Wendy helps all the Lost Boys return to London. But Peter doesn’t want her to go. Instead he tries to trick her. He tells her that their mother doesn’t want them anymore. However, he understands how sad their mother must be. In the end, he decides to let them go home.</p>
 </body>
 </html>
-{% endhighlight %}
+```
 
 <hr/>
 
@@ -90,9 +88,6 @@ Uma possível solução para o problema seria:
 </body>
 </html>
 ```
-
-<hr/>
-
 Ao incluirmos o escopo de global de linguagem, o documento usa essas configurações para toda a página. Assim, o leitor de tela irá carregar a entonação e sotaque daquela linguagem especificada.
 
 Algo muito impressionante, não é mesmo?

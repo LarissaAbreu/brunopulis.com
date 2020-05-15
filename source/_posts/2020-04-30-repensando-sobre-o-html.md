@@ -1,18 +1,11 @@
 ---
-layout: post
+layout: single
 title: "HTML não é tão simples quanto você pensa"
 date: 2020-04-30 23:13:12
-thumb: '/assets/images/posts/photo-thumb-html.jpg'
-categories: dev
+categories: Dev
 tags:
-description:  |-
-  Como um HTML semântico pode fazer a diferença em nossos sites e como isso pode impactar nossos negócios.
-twitter_text: |-
-  Como um HTML semântico pode fazer a diferença em nossos sites e como isso pode impactar nossos negócios.
-introduction: |-
-  Como um HTML semântico pode fazer a diferença em nossos sites e como isso pode impactar nossos negócios.
 ---
-
+Como um HTML semântico pode fazer a diferença em nossos sites e como isso pode impactar nossos negócios.
 ## Introdução
 
 O <abbr title="Hyper Text Markup Language">HTML</abbr> é o bloco de construção mais básico da web. É o responsável por definir duas características importantíssimas: **significado** e a **estrutura** do conteúdo da web. 

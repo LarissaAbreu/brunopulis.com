@@ -1,20 +1,16 @@
 ---
-layout: post
+layout: single
 title: "Expressões Regulares: Introdução e História"
 date: 2018-12-29 03:28:43
-thumb: "/assets/images/posts/cover/cover-code.jpg"
-featured: "/assets/images/posts/code.jpg"
+header:
+  image: "/assets/images/posts/code.jpg"
 alt: "Abreviação em inglês de Expressões regulares. Ilustração"
-description: "Nesta série, vamos estudar sobre a história e a introdução das expressões regulares e compreender os benefícios de sua utilização."
 categories: Séries
 tags:
   - regex
   - metacaracteres
-
-twitter_text: "Nesta série, vamos estudar sobre expressões regulares e compreender os benefícios de sua utilização."
-introduction: "Nesta série, vamos estudar sobre a história e a introdução das expressões regulares e compreender os benefícios de sua utilização."
 ---
-
+Nesta série, vamos estudar sobre expressões regulares e compreender os benefícios de sua utilização.
 ## Introdução
 
 Fala pessoal! Depois de muito tempo ~~offline~~, sem escrever absolutamente nada sobre desenvolvimento resolvi reativar meu blog para partilhar conhecimentos e me forçar a estudar também.

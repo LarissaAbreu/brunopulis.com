@@ -1,18 +1,15 @@
 ---
-layout: post
+layout: single
 title: "Como buscar tags do wordpress sem link"
 date: 2017-10-02 00:43:26
-thumb: "/assets/images/posts/photo-thumb-php.jpg"
-featured: "/assets/images/posts/php.jpg"
+header:
+  image: /assets/images/posts/php.jpg
 alt: "Nuvem de tags com palavras relacionadas ao Wordpress"
 description: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
-categories: 
-  - Desenvolvimento Web
+categories: PHP
 tags:
   - wordpress
   - seo
-twitter_text: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
-introduction: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
 ---
 
 Esse artigo visa mostrar de forma clara como é possível retornar o nome das tags do Wordpress sem o link padrão. É uma técnica relativamente simples uma consulta na documentação e resolvemos nosso problema, vamos lá!
@@ -43,7 +40,9 @@ A função <code>the_tags()</code> não possui retorno.
 
 Imagine o caso, o cliente me pediu que o texto que deve ser mostrado seria **“Tags Sociais”** e separados pelo sinal maior **(>)**:
 
-<code>the_tags( ‘Tags Sociais: ‘,’ > ‘ );</code>
+```php
+the_tags(‘Tags Sociais: ‘,’ > ‘);
+```
 
 Para exibir somente as tags sem o link devemos escrever o seguinte código:
 
