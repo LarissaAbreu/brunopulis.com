@@ -1,16 +1,13 @@
 ---
-layout: post
+layout: single
 title: Extensões que utilizo no meu cotidiano
 date: '2020-04-01 09:07pm'
 categories: Dicas
 tags:
-  - Referências
-  - Dicas
-  - Extensões
-description: >-
-  Dicas de extensões que utilizo no meu dia a dia  me ajudando a ser mais
-  produtivo.
+  - produtividade
+  - extensões
 ---
+Dicas de extensões que utilizo no meu dia a dia  me ajudando a ser mais produtivo.
 
 ![Caixa de ferramentas simbolizando extensoes do navegador.](/assets/images/posts/extension.jpg)
 

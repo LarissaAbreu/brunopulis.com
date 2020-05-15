@@ -125,20 +125,17 @@ EOT
 initpost_content() {
 
 echo "---"
-echo "layout: post"
+echo "layout: single"
 echo "title: \"${POST_TITLE}\""
 echo "date: ${CURRENT_DATE} ${TIME}"
-echo "thumb: '/assets/images/posts/cover'"
-echo "featured: '/assets/images/posts/'"
+echo "header: image: '/assets/images/posts/'"
 echo "alt:"
-echo "legend:"
 echo "link_text:"
 echo "link_image:"
-echo "description:"
 echo "categories:"
 echo "tags:"
-echo "twitter_text:"
-echo "introduction:"
+echo "toc:"
+echo "comments:"
 echo "---"
 
 }

@@ -1,11 +1,9 @@
 ---
-layout: post
+layout: single
 title: "Links da Semana 7"
 date: 2020-04-14 13:55:25
-description: Links sobre coisas interessantes que fui vendo pela semana.
-categories: Referencias
-tags:
- - Links Semanais
+categories:
+ - Links da semana
 ---
 
 Links da semana 7 - Links sobre coisas interessantes que fui vendo pela semana.

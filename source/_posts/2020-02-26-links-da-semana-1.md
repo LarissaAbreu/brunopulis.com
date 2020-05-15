@@ -1,11 +1,9 @@
 ---
-layout: post
-title: 'Links da semana #1'
+layout: single
+title: 'Links da semana 1'
 date: '2020-02-26 06:32pm'
-categories: Referencias
-tags:
-  - Links Semanais
-description: Links interessantes que vi e achei legal em compartilhar
+categories:
+ - Links da semana
 ---
 
 Links da semana 1 - Coisas bacanas que vi e decidi compartilhar com vocês.
@@ -14,7 +12,7 @@ Links da semana 1 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
 Eu acompanho o blog do [Willian Justen](https://willianjusten.com.br) há um bom tempo, desde da época em que ele ensinava sobre Jekyll e algo que ele fazia que era bastante interessante era uma lista semanal de links interessantes.
 
-Pensando nisso, a partir dessa semana irei soltar um post por semana nesse formato. 
+Pensando nisso, a partir dessa semana irei soltar um post por semana nesse formato.
 
 Essa semana praticamente estudei sobre algumas disciplinas relacionadas a Qualidade de Software como: **testes baseados em riscos** e acessibilidade web.
 

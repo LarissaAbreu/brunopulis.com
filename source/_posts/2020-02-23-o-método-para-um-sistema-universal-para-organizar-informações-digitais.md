@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 'Como organizar suas informações digitais'
 date: '2020-02-22 09:21pm'
 categories: Produtividade
@@ -7,26 +7,28 @@ tags:
   - produtividade
   - organização
 description: >-
-  A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma
+
+---
+A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma
   quantidade absurda de informações. E como lidamos com essa grande quantidade,
   armazenando e categorizando elas? Vamos descobrir uma boa alternativa para
   colocar ordem no caos da informação.
----
-A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma quantidade absurda de informações. 
 
-Você já parou para refletir o quanto de conteúdo consumimos nas mídias digitais por dia? Quanto tempo gastamos com redes sociais, notícias, jogos e chats com nossos amigos? 
+A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma quantidade absurda de informações.
+
+Você já parou para refletir o quanto de conteúdo consumimos nas mídias digitais por dia? Quanto tempo gastamos com redes sociais, notícias, jogos e chats com nossos amigos?
 
 Com essa curiosidade em mente um infográfico anual demonstra o que acontece em um minuto na internet, do ano de 2019 pode ser visto logo abaixo.
 
 ![Infográfico demonstrando o que acontece na internet em um minuto ](/assets/images/posts/internet-minute.jpg)
 
-Chega a ser assustador, não é mesmo? Ao analisarmos o ano de 2018 com 2019 os dados são gritantes: 
+Chega a ser assustador, não é mesmo? Ao analisarmos o ano de 2018 com 2019 os dados são gritantes:
 
 ![Infografico comparando o ano de 2018 e 2019](/assets/images/posts/internet-minute-comparison.jpg)
 
 ## Colocando ordem no caos
 
-Eu já experimentei alguns métodos de organização pessoal e produtividade. Dentre eles experimentei: 
+Eu já experimentei alguns métodos de organização pessoal e produtividade. Dentre eles experimentei:
 
 * Pomodoro;
 * GTD;
@@ -37,7 +39,7 @@ Eu já experimentei alguns métodos de organização pessoal e produtividade. De
 >
 > A técnica deriva seu nome da palavra italiana pomodoro (tomate), como referência ao popular cronômetro gastronômico na forma dessa fruta. O método é baseado na ideia de que pausas frequentes podem aumentar a agilidade mental.
 
-Ele, funciona muito bem quanto temos tarefas que são bem definidas. Utilizei um bom tempo, porém, sentia necessidade de algo a mais com mais etapas, pois a maioria dos projetos que estou envolvido são complexas e mudam com certa frequência. 
+Ele, funciona muito bem quanto temos tarefas que são bem definidas. Utilizei um bom tempo, porém, sentia necessidade de algo a mais com mais etapas, pois a maioria dos projetos que estou envolvido são complexas e mudam com certa frequência.
 
 ### GTD
 
@@ -45,9 +47,9 @@ Ele, funciona muito bem quanto temos tarefas que são bem definidas. Utilizei um
 >
 > O alívio por registro (manuscrito, gravação de voz, eletrônico) é a tarefa principal, além na disciplina do cumprimento dos 5 estágios da produtividade (coleção, processamento, organização, execução e revisão periódica), todos os itens estão no estágio executivo, porém a efetividade se conquista no implemento pleno das 5 etapas.
 
-Particularmente eu tentei usar o GTD diversas vezes, mas sempre caia na mesma coisa, muitas etapas e pouca disciplina para cumprir cada etapa para o método funcionar. Talvez eu dê uma chance num futuro para o métodos. 
+Particularmente eu tentei usar o GTD diversas vezes, mas sempre caia na mesma coisa, muitas etapas e pouca disciplina para cumprir cada etapa para o método funcionar. Talvez eu dê uma chance num futuro para o métodos.
 
-Em minha procura por me organizar estava vendo alguns vídeos sobre o [Notion](http://notion.so/), uma excelente ferramenta para se organizar e armazenar informações me deparei com o [método PARA ](https://praxis.fortelabs.co/para/)criado por Tiago Forte. 
+Em minha procura por me organizar estava vendo alguns vídeos sobre o [Notion](http://notion.so/), uma excelente ferramenta para se organizar e armazenar informações me deparei com o [método PARA ](https://praxis.fortelabs.co/para/)criado por Tiago Forte.
 
 Basicamente o **PARA**, possuí uma proposta bastante interessante onde ele subdivide todo o método em somente quatro etapas. A palavra PARA é um acrônimo de:
 
@@ -70,9 +72,9 @@ Alguns exemplos de projetos:
 
 #### Áreas de responsabilidade
 
-Uma área de responsabilidade é uma esfera de atividade com um padrão a ser mantido ao longo do tempo. Em outras sistemas poderíamos chamá-las de **categorias**. 
+Uma área de responsabilidade é uma esfera de atividade com um padrão a ser mantido ao longo do tempo. Em outras sistemas poderíamos chamá-las de **categorias**.
 
-Alguns exemplos: 
+Alguns exemplos:
 
 * Saúde;
 * Finanças;
@@ -83,9 +85,9 @@ Alguns exemplos:
 
 #### Recurso
 
-Um recurso é um tópico ou tema de interesse contínuo. Os blocos de informações nessa etapa costumam ter informações valiosas que você pode acessar ao procurar material para uma postagem de um blog, por exemplo. 
+Um recurso é um tópico ou tema de interesse contínuo. Os blocos de informações nessa etapa costumam ter informações valiosas que você pode acessar ao procurar material para uma postagem de um blog, por exemplo.
 
-Alguns exemplos: 
+Alguns exemplos:
 
 * Música;
 * SEO;
@@ -93,9 +95,9 @@ Alguns exemplos:
 
 #### Arquivos
 
-Arquivos podemos encarar como portfólios de projetos concluídos, cada um inativo, mas pronto para oferecer material potencialmente útil para reutilizar em projetos futuros. 
+Arquivos podemos encarar como portfólios de projetos concluídos, cada um inativo, mas pronto para oferecer material potencialmente útil para reutilizar em projetos futuros.
 
-Alguns exemplos: 
+Alguns exemplos:
 
 * Site da empresa ACME;
 * Aplicativo em Flutter.

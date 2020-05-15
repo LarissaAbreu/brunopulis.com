@@ -1,18 +1,17 @@
 ---
-layout: post
+layout: single
 title: "Criando links acessíveis e válidos"
 date: 2019-04-21 10:20:00
-thumb: "/assets/images/posts/cover/cover-links.jpg"
-featured: "/assets/images/posts/links.jpg"
+header:
+  image: /assets/images/posts/links.jpg
 alt: "Duas páginas da internet se conectando através de um link. Ilustração"
-description: "Vamos aprender a escrever links válidos e acessíveis para todas as pessoas"
 categories: Acessibilidade
 tags:
   - links
   - a11y
-twitter_text: "Quer aprender a escrever um link válido e acessível? Confira neste artigo."
-introduction: "Quer aprender a escrever um link válido e acessível? Confira neste artigo."
 ---
+Quer aprender a escrever um link válido e acessível? Confira neste artigo.
+
 
 > [Post traduzido](https://a11yproject.com/posts/creating-valid-and-accessible-links/) por [Bruno Pulis](https://github.com/brunopulis) e escrito originalmente por [Emma Patricios](http://www.punkchip.com/). Publicado em 15 de Fevereiro, 2019
 

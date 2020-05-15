@@ -1,19 +1,15 @@
 ---
-layout: post
+layout: single
 title: "Global Accessibility Awarenss Day 2017"
 date: 2017-11-09
-thumb: "/assets/images/posts/cover/cover-a11y.jpg"
-featured: "/assets/images/posts/travel.jpg"
-alt: "Logomarca do movimento global de acessibilidade comemorado em 18 de março"
-description: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017 promovido pelo o IXDABH"
+header:
+  image: /assets/images/posts/travel.jpg
 categories: Eventos
 tags:
   - reviews
   - a11y
-twitter_text: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
-introduction: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 ---
-
+Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017
 ## Introdução
 
 Fala pessoal, nesse post vou contar um pouco de como foi participar no Global Acessibility Awarenss da edição de Belo Horizonte promovido pelo [IXDABH](http://bhz.ixda.org.br/)

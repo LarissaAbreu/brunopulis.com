@@ -1,15 +1,2 @@
-# frozen_string_literal: true
-
-source 'https://rubygems.org'
-
-gem 'jekyll'
-
-group :jekyll_plugins do
-  gem "pygments.rb"
-  gem "jekyll-compose"
-  gem "kramdown"
-  gem 'jekyll-feed'
-  gem 'jekyll-seo-tag'
-  gem 'jekyll-sitemap'
-  gem 'rouge'
-end
+source "https://rubygems.org"
+gemspec

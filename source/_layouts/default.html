@@ -1,26 +1,44 @@
 ---
-layout: compress
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
-{% include head.html %}
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <a id="skippy" class="sr-only sr-only-focusable skippy" href="#content">
-    <div class="container">
-      <span class="skiplink-text">Ir para conteúdo principal</span>
-    </div>
-  </a>
-  {% include icons.html %}
-  {% include header.html %}
+<head>
+  {% include head.html %}
+  {% include head/custom.html %}
+</head>
 
-  <main class="main-wrapper" id="content">
+<body
+  class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  {% include_cached skip-links.html %}
+  {% include_cached browser-upgrade.html %}
+  {% include_cached masthead.html %}
+
+  <div class="initial-content">
     {{ content }}
+  </div>
 
-    {% include footer.html %}
-  </main>
+  {% if site.search == true %}
+  <div class="search-content">
+    {% include_cached search/search_form.html %}
+  </div>
+  {% endif %}
 
-  {% include shared/scripts.html %}
+  <div id="footer" class="page__footer">
+    <footer>
+      {% include footer/custom.html %}
+      {% include_cached footer.html %}
+    </footer>
+  </div>
+
+  {% include scripts.html %}
 </body>
+
 </html>

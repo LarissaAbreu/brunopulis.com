@@ -1,30 +1,26 @@
 ---
-layout: post
+layout: single
 title: "Texto alternativo o guia definitivo"
 date: 2020-05-14 17:18:16
-thumb: '/assets/images/posts/cover'
-featured: '/assets/images/posts/cute-cat.jpeg'
 alt: Gato de cor marrom brincando
-legend: 
+legend:
 link_text: Foto por Daniel Göransson
 link_image: https://axesslab.com/alt-texts
-categories: acessibilidade
+categories: Acessibilidade
 tags:
-description:  |-
-  Esse artigo contém tudo o que você precisa saber sobre texto alternativo! Quando usá-los e como desenhá-los perfeitamente.
-twitter_text: |-
-  Esse artigo contém tudo o que você precisa saber sobre texto alternativo! Quando usá-los e como desenhá-los perfeitamente.
-introduction: |-
-  Esse artigo contém tudo o que você precisa saber sobre texto alternativo! Quando usá-los e como desenhá-los perfeitamente.
+  - texto alternativo
+  - html semantico
+toc: true
+comments: true
+header:
+  image: /assets/images/posts/cute-cat.jpeg
 ---
+Esse artigo contém tudo o que você precisa saber sobre texto alternativo! 
+Quando usá-los e como desenhá-los perfeitamente.
 
 <div class="alert alert-warning">
 Texto postado originalmente no <a href="https://axesslab.com/alt-texts" rel="noopener noreferrer" target="_blank">blog da Axesslab</a> escrito por <a href="https://twitter.com/danielgoransson" rel="noopener noreferrer" target="_blank">Daniel Göransson</a>, adaptado e traduzido por mim.
 </div>
-
-Esta publicação contém tudo o que você precisa saber sobre texto alternativo!
-
-Quando usá-los e como desenhá-los perfeitamente. Por mim, Daniel, um desenvolvedor web com deficiência visual que usa um leitor de tela no meu dia-a-dia.
 
 ## Minhas experiências com imagens na web
 
@@ -35,11 +31,11 @@ Eu, como qualquer um, encontro várias imagens surfando na web. Se eu estiver us
 Muitas vezes o texto alternativo não ajuda, sendo um desperdício do meu tempo porque não transmite qualquer significado.
 Deixe-me ilustrar isso na página inicial do [The Verge](https://www.theverge.com/). Isto é o que exibe para pessoas com visão:
 
-<img src="/assets/images/posts/the-verge.png" class="img-fluid" alt="Pagina incial do The Verge />
+<img src="/assets/images/posts/the-verge.png" alt="Pagina incial do The Verge" />
 
 Abaixo é o que eu vejo. Eu substituí as imagens com o que meu leitor de tela lê:
 
-<img src="/assets/images/posts/the-verge-alt.png" class="img-fluid" alt="" />
+<img src="/assets/images/posts/the-verge-alt.png" alt="" />
 
 **Não ajuda muito, não é?**
 
@@ -72,18 +68,14 @@ Textos alternativos são super importantes! Tão importantes que o <abbr title="
 
 No HTML, um texto alternativo é um atributo em um elemento de imagem:
 
-<pre>
-  <code class="html">
-    &lt;img src="cachorro.png" alt="Cachorro brincando no prado." /&gt;
-  </code>
-</pre>
+```html
+<img src="cachorro.png" alt="Cachorro brincando no prado." />
+```
 
 A maioria dos gerenciadores de conteúdo, como WordPress, permite você criar um texto alternativo quando subir a imagem.
 Esse campo geralmente é chamado de **Texto Alternativo** mas em algumas interfaces é chamado de **"descrição da imagem"** ou algo similar.
 
-<div class="text-center">
-  <img src="/assets/images/posts/alt-text.png" class="img-fluid" alt="Interface do Wordpress para inserir texto alternativo" />
-</div>
+<img src="/assets/images/posts/alt-text.png" alt="Interface do Wordpress para inserir texto alternativo" />
 
 ## Vamos criar o texto alternativo perfeito
 
@@ -106,10 +98,7 @@ Pode parecer óbvio, mas um texto alternativo deve descrever uma imagem. Por exe
 
 Como você descreve a imagem depende do seu contexto. Deixe-me dar-lhe um exemplo:
 
-<div class="text-center">
-  <img src="/assets/images/posts/image-alt.jpeg" class="img-fluid" alt="Close, fotografia em escala de cinza do homem de fora, face em foco, fundo não focado." />
-</div>
-<hr />
+<img src="/assets/images/posts/image-alt.jpeg" alt="Close, fotografia em escala de cinza do homem de fora, face em foco, fundo não focado." />
 
 Se essa imagem fosse exibida em um artigo sobre fotografia, o texto alternativo poderia ser algo ao longo das linhas de:
 
@@ -156,9 +145,7 @@ Além disso, adicionar um atributo title faz com que alguns leitores de tela lei
 
 Na maioria dos casos você deve usar um texto alternativo para imagens, mas existem algumas execeções onde você deve deixar o atributo alt em branco.
 
-<div class="alert alert-danger">
-Nota importante: nunca remova o atributo alt, pois irá quebra o padrão do HTML.
-</div>
+> Nota importante: nunca remova o atributo alt, pois irá quebra o padrão do HTML.
 
 Mas você é permitido inserir uma string vazia, desta forma: `alt=""`.
 
@@ -166,7 +153,7 @@ Mas você é permitido inserir uma string vazia, desta forma: `alt=""`.
 
 #### Imagens repetidas em feeds
 
-Imagine que você está percorrendo seu feed do Twitter. Toda vez que quiser ler um novo tweet, primeiro você deve ouvir 
+Imagine que você está percorrendo seu feed do Twitter. Toda vez que quiser ler um novo tweet, primeiro você deve ouvir.
 
 "Foto de perfil do usuário `<nome de usuário da pessoa que postou>`".
 
@@ -185,26 +172,22 @@ Você sempre deve ter labels ao lado de ícones. Supondo que você faça, o íco
 
 Vamos dar um exemplo de mídia social como exemplo:
 
-<img src="/assets/images/posts/icones-alt.png" class="img-fluid" alt="Icones do Facebook e Twitter" />
+<img src="/assets/images/posts/icones-alt.png" alt="Icones do Facebook e Twitter" />
 
 Se você escrevesse um texto alternativo para o ícone do Facebook, um leitor de tela diria algo ao longo da linha: "Facebook Facebook". Muito redundante!
 
 OK, isso não é tecnicamente sobre textos alternativos, mas ainda é importante: **certifique-se de que tanto o ícone quanto o texto do link estão no mesmo atributo de link, para obter uma experiência fluída**. Como isso:
 
-<pre>
-  <code class="html">
-    &lt;a href="..."&gt;
-      &lt;img src="fb_icon.png" alt="" /&gt;
-      Facebook
-    &lt;/a&gt;
-  </code>
-</pre>
+```html
+  <a href="...">
+    <img src="fb_icon.png" alt="" />
+    Facebook
+  </a>
+```
 
 Outro erro comum está nos botões de menus:
 
-<div class="text-center">
-  <img src="/assets/images/posts/menu-hamburger.png" class="img-fluid" alt="Menu" />
-</div>
+<img src="/assets/images/posts/menu-hamburger.png" alt="Menu" />
 
 Se o botão de menu não tiver um label visual — o que, de maneira direta, é realmente ruim para a experiência do usuário, ele precisa de um texto alternativo (ou outra maneira de descrever sua função no código, como `aria-label`).
 
@@ -216,9 +199,7 @@ Se o ícone do menu tiver um label, você deve deixar o texto alternativo em bra
 
 Geralmente uma imagem com um link é acompanhado com um texto. Como o exemplo abaixo:
 
-<div class="text-center">
-  <img src="/assets/images/posts/mourinho.png" class="img-fluid" alt="" />
-</div>
+<img src="/assets/images/posts/mourinho.png" alt="" />
 
 Nesse caso, a imagem e o link devem estar na mesma tag de link no html. Você pode simplesmente deixar o texto alternativo em branco. O importante para o usuário é ouvir o texto do link.
 
@@ -234,9 +215,7 @@ Eu classificaria a maioria das imagens nas quais você coloca o texto como decor
 
 Um exemplo é a imagem de fundo na página inicial do Netflix:
 
-<div class="text-center">
-  <img src="/assets/images/posts/netflix.png" class="img-fluid" alt="" />
-</div>
+<img src="/assets/images/posts/netflix.png" alt="" />
 
 ### Casos especiais
 
@@ -260,11 +239,9 @@ Existem dois caminhos principais para adicionar um SVG a uma página HTML.
 
 Dentro de um elemento `img`. Nesse caso, basta adicionar um texto alternativo como de costume:
 
-<pre>
-  <code class="html">
-    &lt;img src="dog.svg" alt="Cachorro brincando na grama." /&gt;
-  </code>
-</pre>
+```html
+<img src="dog.svg" alt="Cachorro brincando na grama." />
+```
 
 Usando uma tag `svg`. Se você usar esse método, não pode adicionar um atributo `alt` porque não há suporte para isso. No entanto, você pode contornar isso adicionando dois atributos wai-aria: `role="img"` e `aria-label="texto alternativo"`.
 

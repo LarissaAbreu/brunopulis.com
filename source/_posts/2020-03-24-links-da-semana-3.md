@@ -1,16 +1,14 @@
 ---
-layout: post
-title: 'Links da semana #3'
+layout: single
+title: 'Links da semana 3'
 date: '2020-03-24 08:15pm'
-categories: Referencias
-tags:
-  - Links Semanais
-description: Links interessantes que vi e achei legal em compartilhar
+categories:
+  - Links da semana
 ---
 
 Links da semana 3 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
-## Repositórios interessantes 
+## Repositórios interessantes
 
 * [Dialetus - Dicionário informal brasileiro](https://github.com/mvfsillva/dialetus)
 * [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist)

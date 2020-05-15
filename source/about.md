@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Sobre mim
+layout: single
+title: Sobre
 description: Trajetória profissional
-permalink: /about
+toc: true
+author_profile: true
 ---
 
 Nascido em Campo Belo/MG e erradicado em Belo Horizonte. Considero-me mais belohorizontino do que campobelense. Atuo na área de tecnologia desde 2009, com boa experiência em desenvolvimento frontend e backend. Para ver detalhadamente a minha trajetória profissional basta fazer o download do meu <a href="/assets/docs/brunopulis.pdf" download onclick="ga('send', 'event', 'PDF', 'Download', 'Download do meu currículo');">currículo</a>

@@ -1,21 +1,19 @@
 ---
-layout: post
+layout: single
 title: "Como a teologia me ajudou a palestrar"
 date: 2017-07-14 01:13:35
-thumb: "/assets/images/posts/cover/cover-teologia.jpg"
-featured: "/assets/images/posts/cover/cover-teologia.jpg"
+header:
+  image: /assets/images/posts/cover/cover-teologia.jpg
 alt: "Uma bíblia com foco e duas velas próximas e um corredor ao fundo da imagem"
 description: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 categories: Carreira
 tags:
 - carreira
 - motivacional
-
-twitter_text: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
-introduction: "Relato de como a teologia me auxiliou para perder o medo de falar em público"
 ---
+Como a faculdade de teologia me ensinou tecnicas de comunicacão, e como isso contribuiu para eu palestrar com maior confianca e sem timidez.
 
-![Bruno Pulis segurando um microfone, vestindo blusa preta com uma bermuda jeans olhando para o computador](/img/posts/devfestne/devfestne.jpg)
+![Bruno Pulis segurando um microfone, vestindo blusa preta com uma bermuda jeans olhando para o computador](/assets/images/posts/devfestne.jpg)
 
 ## Disclaimer
 
@@ -51,11 +49,11 @@ Os princípios da homilética auxiliam na comunicação da mensagem. Já perdi a
 
 Me arrisquei como palestrante algumas vezes. Em 2017 palestrei em dois eventos: DevFest Nordeste e o DevFest Belo Horizonte (agradecimentos a: Jader Gomes, Marcus Silva, Yan Magalhães e Thiago Almeida).
 
-![Bruno Pulis segurando um microfone e apoiando um púlpito transparente, vestindo uma blusa preta e calça bonina. Ao fundo a platéia sentanda](/img/posts/devfestne/devfestbh.jpg)
+![Bruno Pulis segurando um microfone e apoiando um púlpito transparente, vestindo uma blusa preta e calça bonina. Ao fundo a platéia sentanda](/assets/images/posts/devfestbh.jpg)
 
 Como eu tinha uma prévia experiência em pregar na igreja, encarar o público não foi o maior desafio, mas sim o preparo técnico das palestras. O que sempre vamos ter são o frio na barriga e a expectativa de como o público irá reagir e muito dessa expectativa começa através de você.
 
-![Bruno Pulis segurando um microfone, vestindo de blusa xadrez orando para as pessoas que estão ems sua frente](/img/posts/devfestne/pregacao.jpg)
+![Bruno Pulis segurando um microfone, vestindo de blusa xadrez orando para as pessoas que estão ems sua frente](/assets/images/posts/pregacao.jpg)
 
 Você é o comunicador que irá transmitir uma mensagem e sua desenvoltura para isso pode te levar ao sucesso ou ao fracasso. O conteúdo pode ser excelente, porém se a forma de comunicar for ruim, todo o trabalho é levado água abaixo.
 
@@ -131,7 +129,7 @@ importantes;
 
 * * *
 
-![Várias pessoas em posições diferente fazendo caretas](/img/posts/devfestne/galera.jpg)
+![Várias pessoas em posições diferente fazendo caretas](/assets/images/posts/galera.jpg)
 
 ## Conclusão
 
