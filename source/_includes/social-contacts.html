@@ -1,0 +1,27 @@
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
+
+<section class="page__share">
+  {% if site.data.ui-text[site.locale].share_on_label %}
+  <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_contacts | default: "Share on" }}</h4>
+  {% endif %}
+
+  <p>Se você gostou desse post, compartilhe com seus amigos, ajude a espalhar conhecimento!</p>
+  <ul>
+    <li>
+      <a href="https://t.me/canaldopulis" target="_blank" rel="noopener noreferrer">
+        Faça parte do canal do Telegram
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/channel/UCAjuwwxEbHtm4GvVi3W_o6Q" target="_blank" rel="noopener noreferrer">
+        Se inscreva no canal do Youtube
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/canaldobrunopulis" target="_blank" rel="noopener noreferrer">
+        Curta a página no Facebook
+      </a>
+    </li>
+  </ul>
+</section>
