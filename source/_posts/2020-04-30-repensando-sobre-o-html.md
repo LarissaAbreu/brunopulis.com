@@ -4,8 +4,10 @@ title: "HTML não é tão simples quanto você pensa"
 date: 2020-04-30 23:13:12
 categories: Dev
 tags:
+- Web Standards
+excerpt: "Como um HTML semântico pode fazer a diferença em nossos sites e como isso pode impactar nossos negócios."
 ---
-Como um HTML semântico pode fazer a diferença em nossos sites e como isso pode impactar nossos negócios.
+
 ## Introdução
 
 O <abbr title="Hyper Text Markup Language">HTML</abbr> é o bloco de construção mais básico da web. É o responsável por definir duas características importantíssimas: **significado** e a **estrutura** do conteúdo da web.

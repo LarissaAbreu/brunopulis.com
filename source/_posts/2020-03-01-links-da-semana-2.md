@@ -4,9 +4,8 @@ title: 'Links da semana 2'
 date: '2020-03-01 04:19pm'
 categories:
  - Links da semana
+excerpt: "Links da semana 2 - Coisas bacanas que vi e decidi compartilhar com vocês."
 ---
-
-Links da semana 2 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
 ## Produtividade
 

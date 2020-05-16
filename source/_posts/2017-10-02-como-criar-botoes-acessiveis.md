@@ -4,13 +4,13 @@ title: "Como criar botões acessíveis"
 date: 2017-10-02
 header:
   image: /assets/images/posts/links.jpg
-alt: "Botão azul escrito Clique aqui"
+  image_description: "Botão azul escrito Clique aqui"
 categories: Acessibilidade
 tags:
   - dicas
   - a11y
+excerpt: "Aprenda a criar botões acessíveis sem prejudicar a estética e/ou seu comportamento."
 ---
-Aprenda a criar botões acessíveis sem prejudicar a estética e/ou seu comportamento.
 
 ## O cenário
 

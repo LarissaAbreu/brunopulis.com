@@ -3,22 +3,21 @@ layout: single
 title: "Como consegui otimizar os testes do meu time"
 date: 2020-04-30 23:13:12
 header:
-  image: '/assets/images/posts/phpunit-faster.jpg'
-alt: Palavra inglesa Change em um letreiro vermelho chamativo
-legend:
-link_text: Foto por Marc-Olivier Jodoin em Unsplash
-link_image: https://unsplash.com/photos/NqOInJ-ttqM
+  image: /assets/images/posts/phpunit-faster.jpg
+  image_description: "Palavra inglesa Change em um letreiro vermelho chamativo"
+  teaser: /assets/images/posts/phpunit-faster.jpg
+  caption: "Credito image [**Unsplash**](https://unsplash.com/photos/NqOInJ-ttqM)"
+
 categories: Qualidade
 tags:
  - testes
  - performance
+excerpt: "Nesse artigo eu conto como consegui diminui o tempo de execução da suíte de testes do meu time e tive um ganho de 80% de tempo."
 ---
-Nesse artigo eu conto como consegui diminui o tempo de execução da suíte de testes do meu time e tive um ganho de 80% de tempo.
-
 
 Testes são uma das partes mais importantes na concepção de um produto digital. Através deles obtemos garantia que determinada funcionalidade cumpre com os requisitos e atende ao cliente de maneira satisfatória.
 
-Para alcançar esse objetivo devemos ter em mente que a entrega dos testes deve ser a mais rápida possível. 
+Para alcançar esse objetivo devemos ter em mente que a entrega dos testes deve ser a mais rápida possível.
 Com na pirâmide de testes, os unitários são rápidos, baratos e fáceis de implementar.
 
 Subindo o nível na pirâmide o grau de complexidade aumenta e por consequência sua execução também.
@@ -33,7 +32,7 @@ Segunda-feira iniciei um processo de investigação nos testes e o primeiro pass
 
 Pesquisando na web encontrei o <a href="https://eltonminetto.net/2016/04/08/melhorando-a-performance-do-phpunit" target="_blank" rel="noopener noreferrer">artigo</a> do <a href="https://twitter.com/eminetto" target="_blank" rel="noopener noreferrer">Elton Minetto</a>, onde ele apresenta um pacote chamado `phpunit-speedtrap`. No post do Elton ele explica passo a passo como configurar o <span lang="en">speedtrap</span>.
 
-O <span lang="en">speedtrap</span> executa juntamente com os testes e ao final da execução exibe os 10 primeiros testes mais lentos. Com um ponto de partida, continuei a investigar e juntamente com os desenvolvedores descobrimos que alguns testes estavam com um gargalo muito grande. 
+O <span lang="en">speedtrap</span> executa juntamente com os testes e ao final da execução exibe os 10 primeiros testes mais lentos. Com um ponto de partida, continuei a investigar e juntamente com os desenvolvedores descobrimos que alguns testes estavam com um gargalo muito grande.
 
 Por enquanto esses testes ainda não foram refatorados, mas está no nosso radar em corrigí-los para melhorar a performance dos testes.
 
@@ -43,9 +42,9 @@ Logo após isso, questionei os desenvolvedores sobre outros pontos que poderiam 
 
 Meu próximo passo foi pesquisar referências na web sobre a possível lentidão dos testes relacionado ao Xdebug. Para minha sorte encontrei diversas informações a respeito que mostravam como desabilitar ou até mesmo criar filtros para melhorar a performance dos testes.
 
-Tentei desabilitar a extensão do Xdebug no arquivo `php.ini`, localmente porém não tive sucesso. Eu sabia que poderia realizar esse tipo de teste, mas iria precisar de um devops para configurar essa opção no servidor. 
+Tentei desabilitar a extensão do Xdebug no arquivo `php.ini`, localmente porém não tive sucesso. Eu sabia que poderia realizar esse tipo de teste, mas iria precisar de um devops para configurar essa opção no servidor.
 
-Mais uma vez o <a href="https://twitter.com/eminetto" target="_blank" rel="noopener noreferrer">Elton Minetto</a> salvando a pátria. Dessa vez ele aborda em um <a href="https://hackernoon.com/generating-code-coverage-with-phpunite-and-phpdbg-4d20347ffb45" target="_blank" rel="noopener noreferrer">artigo</a> publicado em 2016, a relação da lentidão dos testes com o Xdebug, a título de comparação ele conta no artigo que possuía uma base de código que sem o Xdebug habilita terminava em **1.08**, ao habilitar o Xdebug transformou para **22.26** minutos. 
+Mais uma vez o <a href="https://twitter.com/eminetto" target="_blank" rel="noopener noreferrer">Elton Minetto</a> salvando a pátria. Dessa vez ele aborda em um <a href="https://hackernoon.com/generating-code-coverage-with-phpunite-and-phpdbg-4d20347ffb45" target="_blank" rel="noopener noreferrer">artigo</a> publicado em 2016, a relação da lentidão dos testes com o Xdebug, a título de comparação ele conta no artigo que possuía uma base de código que sem o Xdebug habilita terminava em **1.08**, ao habilitar o Xdebug transformou para **22.26** minutos.
 
 Ou seja, deve um aumento significativo. Infelizmente, a opção que era apresentada no artigo não consegui realizar pois precisaria de instalar um novo pacote no servidor. 😭
 
@@ -53,27 +52,27 @@ Ou seja, deve um aumento significativo. Infelizmente, a opção que era apresent
 
 Seguindo o lema de ser brasileiro e não desistir nunca, persisti em buscar outras alternativas para resolver meu problema. Encontrei um artigo no próprio site do Xdebug, explicando sobre a <a href="https://xdebug.org/docs/code_coverage" target="_blank" rel="noopener noreferrer">relação da cobertura de código com o Xdebug</a>.
 
-Ele é frequentemente usado em combinação com `PHP_CodeCoverage` como parte padrão do PHPUnit. 
+Ele é frequentemente usado em combinação com `PHP_CodeCoverage` como parte padrão do PHPUnit.
 O PHPUnit atribuí uma coleção de cobertura de código para o Xdebug que por sua vez, inicia a cobertura do código por meio do método `xdebug_start_code_coverage()` e interrompe através do `xdebug_stop_code_coverage()`.
 
 Para cada teste ele utiliza o `xdebug_get_code_coverage()` para recuperar os resultados.
 
-Sua saída principal é detalha **quais linhas nos quais os arquivos foram "atingidos"** durante a execução do código. 
+Sua saída principal é detalha **quais linhas nos quais os arquivos foram "atingidos"** durante a execução do código.
 
-Usando o Xdebug para tais atividades podemos ter um impacto adicional no desempenho, pois ele irá certificar de algumas informações como: 
+Usando o Xdebug para tais atividades podemos ter um impacto adicional no desempenho, pois ele irá certificar de algumas informações como:
 
 * *analisar quais linhas de código possuem código executável*;
 * *quais linhas de código podem ser atingidas*;
-* *também podem instrumentar para descobrir quais ramificações*; 
-* *caminhos em funções e métodos foram seguidos*. 
+* *também podem instrumentar para descobrir quais ramificações*;
+* *caminhos em funções e métodos foram seguidos*.
 
 #### Filtros para o resgate
 
 Desde a versão 2.6 do Xdebug é possível criar filtros para a cobertura de código. Com um filtro, podemos incluir através de uma <strong lang="en">whitelist</strong> caminhos e prefixos que podem ser executados e também é possível negar através de uma <strong lang="en">blacklist</strong>.
 
-Um exemplo, seria informar ao PHPUnit para coletar informações somente da sua pasta `src` onde fica sua base de código e os outros arquivos ele iria desconsiderar, assim, dependências do Composer, arquivos de configuração seria descartados na cobertura do código. 
+Um exemplo, seria informar ao PHPUnit para coletar informações somente da sua pasta `src` onde fica sua base de código e os outros arquivos ele iria desconsiderar, assim, dependências do Composer, arquivos de configuração seria descartados na cobertura do código.
 
-Existem algumas formas de criar esse filtro, eu criei o filtro baseado nesse <a href="https://medium.com/@nicocabot/speed-up-phpunit-code-coverage-analysis-4e35345b3dad" target="_blank" rel="noopener noreferrer">artigo</a>. Com um filtro configurado corretamente podemos esperar um ganho de velocidade duas vezes maior. 
+Existem algumas formas de criar esse filtro, eu criei o filtro baseado nesse <a href="https://medium.com/@nicocabot/speed-up-phpunit-code-coverage-analysis-4e35345b3dad" target="_blank" rel="noopener noreferrer">artigo</a>. Com um filtro configurado corretamente podemos esperar um ganho de velocidade duas vezes maior.
 
 Esses são alguns relatos de pessoas que usaram os filtros:
 
@@ -87,7 +86,7 @@ Antes de aplicar a técnica de filtros do Xdebug os testes estavam executando as
 
 ### Habilitando o filtro
 
-Para criarmos o filtro basta utilizar dois comandos que irão reduzir drasticamente o tempo de execução dos testes. 
+Para criarmos o filtro basta utilizar dois comandos que irão reduzir drasticamente o tempo de execução dos testes.
 
 O primeiro comando cria o arquivo `xdebug-filter.php` dentro do diretório `build` ele será gerado no diretório raiz da aplicação. Na minha pesquisa não verifiquei se podemos colocar ele em outro diretório.
 
@@ -135,13 +134,13 @@ Após aplicar as modificações do `xdebug-filter`, eis o resultado:
 
 <img src="/assets/images/posts/phpunit_rapido.png"  alt="Relatório informando que testes demoram 8 minutos para ser executados">
 
-Tive um ganho aproximadamente de 80% de execução! O processo agora está mais rápido e todo mundo feliz. 
+Tive um ganho aproximadamente de 80% de execução! O processo agora está mais rápido e todo mundo feliz.
 
 ## Dicas para o phpunit.xml
 
-O arquivo `phpunit.xml` é o setup de configuração para suíte de testes que utilizam PHPUnit. 
+O arquivo `phpunit.xml` é o setup de configuração para suíte de testes que utilizam PHPUnit.
 
-Vou mostrar alguns paramêtros que podem ser passados que irão melhorar a performance. 
+Vou mostrar alguns paramêtros que podem ser passados que irão melhorar a performance.
 Ele vem com uma série de paramêtros pré-configurados.
 
 O primeiro paramêtro é o `cacheResult="true"`, que permite o PHPUnit execute somente os testes que falharam anteriormente, com uma suíte grande testes isso é um ganho de tempo de resposta absurdo.

@@ -6,13 +6,8 @@ categories: Produtividade
 tags:
   - produtividade
   - organização
-description: >-
-
+excerpt: "A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma quantidade absurda de informações. E como lidamos com essa grande quantidade, armazenando e categorizando elas? Vamos descobrir uma boa alternativa para colocar ordem no caos da informação."
 ---
-A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma
-  quantidade absurda de informações. E como lidamos com essa grande quantidade,
-  armazenando e categorizando elas? Vamos descobrir uma boa alternativa para
-  colocar ordem no caos da informação.
 
 A cada dia o mundo da tecnologia traz uma novidade e somos inundados com uma quantidade absurda de informações.
 

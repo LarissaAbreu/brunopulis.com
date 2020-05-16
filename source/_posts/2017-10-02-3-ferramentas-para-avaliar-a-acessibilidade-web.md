@@ -4,15 +4,14 @@ title: "3 ferramentas para avaliar a acessibilidade web"
 date: 2017-10-02
 header:
   image: /assets/images/posts/tools.jpg
-alt: "Um notebook ao centro da mesa com diversas ferramentas ao seu redor, representando sua utilidade"
+  image_description: "Um notebook ao centro da mesa com diversas ferramentas ao seu redor, representando sua utilidade"
 categories: Acessibilidade
 tags:
   - dicas
   - tools
   - a11y
+excerpt: "Neste post bem rapidinho vou mostrar alguns avaliadores automáticos para testar as recomendações da WCAG em suas app’s ou websites."
 ---
-
-Neste post bem rapidinho vou mostrar alguns avaliadores automáticos para testar as recomendações da WCAG em suas app’s ou websites.
 
 Os avaliadores de acessibilidade, tem como função, testar de forma automática a estrutura do seu código para checar se atende as conformidades dos webstandards propostos pela W3C. Estes validadores não testam a semântica, isto é, testam a síntaxe do seu código.
 

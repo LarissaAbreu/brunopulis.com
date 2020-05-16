@@ -4,14 +4,15 @@ title: "Precisamos de equilibrio"
 date: 2017-12-21 00:06:48
 header:
   image: /assets/images/posts/equilibrio.jpg
-alt: "Mulher sentada no canto do quarto apoiando a mão na cabeça pensativa"
+  teaser: /assets/images/posts/equilibrio.jpg
+  image_description: "Mulher sentada no canto do quarto apoiando a mão na cabeça pensativa"
 categories: Carreira
 tags:
   - saude
   - burnout
   - depressão
+excerpt: "Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde."
 ---
-Dicas de como manter a sanidade mental e ter uma vida equilibrada com seu trabalho, lazer e o mais importante sua saúde.
 
 Esse artigo não será técnico, mas uma reflexão sobre um tema pouco tocado, mas que todos passam em suas carreiras na área de TI.
 

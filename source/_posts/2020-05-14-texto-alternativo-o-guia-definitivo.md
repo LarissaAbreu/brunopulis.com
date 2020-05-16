@@ -2,21 +2,19 @@
 layout: single
 title: "Texto alternativo o guia definitivo"
 date: 2020-05-14 17:18:16
-alt: Gato de cor marrom brincando
-legend:
-link_text: Foto por Daniel Göransson
-link_image: https://axesslab.com/alt-texts
+header:
+  image: /assets/images/posts/cute-cat.jpeg
+  image_description: Gato de cor marrom brincando
+  caption: "Foto por [Daniel Göransson](https://axesslab.com/alt-texts)"
+  teaser: /assets/images/posts/cute-cat.jpeg
 categories: Acessibilidade
 tags:
   - texto alternativo
   - html semantico
-toc: true
-comments: true
-header:
-  image: /assets/images/posts/cute-cat.jpeg
+
+excerpt: "Esse artigo contém tudo o que você precisa saber sobre texto alternativo! 
+Quando usá-los e como desenhá-los perfeitamente."
 ---
-Esse artigo contém tudo o que você precisa saber sobre texto alternativo! 
-Quando usá-los e como desenhá-los perfeitamente.
 
 <div class="alert alert-warning">
 Texto postado originalmente no <a href="https://axesslab.com/alt-texts" rel="noopener noreferrer" target="_blank">blog da Axesslab</a> escrito por <a href="https://twitter.com/danielgoransson" rel="noopener noreferrer" target="_blank">Daniel Göransson</a>, adaptado e traduzido por mim.

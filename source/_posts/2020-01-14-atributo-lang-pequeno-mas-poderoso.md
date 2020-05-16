@@ -4,14 +4,14 @@ title: "Explorando o atributo lang"
 date: 2020-01-14 01:11:52
 header:
   image: /assets/images/posts/languages.jpg
-alt: Vários bilhetes com expressões de diversos idiomas escritos
+  teaser: /assets/images/posts/languages.jpg
+  image_description: Vários bilhetes com expressões de diversos idiomas escritos
 categories: Acessibilidade
 tags:
   - Semântica
   - Web Standards
+excerpt: "O atributo lang geralmente é ignorado e desconhecido pela maioria de nós desenvolvedores, porém, ele  influência diretamente no significado e sentido de nossos documentos HTML. Descubra o poder desse atributo."
 ---
-O atributo lang geralmente é ignorado e desconhecido pela maioria de nós desenvolvedores, porém, ele  influência diretamente no significado e sentido de nossos documentos HTML. Descubra o poder desse atributo.
-
 
 Nesse post iremos explorar um dos atributos HTML que passam desapercebidos no dia a dia, o atributo `lang`.
 

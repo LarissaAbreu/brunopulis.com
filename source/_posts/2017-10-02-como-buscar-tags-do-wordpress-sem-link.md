@@ -4,15 +4,13 @@ title: "Como buscar tags do wordpress sem link"
 date: 2017-10-02 00:43:26
 header:
   image: /assets/images/posts/php.jpg
-alt: "Nuvem de tags com palavras relacionadas ao Wordpress"
-description: "Aprenda como retornar o nome das tags do Wordpress sem o link padrão"
+  image_description: "Nuvem de tags com palavras relacionadas ao Wordpress"
 categories: PHP
 tags:
   - wordpress
   - seo
+excerpt: "Esse artigo visa mostrar de forma clara como é possível retornar o nome das tags do Wordpress sem o link padrão. É uma técnica relativamente simples uma consulta na documentação e resolvemos nosso problema, vamos lá!"
 ---
-
-Esse artigo visa mostrar de forma clara como é possível retornar o nome das tags do Wordpress sem o link padrão. É uma técnica relativamente simples uma consulta na documentação e resolvemos nosso problema, vamos lá!
 
 ## O cenário
 

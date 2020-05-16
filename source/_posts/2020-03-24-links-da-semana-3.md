@@ -4,9 +4,8 @@ title: 'Links da semana 3'
 date: '2020-03-24 08:15pm'
 categories:
   - Links da semana
+excerpt: "Links da semana 3 - Coisas bacanas que vi e decidi compartilhar com vocês."
 ---
-
-Links da semana 3 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
 ## Repositórios interessantes
 

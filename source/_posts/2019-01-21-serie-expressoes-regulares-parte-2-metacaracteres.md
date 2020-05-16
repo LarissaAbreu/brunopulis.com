@@ -4,18 +4,20 @@ title: "Expressões Regulares: Metacaracteres"
 date: 2019-01-21 23:38:51
 header:
   image: /assets/images/posts/code.jpg
-alt: "Abreviação em inglês de Expressões regulares. Ilustração"
+  teaser: /assets/images/posts/code.jpg
+  image_description: "Abreviação em inglês de Expressões regulares. Ilustração"
 categories: Séries
 tags:
   - regex
   - metacaracteres
+excerpt: "Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los"
 ---
-Vamos entender os metacaracteres que são essenciais para criar expressões regulares e como utilizá-los
+
 ## Introdução
 
 Fala pessoal! Continuando nossa jornada no mundo das expressões regulares iremos aprender sobre os **metacaracteres** que são essenciais para construirmos nossas regexps.
 
-![Homem dizendo vamos começar](/img/posts/metacaracteres/shall-we-begin.gif)
+![Homem dizendo vamos começar](/assets/images/shall-we-begin.gif)
 
 ## Metacaracteres: a essência das regexp
 

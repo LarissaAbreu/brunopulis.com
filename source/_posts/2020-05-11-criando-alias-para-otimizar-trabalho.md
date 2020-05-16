@@ -4,20 +4,16 @@ title: "Criando alias para otimizar seu trabalho"
 date: 2020-05-11 18:20:08
 header:
   image: /assets/images/posts/terminal.jpg
-alt: Terminal de um computador com vários comando digitados na tela
-link_text: Foto por Arget em Unsplash
-link_image: https://unsplash.com/photos/zvHhKiVuR9M
-description:
+  image_description: "Terminal de um computador com vários comando digitados na tela"
+  caption: "Credito da imagem: [**Unsplash**](https://unsplash.com/photos/zvHhKiVuR9M)"
 categories: Dicas
 tags:
   - alias
   - linux
   - zsh
   - bash
-toc: true
-comments: true
+excerpt: "Esse artigo visa demonstrar a criação de `alias` no terminal para encurtar e otimizar alguns comandos."
 ---
-Esse artigo visa demonstrar a criação de `alias` no terminal para encurtar e otimizar alguns comandos.
 
 ## Introducão
 

@@ -3,17 +3,17 @@ layout: single
 title: "Conhecendo o DeepCode"
 date: 2019-12-31 14:01:04
 header:
-  image: '/assets/images/posts/inteligencia-artificial.jpg'
-alt:
+  image: /assets/images/posts/inteligencia-artificial.jpg
+  teaser: /assets/images/posts/inteligencia-artificial.jpg
+  image_description: "Um robo simulando a inteligencia artificial"
 categories: Qualidade
 tags:
   - Inteligência Artificial
   - Code Review
   - Automação
   - Machine Learning
+excerpt: "Descubra como a inteligência artificial pode ajudar no processo de Code Review"
 ---
-Descubra como a inteligência artificial pode ajudar no processo de Code Review
-
 
 Recentemente navegando pelo Youtube vi um vídeo do [Filipe Deschamps](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw), onde ele mostrou uma ferramenta para avaliar questões de segurança no <span lang="en">Code Review</span> chamada DeepCode.
 
