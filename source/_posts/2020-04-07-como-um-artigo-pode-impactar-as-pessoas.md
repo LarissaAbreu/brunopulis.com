@@ -4,17 +4,14 @@ title: Se desafie, sempre!
 date: 2020-04-07 11:15:24
 header:
   image: /assets/images/posts/changes.png
-alt: Palavra inglesa Change em um letreiro vermelho chamativo
-legend:
-link_text: Foto por Ross Find em Unsplash
-link_image: https://unsplash.com/photos/mG28olYFgHI
-description:
+  teaser: /assets/images/posts/changes.png
+  image_description: Palavra inglesa Change em um letreiro vermelho chamativo
+  caption: "Credito da imagem: [**Unsplash**](https://unsplash.com/photos/mG28olYFgHI)"
 categories: Acessibilidade
 tags:
   - desafios
+excerpt: "Conto um pouco de como eu topei um desafio para gravar meu primeiro vídeo para o Youtube e a surpresa que tive."
 ---
-
-Conto um pouco de como eu topei um desafio para gravar meu primeiro vídeo para o Youtube e a surpresa que tive.
 
 Recentemente por incentivo do meu mentor o [Júlio de Lima](https://www.linkedin.com/in/juliodelimas/), postei o meu primeiro vídeo sobre acessibilidade no meu [canal no Youtube](https://www.youtube.com/channel/UCAjuwwxEbHtm4GvVi3W_o6Q), onde mostro a ferramenta <span lang="en">NoCoffee Vision Simulator</span>.
 

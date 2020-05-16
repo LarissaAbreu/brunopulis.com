@@ -4,15 +4,13 @@ title: "Acessibilidade: um caso de amor"
 date: 2015-02-26
 header:
   image: /assets/images/posts/cover/cover-stormtropper.jpg
-alt: "Um stormtropper saindo da tecla S do teclado"
-description: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
+  image_description: "Um stormtropper saindo da tecla S do teclado"
 categories: Acessibilidade
 tags:
 - a11y
 - empatia
 
-twitter_text: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
-introduction: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
+excerpt: "Como toda boa história de amor, ela inicia-se com empatia e aproximidade entre as partes. Conto um pouco como tive contado com a acessibilidade web e meus motivos por defender essa bandeira."
 ---
 
 Aos que me conhecem sabem que eu sou defensor de uma Web inclusiva e não exclusiva, por isso luto pela Acessibilidade Web no Brasil.

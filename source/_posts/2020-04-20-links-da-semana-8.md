@@ -4,14 +4,12 @@ title: "Links da semana 8"
 date: 2020-04-20 15:44:37
 categories:
  - Links da semana
+excerpt: "Links da semana 8 - Links sobre coisas interessantes que fui vendo pela semana."
 ---
-
-Links da semana 8 - Links sobre coisas interessantes que fui vendo pela semana.
 
 # Introdução
 
 Essa semana foi entrega do projeto que estou trabalhando e durante esse processo refleti bastante sobre o contexto ágil. Por isso, essa semana está recheado de artigos sobre técnicas de testes, cultura de acessibilidade e matriz de risco.
-
 
 ## Artigos
 

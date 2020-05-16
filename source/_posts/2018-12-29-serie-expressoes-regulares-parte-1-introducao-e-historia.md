@@ -3,8 +3,9 @@ layout: single
 title: "Expressões Regulares: Introdução e História"
 date: 2018-12-29 03:28:43
 header:
-  image: "/assets/images/posts/code.jpg"
-alt: "Abreviação em inglês de Expressões regulares. Ilustração"
+  image: /assets/images/posts/code.jpg
+  teaser: /assets/images/posts/code.jpg
+  image_description: "Abreviação em inglês de Expressões regulares. Ilustração"
 categories: Séries
 tags:
   - regex

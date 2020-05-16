@@ -4,12 +4,12 @@ title: "Seis livros para estudar acessibilidade web"
 date: 2017-11-27
 header:
  image: /assets/images/posts/books.jpg
+ image_description: "Livros coloridos empilhados sobre uma mesa"
 categories: Dicas
 tags:
   - livros
+excerpt: "Neste artigo irei mostrar uma lista de livros para você que se interessa pelo assunto, são livros excelentes e recomendados internacionalmente."
 ---
-
-Neste artigo irei mostrar uma lista de livros para você que se interessa pelo assunto, são livros excelentes e recomendados internacionalmente.
 
 Navegando pela internet, encontrei uma lista de livros sobre acessibilidade web no site do [Web Axe](http://www.webaxe.org/web-accessibility-books/).
 

@@ -4,12 +4,12 @@ title: "Ignore o WCAG! Teste de usuários com pessoas com deficiência em vez d
 date: 2017-11-13
 header:
   image: /assets/images/posts/wcag.png
-alt: "Um bloco de anotações com uma caneta e um notebook em cima de uma mesa marrom"
-description: "Aprenda com essas dicas como testar acessibilidade dos seus produtos digitais da forma correta"
+  image_description: "Um bloco de anotações com uma caneta e um notebook em cima de uma mesa marrom"
 categories: Acessibilidade
 tags:
   - wcag
   - teste usabilidade
+excerpt: "Aprenda com essas dicas como testar acessibilidade dos seus produtos digitais da forma correta"
 ---
 Se você está tentando tornar seu site ou aplicativo acessível, você provavelmente se atrapalhou nas Diretrizes de Acessibilidade para o Conteúdo da Web (WCAG). Mas não desperdice sua energia tentando compreendê-la. Sério, não!
 

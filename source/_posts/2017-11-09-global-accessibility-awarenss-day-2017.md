@@ -8,13 +8,12 @@ categories: Eventos
 tags:
   - reviews
   - a11y
+excerpt: "Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017"
 ---
-Resumo de como foi minha participação no Global Accessibility Awarenss Day 2017
+
 ## Introdução
 
 Fala pessoal, nesse post vou contar um pouco de como foi participar no Global Acessibility Awarenss da edição de Belo Horizonte promovido pelo [IXDABH](http://bhz.ixda.org.br/)
-
----
 
 ## Objetivos do evento
 
@@ -32,7 +31,7 @@ A ideia do GAAD começou com um [post em um blog](https://mysqltalk.wordpress.co
 - [Free AMAC](http://mailchi.mp/e993313afc40/1ml4oa6z8f-1242317?e=3ab58790fd)
 - WAG Webinar 10 Challenges and Solutions for web accessibility implementation in higher education.
 
-<h2 class="section-heading">Países participantes</h2>
+### Países participantes
 
 - Belo Horizonte, Brasil
 - Itália

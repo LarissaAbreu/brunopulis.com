@@ -4,17 +4,16 @@ title: "9 coisas para evitar na quarentena"
 date: 2020-04-04 21:14:11
 header:
   image: /assets/images/posts/isolate.jpg
-legend: 'Foto por Artem Maltsev em Unsplash'
-link_text: 'Unsplash'
-link_image: 'https://unsplash.com/photos/h31mHmLFX_A'
+  teaser: /assets/images/posts/isolate.jpg
+  image_description: "Isolamento social"
+  caption: "Credito imagem: [**Unsplash**](https://unsplash.com/photos/h31mHmLFX_A)"
 categories: Dicas
 tags:
   - saúde mental
   - pandemia
   - covid19
+excerpt: "A pandemina tem mexido bastante com nosso piscologico, em conversa com meu psicologo ele me orientou com 9 dicas para o que não fazer em tempos de isolamento social."
 ---
-
-Nove dicas para o que não fazer em tempos de isolamento social.
 
 > Este artigo é um compilado que meu psicológo <a href="https://www.linkedin.com/in/saulo-ferreira-cruz-602999ab/" rel="noreferrer noopener" target="_blank">Saulo Ferreira Cruz</a> desenvolveu. O conteúdo foi autorizado para ser divulgado.
 

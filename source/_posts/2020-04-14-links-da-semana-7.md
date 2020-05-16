@@ -4,9 +4,8 @@ title: "Links da Semana 7"
 date: 2020-04-14 13:55:25
 categories:
  - Links da semana
+excerpt: "Links da semana 7 - Links sobre coisas interessantes que fui vendo pela semana."
 ---
-
-Links da semana 7 - Links sobre coisas interessantes que fui vendo pela semana.
 
 ## Artigos
 

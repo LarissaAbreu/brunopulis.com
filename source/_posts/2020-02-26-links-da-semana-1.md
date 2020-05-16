@@ -4,9 +4,8 @@ title: 'Links da semana 1'
 date: '2020-02-26 06:32pm'
 categories:
  - Links da semana
+excerpt: "Links da semana 1 - Coisas bacanas que vi e decidi compartilhar com vocês."
 ---
-
-Links da semana 1 - Coisas bacanas que vi e decidi compartilhar com vocês.
 
 ## Introdução
 
