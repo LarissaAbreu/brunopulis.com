@@ -17,7 +17,7 @@ Ele é um guia para informar organizações que possuem problemas de acessibilid
 
 ## Introdução
 
-Esse artigo é uma forma de incentivar a você poder contribuir organizações criem sites mais acessíveis. Muitas vezes encontramos pela web, sites que precisam de alguns ajustes em questões de acessibilidade.
+Esse artigo é uma forma de incentivar a você poder contribuir para as organizações criem sites mais acessíveis. Muitas vezes encontramos pela web, sites que precisam de alguns ajustes em questões de acessibilidade.
 
 Informar as barreiras de acessibilidade é crucial para criarmos um ambiente digital inclusivo. Eis alguns motivos:
 
@@ -25,7 +25,7 @@ Informar as barreiras de acessibilidade é crucial para criarmos um ambiente dig
 * a organização não ficaria esperando uma multa ou punição legal;
 * beneficia também os usuários do site.
 
-Os proprietários de sites têm muitas prioridades para alterações e melhorias. Quanto mais uma organização ouve sobre acessibilidade de pessoas que usam seu site, maior a probabilidade de a acessibilidade se tornar uma prioridade mais alta. O **feedback positivo** é útil, bem como o **feedback crítico**.
+Os proprietários de sites têm muitas prioridades para alterações e melhorias. Quanto mais uma organização ouvir sobre acessibilidade de pessoas que usam seu site, maior a probabilidade de se tornar uma prioridade mais alta. O **feedback positivo** é útil, bem como o **feedback crítico**.
 
 A grande maioria dos proprietários de sites desconhecem da importância de tornar seu site acessível. Os sites precisam estar acessíveis em muitos países pelas [políticas nacionais](https://www.w3.org/WAI/policies/), especificamente no Brasil temos a [Lei Brasileira de Inclusão](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm).
 
@@ -37,12 +37,12 @@ No entanto, alguns problemas de acessibilidade podem estar relacionados às conf
 
 ## Pensando na melhor abordagem
 
-Considere qual abordagem utilizará para obter os resultados desejados. Seu tom nos e-mails, telefonemas e outras comunicações influencia a maneira como as pessoas reagem e respondem.
+Considere qual abordagem utilizará para obter os resultados desejados. Seu tom nos e-mails, telefonemas e outras formas de  comunicação influencia a maneira como as pessoas reagem e respondem.
 
 Lembre-se de que existem diferentes razões pelas quais os sites não estão acessíveis. Algumas organizações não sabem sobre acessibilidade e não sabem como tornar seus sites acessíveis. Alguns estão apenas aprendendo sobre acessibilidade e tentando tornar seu site acessível, embora ainda não o estejam fazendo o suficiente. E existem algumas organizações que optam por não tornar seus sites acessíveis.
 {: .notice--info}
 
-Geralmente, é melhor quando você entra em contato com uma organização para supor que ela não conhece as barreiras de acessibilidade em seu site. Você pode ajustar sua abordagem com base na resposta deles e no que aprender sobre a posição da organização em acessibilidade. A resposta deles pode ajudá-lo a escolher ações de acompanhamento que provavelmente serão mais eficazes.
+Geralmente, a melhor estratégia e quando você entra em contato com uma organização. Você pode ajustar sua abordagem com base na resposta deles e no que aprender sobre a posição da organização em acessibilidade. A resposta deles pode ajudá-lo a escolher ações de acompanhamento que provavelmente serão mais eficazes.
 
 ### Peça ajuda
 
