@@ -84,7 +84,7 @@ pt: &DEFAULT_PT
   comments_label: "Deixe um Comentário"
   comments_title: "Comentários"
   more_label: "Saber mais"
-  related_label: "Também pode gostar de"
+  related_label: "Posts relacionados"
   follow_label: "Siga:"
   feed_label: "Feed"
   powered_by: "Feito com"
