@@ -40,7 +40,7 @@ search_full_content: # true, false (default)
 search_provider: algolia # lunr (default), algolia, google
 algolia:
   application_id: MJWV3215SI # YOUR_APPLICATION_ID
-  index_name: # YOUR_INDEX_NAME
+  index_name: brunopulis # YOUR_INDEX_NAME
   search_only_api_key: f19e756547d9308962ed97854833f293 # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
 
