@@ -6,8 +6,7 @@ npm-debug.log
 _site
 .jekyll-metadata
 .jekyll-cache
-.ruby-version
-vendor/bundle/ruby/
+vendor/
 .bundle/
 .cache
 
