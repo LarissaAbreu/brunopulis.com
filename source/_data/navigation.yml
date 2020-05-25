@@ -4,7 +4,5 @@ main:
     url: /
   - title: "Sobre"
     url: /about
-  - title: "Talks"
-    url: /talks/
-  - title: "Arquivo"
-    url: /year-archive/
+  - title: "Categorias"
+    url: /categories/
