@@ -19,8 +19,11 @@
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-      <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i
-          class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      <a href="{{ post.link }}">{{ title }}</a> 
+      <a href="{{ post.url | relative_url }}" rel="permalink">
+        <i class="fas fa-link" aria-hidden="true"></i>
+        <span class="sr-only">Permalink</span>
+      </a>
       {% else %}
       <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
@@ -28,8 +31,6 @@
     {% if post.read_time %}
     <p class="page__meta">
       <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
-      <i class="far fa-comment disqus-count-home" aria-hidden="true"></i><a
-        href="{{ post.url | absolute_url }}#disqus_thread">~</a>
     </p>
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">
