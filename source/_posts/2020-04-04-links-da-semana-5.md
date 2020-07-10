@@ -2,8 +2,7 @@
 layout: single
 title: "Links da Semana 5"
 date: 2020-04-04 12:43:07
-categories:
-  - Links da semana
+categories: Links
 excerpt: "Links da semana 5 - Coisas bacanas que vi e decidi compartilhar com vocês."
 ---
 

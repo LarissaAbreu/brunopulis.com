@@ -2,8 +2,7 @@
 layout: single
 title: 'Links da semana 2'
 date: '2020-03-01 04:19pm'
-categories:
- - Links da semana
+categories: Links
 excerpt: "Links da semana 2 - Coisas bacanas que vi e decidi compartilhar com vocês."
 ---
 
