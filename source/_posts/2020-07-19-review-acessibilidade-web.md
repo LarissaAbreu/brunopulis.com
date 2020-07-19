@@ -95,16 +95,16 @@ Se gestor que quer colocar seus produtos digitais em conformidade com as diretri
 
 Concluo essa review, incentivando você, leitor que compre e ajude a divulgar produções de livros nacionais, precisamos fomentar mais conteúdo relacionado sobre acessibilidade.
 
-Patrocine publicações nacionais existe muita gente boa produzindo conteúdo em terras tupiniquis. 
+Patrocine publicações nacionais existe muita gente boa produzindo conteúdo em terras tupiniquis.
 
 Seja um incentivador e não um detrator, compre e-books, livros, ajude a comunidade web a crescer e principalmente ajude a web ser de **TUDO para TODOS**.
 
 ## Referências
 
-- Anúncio da publicação do livro de acessibilidade, 2020. Disponível em: [https://twitter.com/reinaldoferraz/status/1263498521300348928](https://twitter.com/reinaldoferraz/status/1263498521300348928) Acesso em: 19 de julho de 2020;
-- Acessibilidade na Web: Boas práticas para construir sites e aplicações acessíveis, 2020. Disponível em: ****[https://www.casadocodigo.com.br/products/livro-acessibilidade](https://www.casadocodigo.com.br/products/livro-acessibilidade) Acesso em: 19 de julho de 2020;
-- Casa do Código, 2020. Disponível em : [https://www.casadocodigo.com.br](https://www.casadocodigo.com.br/) Acesso em: 19 de julho de 2020;
-- Sobre Reinaldo Ferraz, 2020. Disponível em: [http://reinaldoferraz.com.br/sobre](http://reinaldoferraz.com.br/sobre/) Acesso em: 19 de julho de 2020;
-- Como citar ebook, kindle e epub, 2020. Disponível em: [https://guiadamonografia.com.br/como-citar-ebook-kindle-epub/#Como_citar_livros_no_formato_epub](https://guiadamonografia.com.br/como-citar-ebook-kindle-epub/#Como_citar_livros_no_formato_epub) Acesso em: 19 de julho de 2020;
-- Biografia de Tim Berners-Lee, 2020. Disponível em: [https://pt.wikipedia.org/wiki/Tim_Berners-Lee](https://pt.wikipedia.org/wiki/Tim_Berners-Lee) Acesso em: 19 de julho de 2020;
-- Lei Brasileira de Inclusão, 2020. Disponível em: [http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm) Acesso em: 19 de julho de 2020.
+- Anúncio da publicação do livro de acessibilidade, 2020. Disponível em: [Twitter](https://twitter.com/reinaldoferraz/status/1263498521300348928) Acesso em: 19 de julho de 2020;
+- Acessibilidade na Web: Boas práticas para construir sites e aplicações acessíveis, 2020. Disponível em: [Livro disponível na Casa do Código](https://www.casadocodigo.com.br/products/livro-acessibilidade) Acesso em: 19 de julho de 2020;
+- Casa do Código, 2020. Disponível em : [Casa do código](https://www.casadocodigo.com.br/) Acesso em: 19 de julho de 2020;
+- Sobre Reinaldo Ferraz, 2020. Disponível em: [Sobre Reinaldo Ferraz](http://reinaldoferraz.com.br/sobre/) Acesso em: 19 de julho de 2020;
+- Como citar ebook, kindle e epub, 2020. Disponível em: [Como citar ebook, kindle e epub](https://guiadamonografia.com.br/como-citar-ebook-kindle-epub/#Como_citar_livros_no_formato_epub) Acesso em: 19 de julho de 2020;
+- Biografia de Tim Berners-Lee, 2020. Disponível em: [Tim Berners-Lee](https://pt.wikipedia.org/wiki/Tim_Berners-Lee) Acesso em: 19 de julho de 2020;
+- Lei Brasileira de Inclusão, 2020. Disponível em: [Lei Brasileira de inclusão](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm) Acesso em: 19 de julho de 2020.
