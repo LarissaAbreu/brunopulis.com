@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Review: Acessibilidade na web - Boas práticas para construir sites e aplicações acessíveis"
+title: "Acessibilidade na web - Boas práticas para construir sites e aplicações acessíveis"
 date: 2020-07-19 16:02:56
 categories: Review
 excerpt: "Minhas impressões pessoais sobre a leitura do novo livro do Reinaldo Ferraz"
